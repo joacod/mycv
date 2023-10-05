@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-// import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Navigation = () => {
   return (
@@ -21,10 +21,10 @@ const Navigation = () => {
       </ul>
       <div>
         <a href="https://github.com/your-github-profile">
-          {/* <FaGithub /> */}
+          <FaGithub />
         </a>
         <a href="https://www.linkedin.com/in/your-linkedin-profile">
-          {/* <FaLinkedin /> */}
+          <FaLinkedin />
         </a>
         {/* <Link href={`/${locale}`}>
           {locale.toUpperCase()}
