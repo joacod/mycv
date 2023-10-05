@@ -1,4 +1,10 @@
 {
+  "Navigation": {
+    "about": "Acerca de",
+    "experience": "Experiencia",
+    "education": "Educacion",
+    "skills": "Habilidades"
+  },
   "Home": {
     "title": "Mi CV"
   }

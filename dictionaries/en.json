@@ -1,4 +1,10 @@
 {
+  "Navigation": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills"
+  },
   "Home": {
     "title": "My CV"
   }

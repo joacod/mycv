@@ -2,37 +2,38 @@ import React from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { devGithub, devLinkedIn } from "@/utils/devConstants";
+import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
+import { useTranslations } from "next-intl";
 
 const Navigation = () => {
+  const t = useTranslations("Navigation");
   const githubUrl = "https://github.com/" + devGithub;
   const linkedinUrl = "https://www.linkedin.com/in/" + devLinkedIn;
 
   return (
-    <nav className="bg-neutral-800 p-4 shadow-md">
-      <ul>
+    <nav className="flex items-center justify-between bg-neutral-800 px-10 py-5 shadow-md">
+      <ul className="flex space-x-4">
         <li>
-          <Link href={`#section-about`}>About</Link>
+          <Link href={`#section-about`}>{t("about")}</Link>
         </li>
         <li>
-          <Link href={`#section-experience`}>Experience</Link>
+          <Link href={`#section-experience`}>{t("experience")}</Link>
         </li>
         <li>
-          <Link href={`#section-education`}>Education</Link>
+          <Link href={`#section-education`}>{t("education")}</Link>
         </li>
         <li>
-          <Link href={`#section-skills`}>Skills</Link>
+          <Link href={`#section-skills`}>{t("skills")}</Link>
         </li>
       </ul>
-      <div>
+      <div className="flex space-x-4">
         <a href={githubUrl}>
-          <FaGithub />
+          <FaGithub size={32} />
         </a>
         <a href={linkedinUrl}>
-          <FaLinkedin />
+          <FaLinkedin size={32} />
         </a>
-        {/* <Link href={`/${locale}`}>
-          {locale.toUpperCase()}
-        </Link> */}
+        <LocaleSwitcher />
       </div>
     </nav>
   );
