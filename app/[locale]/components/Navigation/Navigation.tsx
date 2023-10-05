@@ -8,7 +8,7 @@ const Navigation = () => {
   const linkedinUrl = "https://www.linkedin.com/in/" + devLinkedIn;
 
   return (
-    <nav className="bg-white p-4 shadow-md">
+    <nav className="bg-neutral-800 p-4 shadow-md">
       <ul>
         <li>
           <Link href={`#section-about`}>About</Link>
