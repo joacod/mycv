@@ -4,11 +4,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Analytics } from "@vercel/analytics/react";
+import Wrapper from "./components/Wrapper/Wrapper";
+import { devName } from "./utils/devConstants";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My CV - Joaquin Diaz",
+  title: "My CV - " + devName,
   description:
     "My software developer resume. Created using Bun, Next.js 13, Typescript and Tailwind CSS.",
 };
@@ -27,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang={params.locale}>
       <body className={inter.className}>
-        {children}
+        <Wrapper>{children}</Wrapper>
         <Analytics />
       </body>
     </html>
