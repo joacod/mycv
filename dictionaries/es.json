@@ -3,9 +3,18 @@
     "about": "Acerca de",
     "experience": "Experiencia",
     "education": "Educacion",
-    "skills": "Habilidades"
+    "skills": "Tecnologias"
   },
-  "Home": {
-    "title": "Mi CV"
+  "About": {
+    "title": "Acerca de mi"
+  },
+  "Experience": {
+    "title": "Experiencia"
+  },
+  "Education": {
+    "title": "Educacion"
+  },
+  "Skills": {
+    "title": "Tecnologias"
   }
 }
