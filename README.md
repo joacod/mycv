@@ -2,7 +2,14 @@
 
 # My CV
 
+[![Vercel](https://vercelbadge.vercel.app/api/joacod/mycv)](https://mycv-blush.vercel.app/)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/joacod/mycv/blob/main/LICENSE)
+
+![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 </div>
 
