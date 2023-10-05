@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { devGithub, devLinkedIn } from "../../utils/devConstants";
+import { devGithub, devLinkedIn } from "@/utils/devConstants";
 
 const Navigation = () => {
   const githubUrl = "https://github.com/" + devGithub;

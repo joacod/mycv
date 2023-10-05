@@ -1,4 +1,4 @@
-import { devName } from "../../utils/devConstants";
+import { devName } from "@/utils/devConstants";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();

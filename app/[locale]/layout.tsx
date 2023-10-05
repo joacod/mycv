@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Analytics } from "@vercel/analytics/react";
 import Wrapper from "./components/Wrapper/Wrapper";
-import { devName } from "./utils/devConstants";
+import { devName } from "@/utils/devConstants";
 
 const inter = Inter({ subsets: ["latin"] });
 
