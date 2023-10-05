@@ -1,6 +1,6 @@
 ## My CV
 
-This is my CV, created using Bun, Next.js, Typescript and Tailwind CSS.
+This is my resume, created using [Bun](https://bun.sh/), [Next.js 13](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/).
 
 **Install dependencies:**
 
