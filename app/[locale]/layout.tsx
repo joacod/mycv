@@ -7,9 +7,9 @@ import { notFound } from "next/navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My CV",
+  title: "My CV - Joaquin Diaz",
   description:
-    "My resume. Created using Bun, Next.js 13, Typescript and Tailwind CSS.",
+    "My software developer resume. Created using Bun, Next.js 13, Typescript and Tailwind CSS.",
 };
 
 export default function RootLayout({

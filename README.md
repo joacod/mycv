@@ -11,11 +11,20 @@
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diazjoaquin/)
+
 </div>
 
 ## 👋 Introduction
 
 This is my resume, created using [Bun](https://bun.sh/), [Next.js 13](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/).
+
+## 📚 Libraries
+
+We use the following libraries:
+- [prettier](https://prettier.io/) - Code formatter
+- [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Prettier plugin for Tailwind CSS that automatically sorts classes
+- [next-intl](https://next-intl-docs.vercel.app/) - Internationalization for Next.js
 
 ## 💻 Development
 
