@@ -11,6 +11,8 @@
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diazjoaquin/)
+
 </div>
 
 ## 👋 Introduction
@@ -32,6 +34,23 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the web.
+
+## 📚 Libraries
+
+We use the following libraries:
+
+- [prettier](https://prettier.io/) - Code formatter
+- [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Prettier plugin for Tailwind CSS that automatically sorts classes
+- [next-intl](https://next-intl-docs.vercel.app/) - Internationalization for Next.js
+
+## 🔌 VS Code Extensions
+
+We recommend the following VS Code extensions for this project:
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Integrates ESLint JavaScript into VS Code.
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Code formatter using prettier.
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - Intelligent Tailwind CSS tooling for VS Code.
+- [Tailwind Fold](https://marketplace.visualstudio.com/items?itemName=stivo.tailwind-fold) - Improve the readability of your code by automatically "folding" long class attributes.
 
 ## 📄 License
 
