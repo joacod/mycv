@@ -1,8 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { devGithub, devLinkedIn } from "../../utils/devConstants";
 
 const Navigation = () => {
+  const githubUrl = "https://github.com/" + devGithub;
+  const linkedinUrl = "https://www.linkedin.com/in/" + devLinkedIn;
+
   return (
     <nav className="bg-white p-4 shadow-md">
       <ul>
@@ -20,10 +24,10 @@ const Navigation = () => {
         </li>
       </ul>
       <div>
-        <a href="https://github.com/your-github-profile">
+        <a href={githubUrl}>
           <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/your-linkedin-profile">
+        <a href={linkedinUrl}>
           <FaLinkedin />
         </a>
         {/* <Link href={`/${locale}`}>
