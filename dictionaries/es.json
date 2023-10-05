@@ -1,5 +1,20 @@
 {
-  "Home": {
-    "title": "Mi CV"
+  "Navigation": {
+    "about": "Acerca de",
+    "experience": "Experiencia",
+    "education": "Educacion",
+    "skills": "Tecnologias"
+  },
+  "About": {
+    "title": "Acerca de mi"
+  },
+  "Experience": {
+    "title": "Experiencia"
+  },
+  "Education": {
+    "title": "Educacion"
+  },
+  "Skills": {
+    "title": "Tecnologias"
   }
 }
