@@ -19,13 +19,6 @@
 
 This is my resume, created using [Bun](https://bun.sh/), [Next.js 13](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/).
 
-## 📚 Libraries
-
-We use the following libraries:
-- [prettier](https://prettier.io/) - Code formatter
-- [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Prettier plugin for Tailwind CSS that automatically sorts classes
-- [next-intl](https://next-intl-docs.vercel.app/) - Internationalization for Next.js
-
 ## 💻 Development
 
 **Install dependencies:**
@@ -41,6 +34,23 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the web.
+
+## 📚 Libraries
+
+We use the following libraries:
+
+- [prettier](https://prettier.io/) - Code formatter
+- [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Prettier plugin for Tailwind CSS that automatically sorts classes
+- [next-intl](https://next-intl-docs.vercel.app/) - Internationalization for Next.js
+
+## 🔌 VS Code Extensions
+
+We recommend the following VS Code extensions for this project:
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Integrates ESLint JavaScript into VS Code.
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Code formatter using prettier.
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - Intelligent Tailwind CSS tooling for VS Code.
+- [Tailwind Fold](https://marketplace.visualstudio.com/items?itemName=stivo.tailwind-fold) - Improve the readability of your code by automatically "folding" long class attributes.
 
 ## 📄 License
 
