@@ -27,9 +27,10 @@ export default function RootLayout({
   if (!isValidLocale) notFound();
 
   return (
-    <html lang={params.locale}>
+    <html data-theme="retro" lang={params.locale}>
       <body className={inter.className}>
-        <Wrapper>{children}</Wrapper>
+        {/* <Wrapper>{children}</Wrapper> */}
+        {children}
         <Analytics />
       </body>
     </html>
