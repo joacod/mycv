@@ -39,6 +39,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 We use the following libraries:
 
+- [daisyUI](https://daisyui.com/) - Tailwind CSS Components
 - [prettier](https://prettier.io/) - Code formatter
 - [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Prettier plugin for Tailwind CSS that automatically sorts classes
 - [next-intl](https://next-intl-docs.vercel.app/) - Internationalization for Next.js

@@ -10,7 +10,7 @@ const Navigation = () => {
   const linkedinUrl = "https://www.linkedin.com/in/" + devLinkedIn;
 
   return (
-    <div className="navbar bg-neutral text-neutral-content">
+    <div className="navbar bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
