@@ -3,39 +3,60 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { devGithub, devLinkedIn } from "@/utils/devConstants";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
-import { useTranslations } from "next-intl";
+import { NavLinks } from "./NavLinks";
 
 const Navigation = () => {
-  const t = useTranslations("Navigation");
   const githubUrl = "https://github.com/" + devGithub;
   const linkedinUrl = "https://www.linkedin.com/in/" + devLinkedIn;
 
   return (
-    <nav className="flex items-center justify-between bg-neutral-800 px-10 py-5 shadow-md">
-      <ul className="flex space-x-4">
-        <li>
-          <Link href={`#section-about`}>{t("about")}</Link>
-        </li>
-        <li>
-          <Link href={`#section-experience`}>{t("experience")}</Link>
-        </li>
-        <li>
-          <Link href={`#section-education`}>{t("education")}</Link>
-        </li>
-        <li>
-          <Link href={`#section-skills`}>{t("skills")}</Link>
-        </li>
-      </ul>
-      <div className="flex space-x-4">
-        <a href={githubUrl}>
-          <FaGithub size={32} />
-        </a>
-        <a href={linkedinUrl}>
-          <FaLinkedin size={32} />
-        </a>
-        <LocaleSwitcher />
+    <div className="navbar bg-neutral text-neutral-content">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabIndex={0}
+            className="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow"
+          >
+            <NavLinks />
+          </ul>
+        </div>
+        <a className="btn btn-ghost text-xl normal-case">My CV</a>
       </div>
-    </nav>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
+          <NavLinks />
+        </ul>
+      </div>
+      <div className="navbar-end">
+        <a className="btn">Button</a>
+      </div>
+    </div>
+
+    //   <div className="flex space-x-4">
+    //     <a href={githubUrl}>
+    //       <FaGithub size={32} />
+    //     </a>
+    //     <a href={linkedinUrl}>
+    //       <FaLinkedin size={32} />
+    //     </a>
+    //     <LocaleSwitcher />
+    //   </div>
   );
 };
 

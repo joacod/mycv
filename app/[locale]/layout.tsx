@@ -4,8 +4,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Analytics } from "@vercel/analytics/react";
-import Wrapper from "./components/Wrapper/Wrapper";
 import { devName } from "@/utils/devConstants";
+import Navigation from "./components/Navigation/Navigation";
+import { Footer } from "./components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,8 +30,9 @@ export default function RootLayout({
   return (
     <html data-theme="retro" lang={params.locale}>
       <body className={inter.className}>
-        {/* <Wrapper>{children}</Wrapper> */}
+        <Navigation />
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>
