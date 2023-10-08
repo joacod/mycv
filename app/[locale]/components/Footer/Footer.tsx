@@ -11,7 +11,13 @@ export const Footer = () => {
   return (
     <footer className="footer footer-center bg-primary p-10 text-primary-content">
       <aside>
-        <BsFillClipboard2CheckFill size={50} />
+        <a
+          href="https://github.com/joacod/mycv"
+          className="delay-50 transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-125"
+          target="_blank"
+        >
+          <BsFillClipboard2CheckFill size={50} />
+        </a>
         <p className="font-bold">
           {tc("my")} CV <br />
           {devInfo.name}
@@ -22,10 +28,18 @@ export const Footer = () => {
       </aside>
       <nav>
         <div className="grid grid-flow-col gap-4">
-          <a href={githubUrl} target="_blank">
+          <a
+            href={githubUrl}
+            className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+            target="_blank"
+          >
             <FaGithub size={28} />
           </a>
-          <a href={linkedinUrl} target="_blank">
+          <a
+            href={linkedinUrl}
+            className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+            target="_blank"
+          >
             <FaLinkedin size={28} />
           </a>
         </div>

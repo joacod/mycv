@@ -24,11 +24,7 @@ const Navigation = () => {
             <LocaleSwitcher />
           </ul>
         </div>
-        <a
-          className="btn btn-ghost text-base normal-case lg:text-xl"
-          href="https://github.com/joacod/mycv"
-          target="_blank"
-        >
+        <a className="btn btn-ghost text-base normal-case lg:text-xl" href="#">
           <span className="hidden lg:inline">
             <BsFillClipboard2CheckFill size={32} />
           </span>{" "}
@@ -46,10 +42,18 @@ const Navigation = () => {
         <ul className="menu menu-horizontal px-1">
           <LocaleSwitcher />
         </ul>
-        <a href={githubUrl} target="_blank">
+        <a
+          href={githubUrl}
+          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          target="_blank"
+        >
           <FaGithub size={32} />
         </a>
-        <a href={linkedinUrl} target="_blank">
+        <a
+          href={linkedinUrl}
+          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          target="_blank"
+        >
           <FaLinkedin size={32} />
         </a>
         <a className="btn">{t("clickme")}</a>
