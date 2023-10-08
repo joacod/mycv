@@ -44,6 +44,7 @@ const Navigation = () => {
         </ul>
       </div>
       <div className="navbar-end hidden space-x-4 lg:flex">
+        <ClickMe text={tclick("text1")} />
         <ul className="menu menu-horizontal px-1">
           <LocaleSwitcher />
         </ul>
@@ -61,7 +62,6 @@ const Navigation = () => {
         >
           <FaLinkedin size={32} />
         </a>
-        <ClickMe text={tclick("text1")} />
       </div>
     </div>
   );

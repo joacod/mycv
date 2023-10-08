@@ -14,7 +14,7 @@ export const ThemeProvider = ({
 
   return (
     <html data-theme={theme} lang={locale}>
-      <body>{children}</body>
+      {children}
     </html>
   );
 };
