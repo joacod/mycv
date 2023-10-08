@@ -6,8 +6,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { devInfo } from "@/utils/devInfo";
 import Navigation from "./components/Navigation/Navigation";
 import { Footer } from "./components/Footer/Footer";
-import { ThemeProvider } from "./themeProvider";
-import { RecoilProvider } from "./recoilProvider";
+import { ThemeProvider } from "./providers/themeProvider";
+import { RecoilProvider } from "./providers/recoilProvider";
 
 export const metadata: Metadata = {
   title: "My CV - " + devInfo.name,
