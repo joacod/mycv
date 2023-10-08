@@ -1,15 +1,12 @@
 import { languages } from "@/middleware";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Analytics } from "@vercel/analytics/react";
 import { devInfo } from "@/utils/devInfo";
 import Navigation from "./components/Navigation/Navigation";
 import { Footer } from "./components/Footer/Footer";
 import { ThemeProvider } from "./themeProvider";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "My CV - " + devInfo.name,
@@ -30,7 +27,7 @@ export default function RootLayout({
 
   return (
     <ThemeProvider locale={params.locale}>
-      <body className={inter.className}>
+      <body>
         <Navigation />
         {children}
         <Footer />
