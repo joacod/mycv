@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { devInfo } from "@/utils/devInfo";
 import Navigation from "./components/Navigation/Navigation";
 import { Footer } from "./components/Footer/Footer";
+import { ThemeProvider } from "./themeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,13 +29,13 @@ export default function RootLayout({
   if (!isValidLocale) notFound();
 
   return (
-    <html data-theme="retro" lang={params.locale}>
+    <ThemeProvider locale={params.locale}>
       <body className={inter.className}>
         <Navigation />
         {children}
         <Footer />
         <Analytics />
       </body>
-    </html>
+    </ThemeProvider>
   );
 }
