@@ -1,4 +1,4 @@
-import { devName } from "@/utils/devConstants";
+import { devInfo } from "@/utils/devInfo";
 import { useTranslations } from "next-intl";
 
 export const Footer = () => {
@@ -21,9 +21,11 @@ export const Footer = () => {
         </svg>
         <p className="font-bold">
           My CV <br />
-          {devName}
+          {devInfo.name}
         </p>
-        <p>Copyright © 2023-{currentYear} - {t("rights")}</p>
+        <p>
+          Copyright © 2023-{currentYear} - {t("rights")}
+        </p>
       </aside>
       <nav>
         <div className="grid grid-flow-col gap-4">

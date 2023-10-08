@@ -4,14 +4,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Analytics } from "@vercel/analytics/react";
-import { devName } from "@/utils/devConstants";
+import { devInfo } from "@/utils/devInfo";
 import Navigation from "./components/Navigation/Navigation";
 import { Footer } from "./components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My CV - " + devName,
+  title: "My CV - " + devInfo.name,
   description:
     "My software developer resume. Created using Bun, Next.js 13, Typescript and Tailwind CSS.",
 };

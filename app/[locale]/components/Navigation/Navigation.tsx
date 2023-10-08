@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { devGithub, devLinkedIn } from "@/utils/devConstants";
+import { devInfo } from "@/utils/devInfo";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import { NavLinks } from "./NavLinks";
 
 const Navigation = () => {
-  const githubUrl = "https://github.com/" + devGithub;
-  const linkedinUrl = "https://www.linkedin.com/in/" + devLinkedIn;
+  const githubUrl = "https://github.com/" + devInfo.github;
+  const linkedinUrl = "https://www.linkedin.com/in/" + devInfo.linkedIn;
 
   return (
     <div className="navbar bg-base-100">
