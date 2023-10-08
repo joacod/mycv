@@ -1,12 +1,23 @@
 {
+  "Common": {
+    "my": "My",
+    "clickme": "Click me!"
+  },
   "Navigation": {
     "about": "About",
     "experience": "Experience",
     "education": "Education",
     "skills": "Skills"
   },
+  "LocaleSwitcher": {
+    "title": "Language",
+    "en": "English",
+    "es": "Spanish"
+  },
   "About": {
-    "title": "About me"
+    "title": "About me",
+    "description": "With over 15 years of experience in the ever-evolving world of software development, I've dedicated the past 5 years to frontend development, with a focus on React. Let's collaborate and bring your digital vision to life.",
+    "getstarted": "Get started"
   },
   "Experience": {
     "title": "Experience"
@@ -16,5 +27,8 @@
   },
   "Skills": {
     "title": "Tech Skills"
+  },
+  "Footer": {
+    "rights": "All right reserved"
   }
 }

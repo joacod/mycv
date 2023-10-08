@@ -4,15 +4,16 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Analytics } from "@vercel/analytics/react";
-import Wrapper from "./components/Wrapper/Wrapper";
-import { devName } from "@/utils/devConstants";
+import { devInfo } from "@/utils/devInfo";
+import Navigation from "./components/Navigation/Navigation";
+import { Footer } from "./components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My CV - " + devName,
+  title: "My CV - " + devInfo.name,
   description:
-    "My software developer resume. Created using Bun, Next.js 13, Typescript and Tailwind CSS.",
+    "My software developer resume. Created using Bun, Next.js 13, Typescript, Tailwind CSS and daisyUI.",
 };
 
 export default function RootLayout({
@@ -27,9 +28,11 @@ export default function RootLayout({
   if (!isValidLocale) notFound();
 
   return (
-    <html lang={params.locale}>
+    <html data-theme="retro" lang={params.locale}>
       <body className={inter.className}>
-        <Wrapper>{children}</Wrapper>
+        <Navigation />
+        {children}
+        <Footer />
         <Analytics />
       </body>
     </html>

@@ -4,7 +4,7 @@ export const Skills = () => {
   const t = useTranslations("Skills");
 
   return (
-    <div id="section-skills" className="py-12">
+    <div id="section-skills">
       <p>{t("title")}</p>
     </div>
   );
