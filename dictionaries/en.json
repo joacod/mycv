@@ -16,5 +16,8 @@
   },
   "Skills": {
     "title": "Tech Skills"
+  },
+  "Footer": {
+    "rights": "All right reserved"
   }
 }

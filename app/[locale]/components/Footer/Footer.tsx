@@ -1,6 +1,8 @@
 import { devName } from "@/utils/devConstants";
+import { useTranslations } from "next-intl";
 
 export const Footer = () => {
+  const t = useTranslations("Footer");
   const currentYear = new Date().getFullYear();
 
   return (
@@ -21,7 +23,7 @@ export const Footer = () => {
           My CV <br />
           {devName}
         </p>
-        <p>Copyright © 2023-{currentYear} - All right reserved</p>
+        <p>Copyright © 2023-{currentYear} - {t("rights")}</p>
       </aside>
       <nav>
         <div className="grid grid-flow-col gap-4">

@@ -44,7 +44,7 @@ const Navigation = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn">Click Me</a>
       </div>
     </div>
 
