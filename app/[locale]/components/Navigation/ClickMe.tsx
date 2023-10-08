@@ -23,8 +23,13 @@ export const ClickMe = ({ text }: { text: string }) => {
   if (!mounted) return null;
 
   return (
-    <button className="btn" onClick={toggleTheme}>
-      {text}
-    </button>
+    <>
+      <a className="lg:hidden" onClick={toggleTheme}>
+        {text}
+      </a>
+      <button className="btn hidden lg:inline" onClick={toggleTheme}>
+        {text}
+      </button>
+    </>
   );
 };

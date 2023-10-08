@@ -24,6 +24,9 @@ const Navigation = () => {
           >
             <NavLinks />
             <LocaleSwitcher />
+            <li>
+              <ClickMe text={tclick("text1")} />
+            </li>
           </ul>
         </div>
         <a className="btn btn-ghost text-base normal-case lg:text-xl" href="#">
