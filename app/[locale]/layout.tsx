@@ -7,6 +7,7 @@ import { devInfo } from "@/utils/devInfo";
 import Navigation from "./components/Navigation/Navigation";
 import { Footer } from "./components/Footer/Footer";
 import { ThemeProvider } from "./themeProvider";
+import { RecoilProvider } from "./recoilProvider";
 
 export const metadata: Metadata = {
   title: "My CV - " + devInfo.name,
@@ -26,13 +27,15 @@ export default function RootLayout({
   if (!isValidLocale) notFound();
 
   return (
-    <ThemeProvider locale={params.locale}>
-      <body>
-        <Navigation />
-        {children}
-        <Footer />
-        <Analytics />
-      </body>
-    </ThemeProvider>
+    <RecoilProvider>
+      <ThemeProvider locale={params.locale}>
+        <body>
+          <Navigation />
+          {children}
+          <Footer />
+          <Analytics />
+        </body>
+      </ThemeProvider>
+    </RecoilProvider>
   );
 }

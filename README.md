@@ -39,9 +39,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Other libraries used in this project:
 
+- [recoil](https://recoiljs.org/) - State management library for React
+- [next-intl](https://next-intl-docs.vercel.app/) - Internationalization for Next.js
 - [prettier](https://prettier.io/) - Code formatter
 - [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Prettier plugin for Tailwind CSS that automatically sorts classes
-- [next-intl](https://next-intl-docs.vercel.app/) - Internationalization for Next.js
 - [react-icons](https://react-icons.github.io/react-icons/) - Include popular icons in your React projects easily
 
 ## 🔌 VS Code Extensions
