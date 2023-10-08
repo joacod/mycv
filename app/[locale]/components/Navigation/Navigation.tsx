@@ -50,6 +50,7 @@ const Navigation = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-4">
+        <LocaleSwitcher />
         <a href={githubUrl} target="_blank">
           <FaGithub size={32} />
         </a>
@@ -57,7 +58,6 @@ const Navigation = () => {
           <FaLinkedin size={32} />
         </a>
         <a className="btn">{t("clickme")}</a>
-        {/* <LocaleSwitcher /> */}
       </div>
     </div>
   );
