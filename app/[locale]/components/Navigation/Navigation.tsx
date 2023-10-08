@@ -24,6 +24,9 @@ const Navigation = () => {
           >
             <NavLinks />
             <LocaleSwitcher />
+            <li>
+              <ClickMe text={tclick("text1")} />
+            </li>
           </ul>
         </div>
         <a className="btn btn-ghost text-base normal-case lg:text-xl" href="#">
@@ -41,6 +44,7 @@ const Navigation = () => {
         </ul>
       </div>
       <div className="navbar-end hidden space-x-4 lg:flex">
+        <ClickMe text={tclick("text1")} />
         <ul className="menu menu-horizontal px-1">
           <LocaleSwitcher />
         </ul>
@@ -58,7 +62,6 @@ const Navigation = () => {
         >
           <FaLinkedin size={32} />
         </a>
-        <ClickMe text={tclick("text1")} />
       </div>
     </div>
   );
