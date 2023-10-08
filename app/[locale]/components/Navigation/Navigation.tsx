@@ -1,4 +1,3 @@
-import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { devInfo, githubUrl, linkedinUrl } from "@/utils/devInfo";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
@@ -26,11 +25,16 @@ const Navigation = () => {
           </ul>
         </div>
         <a
-          className="btn btn-ghost text-xl normal-case"
+          className="btn btn-ghost text-base normal-case lg:text-xl"
           href="https://github.com/joacod/mycv"
           target="_blank"
         >
-          <BsFillClipboard2CheckFill size={32} /> {t("my")} CV - {devInfo.name}
+          <span className="hidden lg:inline">
+            <BsFillClipboard2CheckFill size={32} />
+          </span>{" "}
+          <span>
+            {t("my")} CV - {devInfo.name}
+          </span>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
