@@ -17,7 +17,7 @@
 
 ## 👋 Introduction
 
-This is my resume, created using [Bun](https://bun.sh/), [Next.js 13](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [daisyUI](https://daisyui.com/).
+This is my resume, created using [Bun](https://bun.sh/), [Next.js 13](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [daisyUI](https://daisyui.com/) 🌼.
 
 ## 💻 Development
 

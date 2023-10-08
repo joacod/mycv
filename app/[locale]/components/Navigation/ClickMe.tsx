@@ -1,7 +1,11 @@
-import { useTranslations } from "next-intl";
+"use client";
 
-export const ClickMe = () => {
-  const t = useTranslations("ClickMe");
+export const ClickMe = ({ text }: { text: string }) => {
+  const handleClick = () => {};
 
-  return <a className="btn">{t("text1")}</a>;
+  return (
+    <button className="btn" onClick={handleClick}>
+      {text}
+    </button>
+  );
 };

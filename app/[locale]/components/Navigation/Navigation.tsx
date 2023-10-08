@@ -9,6 +9,7 @@ import { ClickMe } from "./ClickMe";
 
 const Navigation = () => {
   const t = useTranslations("Common");
+  const tclick = useTranslations("ClickMe");
 
   return (
     <div className="navbar bg-base-100">
@@ -57,7 +58,7 @@ const Navigation = () => {
         >
           <FaLinkedin size={32} />
         </a>
-        <ClickMe />
+        <ClickMe text={tclick("text1")} />
       </div>
     </div>
   );
