@@ -8,7 +8,20 @@ export const About = () => {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <Image src="/avatar.png" alt="avatar" width={480} height={526} />
+        <Image
+          className="lg:hidden"
+          src="/avatar.png"
+          alt="avatar"
+          width={180}
+          height={196}
+        />
+        <Image
+          className="hidden lg:inline"
+          src="/avatar.png"
+          alt="avatar"
+          width={480}
+          height={526}
+        />
         <div>
           <h1 className="text-5xl font-bold">{t("title")}</h1>
           <p className="py-6">{t("description")}</p>

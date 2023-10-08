@@ -5,6 +5,7 @@ import { NavLinks } from "./NavLinks";
 import { BsFillClipboard2CheckFill } from "react-icons/bs";
 import { useTranslations } from "next-intl";
 import { RiMenu2Fill } from "react-icons/ri";
+import { ClickMe } from "./ClickMe";
 
 const Navigation = () => {
   const t = useTranslations("Common");
@@ -56,7 +57,7 @@ const Navigation = () => {
         >
           <FaLinkedin size={32} />
         </a>
-        <a className="btn">{t("clickme")}</a>
+        <ClickMe />
       </div>
     </div>
   );
