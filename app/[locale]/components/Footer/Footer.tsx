@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillClipboard2CheckFill } from "react-icons/bs";
 
 export const Footer = () => {
+  const tc = useTranslations("Common");
   const t = useTranslations("Footer");
   const currentYear = new Date().getFullYear();
 
@@ -12,7 +13,7 @@ export const Footer = () => {
       <aside>
         <BsFillClipboard2CheckFill size={50} />
         <p className="font-bold">
-          My CV <br />
+          {tc("my")} CV <br />
           {devInfo.name}
         </p>
         <p>

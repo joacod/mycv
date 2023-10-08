@@ -1,4 +1,8 @@
 {
+  "Common": {
+    "my": "Mi",
+    "clickme": "Clickeame!"
+  },
   "Navigation": {
     "about": "Acerca de",
     "experience": "Experiencia",
@@ -6,7 +10,9 @@
     "skills": "Tecnologias"
   },
   "About": {
-    "title": "Acerca de mi"
+    "title": "Acerca de mi",
+    "description": "Con más de 15 años de experiencia en el siempre cambiante mundo del desarrollo de software, he dedicado los últimos 5 años al desarrollo frontend, con un enfoque en React. Colaboremos y hagamos realidad tu visión digital.",
+    "getstarted": "Empecemos"
   },
   "Experience": {
     "title": "Experiencia"

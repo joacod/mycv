@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { FaHandPointDown } from "react-icons/fa";
 
 export const About = () => {
   const t = useTranslations("About");
@@ -12,12 +13,10 @@ export const About = () => {
         />
         <div>
           <h1 className="text-5xl font-bold">{t("title")}</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
-          <button className="btn btn-primary">Get Started</button>
+          <p className="py-6">{t("description")}</p>
+          <button className="btn btn-primary">
+            {t("getstarted")} <FaHandPointDown size={22} />
+          </button>
         </div>
       </div>
     </div>

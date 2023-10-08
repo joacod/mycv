@@ -1,12 +1,14 @@
 import React from "react";
-import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { devInfo, githubUrl, linkedinUrl } from "@/utils/devInfo";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import { NavLinks } from "./NavLinks";
 import { BsFillClipboard2CheckFill } from "react-icons/bs";
+import { useTranslations } from "next-intl";
 
 const Navigation = () => {
+  const t = useTranslations("Common");
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -39,7 +41,7 @@ const Navigation = () => {
           href="https://github.com/joacod/mycv"
           target="_blank"
         >
-          <BsFillClipboard2CheckFill size={32} /> My CV - {devInfo.name}
+          <BsFillClipboard2CheckFill size={32} /> {t("my")} CV - {devInfo.name}
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -54,7 +56,7 @@ const Navigation = () => {
         <a href={linkedinUrl} target="_blank">
           <FaLinkedin size={32} />
         </a>
-        <a className="btn">Click Me</a>
+        <a className="btn">{t("clickme")}</a>
         {/* <LocaleSwitcher /> */}
       </div>
     </div>
