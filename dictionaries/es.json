@@ -1,13 +1,15 @@
 {
   "Common": {
-    "my": "Mi",
-    "clickme": "Clickeame!"
+    "my": "Mi"
   },
   "Navigation": {
     "about": "Acerca de",
     "experience": "Experiencia",
     "education": "Educacion",
     "skills": "Tecnologias"
+  },
+  "ClickMe": {
+    "text1": "Clickeame!"
   },
   "LocaleSwitcher": {
     "title": "Idioma",

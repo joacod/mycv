@@ -1,13 +1,15 @@
 {
   "Common": {
-    "my": "My",
-    "clickme": "Click me!"
+    "my": "My"
   },
   "Navigation": {
     "about": "About",
     "experience": "Experience",
     "education": "Education",
     "skills": "Skills"
+  },
+  "ClickMe": {
+    "text1": "Click me!"
   },
   "LocaleSwitcher": {
     "title": "Language",
