@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "My CV - " + devInfo.name,
   description:
-    "My software developer resume. Created using Bun, Next.js 13, Typescript and Tailwind CSS.",
+    "My software developer resume. Created using Bun, Next.js 13, Typescript, Tailwind CSS and daisyUI.",
 };
 
 export default function RootLayout({

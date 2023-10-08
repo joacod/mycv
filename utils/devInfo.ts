@@ -9,3 +9,6 @@ export const devInfo: DevInfo = {
   github: "joacod",
   linkedIn: "diazjoaquin",
 };
+
+export const githubUrl = "https://github.com/" + devInfo.github;
+export const linkedinUrl = "https://www.linkedin.com/in/" + devInfo.linkedIn;

@@ -1,14 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { devInfo } from "@/utils/devInfo";
+import { devInfo, githubUrl, linkedinUrl } from "@/utils/devInfo";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import { NavLinks } from "./NavLinks";
+import { BsFillClipboard2CheckFill } from "react-icons/bs";
 
 const Navigation = () => {
-  const githubUrl = "https://github.com/" + devInfo.github;
-  const linkedinUrl = "https://www.linkedin.com/in/" + devInfo.linkedIn;
-
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -36,27 +34,30 @@ const Navigation = () => {
             <NavLinks />
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl normal-case">My CV</a>
+        <a
+          className="btn btn-ghost text-xl normal-case"
+          href="https://github.com/joacod/mycv"
+          target="_blank"
+        >
+          <BsFillClipboard2CheckFill size={32} /> My CV - {devInfo.name}
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <NavLinks />
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end space-x-4">
+        <a href={githubUrl} target="_blank">
+          <FaGithub size={32} />
+        </a>
+        <a href={linkedinUrl} target="_blank">
+          <FaLinkedin size={32} />
+        </a>
         <a className="btn">Click Me</a>
+        {/* <LocaleSwitcher /> */}
       </div>
     </div>
-
-    //   <div className="flex space-x-4">
-    //     <a href={githubUrl}>
-    //       <FaGithub size={32} />
-    //     </a>
-    //     <a href={linkedinUrl}>
-    //       <FaLinkedin size={32} />
-    //     </a>
-    //     <LocaleSwitcher />
-    //   </div>
   );
 };
 

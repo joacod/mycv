@@ -17,7 +17,7 @@
 
 ## 👋 Introduction
 
-This is my resume, created using [Bun](https://bun.sh/), [Next.js 13](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/).
+This is my resume, created using [Bun](https://bun.sh/), [Next.js 13](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [daisyUI](https://daisyui.com/).
 
 ## 💻 Development
 
@@ -35,11 +35,10 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the web.
 
-## 📚 Libraries
+## 📚 Other Libraries
 
-We use the following libraries:
+Other libraries used in this project:
 
-- [daisyUI](https://daisyui.com/) - Tailwind CSS Components
 - [prettier](https://prettier.io/) - Code formatter
 - [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Prettier plugin for Tailwind CSS that automatically sorts classes
 - [next-intl](https://next-intl-docs.vercel.app/) - Internationalization for Next.js
