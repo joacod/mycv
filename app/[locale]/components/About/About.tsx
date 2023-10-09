@@ -24,7 +24,9 @@ export const About = () => {
         />
         <div>
           <h1 className="text-5xl font-bold">{t("title")}</h1>
-          <p className="py-6">{t("description")}</p>
+          <p className="pt-6">{t("description")}</p>
+          <p className="pt-6">{t("role")}</p>
+          <p className="py-6">{t("colaborate")}</p>
           <button className="btn btn-primary">
             {t("getstarted")} <FaHandPointDown size={22} />
           </button>

@@ -19,6 +19,12 @@
 
 This is my resume, created using [Bun](https://bun.sh/), [Next.js 13](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [daisyUI](https://daisyui.com/) 🌼.
 
+<p align="center">
+  <img width="33%" src="public/readme/thumb1.jpg" alt="Thumbnail 1">
+  <img width="33%" src="public/readme/thumb2.jpg" alt="Thumbnail 2">
+  <img width="33%" src="public/readme/thumb3.jpg" alt="Thumbnail 3">
+</p>
+
 ## 💻 Development
 
 **Install dependencies:**
@@ -47,7 +53,7 @@ Sure! You can fork this project and change the content with your own information
 
 Any other changes possible? Well... is React and Tailwind CSS, so you can do whatever you want! 🤓
 
-*Keep the credits, it is a way to thank me for the work done.* 🙏
+_Keep the credits, it is a way to thank me for the work done._ 🙏
 
 ## 📚 Other Libraries
 

@@ -5,11 +5,10 @@ import { NavLinks } from "./NavLinks";
 import { BsFillClipboard2CheckFill } from "react-icons/bs";
 import { useTranslations } from "next-intl";
 import { RiMenu2Fill } from "react-icons/ri";
-import { ClickMe } from "./ClickMe";
+import { ClickMe } from "./ClickMe/ClickMe";
 
 const Navigation = () => {
   const t = useTranslations("Common");
-  const tclick = useTranslations("ClickMe");
 
   return (
     <div className="navbar bg-base-100">
@@ -25,7 +24,7 @@ const Navigation = () => {
             <NavLinks />
             <LocaleSwitcher />
             <li>
-              <ClickMe text={tclick("text1")} />
+              <ClickMe />
             </li>
           </ul>
         </div>
@@ -44,7 +43,7 @@ const Navigation = () => {
         </ul>
       </div>
       <div className="navbar-end hidden space-x-4 lg:flex">
-        <ClickMe text={tclick("text1")} />
+        <ClickMe />
         <ul className="menu menu-horizontal px-1">
           <LocaleSwitcher />
         </ul>

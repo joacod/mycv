@@ -8,7 +8,23 @@ const config: Config = {
   ],
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["retro", "halloween", "synthwave"],
+    themes: [
+      "winter",
+      "dark",
+      "emerald",
+      "synthwave",
+      "retro",
+      "cyberpunk",
+      "valentine",
+      "halloween",
+      "aqua",
+      "pastel",
+      "wireframe",
+      "luxury",
+      "dracula",
+      "acid",
+      "night",
+    ],
   },
 };
 export default config;
