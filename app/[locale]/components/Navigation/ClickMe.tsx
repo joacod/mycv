@@ -20,7 +20,7 @@ export const ClickMe = ({ text }: { text: string }) => {
     setTheme(themes[nextIndex]);
   };
 
-  if (!mounted) return null;
+  if (!mounted) return <button className="btn hidden lg:inline">{text}</button>;
 
   return (
     <>
