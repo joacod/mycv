@@ -20,7 +20,7 @@ const Navigation = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow"
+            className="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 space-y-2 bg-base-100 p-2 shadow"
           >
             <NavLinks />
             <LocaleSwitcher />
@@ -39,7 +39,7 @@ const Navigation = () => {
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal space-x-5 px-1">
           <NavLinks />
         </ul>
       </div>
