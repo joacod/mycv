@@ -35,6 +35,20 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the web.
 
+## 🔶 Want to use this project for your resume page?
+
+Sure! You can fork this project and change the content with your own information.
+
+> Personal information -> `utils/devInfo.ts`
+
+> Site content -> `dictionaries folder`
+
+> Change themes -> `tailwind.config.js`
+
+Any other changes possible? Well... is React and Tailwind CSS, so you can do whatever you want! 🤓
+
+*Keep the credits, it is a way to thank me for the work done.* 🙏
+
 ## 📚 Other Libraries
 
 Other libraries used in this project:
@@ -56,10 +70,14 @@ We recommend the following VS Code extensions for this project:
 
 ## 📄 License
 
-Copyright 2023 Joaquin Diaz
+Copyright 2023 [Joaquin Diaz](https://github.com/joacod)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## ☕️ Did you like the project?
 
+You can colaborate with me giving a star ⭐️ to the project or
+
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/joacod)
+
+Thanks! 😃
