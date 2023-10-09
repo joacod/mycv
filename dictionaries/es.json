@@ -5,8 +5,9 @@
   "Navigation": {
     "about": "Acerca de",
     "experience": "Experiencia",
-    "education": "Educacion",
-    "skills": "Tecnologias"
+    "skills": "Tecnologias",
+    "riddler": "?",
+    "credits": "Creditos"
   },
   "ClickMe": {
     "text1": "Clickeame!"
@@ -24,11 +25,11 @@
   "Experience": {
     "title": "Experiencia"
   },
-  "Education": {
-    "title": "Educacion"
-  },
   "Skills": {
     "title": "Tecnologias"
+  },
+  "Riddler": {
+    "title": "?"
   },
   "Footer": {
     "rights": "Todos los derechos reservados"

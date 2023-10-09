@@ -13,11 +13,14 @@ export const NavLinks = () => {
         <Link href={`#section-experience`}>{t("experience")}</Link>
       </li>
       <li>
-        <Link href={`#section-education`}>{t("education")}</Link>
-      </li>
-      <li>
         <Link href={`#section-skills`}>{t("skills")}</Link>
       </li>
+      <li>
+        <Link href={`#section-riddler`}>{t("riddler")}</Link>
+      </li>
+      {/* <li>
+        <Link href={`#section-credits`}>{t("credits")}</Link>
+      </li> */}
     </>
   );
 };

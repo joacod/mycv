@@ -5,8 +5,9 @@
   "Navigation": {
     "about": "About",
     "experience": "Experience",
-    "education": "Education",
-    "skills": "Skills"
+    "skills": "Skills",
+    "riddler": "?",
+    "credits": "Credits"
   },
   "ClickMe": {
     "text1": "Click me!"
@@ -24,11 +25,11 @@
   "Experience": {
     "title": "Experience"
   },
-  "Education": {
-    "title": "Education"
-  },
   "Skills": {
     "title": "Tech Skills"
+  },
+  "Riddler": {
+    "title": "?"
   },
   "Footer": {
     "rights": "All right reserved"
