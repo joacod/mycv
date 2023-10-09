@@ -10,9 +10,24 @@ import { ThemeProvider } from "./providers/themeProvider";
 import { RecoilProvider } from "./providers/recoilProvider";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://joacod.com"),
   title: "My CV - " + devInfo.name,
   description:
     "My software developer resume. Created using Bun, Next.js 13, Typescript, Tailwind CSS and daisyUI.",
+  authors: [{ name: "Joaquin Diaz", url: "https://github.com/joacod" }],
+  keywords: [
+    "Software",
+    "Resume",
+    "Bun",
+    "React",
+    "Next.js 13",
+    "Typescript",
+    "Tailwind CSS",
+    "daisyUI",
+  ],
+  openGraph: {
+    images: "/mycv.png",
+  },
 };
 
 export default function RootLayout({

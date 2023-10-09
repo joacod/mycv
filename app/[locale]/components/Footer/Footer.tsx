@@ -2,10 +2,13 @@ import { devInfo, githubUrl, linkedinUrl } from "@/utils/devInfo";
 import { useTranslations } from "next-intl";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillClipboard2CheckFill } from "react-icons/bs";
+import { CreditsModal } from "../CreditsModal/CreditsModal";
+import { Credits } from "../CreditsModal/Credits";
 
 export const Footer = () => {
   const tc = useTranslations("Common");
   const t = useTranslations("Footer");
+  const tcred = useTranslations("Credits");
   const currentYear = new Date().getFullYear();
 
   return (
@@ -25,6 +28,9 @@ export const Footer = () => {
         <p>
           Copyright © 2023-{currentYear} - {t("rights")}
         </p>
+        <CreditsModal title={tcred("title")}>
+          <Credits />
+        </CreditsModal>
       </aside>
       <nav>
         <div className="grid grid-flow-col gap-4">
