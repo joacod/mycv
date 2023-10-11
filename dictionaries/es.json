@@ -28,7 +28,11 @@
     "getstarted": "Empecemos"
   },
   "Experience": {
-    "title": "Experiencia"
+    "title": "Experiencia",
+    "description": "Como proveedor, he tenido la oportunidad de colaborar con estos destacados clientes.",
+    "clientDescription1": "Empresa de medios formada por la fusión de WarnerMedia y Discovery, Inc., que ofrece una amplia gama de contenido de entretenimiento.",
+    "clientDescription2": "Popular plataforma de búsqueda de empleo en línea, que conecta a solicitantes de empleo con empleadores de todo el mundo.",
+    "clientDescription3": "Líder global en servicios profesionales, que ofrece soluciones innovadoras en servicios de auditoría, consultoría y asesoría."
   },
   "Skills": {
     "title": "Tecnologias"

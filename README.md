@@ -20,9 +20,9 @@
 This is my resume, created using [Bun](https://bun.sh/), [Next.js 13](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [daisyUI](https://daisyui.com/) 🌼.
 
 <p align="center">
-  <img width="33%" src="public/readme/thumb1.jpg" alt="Thumbnail 1">
-  <img width="33%" src="public/readme/thumb2.jpg" alt="Thumbnail 2">
-  <img width="33%" src="public/readme/thumb3.jpg" alt="Thumbnail 3">
+  <img width="33%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb1.png" alt="Thumbnail 1">
+  <img width="33%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb2.png" alt="Thumbnail 2">
+  <img width="33%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb3.png" alt="Thumbnail 3">
 </p>
 
 ## 💻 Development

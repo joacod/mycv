@@ -28,7 +28,11 @@
     "getstarted": "Get started"
   },
   "Experience": {
-    "title": "Experience"
+    "title": "Experience",
+    "description": "As a vendor, I've had the opportunity to collaborate with these outstanding clients.",
+    "clientDescription1": "Media company formed by the merger of WarnerMedia and Discovery, Inc., offering a vast array of entertainment content.",
+    "clientDescription2": "Popular online job search platform, connecting job seekers with employers worldwide.",
+    "clientDescription3": "A global leader in professional services, providing innovative solutions in auditing, consulting, and advisory services."
   },
   "Skills": {
     "title": "Tech Skills"

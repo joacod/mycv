@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <About />
-      {/* <Experience />
-      <Skills />
+      <Experience />
+      {/* <Skills />
       <Riddler /> */}
     </>
   );
