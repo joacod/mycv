@@ -42,7 +42,7 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
         {texts[0]}
       </a>
       <button
-        className="btn btn-accent btn-sm hidden lg:inline"
+        className="btn btn-accent btn-sm hidden w-32 lg:inline"
         onClick={toggleTheme}
       >
         {clickMeText}

@@ -1,11 +1,14 @@
-import { useTranslations } from "next-intl";
+import { ExperienceDesktop } from "./ExperienceDesktop/ExperienceDesktop";
+import { ExperienceMobile } from "./ExperienceMobile/ExperienceMobile";
 
 export const Experience = () => {
-  const t = useTranslations("Experience");
-
   return (
-    <div id="section-experience">
-      <p>{t("title")}</p>
+    <div
+      id="section-experience"
+      className="bg-gradient-to-b from-primary to-secondary text-primary-content"
+    >
+      <ExperienceMobile />
+      <ExperienceDesktop />
     </div>
   );
 };

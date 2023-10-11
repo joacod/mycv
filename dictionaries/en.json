@@ -28,7 +28,8 @@
     "getstarted": "Get started"
   },
   "Experience": {
-    "title": "Experience"
+    "title": "Experience",
+    "description": "As a vendor, I've had the opportunity to collaborate with these outstanding clients."
   },
   "Skills": {
     "title": "Tech Skills"
