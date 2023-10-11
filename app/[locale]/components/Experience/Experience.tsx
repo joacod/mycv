@@ -7,7 +7,7 @@ export const Experience = () => {
       id="section-experience"
       className="bg-gradient-to-b from-primary to-secondary text-primary-content"
     >
-      <ExperienceMobile />
+      {/* <ExperienceMobile /> */}
       <ExperienceDesktop />
     </div>
   );
