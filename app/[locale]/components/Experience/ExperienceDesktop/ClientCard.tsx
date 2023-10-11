@@ -1,23 +1,25 @@
 import Image from "next/image";
 
-export const ClientCard = () => {
+export const ClientCard = ({
+  imageUrl,
+  clientUrl,
+}: {
+  imageUrl: string;
+  clientUrl: string;
+}) => {
   return (
-    <a
-      href="https://wbd.com/"
-      target="_blank"
-      className="transform-gpu grayscale transition-transform duration-300 hover:grayscale-0"
-    >
+    <a href={clientUrl} target="_blank">
       <div className="card glass w-96">
         <figure>
           <Image
-            src="/clients/client.jpeg"
+            src={imageUrl}
             alt="client"
-            width={928}
-            height={548}
+            width={384}
+            height={288}
             className=""
           />
         </figure>
-        <div className="card-body">
+        <div className="card-body pt-0">
           <h2 className="card-title">Client</h2>
           <p>Description of what I did</p>
         </div>

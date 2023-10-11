@@ -11,9 +11,9 @@ export const ExperienceDesktop = () => {
         <p className="py-6">{t("description")}</p>
 
         <div className="grid grid-cols-3 text-secondary-content">
-          <ClientCard />
-          <ClientCard />
-          <ClientCard />
+          <ClientCard imageUrl="/clients/warner.png" clientUrl="https://wbd.com/" />
+          <ClientCard imageUrl="/clients/indeed.png" clientUrl="https://indeed.com" />
+          <ClientCard imageUrl="/clients/deloitte.png" clientUrl="https://deloitte.com" />
         </div>
       </div>
     </div>
