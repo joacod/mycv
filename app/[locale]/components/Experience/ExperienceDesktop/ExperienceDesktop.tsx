@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { ClientCard } from "./ClientCard";
+import { myClients } from "@/utils/clients";
 
 export const ExperienceDesktop = () => {
   const t = useTranslations("Experience");
@@ -11,9 +12,10 @@ export const ExperienceDesktop = () => {
         <p className="py-6">{t("description")}</p>
 
         <div className="grid grid-cols-3 text-secondary-content">
-          <ClientCard imageUrl="/clients/warner.png" clientUrl="https://wbd.com/" />
-          <ClientCard imageUrl="/clients/indeed.png" clientUrl="https://indeed.com" />
-          <ClientCard imageUrl="/clients/deloitte.png" clientUrl="https://deloitte.com" />
+          {/* Show the first 3 clients in the array */}
+          {myClients.slice(0, 3).map((client) => (
+            <ClientCard key={client.webUrl} client={client} />
+          ))}
         </div>
       </div>
     </div>
