@@ -25,6 +25,12 @@ This is my resume, created using [Bun](https://bun.sh/), [Next.js 13](https://ne
   <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb3.png" alt="Thumbnail 3">
 </p>
 
+<p align="center">
+  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb-mobile1.png" alt="Thumbnail 1">
+  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb-mobile2.png" alt="Thumbnail 2">
+  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb-mobile3.png" alt="Thumbnail 3">
+</p>
+
 ## 💻 Development
 
 **Install dependencies:**

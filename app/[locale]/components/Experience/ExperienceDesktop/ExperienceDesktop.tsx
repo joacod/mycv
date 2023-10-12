@@ -11,9 +11,8 @@ export const ExperienceDesktop = () => {
         <h1 className="text-5xl font-bold">{t("title")}</h1>
         <p className="py-6">{t("description")}</p>
 
-        <div className="grid grid-cols-3 text-secondary-content">
-          {/* Show the first 3 clients in the array */}
-          {myClients.slice(0, 3).map((client) => (
+        <div className="flex justify-between text-secondary-content">
+          {myClients.map((client) => (
             <ClientCard key={client.webUrl} client={client} />
           ))}
         </div>
