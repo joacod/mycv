@@ -31,17 +31,26 @@ export const Credits = () => {
         </p>
         <ul>
           <li>
-            <p>
-              {t("flaticon")}{" "}
-              <a
-                className="underline"
-                href="https://www.flaticon.com/free-icons/files-and-folders"
-                target="_blank"
-                title="files and folders icons"
-              >
-                Muhammad Atif - Flaticon
-              </a>
-            </p>
+            {t("shots")}{" "}
+            <a
+              className="underline"
+              href="https://shots.so/"
+              target="_blank"
+              title="files and folders icons"
+            >
+              Shots.so
+            </a>
+          </li>
+          <li>
+            {t("flaticon")}{" "}
+            <a
+              className="underline"
+              href="https://www.flaticon.com/free-icons/files-and-folders"
+              target="_blank"
+              title="files and folders icons"
+            >
+              Muhammad Atif - Flaticon
+            </a>
           </li>
         </ul>
       </div>
