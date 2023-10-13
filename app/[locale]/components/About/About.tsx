@@ -27,9 +27,11 @@ export const About = () => {
           <p className="pt-6">{t("description")}</p>
           <p className="pt-6">{t("role")}</p>
           <p className="py-6">{t("colaborate")}</p>
-          <a className="btn btn-primary" href="#section-experience">
-            {t("getstarted")} <FaHandPointDown size={22} />
-          </a>
+          <div className="hidden lg:inline">
+            <a className="btn btn-primary " href="#section-experience">
+              {t("getstarted")} <FaHandPointDown size={22} />
+            </a>
+          </div>
         </div>
       </div>
     </div>
