@@ -11,14 +11,14 @@ export const About = () => {
         <Image
           className="lg:hidden"
           src="/avatar.png"
-          alt="avatar"
+          alt="Avatar"
           width={180}
           height={196}
         />
         <Image
           className="hidden lg:inline"
           src="/avatar.png"
-          alt="avatar"
+          alt="Avatar"
           width={480}
           height={526}
         />

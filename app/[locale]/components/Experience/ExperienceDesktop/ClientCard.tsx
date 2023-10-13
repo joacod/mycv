@@ -12,7 +12,7 @@ export const ClientCard = ({ client }: { client: Client }) => {
           <figure>
             <Image
               src={client.imageUrl}
-              alt="client"
+              alt={client.name}
               width={384}
               height={288}
             />
