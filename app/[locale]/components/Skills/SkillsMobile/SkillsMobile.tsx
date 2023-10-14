@@ -21,7 +21,7 @@ export const SkillsMobile = () => {
       <div className="p-4">
         <h1 className="text-5xl font-bold">{t("title")}</h1>
 
-        <div className="mt-10 grid grid-cols-3 gap-y-5">
+        <div className="mt-10 flex justify-between">
           <SkillWrapperMobile>
             <FaReact size={70} />
           </SkillWrapperMobile>
@@ -31,7 +31,9 @@ export const SkillsMobile = () => {
           <SkillWrapperMobile>
             <SiVite size={50} />
           </SkillWrapperMobile>
+        </div>
 
+        <div className="mt-10 flex justify-between">
           <SkillWrapperMobile>
             <SiJavascript size={50} />
           </SkillWrapperMobile>
@@ -41,7 +43,9 @@ export const SkillsMobile = () => {
           <SkillWrapperMobile>
             <SiAmazonaws size={60} />
           </SkillWrapperMobile>
+        </div>
 
+        <div className="mt-10 flex justify-between">
           <SkillWrapperMobile>
             <SiHtml5 size={50} />
           </SkillWrapperMobile>

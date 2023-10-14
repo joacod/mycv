@@ -21,7 +21,7 @@ export const SkillsDesktop = () => {
       <div className="px-28 py-20">
         <h1 className="mb-14 text-5xl font-bold">{t("title")}</h1>
 
-        <div className="grid grid-cols-5 grid-rows-2 gap-y-12">
+        <div className="flex justify-between">
           <SkillWrapper>
             <FaReact size={110} />
           </SkillWrapper>
@@ -37,7 +37,8 @@ export const SkillsDesktop = () => {
           <SkillWrapper>
             <SiAmazonaws size={90} />
           </SkillWrapper>
-
+        </div>
+        <div className="mt-12 flex justify-between">
           <SkillWrapper>
             <SiJavascript size={90} />
           </SkillWrapper>
