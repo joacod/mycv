@@ -38,7 +38,9 @@
     "title": "Tech Skills"
   },
   "Riddler": {
-    "title": "?"
+    "title": "?",
+    "riddle": "riddle",
+    "end": "end"
   },
   "Credits": {
     "title": "Credits",
