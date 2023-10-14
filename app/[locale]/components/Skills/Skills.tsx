@@ -1,11 +1,11 @@
-import { SkillsDesktop } from "./SkillsDesktop/SkillsDesktop";
-import { SkillsMobile } from "./SkillsMobile/SkillsMobile";
+import { SkillsLg } from "./SkillsScreens/SkillsLg";
+import { SkillsSm } from "./SkillsScreens/SkillsSm";
 
 export const Skills = () => {
   return (
     <div id="section-skills">
-      <SkillsMobile />
-      <SkillsDesktop />
+      <SkillsSm />
+      <SkillsLg />
     </div>
   );
 };

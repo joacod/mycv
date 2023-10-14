@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { FaReact } from "react-icons/fa";
-import { SkillWrapperMobile } from "./SkillWrapperMobile";
+import { SkillWrapper } from "../SkillWrapper";
 import {
   SiJavascript,
   SiNextdotjs,
@@ -13,7 +13,7 @@ import {
 } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 
-export const SkillsMobile = () => {
+export const SkillsSm = () => {
   const t = useTranslations("Skills");
 
   return (
@@ -22,39 +22,39 @@ export const SkillsMobile = () => {
         <h1 className="text-5xl font-bold">{t("title")}</h1>
 
         <div className="mt-10 flex justify-between">
-          <SkillWrapperMobile>
+          <SkillWrapper size="sm">
             <FaReact size={70} />
-          </SkillWrapperMobile>
-          <SkillWrapperMobile>
+          </SkillWrapper>
+          <SkillWrapper size="sm">
             <SiNextdotjs size={60} />
-          </SkillWrapperMobile>
-          <SkillWrapperMobile>
+          </SkillWrapper>
+          <SkillWrapper size="sm">
             <SiVite size={50} />
-          </SkillWrapperMobile>
+          </SkillWrapper>
         </div>
 
         <div className="mt-10 flex justify-between">
-          <SkillWrapperMobile>
+          <SkillWrapper size="sm">
             <SiJavascript size={50} />
-          </SkillWrapperMobile>
-          <SkillWrapperMobile>
+          </SkillWrapper>
+          <SkillWrapper size="sm">
             <BiLogoTypescript size={70} />
-          </SkillWrapperMobile>
-          <SkillWrapperMobile>
+          </SkillWrapper>
+          <SkillWrapper size="sm">
             <SiAmazonaws size={60} />
-          </SkillWrapperMobile>
+          </SkillWrapper>
         </div>
 
         <div className="mt-10 flex justify-between">
-          <SkillWrapperMobile>
+          <SkillWrapper size="sm">
             <SiHtml5 size={50} />
-          </SkillWrapperMobile>
-          <SkillWrapperMobile>
+          </SkillWrapper>
+          <SkillWrapper size="sm">
             <SiCsswizardry size={50} />
-          </SkillWrapperMobile>
-          <SkillWrapperMobile>
+          </SkillWrapper>
+          <SkillWrapper size="sm">
             <SiTailwindcss size={60} />
-          </SkillWrapperMobile>
+          </SkillWrapper>
         </div>
       </div>
     </div>
