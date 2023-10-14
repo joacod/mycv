@@ -11,7 +11,7 @@ export const ExperienceMobile = () => {
         <h1 className="text-5xl font-bold">{t("title")}</h1>
         <p className="py-6">{t("description")}</p>
 
-        <div className="grid-row-3 grid space-y-4">
+        <div className="space-y-4">
           {/* Show the first 3 clients for mobile */}
           {myClients.slice(0, 3).map((client) => (
             <ClientMobile key={client.webUrl} client={client} />

@@ -1,11 +1,11 @@
-import { useTranslations } from "next-intl";
+import { SkillsDesktop } from "./SkillsDesktop/SkillsDesktop";
+import { SkillsMobile } from "./SkillsMobile/SkillsMobile";
 
 export const Skills = () => {
-  const t = useTranslations("Skills");
-
   return (
     <div id="section-skills">
-      <p>{t("title")}</p>
+      <SkillsMobile />
+      <SkillsDesktop />
     </div>
   );
 };

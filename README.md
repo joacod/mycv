@@ -55,6 +55,8 @@ Sure! You can fork this project and change the content with your own information
 
 > Site content -> `dictionaries folder`
 
+> Experience section -> `utils/clients.ts`
+
 > Change themes -> `tailwind.config.js`
 
 Any other changes possible? Well... is React and Tailwind CSS, so you can do whatever you want! 🤓

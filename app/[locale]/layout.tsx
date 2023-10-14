@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "daisyUI",
   ],
   openGraph: {
-    images: "/mycv.png",
+    images: "/mycv.jpg",
   },
 };
 

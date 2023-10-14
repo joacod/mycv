@@ -9,8 +9,8 @@ const config: Config = {
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
-      "winter",
       "dark",
+      "winter",
       "emerald",
       "synthwave",
       "retro",
@@ -24,6 +24,7 @@ const config: Config = {
       "dracula",
       "acid",
       "night",
+      "forest",
     ],
   },
 };
