@@ -31,7 +31,12 @@ export const Credits = () => {
               Joaquin Diaz
             </a>
           </p>
-          <SiStartrek size={20} className="ml-2" />
+          <div
+            className="tooltip  tooltip-info ml-2"
+            data-tip="Live Long and Prosper! 🖖"
+          >
+            <SiStartrek size={20} className="" />
+          </div>
         </div>
         <ul>
           <li>
