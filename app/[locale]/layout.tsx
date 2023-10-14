@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     "My software developer resume. Created using Bun, Next.js 13, Typescript, Tailwind CSS and daisyUI.",
   authors: [{ name: "Joaquin Diaz", url: "https://github.com/joacod" }],
   keywords: [
+    devInfo.name,
     "Software",
     "Resume",
     "Bun",

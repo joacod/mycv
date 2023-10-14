@@ -1,4 +1,4 @@
-import { devInfo, githubUrl, linkedinUrl } from "@/utils/devInfo";
+import { devInfo } from "@/utils/devInfo";
 import { useTranslations } from "next-intl";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillClipboard2CheckFill } from "react-icons/bs";
@@ -35,14 +35,14 @@ export const Footer = () => {
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a
-            href={githubUrl}
+            href={devInfo.githubUrl}
             className="delay-50 transition duration-200 ease-in-out hover:scale-125"
             target="_blank"
           >
             <FaGithub size={28} />
           </a>
           <a
-            href={linkedinUrl}
+            href={devInfo.linkedinUrl}
             className="delay-50 transition duration-200 ease-in-out hover:scale-125"
             target="_blank"
           >
