@@ -11,7 +11,7 @@ import {
   SiCsswizardry,
 } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
-import { SkillWrapper } from "../SkillWrapper";
+import { SkillWrapper } from "./SkillWrapper";
 
 export const SkillsLg = () => {
   const t = useTranslations("Skills");

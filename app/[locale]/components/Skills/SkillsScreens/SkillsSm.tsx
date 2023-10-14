@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { FaReact } from "react-icons/fa";
-import { SkillWrapper } from "../SkillWrapper";
+import { SkillWrapper } from "./SkillWrapper";
 import {
   SiJavascript,
   SiNextdotjs,
