@@ -17,10 +17,10 @@ export const SkillsSm = () => {
 
   return (
     <div className="md:hidden lg:hidden">
-      <div className="px-6 py-10">
+      <div className="px-6 py-14">
         <h1 className="text-5xl font-bold">{t("title")}</h1>
 
-        <div className="mt-10 flex justify-between">
+        <div className="mt-10 flex justify-between px-4">
           <SkillWrapper size="sm">
             <FaReact size={70} />
           </SkillWrapper>
@@ -32,7 +32,7 @@ export const SkillsSm = () => {
           </SkillWrapper>
         </div>
 
-        <div className="mt-10 flex justify-between">
+        <div className="mt-10 flex justify-between px-4">
           <SkillWrapper size="sm">
             <SiJavascript size={50} />
           </SkillWrapper>
@@ -44,7 +44,7 @@ export const SkillsSm = () => {
           </SkillWrapper>
         </div>
 
-        <div className="mt-10 flex justify-between">
+        <div className="mt-10 flex justify-between px-4">
           <SkillWrapper size="sm">
             <SiHtml5 size={50} />
           </SkillWrapper>
