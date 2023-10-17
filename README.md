@@ -70,6 +70,7 @@ Other libraries used in this project:
 - [prettier](https://prettier.io/) - Code formatter
 - [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Prettier plugin for Tailwind CSS that automatically sorts classes
 - [react-icons](https://react-icons.github.io/react-icons/) - Include popular icons in your React projects easily
+- [ua-parser-js](https://uaparser.js.org/) - Library to detect user's Browser, Engine, OS, CPU, and Device
 
 ## 🔌 VS Code Extensions
 
