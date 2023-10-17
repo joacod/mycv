@@ -6,8 +6,8 @@ export const ExperienceMobile = () => {
   const t = useTranslations("Experience");
 
   return (
-    <div className="py-5 lg:hidden">
-      <div className="p-4">
+    <div className="lg:hidden">
+      <div className="px-4 py-14">
         <h1 className="text-5xl font-bold">{t("title")}</h1>
         <p className="py-6">{t("description")}</p>
 

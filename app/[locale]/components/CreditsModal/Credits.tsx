@@ -45,9 +45,20 @@ export const Credits = () => {
               className="underline"
               href="https://shots.so/"
               target="_blank"
-              title="files and folders icons"
+              title="Shots.so"
             >
               Shots.so
+            </a>
+          </li>
+          <li>
+            {t("uaparser")}{" "}
+            <a
+              className="underline"
+              href="https://uaparser.js.org/"
+              target="_blank"
+              title="UAParser"
+            >
+              uaparser.js.org
             </a>
           </li>
           <li>
@@ -56,7 +67,7 @@ export const Credits = () => {
               className="underline"
               href="https://www.flaticon.com/free-icons/files-and-folders"
               target="_blank"
-              title="files and folders icons"
+              title="Flaticon"
             >
               Muhammad Atif - Flaticon
             </a>

@@ -24,7 +24,7 @@ export const ClientMobile = ({ client }: { client: Client }) => {
           href={client.webUrl}
           target="_blank"
         >
-          Visit Client Site
+          {t("visit")}
         </a>
       </div>
     </div>

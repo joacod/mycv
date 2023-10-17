@@ -13,7 +13,7 @@ import {
 import { BiLogoTypescript } from "react-icons/bi";
 import { SkillWrapper } from "./SkillWrapper";
 
-export const SkillsDesktop = () => {
+export const SkillsLg = () => {
   const t = useTranslations("Skills");
 
   return (
@@ -21,36 +21,37 @@ export const SkillsDesktop = () => {
       <div className="px-28 py-20">
         <h1 className="mb-14 text-5xl font-bold">{t("title")}</h1>
 
-        <div className="grid grid-cols-5 grid-rows-2 gap-y-5">
-          <SkillWrapper>
+        <div className="flex justify-between">
+          <SkillWrapper size="lg">
             <FaReact size={110} />
           </SkillWrapper>
-          <SkillWrapper>
+          <SkillWrapper size="lg">
             <SiNextdotjs size={100} />
           </SkillWrapper>
-          <SkillWrapper>
+          <SkillWrapper size="lg">
             <SiVite size={90} />
           </SkillWrapper>
-          <SkillWrapper>
+          <SkillWrapper size="lg">
             <SiTailwindcss size={110} />
           </SkillWrapper>
-          <SkillWrapper>
+          <SkillWrapper size="lg">
             <SiAmazonaws size={90} />
           </SkillWrapper>
-
-          <SkillWrapper>
+        </div>
+        <div className="mt-12 flex justify-between">
+          <SkillWrapper size="lg">
             <SiJavascript size={90} />
           </SkillWrapper>
-          <SkillWrapper>
+          <SkillWrapper size="lg">
             <BiLogoTypescript size={120} />
           </SkillWrapper>
-          <SkillWrapper>
+          <SkillWrapper size="lg">
             <SiGit size={100} />
           </SkillWrapper>
-          <SkillWrapper>
+          <SkillWrapper size="lg">
             <SiHtml5 size={90} />
           </SkillWrapper>
-          <SkillWrapper>
+          <SkillWrapper size="lg">
             <SiCsswizardry size={90} />
           </SkillWrapper>
         </div>

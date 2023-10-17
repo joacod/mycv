@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { devInfo, githubUrl, linkedinUrl } from "@/utils/devInfo";
+import { devInfo } from "@/utils/devInfo";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import { NavLinks } from "./NavLinks";
 import { BsFillClipboard2CheckFill } from "react-icons/bs";
@@ -48,14 +48,14 @@ const Navigation = () => {
           <LocaleSwitcher />
         </ul>
         <a
-          href={githubUrl}
+          href={devInfo.githubUrl}
           className="delay-50 transition duration-200 ease-in-out hover:scale-125"
           target="_blank"
         >
           <FaGithub size={32} />
         </a>
         <a
-          href={linkedinUrl}
+          href={devInfo.linkedinUrl}
           className="delay-50 transition duration-200 ease-in-out hover:scale-125"
           target="_blank"
         >
