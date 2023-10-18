@@ -77,7 +77,7 @@ export const Credits = () => {
       <div className="modal-action flex flex-col items-center">
         <form method="dialog">
           {/* if there is a button in form, it will close the modal */}
-          <button className="btn btn-primary">{t("close")}</button>
+          <button className="btn btn-primary">{tc("close")}</button>
         </form>
       </div>
     </>

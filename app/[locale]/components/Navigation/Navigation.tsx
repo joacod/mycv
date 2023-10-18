@@ -6,6 +6,7 @@ import { BsFillClipboard2CheckFill } from "react-icons/bs";
 import { useTranslations } from "next-intl";
 import { RiMenu2Fill } from "react-icons/ri";
 import { ClickMe } from "./ClickMe/ClickMe";
+import { FontBtn } from "./FontBtn";
 
 const Navigation = () => {
   const t = useTranslations("Common");
@@ -28,14 +29,7 @@ const Navigation = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-base normal-case lg:text-xl" href="#">
-          <span className="hidden lg:inline">
-            <BsFillClipboard2CheckFill size={32} />
-          </span>{" "}
-          <span>
-            {t("my")} CV - {devInfo.name}
-          </span>
-        </a>
+        <FontBtn title={t("my") + "CV - " + devInfo.name} />
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal space-x-5 px-1">
