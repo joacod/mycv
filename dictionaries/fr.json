@@ -1,0 +1,63 @@
+{
+  "Common": {
+    "my": "Mon",
+    "close": "Fermer"
+  },
+  "Navigation": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "skills": "Compétences",
+    "riddler": "?",
+    "credits": "Crédits"
+  },
+  "ClickMe": {
+    "text1": "Cliquez ici !",
+    "text2": "Oui !",
+    "text3": "Thèmes !",
+    "text4": "Encore une fois !"
+  },
+  "LocaleSwitcher": {
+    "title": "Langue",
+    "en": "Anglais",
+    "es": "Espagnol",
+    "pt": "Portugais",
+    "fr": "Français",
+    "de": "Allemand"
+  },
+  "About": {
+    "title": "À propos de moi",
+    "description": "Avec plus de 15 ans d'expérience dans le monde en constante évolution du développement logiciel, j'ai consacré les 5 dernières années au développement frontend, avec un accent sur React.",
+    "role": "Outre mon rôle de développeur, je participe à la plupart des décisions techniques, y compris la conception, l'architecture et le développement des composants principaux, ainsi qu'aux activités liées à la gestion de la configuration, à l'intégration continue, au support, à l'encadrement et à la formation des autres membres de l'équipe, en gardant toujours à l'esprit la qualité du produit.",
+    "colaborate": "Collaborons et donnons vie à votre vision numérique.",
+    "getstarted": "Commencer"
+  },
+  "Experience": {
+    "title": "Expérience",
+    "description": "En tant que fournisseur, j'ai eu l'occasion de collaborer avec ces clients exceptionnels.",
+    "clientDescription1": "Société de médias formée par la fusion de WarnerMedia et Discovery, Inc., offrant une vaste gamme de contenus de divertissement.",
+    "clientDescription2": "Plateforme populaire de recherche d'emploi en ligne, mettant en relation les demandeurs d'emploi avec des employeurs du monde entier.",
+    "clientDescription3": "Leader mondial des services professionnels, proposant des solutions innovantes en matière d'audit, de conseil et de services consultatifs.",
+    "visit": "Visiter le site du client"
+  },
+  "Skills": {
+    "title": "Compétences techniques"
+  },
+  "Riddler": {
+    "question": "Que sais-je de vous",
+    "device": "Appareil",
+    "os": "Système d'exploitation",
+    "browser": "Navigateur",
+    "version": "Version",
+    "disclaimer": "Ce site ne stocke aucune de ces informations."
+  },
+  "Credits": {
+    "title": "Crédits",
+    "created": "créé par",
+    "flaticon": "Image pour le favicon créée par",
+    "shots": "Images encadrées créées avec",
+    "uaparser": "Nous détectons les informations de l'utilisateur en utilisant"
+  },
+  "Footer": {
+    "rights": "Tous droits réservés"
+  }
+}

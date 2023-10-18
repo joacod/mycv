@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 export const EasterEgg = () => {
   useEffect(() => {
+    console.clear();
     console.log(
       "%cYou take the %c🔵 blue pill%c... the story ends, you wake up in your bed and believe whatever you want to believe.",
       "background-color: white; color: green; font-size: 15px",

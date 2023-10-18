@@ -1,0 +1,63 @@
+{
+  "Common": {
+    "my": "Mein",
+    "close": "Schließen"
+  },
+  "Navigation": {
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "skills": "Fähigkeiten",
+    "riddler": "?",
+    "credits": "Credits"
+  },
+  "ClickMe": {
+    "text1": "Klick mich!",
+    "text2": "Ja!",
+    "text3": "Themen!",
+    "text4": "Nochmal!"
+  },
+  "LocaleSwitcher": {
+    "title": "Sprache",
+    "en": "Englisch",
+    "es": "Spanisch",
+    "pt": "Portugiesisch",
+    "fr": "Französisch",
+    "de": "Deutsch"
+  },
+  "About": {
+    "title": "Über mich",
+    "description": "Mit über 15 Jahren Erfahrung in der sich ständig weiterentwickelnden Welt der Softwareentwicklung habe ich die letzten 5 Jahre dem Frontend-Entwicklung gewidmet, mit einem Schwerpunkt auf React.",
+    "role": "Neben meiner Rolle als Entwickler bin ich an den meisten technischen Entscheidungen beteiligt, einschließlich Design, Architektur und Entwicklung von Kernkomponenten sowie an Aktivitäten im Zusammenhang mit Konfigurationsmanagement, kontinuierlicher Integration, Support, Coaching und Schulung anderer Teammitglieder, immer mit Blick auf die Produktqualität.",
+    "colaborate": "Lass uns zusammenarbeiten und deine digitale Vision zum Leben erwecken.",
+    "getstarted": "Loslegen"
+  },
+  "Experience": {
+    "title": "Erfahrung",
+    "description": "Als Anbieter hatte ich die Gelegenheit, mit diesen herausragenden Kunden zusammenzuarbeiten.",
+    "clientDescription1": "Medienunternehmen, das aus der Fusion von WarnerMedia und Discovery, Inc. hervorgegangen ist und ein breites Spektrum an Unterhaltungsinhalten anbietet.",
+    "clientDescription2": "Beliebte Online-Jobplattform, die Jobsuchende mit Arbeitgebern weltweit verbindet.",
+    "clientDescription3": "Weltweit führendes Unternehmen im Bereich professioneller Dienstleistungen, das innovative Lösungen in den Bereichen Prüfung, Beratung und Beratung anbietet.",
+    "visit": "Website des Kunden besuchen"
+  },
+  "Skills": {
+    "title": "Technische Fähigkeiten"
+  },
+  "Riddler": {
+    "question": "Was weiß ich über dich",
+    "device": "Gerät",
+    "os": "Betriebssystem",
+    "browser": "Browser",
+    "version": "Version",
+    "disclaimer": "Diese Website speichert keine dieser Informationen."
+  },
+  "Credits": {
+    "title": "Credits",
+    "created": "erstellt von",
+    "flaticon": "Bild für das Favicon erstellt von",
+    "shots": "Gerahmte Bilder erstellt mit",
+    "uaparser": "Wir erkennen die Informationen des Benutzers mithilfe"
+  },
+  "Footer": {
+    "rights": "Alle Rechte vorbehalten"
+  }
+}

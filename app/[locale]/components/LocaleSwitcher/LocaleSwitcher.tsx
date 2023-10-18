@@ -15,7 +15,7 @@ const LocaleSwitcher = () => {
           </span>
           <span className="lg:hidden">{t("title")}</span>
         </summary>
-        <ul className="space-y-2 bg-base-100 p-2">
+        <ul className="z-50 space-y-2 bg-base-100 p-2">
           <li>
             <Link href={`en`} className={locale === "en" ? "active" : ""}>
               {t("en")}
@@ -24,6 +24,21 @@ const LocaleSwitcher = () => {
           <li>
             <Link href={`es`} className={locale === "es" ? "active" : ""}>
               {t("es")}
+            </Link>
+          </li>
+          <li>
+            <Link href={`pt`} className={locale === "pt" ? "active" : ""}>
+              {t("pt")}
+            </Link>
+          </li>
+          <li>
+            <Link href={`fr`} className={locale === "fr" ? "active" : ""}>
+              {t("fr")}
+            </Link>
+          </li>
+          <li>
+            <Link href={`de`} className={locale === "de" ? "active" : ""}>
+              {t("de")}
             </Link>
           </li>
         </ul>
