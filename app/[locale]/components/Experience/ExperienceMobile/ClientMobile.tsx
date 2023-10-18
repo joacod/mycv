@@ -16,11 +16,11 @@ export const ClientMobile = ({ client }: { client: Client }) => {
           className=""
         />
       </figure>
-      <div className="card-body pt-0">
+      <div className="card-body inline-block pt-0">
         <h2 className="card-title">{client.name}</h2>
         <p>{t(client.descriptionKey)}</p>
         <a
-          className="btn btn-xs mt-2 w-36"
+          className="btn btn-xs mt-5 inline-block py-1"
           href={client.webUrl}
           target="_blank"
         >
