@@ -15,7 +15,7 @@ const LocaleSwitcher = () => {
           </span>
           <span className="lg:hidden">{t("title")}</span>
         </summary>
-        <ul className="space-y-2 bg-base-100 p-2">
+        <ul className="z-50 space-y-2 bg-base-100 p-2">
           <li>
             <Link href={`en`} className={locale === "en" ? "active" : ""}>
               {t("en")}
