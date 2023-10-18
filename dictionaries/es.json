@@ -1,6 +1,7 @@
 {
   "Common": {
-    "my": "Mi"
+    "my": "Mi",
+    "close": "Cerrar"
   },
   "Navigation": {
     "about": "Acerca de",
@@ -39,17 +40,19 @@
     "title": "Tecnologias"
   },
   "Riddler": {
-    "title": "?",
-    "riddle": "ridle",
-    "end": "end"
+    "question": "¿Qué sé de ti",
+    "device": "Dispositivo",
+    "os": "Sistema Operativo",
+    "browser": "Navegador",
+    "version": "Versión",
+    "disclaimer": "Este sitio no almacena ninguna de esta información."
   },
   "Credits": {
     "title": "Creditos",
     "created": "creado por",
     "flaticon": "Imagen de favicon creada por",
     "shots": "Imágenes enmarcadas creadas con",
-    "uaparser":"Detectamos la información del usuario utilizando",
-    "close": "Cerrar"
+    "uaparser": "Detectamos la información del usuario utilizando"
   },
   "Footer": {
     "rights": "Todos los derechos reservados"

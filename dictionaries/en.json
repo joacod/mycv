@@ -1,6 +1,7 @@
 {
   "Common": {
-    "my": "My"
+    "my": "My",
+    "close": "Close"
   },
   "Navigation": {
     "about": "About",
@@ -39,17 +40,19 @@
     "title": "Tech Skills"
   },
   "Riddler": {
-    "title": "?",
-    "riddle": "riddle",
-    "end": "end"
+    "question": "What do I know about you",
+    "device": "Device",
+    "os": "Operating System",
+    "browser": "Browser",
+    "version": "Version",
+    "disclaimer": "This site does not store any of this information."
   },
   "Credits": {
     "title": "Credits",
     "created": "created by",
     "flaticon": "Image for the favicon created by",
     "shots": "Framed images created with",
-    "uaparser":"We detect user's info using",
-    "close": "Close"
+    "uaparser": "We detect user's info using"
   },
   "Footer": {
     "rights": "All rights reserved"
