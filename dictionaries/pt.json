@@ -1,0 +1,63 @@
+{
+  "Common": {
+    "my": "Meu",
+    "close": "Fechar"
+  },
+  "Navigation": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "skills": "Habilidades",
+    "riddler": "?",
+    "credits": "Créditos"
+  },
+  "ClickMe": {
+    "text1": "Clique em mim!",
+    "text2": "Sim!",
+    "text3": "Temas!",
+    "text4": "Novamente!"
+  },
+  "LocaleSwitcher": {
+    "title": "Idioma",
+    "en": "Inglês",
+    "es": "Espanhol",
+    "pt": "Português",
+    "fr": "Francês",
+    "de": "Alemão"
+  },
+  "About": {
+    "title": "Sobre mim",
+    "description": "Com mais de 15 anos de experiência no mundo em constante evolução do desenvolvimento de software, dediquei os últimos 5 anos ao desenvolvimento frontend, com foco em React.",
+    "role": "Além do meu papel como desenvolvedor, estou envolvido na maioria das decisões técnicas, incluindo design, arquitetura e desenvolvimento de componentes principais, bem como em atividades relacionadas à gestão de configuração, integração contínua, suporte, treinamento e treinamento de outros membros da equipe, sempre tendo em mente a qualidade do produto.",
+    "colaborate": "Vamos colaborar e dar vida à sua visão digital.",
+    "getstarted": "Comece"
+  },
+  "Experience": {
+    "title": "Experiência",
+    "description": "Como fornecedor, tive a oportunidade de colaborar com esses clientes excepcionais.",
+    "clientDescription1": "Empresa de mídia formada pela fusão da WarnerMedia e Discovery, Inc., oferecendo uma vasta gama de conteúdo de entretenimento.",
+    "clientDescription2": "Plataforma popular de busca de emprego on-line, conectando candidatos a emprego a empregadores em todo o mundo.",
+    "clientDescription3": "Líder global em serviços profissionais, oferecendo soluções inovadoras em serviços de auditoria, consultoria e assessoria.",
+    "visit": "Visite o site do cliente"
+  },
+  "Skills": {
+    "title": "Habilidades Técnicas"
+  },
+  "Riddler": {
+    "question": "O que eu sei sobre você",
+    "device": "Dispositivo",
+    "os": "Sistema Operacional",
+    "browser": "Navegador",
+    "version": "Versão",
+    "disclaimer": "Este site não armazena nenhuma dessas informações."
+  },
+  "Credits": {
+    "title": "Créditos",
+    "created": "criado por",
+    "flaticon": "Imagem do favicon criada por",
+    "shots": "Imagens emolduradas criadas com",
+    "uaparser": "Detectamos as informações do usuário usando"
+  },
+  "Footer": {
+    "rights": "Todos os direitos reservados"
+  }
+}

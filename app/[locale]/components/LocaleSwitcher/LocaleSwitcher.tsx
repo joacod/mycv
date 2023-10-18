@@ -26,6 +26,21 @@ const LocaleSwitcher = () => {
               {t("es")}
             </Link>
           </li>
+          <li>
+            <Link href={`pt`} className={locale === "pt" ? "active" : ""}>
+              {t("pt")}
+            </Link>
+          </li>
+          <li>
+            <Link href={`fr`} className={locale === "fr" ? "active" : ""}>
+              {t("fr")}
+            </Link>
+          </li>
+          <li>
+            <Link href={`de`} className={locale === "de" ? "active" : ""}>
+              {t("de")}
+            </Link>
+          </li>
         </ul>
       </details>
     </li>

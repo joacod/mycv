@@ -19,7 +19,10 @@
   "LocaleSwitcher": {
     "title": "Idioma",
     "en": "Ingles",
-    "es": "Español"
+    "es": "Español",
+    "pt": "Portugues",
+    "fr": "Frances",
+    "de": "Aleman"
   },
   "About": {
     "title": "Acerca de mi",
