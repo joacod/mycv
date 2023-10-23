@@ -7,16 +7,16 @@ export const About = () => {
 
   return (
     <div className="hero min-h-screen bg-neutral text-neutral-content">
-      <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className="hero-content relative flex-col lg:flex-row-reverse">
         <Image
-          className="lg:hidden"
+          className="z-0 lg:hidden"
           src="/avatar.png"
           alt="Avatar"
           width={180}
           height={196}
         />
         <Image
-          className="hidden lg:inline"
+          className="z-0 hidden lg:inline"
           src="/avatar.png"
           alt="Avatar"
           width={480}
