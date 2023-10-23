@@ -18,7 +18,7 @@ export const FontBtn = ({ title }: { title: string }) => {
 
   return (
     <h1
-      className="btn btn-neutral text-base normal-case lg:text-xl"
+      className="btn btn-neutral text-base normal-case lg:text-lg"
       onClick={() => changeFont()}
     >
       <span className="hidden lg:inline">

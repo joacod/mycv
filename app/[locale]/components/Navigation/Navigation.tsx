@@ -12,9 +12,9 @@ const Navigation = () => {
   const t = useTranslations("Common");
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 lg:px-4">
       <div className="navbar-start">
-        <div className="dropdown">
+        <div className="dropdown mr-2">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <RiMenu2Fill size={28} />
           </label>
@@ -32,7 +32,7 @@ const Navigation = () => {
         <FontBtn title={t("my") + "CV - " + devInfo.name} />
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal space-x-5 px-1">
+        <ul className="menu menu-horizontal space-x-2 px-1">
           <NavLinks />
         </ul>
       </div>

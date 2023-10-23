@@ -62,6 +62,17 @@ export const Credits = () => {
             </a>
           </li>
           <li>
+            {t("flags")}{" "}
+            <a
+              className="underline"
+              href="https://icons8.com/icon/set/flags/color"
+              target="_blank"
+              title="flags"
+            >
+              icons8.com
+            </a>
+          </li>
+          <li>
             {t("flaticon")}{" "}
             <a
               className="underline"
