@@ -13,7 +13,7 @@ const Navigation = () => {
   return (
     <nav className="navbar bg-base-100 lg:px-4">
       <div className="navbar-start">
-        <div className="dropdown relative mr-2">
+        <div className="dropdown mr-2">
           <button
             tabIndex={0}
             aria-haspopup="true"
@@ -28,7 +28,7 @@ const Navigation = () => {
             role="menu"
             aria-label="submenu"
             tabIndex={0}
-            className="menu dropdown-content rounded-box menu-sm z-50 mt-3 w-52 space-y-2 bg-base-100 p-2 shadow"
+            className="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 space-y-2 bg-base-100 p-2 shadow"
           >
             <NavLinks />
             <LocaleSwitcher />
