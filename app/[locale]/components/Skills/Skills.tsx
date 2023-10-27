@@ -4,10 +4,10 @@ import { SkillsSm } from "./SkillsScreens/SkillsSm";
 
 export const Skills = () => {
   return (
-    <div id="section-skills">
+    <section id="section-skills">
       <SkillsSm />
       <SkillsMd />
       <SkillsLg />
-    </div>
+    </section>
   );
 };

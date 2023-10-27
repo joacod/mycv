@@ -7,15 +7,21 @@ export const CreditsModal = ({
   children: React.ReactNode;
   title: string;
 }) => {
+  const openModal = () => {
+    const creditsModal = document.getElementById(
+      "credits_modal",
+    ) as HTMLDialogElement;
+    if (creditsModal) {
+      creditsModal.showModal();
+    }
+  };
+
   return (
     <>
       <button
         className="btn btn-neutral btn-xs"
-        onClick={() =>
-          (
-            document.getElementById("credits_modal") as HTMLDialogElement
-          )?.showModal()
-        }
+        onClick={openModal}
+        aria-label="Open Credits Modal"
       >
         {title}
       </button>

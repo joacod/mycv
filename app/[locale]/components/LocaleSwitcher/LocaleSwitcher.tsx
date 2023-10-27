@@ -24,10 +24,11 @@ const LocaleSwitcher = () => {
                 href="/"
                 locale={lang}
                 className={locale === lang ? "active px-2" : "px-2"}
+                aria-label={`Switch to ${t(lang)} language`}
               >
                 <Image
                   src={"/flags/" + lang + ".png"}
-                  alt={"Language: " + lang}
+                  alt={`Language flag: ${lang}`}
                   width={24}
                   height={24}
                 />{" "}

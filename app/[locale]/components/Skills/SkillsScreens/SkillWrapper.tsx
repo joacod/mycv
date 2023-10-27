@@ -5,23 +5,31 @@ export const SkillWrapper = ({
   children: React.ReactNode;
   size: "sm" | "md" | "lg";
 }) => {
+  let containerClasses = "flex";
+  let containerClassesEnd = " items-center justify-center";
+
+  // Concatenated following TailiwindCSS classes order
+  switch (size) {
+    case "sm":
+      containerClasses += " h-24 w-24" + containerClassesEnd;
+      break;
+    case "md":
+      containerClasses += " h-32 w-32" + containerClassesEnd;
+      break;
+    case "lg":
+      containerClasses += " h-40 w-40" + containerClassesEnd;
+      break;
+    default:
+      containerClasses += " h-32 w-32" + containerClassesEnd;
+  }
+
   return (
     <div
-      className={`mask mask-hexagon-2  transform items-center justify-center bg-primary text-primary-content transition-transform duration-200 hover:mask-decagon hover:scale-125 hover:bg-secondary hover:text-secondary-content`}
+      className={
+        "mask mask-hexagon-2 transform bg-primary text-primary-content transition-transform duration-200 hover:mask-decagon hover:scale-125 hover:bg-secondary hover:text-secondary-content"
+      }
     >
-      {size === "sm" ? (
-        <div className="flex h-24 w-24 items-center justify-center">
-          {children}
-        </div>
-      ) : size === "md" ? (
-        <div className="flex h-32 w-32 items-center justify-center">
-          {children}
-        </div>
-      ) : (
-        <div className="flex h-40 w-40 items-center justify-center">
-          {children}
-        </div>
-      )}
+      <div className={containerClasses}>{children}</div>
     </div>
   );
 };
