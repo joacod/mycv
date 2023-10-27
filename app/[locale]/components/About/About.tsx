@@ -6,7 +6,7 @@ export const About = () => {
   const t = useTranslations("About");
 
   return (
-    <div className="hero min-h-screen bg-neutral text-neutral-content">
+    <div className="hero z-0 min-h-screen bg-neutral text-neutral-content">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <Image
           className="lg:hidden"
