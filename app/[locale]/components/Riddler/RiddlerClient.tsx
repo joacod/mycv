@@ -20,63 +20,81 @@ export const RiddlerClient = ({ info }: { info: RiddlerInfo }) => {
     if (phraseIndex < phrases.length) {
       setPhraseIndex(phraseIndex + 1);
     } else {
-      (
-        document.getElementById("riddler_modal") as HTMLDialogElement
-      )?.showModal();
+      const modal = document.getElementById(
+        "riddler_modal",
+      ) as HTMLDialogElement;
+      if (modal) {
+        modal.showModal();
+      }
     }
   };
 
   return (
-    <>
-      <div
-        id="section-riddler"
-        className="bg-neutral px-28 py-24 text-center lg:px-80 lg:py-36"
+    <section
+      id="section-riddler"
+      className="bg-neutral px-28 py-24 text-center lg:px-80 lg:py-36"
+    >
+      <button
+        className="inline-block cursor-pointer select-none rounded-3xl border-4 bg-secondary p-8 text-4xl font-bold text-secondary-content outline-double transition-colors duration-200 ease-in-out hover:bg-accent hover:text-accent-content md:text-6xl lg:px-20 lg:text-7xl"
+        onClick={handleClick}
+        aria-label="Riddle phrase button"
       >
-        <h1
-          className="inline-block cursor-pointer select-none rounded-3xl border-4 bg-secondary p-8 text-4xl font-bold text-secondary-content outline-double transition-colors duration-200 ease-in-out hover:bg-accent hover:text-accent-content md:text-6xl lg:px-20 lg:text-7xl"
-          onClick={handleClick}
-        >
-          {isFullPhrase ? (
-            <span className="animate-pulse">{currentPhrase}</span>
-          ) : (
-            currentPhrase
-          )}
-        </h1>
-      </div>
+        {isFullPhrase ? (
+          <span className="animate-pulse">{currentPhrase}</span>
+        ) : (
+          currentPhrase
+        )}
+      </button>
       <dialog id="riddler_modal" className="modal modal-bottom sm:modal-middle">
         <div className="modal-box bg-neutral text-neutral-content">
-          <>
-            <div id="modal-content" className="space-y-4 text-center">
-              <h3 className="text-7xl font-bold">?</h3>
-              <p className="inline-block animate-bounce">👇</p>
+          <div
+            className="space-y-4 text-center"
+            aria-label="Device Information"
+          >
+            <h3 className="text-7xl font-bold">?</h3>
+            <p className="inline-block animate-bounce" aria-label="Down Arrow">
+              👇
+            </p>
 
-              <ul>
-                <li>
-                  <strong>{info.device}: </strong>
+            <dl className="flex flex-wrap items-center justify-center">
+              <div className="flex flex-row">
+                <dt className="mr-1">
+                  <strong>{info.device}:</strong>
+                </dt>
+                <dd>
                   {parserResult?.device.vendor} {parserResult?.device.model}
-                </li>
-                <li>
-                  <strong>{info.os}: </strong>
+                </dd>
+              </div>
+              <div className="flex flex-row">
+                <dt className="mr-1">
+                  <strong>{info.os}:</strong>
+                </dt>
+                <dd>
                   {parserResult?.os.name} - {info.version}:{" "}
                   {parserResult?.os.version}
-                </li>
-                <li>
-                  <strong>{info.browser}: </strong>
+                </dd>
+              </div>
+              <div className="flex flex-row">
+                <dt className="mr-1">
+                  <strong>{info.browser}:</strong>
+                </dt>
+                <dd>
                   {parserResult?.browser.name} - {info.version}:{" "}
                   {parserResult?.browser.version}
-                </li>
-              </ul>
-              <p className="text-xs italic">{info.disclaimer}</p>
-            </div>
-            <div className="modal-action flex flex-col items-center">
-              <form method="dialog">
-                {/* if there is a button in form, it will close the modal */}
-                <button className="btn btn-primary">{info.close}</button>
-              </form>
-            </div>
-          </>
+                </dd>
+              </div>
+            </dl>
+            <p className="text-xs italic">{info.disclaimer}</p>
+          </div>
+          <div className="modal-action flex flex-col items-center">
+            <form method="dialog">
+              <button className="btn btn-primary" type="submit">
+                {info.close}
+              </button>
+            </form>
+          </div>
         </div>
       </dialog>
-    </>
+    </section>
   );
 };
