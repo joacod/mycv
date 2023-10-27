@@ -56,29 +56,29 @@ export const RiddlerClient = ({ info }: { info: RiddlerInfo }) => {
               👇
             </p>
 
-            <dl className="flex flex-wrap items-center justify-center">
-              <div className="flex flex-row">
-                <dt className="mr-1">
+            <dl className="text-center">
+              <div className="mt-4">
+                <dt className="inline">
                   <strong>{info.device}:</strong>
                 </dt>
-                <dd>
+                <dd className="ml-1 inline">
                   {parserResult?.device.vendor} {parserResult?.device.model}
                 </dd>
               </div>
-              <div className="flex flex-row">
-                <dt className="mr-1">
+              <div className="mt-1">
+                <dt className="inline">
                   <strong>{info.os}:</strong>
                 </dt>
-                <dd>
+                <dd className="ml-1 inline">
                   {parserResult?.os.name} - {info.version}:{" "}
                   {parserResult?.os.version}
                 </dd>
               </div>
-              <div className="flex flex-row">
-                <dt className="mr-1">
+              <div className="mt-1">
+                <dt className="inline">
                   <strong>{info.browser}:</strong>
                 </dt>
-                <dd>
+                <dd className="ml-1 inline">
                   {parserResult?.browser.name} - {info.version}:{" "}
                   {parserResult?.browser.version}
                 </dd>

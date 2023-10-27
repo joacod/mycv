@@ -9,9 +9,9 @@ const config: Config = {
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
+      "emerald",
       "dark",
       "winter",
-      "emerald",
       "synthwave",
       "retro",
       "cyberpunk",
