@@ -31,19 +31,29 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
 
   if (!mounted)
     return (
-      <button className="btn btn-accent btn-sm hidden lg:inline">
+      <button
+        className="btn btn-accent btn-sm hidden lg:inline"
+        aria-label="Click Me Button"
+      >
         {clickMeText}
       </button>
     );
 
   return (
     <>
-      <a className="lg:hidden" onClick={toggleTheme}>
+      <a
+        className="lg:hidden"
+        onClick={toggleTheme}
+        role="button"
+        tabIndex={0}
+        aria-label="Click Me Button"
+      >
         {texts[0]}
       </a>
       <button
         className="btn btn-accent btn-sm hidden w-32 lg:inline"
         onClick={toggleTheme}
+        aria-label="Click Me Button"
       >
         {clickMeText}
       </button>
