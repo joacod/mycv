@@ -8,7 +8,7 @@ import {
   SiAmazonaws,
   SiGit,
   SiHtml5,
-  SiCsswizardry,
+  SiCss3,
 } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SkillWrapper } from "./SkillWrapper";
@@ -52,7 +52,7 @@ export const SkillsLg = () => {
             <SiHtml5 size={90} />
           </SkillWrapper>
           <SkillWrapper size="lg">
-            <SiCsswizardry size={90} />
+            <SiCss3 size={90} />
           </SkillWrapper>
         </div>
       </div>
