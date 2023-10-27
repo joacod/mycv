@@ -6,11 +6,11 @@ export const ClientMobile = ({ client }: { client: Client }) => {
   const t = useTranslations("Experience");
 
   return (
-    <div className="card glass">
+    <article className="card glass">
       <figure>
         <Image
           src={client.imageUrl}
-          alt={client.name}
+          alt={`Logo of ${client.name}`}
           width={384}
           height={288}
           className=""
@@ -18,15 +18,17 @@ export const ClientMobile = ({ client }: { client: Client }) => {
       </figure>
       <div className="card-body inline-block pt-0">
         <h2 className="card-title">{client.name}</h2>
-        <p>{t(client.descriptionKey)}</p>
+        <p className="mt-2 text-sm">{t(client.descriptionKey)}</p>
         <a
           className="btn btn-xs mt-5 inline-block py-1"
           href={client.webUrl}
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Visit ${client.name}`}
         >
           {t("visit")}
         </a>
       </div>
-    </div>
+    </article>
   );
 };
