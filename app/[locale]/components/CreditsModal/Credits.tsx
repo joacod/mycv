@@ -19,6 +19,8 @@ export const Credits = () => {
               className="underline"
               href="https://github.com/joacod/mycv"
               target="_blank"
+              rel="noopener noreferrer"
+              title="My CV on GitHub"
             >
               {tc("my")} CV
             </a>{" "}
@@ -27,16 +29,19 @@ export const Credits = () => {
               className="underline"
               href="https://github.com/joacod"
               target="_blank"
+              rel="noopener noreferrer"
+              title="Joaquin Diaz on GitHub"
             >
               Joaquin Diaz
             </a>
           </p>
-          <div
-            className="tooltip  tooltip-info ml-2"
+          <span
+            className="tooltip tooltip-info ml-2"
+            aria-label="Live Long and Prosper! 🖖"
             data-tip="Live Long and Prosper! 🖖"
           >
-            <SiStartrek size={20} className="" />
-          </div>
+            <SiStartrek size={20} />
+          </span>
         </div>
         <ul>
           <li>
@@ -45,7 +50,8 @@ export const Credits = () => {
               className="underline"
               href="https://shots.so/"
               target="_blank"
-              title="Shots.so"
+              rel="noopener noreferrer"
+              title="Shots.so website"
             >
               Shots.so
             </a>
@@ -56,7 +62,8 @@ export const Credits = () => {
               className="underline"
               href="https://uaparser.js.org/"
               target="_blank"
-              title="UAParser"
+              rel="noopener noreferrer"
+              title="UAParser website"
             >
               uaparser.js.org
             </a>
@@ -67,7 +74,8 @@ export const Credits = () => {
               className="underline"
               href="https://icons8.com/icon/set/flags/color"
               target="_blank"
-              title="flags"
+              rel="noopener noreferrer"
+              title="Flags icon set on icons8.com"
             >
               icons8.com
             </a>
@@ -78,7 +86,8 @@ export const Credits = () => {
               className="underline"
               href="https://www.flaticon.com/free-icons/files-and-folders"
               target="_blank"
-              title="Flaticon"
+              rel="noopener noreferrer"
+              title="Files and Folders icon on Flaticon by Muhammad Atif"
             >
               Muhammad Atif - Flaticon
             </a>
@@ -87,8 +96,13 @@ export const Credits = () => {
       </div>
       <div className="modal-action flex flex-col items-center">
         <form method="dialog">
-          {/* if there is a button in form, it will close the modal */}
-          <button className="btn btn-primary">{tc("close")}</button>
+          <button
+            type="submit"
+            className="btn btn-primary"
+            aria-label="Close Credits Modal"
+          >
+            {tc("close")}
+          </button>
         </form>
       </div>
     </>
