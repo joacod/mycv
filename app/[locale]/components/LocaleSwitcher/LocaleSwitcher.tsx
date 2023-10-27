@@ -21,7 +21,8 @@ const LocaleSwitcher = () => {
           {languages.map((lang) => (
             <li key={lang}>
               <Link
-                href={lang}
+                href="/"
+                locale={lang}
                 className={locale === lang ? "active px-2" : "px-2"}
               >
                 <Image
