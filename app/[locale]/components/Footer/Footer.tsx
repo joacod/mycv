@@ -13,43 +13,48 @@ export const Footer = () => {
 
   return (
     <footer className="footer footer-center bg-primary p-10 text-primary-content">
-      <aside>
+      <section>
         <a
           href="https://github.com/joacod/mycv"
           className="delay-50 transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-125"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          <BsFillClipboard2CheckFill size={50} />
+          <BsFillClipboard2CheckFill size={50} aria-label="Clipboard Icon" />
         </a>
-        <p className="font-bold">
-          {tc("my")} CV <br />
-          {devInfo.name}
-        </p>
-        <p>
-          Copyright © 2023-{currentYear} - {t("rights")}
-        </p>
-        <CreditsModal title={tcred("title")}>
-          <Credits />
-        </CreditsModal>
-      </aside>
-      <nav>
-        <div className="grid grid-flow-col gap-4">
-          <a
-            href={devInfo.githubUrl}
-            className="delay-50 transition duration-200 ease-in-out hover:scale-125"
-            target="_blank"
-          >
-            <FaGithub size={28} />
-          </a>
-          <a
-            href={devInfo.linkedinUrl}
-            className="delay-50 transition duration-200 ease-in-out hover:scale-125"
-            target="_blank"
-          >
-            <FaLinkedin size={28} />
-          </a>
+        <div className="space-y-2">
+          <p className="font-bold">
+            {tc("my")} CV <br />
+            {devInfo.name}
+          </p>
+          <p>
+            Copyright &copy; 2023-{currentYear} - {t("rights")}
+          </p>
+          <CreditsModal title={tcred("title")}>
+            <Credits />
+          </CreditsModal>
         </div>
-      </nav>
+      </section>
+      <div className="grid grid-flow-col gap-4">
+        <a
+          href={devInfo.githubUrl}
+          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub Profile"
+        >
+          <FaGithub size={28} />
+        </a>
+        <a
+          href={devInfo.linkedinUrl}
+          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn Profile"
+        >
+          <FaLinkedin size={28} />
+        </a>
+      </div>
     </footer>
   );
 };
