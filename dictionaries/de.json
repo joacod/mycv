@@ -59,7 +59,8 @@
     "created": "erstellt von",
     "flaticon": "Bild für das Favicon erstellt von",
     "shots": "Gerahmte Bilder erstellt mit",
-    "uaparser": "Wir erkennen die Informationen des Benutzers mithilfe",
+    "uaparser": "Wir zeigen Benutzerinformationen an mit",
+    "location": "Standort bereitgestellt von",
     "flags": "Flaggenicons von"
   },
   "Footer": {
