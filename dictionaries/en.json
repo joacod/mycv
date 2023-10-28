@@ -1,7 +1,8 @@
 {
   "Common": {
     "my": "My",
-    "close": "Close"
+    "close": "Close",
+    "top": "Go to Top"
   },
   "Navigation": {
     "about": "About",
