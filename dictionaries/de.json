@@ -1,7 +1,8 @@
 {
   "Common": {
     "my": "Mein",
-    "close": "Schließen"
+    "close": "Schließen",
+    "top": "Nach oben"
   },
   "Navigation": {
     "about": "Über mich",
