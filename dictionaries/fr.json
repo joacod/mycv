@@ -59,7 +59,8 @@
     "created": "créé par",
     "flaticon": "Image pour le favicon créée par",
     "shots": "Images encadrées créées avec",
-    "uaparser": "Nous détectons les informations de l'utilisateur en utilisant",
+    "uaparser": "Nous montrons les informations de l'utilisateur à l'aide de",
+    "location": "Emplacement fourni par",
     "flags": "Icônes de drapeau créées par"
   },
   "Footer": {

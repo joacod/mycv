@@ -69,6 +69,18 @@ export const Credits = () => {
             </a>
           </li>
           <li>
+            {t("location")}{" "}
+            <a
+              className="underline"
+              href="https://ipapi.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="ipapi website"
+            >
+              ipapi.co
+            </a>
+          </li>
+          <li>
             {t("flags")}{" "}
             <a
               className="underline"
