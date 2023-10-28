@@ -5,6 +5,8 @@ export interface RiddlerInfo {
   browser: string;
   version: string;
   disclaimer: string;
+  city: string;
+  country: string;
   close: string;
 }
 

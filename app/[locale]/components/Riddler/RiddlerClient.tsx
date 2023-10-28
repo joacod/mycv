@@ -110,7 +110,7 @@ export const RiddlerClient = ({ info }: { info: RiddlerInfo }) => {
                   {geolocation.city && (
                     <div>
                       <dt className="inline">
-                        <strong>City:</strong>
+                        <strong>{info.city}:</strong>
                       </dt>
                       <dd className="ml-1 inline">{geolocation.city}</dd>
                     </div>
@@ -120,7 +120,7 @@ export const RiddlerClient = ({ info }: { info: RiddlerInfo }) => {
                   {geolocation.country_name && (
                     <div>
                       <dt className="inline">
-                        <strong>Country:</strong>
+                        <strong>{info.country}:</strong>
                       </dt>
                       <dd className="ml-1 inline">
                         {geolocation.country_name}

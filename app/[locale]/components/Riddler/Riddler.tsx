@@ -12,6 +12,8 @@ export const Riddler = () => {
     browser: t("browser"),
     version: t("version"),
     disclaimer: t("disclaimer"),
+    city: t("city"),
+    country: t("country"),
     close: tc("close"),
   };
 

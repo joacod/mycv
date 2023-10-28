@@ -48,7 +48,9 @@
     "os": "Sistema Operacional",
     "browser": "Navegador",
     "version": "Versão",
-    "disclaimer": "Este site não armazena nenhuma dessas informações."
+    "disclaimer": "Este site não armazena nenhuma informação.",
+    "city": "Cidade",
+    "country": "País"
   },
   "Credits": {
     "title": "Créditos",

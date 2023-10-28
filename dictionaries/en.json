@@ -48,7 +48,9 @@
     "os": "Operating System",
     "browser": "Browser",
     "version": "Version",
-    "disclaimer": "This site does not store any of this information."
+    "disclaimer": "This site does not store any information.",
+    "city": "City",
+    "country": "Country"
   },
   "Credits": {
     "title": "Credits",
