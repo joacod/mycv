@@ -7,3 +7,9 @@ export interface RiddlerInfo {
   disclaimer: string;
   close: string;
 }
+
+export interface LocationInfo {
+  city: string;
+  country_name: string;
+  ip: string;
+}
