@@ -11,7 +11,7 @@ const Navigation = () => {
   const t = useTranslations("Common");
 
   return (
-    <nav className="navbar bg-base-100 lg:px-4">
+    <nav id="navigation" className="navbar bg-base-100 lg:px-4">
       <div className="navbar-start">
         <div className="dropdown mr-2">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

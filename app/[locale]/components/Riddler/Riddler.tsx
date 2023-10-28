@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { RiddlerClient } from "./RiddlerClient";
 import { RiddlerInfo } from "@/utils/riddler";
+import { GoUp } from "./GoUp";
 
 export const Riddler = () => {
   const t = useTranslations("Riddler");
@@ -17,5 +18,10 @@ export const Riddler = () => {
     close: tc("close"),
   };
 
-  return <RiddlerClient info={info} />;
+  return (
+    <>
+      <RiddlerClient info={info} />
+      <GoUp />
+    </>
+  );
 };
