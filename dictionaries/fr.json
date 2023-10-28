@@ -20,6 +20,7 @@
     "title": "Langue",
     "en": "Anglais",
     "es": "Espagnol",
+    "it": "Italien",
     "pt": "Portugais",
     "fr": "Français",
     "de": "Allemand"
@@ -48,7 +49,9 @@
     "os": "Système d'exploitation",
     "browser": "Navigateur",
     "version": "Version",
-    "disclaimer": "Ce site ne stocke aucune de ces informations."
+    "disclaimer": "Ce site ne stocke aucune information.",
+    "city": "Ville",
+    "country": "Pays"
   },
   "Credits": {
     "title": "Crédits",

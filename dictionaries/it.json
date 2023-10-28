@@ -1,0 +1,67 @@
+{
+  "Common": {
+    "my": "Il mio",
+    "close": "Chiudi"
+  },
+  "Navigation": {
+    "about": "Chi sono",
+    "experience": "Esperienza",
+    "skills": "Competenze",
+    "riddler": "?",
+    "credits": "Crediti"
+  },
+  "ClickMe": {
+    "text1": "Clicca qui!",
+    "text2": "Sì!",
+    "text3": "Temi!",
+    "text4": "Ancora!"
+  },
+  "LocaleSwitcher": {
+    "title": "Lingua",
+    "en": "Inglese",
+    "es": "Spagnolo",
+    "it": "Italiano",
+    "pt": "Portoghese",
+    "fr": "Francese",
+    "de": "Tedesco"
+  },
+  "About": {
+    "title": "Chi sono",
+    "description": "Con oltre 15 anni di esperienza nel mondo in continua evoluzione dello sviluppo software, ho dedicato gli ultimi 5 anni allo sviluppo frontend, con un focus su React.",
+    "role": "Oltre al mio ruolo di sviluppatore, sono coinvolto nella maggior parte delle decisioni tecniche, tra cui design, architettura e sviluppo di componenti principali, nonché in attività legate alla gestione della configurazione, all'integrazione continua, al supporto, all'addestramento e alla formazione di altri membri del team, tenendo sempre a mente la qualità del prodotto.",
+    "collaborate": "Collaboriamo e diamo vita alla tua visione digitale.",
+    "getstarted": "Inizia"
+  },
+  "Experience": {
+    "title": "Esperienza",
+    "description": "Come fornitore, ho avuto l'opportunità di collaborare con questi eccezionali clienti.",
+    "clientDescription1": "Azienda media nata dalla fusione di WarnerMedia e Discovery, Inc., che offre una vasta gamma di contenuti di intrattenimento.",
+    "clientDescription2": "Piattaforma popolare di ricerca di lavoro online, che mette in contatto i candidati con i datori di lavoro in tutto il mondo.",
+    "clientDescription3": "Leader mondiale nei servizi professionali, che fornisce soluzioni innovative in materia di revisione, consulenza e servizi di consulenza.",
+    "visit": "Visita il sito del cliente"
+  },
+  "Skills": {
+    "title": "Competenze tecniche"
+  },
+  "Riddler": {
+    "question": "Cosa so di te",
+    "device": "Dispositivo",
+    "os": "Sistema operativo",
+    "browser": "Browser",
+    "version": "Versione",
+    "disclaimer": "Questo sito non memorizza alcuna informazione.",
+    "city": "Città",
+    "country": "Paese"
+  },
+  "Credits": {
+    "title": "Crediti",
+    "created": "creato da",
+    "flaticon": "Immagine per il favicon creata da",
+    "shots": "Immagini in cornice create con",
+    "uaparser": "Rileviamo le informazioni dell'utente utilizzando",
+    "flags": "Icone delle bandiere di"
+  },
+  "Footer": {
+    "rights": "Tutti i diritti riservati"
+  }
+}
