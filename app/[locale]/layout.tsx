@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://joacod.com"),
   title: "My CV - " + devInfo.name,
   description:
-    "My software developer resume. Created using Bun, Next.js 13, Typescript, Tailwind CSS and daisyUI.",
+    "My software developer resume. Created using Bun, Next.js 14, Typescript, Tailwind CSS and daisyUI.",
   authors: [{ name: "Joaquin Diaz", url: "https://github.com/joacod" }],
   keywords: [
     devInfo.name,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "Resume",
     "Bun",
     "React",
-    "Next.js 13",
+    "Next.js 14",
     "Typescript",
     "Tailwind CSS",
     "daisyUI",

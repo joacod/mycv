@@ -15,7 +15,7 @@
 
 ## 👋 Introduction
 
-This is my resume, created using [Bun](https://bun.sh/), [Next.js 13](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [daisyUI](https://daisyui.com/) 🌼.
+This is my resume, created using [Bun](https://bun.sh/), [Next.js 14](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [daisyUI](https://daisyui.com/) 🌼.
 
 <p align="center">
   <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb1.png" alt="Thumbnail 1">
