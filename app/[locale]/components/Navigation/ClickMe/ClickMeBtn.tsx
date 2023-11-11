@@ -3,11 +3,10 @@
 import config from "@/tailwind.config";
 import { themeState } from "@/utils/state";
 import { useEffect, useState } from "react";
-import { useRecoilState } from "recoil";
 
 export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   const [mounted, setMounted] = useState(false);
-  const [theme, setTheme] = useRecoilState(themeState);
+  // const [theme, setTheme] = useRecoilState(themeState);
   const [textIndex, setTextIndex] = useState(0);
   const themes = config.daisyui.themes;
   let clickMeText = texts[textIndex];
@@ -22,11 +21,11 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   };
 
   const toggleTheme = () => {
-    const availableThemes = themes.filter((t: string) => t !== theme);
-    const randomIndex = Math.floor(Math.random() * availableThemes.length);
-    const randomTheme = availableThemes[randomIndex];
-    setTheme(randomTheme);
-    handleTextChange();
+    // const availableThemes = themes.filter((t: string) => t !== theme);
+    // const randomIndex = Math.floor(Math.random() * availableThemes.length);
+    // const randomTheme = availableThemes[randomIndex];
+    // setTheme(randomTheme);
+    // handleTextChange();
   };
 
   if (!mounted)
