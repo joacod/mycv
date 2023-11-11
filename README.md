@@ -65,7 +65,7 @@ _Keep the credits, it is a way to thank me for the work done._ 🙏
 
 Other libraries used in this project:
 
-- [recoil](https://recoiljs.org/) - State management library for React
+- [zustand 🐻](https://zustand-demo.pmnd.rs/) - A small, fast, and scalable bearbones state management solution
 - [next-intl](https://next-intl-docs.vercel.app/) - Internationalization for Next.js
 - [prettier](https://prettier.io/) - Code formatter
 - [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Prettier plugin for Tailwind CSS that automatically sorts classes
