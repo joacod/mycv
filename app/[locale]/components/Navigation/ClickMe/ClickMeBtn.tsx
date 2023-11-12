@@ -27,7 +27,12 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
     const randomTheme = availableThemes[randomIndex];
     changeTheme(randomTheme);
     handleTextChange();
-    confetti();
+
+    // Confetti!!
+    confetti({
+      particleCount: 120,
+      spread: 150,
+    });
   };
 
   if (!mounted)

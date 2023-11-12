@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { BsFillClipboard2CheckFill } from "react-icons/bs";
+import confetti from "canvas-confetti";
 
 export const FontBtn = ({ title }: { title: string }) => {
   const fonts = ["system-ui", "cursive", "Fira Code", "Tahoma", "Courier New"];
@@ -14,6 +15,23 @@ export const FontBtn = ({ title }: { title: string }) => {
     }
     setCurrentFont(newFont);
     document.documentElement.style.fontFamily = newFont;
+
+    // Confetti!!
+    const colors = ["#bb0000", "#ffffff"];
+    confetti({
+      particleCount: 60,
+      angle: 60,
+      spread: 55,
+      origin: { x: 0 },
+      colors: colors,
+    });
+    confetti({
+      particleCount: 60,
+      angle: 120,
+      spread: 55,
+      origin: { x: 1 },
+      colors: colors,
+    });
   };
 
   return (
