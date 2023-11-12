@@ -5,10 +5,10 @@ const themes = config.daisyui.themes as string[];
 
 interface ThemeState {
   theme: string;
-  changeTheme: (theme: string) => void;
+  changeTheme: (newTheme: string) => void;
 }
 
 export const useThemeStore = create<ThemeState>((set) => ({
   theme: themes[0],
-  changeTheme: (theme: string) => set(() => ({ theme })),
+  changeTheme: (newTheme: string) => set(() => ({ theme: newTheme })),
 }));
