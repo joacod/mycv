@@ -3,6 +3,7 @@
 import config from "@/tailwind.config";
 import { useEffect, useState } from "react";
 import { useThemeStore } from "@/store/theme";
+import confetti from "canvas-confetti";
 
 export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   const [mounted, setMounted] = useState(false);
@@ -26,6 +27,7 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
     const randomTheme = availableThemes[randomIndex];
     changeTheme(randomTheme);
     handleTextChange();
+    confetti();
   };
 
   if (!mounted)
