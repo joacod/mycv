@@ -1,13 +1,13 @@
 "use client";
 
 import config from "@/tailwind.config";
-import { themeState } from "@/utils/state";
 import { useEffect, useState } from "react";
-import { useRecoilState } from "recoil";
+import { useThemeStore } from "@/store/theme";
+import confetti from "canvas-confetti";
 
 export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   const [mounted, setMounted] = useState(false);
-  const [theme, setTheme] = useRecoilState(themeState);
+  const { theme, changeTheme } = useThemeStore();
   const [textIndex, setTextIndex] = useState(0);
   const themes = config.daisyui.themes;
   let clickMeText = texts[textIndex];
@@ -25,8 +25,14 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
     const availableThemes = themes.filter((t: string) => t !== theme);
     const randomIndex = Math.floor(Math.random() * availableThemes.length);
     const randomTheme = availableThemes[randomIndex];
-    setTheme(randomTheme);
+    changeTheme(randomTheme);
     handleTextChange();
+
+    // Confetti!!
+    confetti({
+      particleCount: 120,
+      spread: 150,
+    });
   };
 
   if (!mounted)

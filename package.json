@@ -10,15 +10,17 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.0.2",
+    "canvas-confetti": "^1.9.0",
     "next": "14.0.1",
     "next-intl": "3.0.0-beta.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.11.0",
-    "recoil": "^0.7.7",
-    "ua-parser-js": "^1.0.36"
+    "ua-parser-js": "^1.0.36",
+    "zustand": "^4.4.6"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.6.3",
     "@types/node": "^20",
     "@types/react": "18.2.34",
     "@types/react-dom": "18.2.14",

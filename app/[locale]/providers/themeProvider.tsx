@@ -1,7 +1,6 @@
 "use client";
 
-import { themeState } from "@/utils/state";
-import { useRecoilValue } from "recoil";
+import { useThemeStore } from "@/store/theme";
 
 export const ThemeProvider = ({
   children,
@@ -10,7 +9,7 @@ export const ThemeProvider = ({
   children: React.ReactNode;
   locale: string;
 }) => {
-  const theme = useRecoilValue(themeState);
+  const { theme } = useThemeStore();
 
   return (
     <html data-theme={theme} lang={locale}>

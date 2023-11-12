@@ -7,7 +7,6 @@ import { devInfo } from "@/utils/devInfo";
 import Navigation from "./components/Navigation/Navigation";
 import { Footer } from "./components/Footer/Footer";
 import { ThemeProvider } from "./providers/themeProvider";
-import { RecoilProvider } from "./providers/recoilProvider";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://joacod.com"),
@@ -43,15 +42,13 @@ export default function RootLayout({
   if (!isValidLocale) notFound();
 
   return (
-    <RecoilProvider>
-      <ThemeProvider locale={params.locale}>
-        <body>
-          <Navigation />
-          {children}
-          <Footer />
-          <Analytics />
-        </body>
-      </ThemeProvider>
-    </RecoilProvider>
+    <ThemeProvider locale={params.locale}>
+      <body>
+        <Navigation />
+        {children}
+        <Footer />
+        <Analytics />
+      </body>
+    </ThemeProvider>
   );
 }
