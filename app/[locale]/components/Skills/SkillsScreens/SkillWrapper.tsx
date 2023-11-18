@@ -26,7 +26,7 @@ export const SkillWrapper = ({
   return (
     <div
       className={
-        "mask mask-hexagon-2 transform bg-primary text-primary-content transition-transform duration-200 hover:mask-decagon hover:scale-125 hover:bg-secondary hover:text-secondary-content"
+        "mask mask-hexagon-2 transform bg-primary text-primary-content transition duration-300 hover:mask-decagon hover:scale-125 hover:bg-secondary hover:text-secondary-content hover:duration-700"
       }
     >
       <div className={containerClasses}>{children}</div>
