@@ -8,7 +8,7 @@ export const About = () => {
   return (
     <section className="hero z-0 min-h-screen bg-neutral text-neutral-content">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <figure className="lg:hidden">
+        <figure className="lg:hidden animate-flip-up">
           <Image
             src="/avatar.png"
             alt="Avatar of a guy with a beard, winking and smiling"
@@ -18,7 +18,7 @@ export const About = () => {
             placeholder="empty"
           />
         </figure>
-        <figure className="hidden lg:inline lg:w-1/5">
+        <figure className="hidden lg:inline lg:w-1/5 animate-flip-up">
           <Image
             src="/avatar.png"
             alt="Avatar of a guy with a beard, winking and smiling"
@@ -28,7 +28,7 @@ export const About = () => {
             placeholder="empty"
           />
         </figure>
-        <div className="lg:w-4/5 lg:pr-20">
+        <div className="lg:w-4/5 lg:pr-20 animate-flip-up">
           <h1 className="text-5xl font-bold">{t("title")}</h1>
           <p className="pt-6">{t("description")}</p>
           <p className="pt-6">{t("role")}</p>
