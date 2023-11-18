@@ -7,7 +7,8 @@ import confetti from "canvas-confetti";
 
 export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   const [mounted, setMounted] = useState(false);
-  const { theme, changeTheme } = useThemeStore();
+  const theme = useThemeStore((state) => state.theme);
+  const changeTheme = useThemeStore((state) => state.changeTheme);
   const [textIndex, setTextIndex] = useState(0);
   const themes = config.daisyui.themes;
   let clickMeText = texts[textIndex];
