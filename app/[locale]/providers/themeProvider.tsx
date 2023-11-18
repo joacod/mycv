@@ -9,7 +9,7 @@ export const ThemeProvider = ({
   children: React.ReactNode;
   locale: string;
 }) => {
-  const { theme } = useThemeStore();
+  const theme = useThemeStore((state) => state.theme);
 
   return (
     <html data-theme={theme} lang={locale}>

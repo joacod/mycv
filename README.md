@@ -65,12 +65,14 @@ _Keep the credits, it is a way to thank me for the work done._ 🙏
 
 Other libraries used in this project:
 
-- [zustand 🐻](https://zustand-demo.pmnd.rs/) - A small, fast, and scalable bearbones state management solution
+- [zustand](https://zustand-demo.pmnd.rs/) 🐻 - A small, fast, and scalable bearbones state management solution
 - [next-intl](https://next-intl-docs.vercel.app/) - Internationalization for Next.js
 - [prettier](https://prettier.io/) - Code formatter
 - [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Prettier plugin for Tailwind CSS that automatically sorts classes
 - [react-icons](https://react-icons.github.io/react-icons/) - Include popular icons in your React projects easily
 - [ua-parser-js](https://uaparser.js.org/) - Library to detect user's Browser, Engine, OS, CPU, and Device
+- [canvas-confetti](https://www.kirilv.com/canvas-confetti/) 🎊 - Performant confetti animation in the browser
+- [tailwindcss-animated](https://www.tailwindcss-animated.com/) - Extended animation utilities for Tailwind CSS
 
 ## 🔌 VS Code Extensions
 
