@@ -14,6 +14,8 @@ export const About = () => {
             alt="Avatar of a guy with a beard, winking and smiling"
             width={180}
             height={196}
+            priority={true}
+            placeholder="empty"
           />
         </figure>
         <figure className="hidden lg:inline lg:w-1/5">
@@ -22,6 +24,8 @@ export const About = () => {
             alt="Avatar of a guy with a beard, winking and smiling"
             width={480}
             height={526}
+            priority={true}
+            placeholder="empty"
           />
         </figure>
         <div className="lg:w-4/5 lg:pr-20">
