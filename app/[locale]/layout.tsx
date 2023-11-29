@@ -1,4 +1,4 @@
-import { languages } from "@/middleware";
+import { locales } from "@/middleware";
 import "./globals.css";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -38,7 +38,7 @@ export default function RootLayout({
   params: { locale: string };
 }) {
   // Validate that the incoming `locale` parameter is valid
-  const isValidLocale = languages.some((cur) => cur === params.locale);
+  const isValidLocale = locales.some((cur) => cur === params.locale);
   if (!isValidLocale) notFound();
 
   return (
