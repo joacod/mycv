@@ -1,5 +1,4 @@
 const withNextIntl = require("next-intl/plugin")("./i18n.ts");
+const nextConfig = withNextIntl({});
 
-module.exports = withNextIntl({
-  // Other Next.js configuration
-});
+module.exports = nextConfig;

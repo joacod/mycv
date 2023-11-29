@@ -9,31 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.0.2",
-    "canvas-confetti": "^1.9.0",
-    "next": "14.0.1",
-    "next-intl": "3.0.0-beta.19",
+    "@vercel/analytics": "^1.1.1",
+    "canvas-confetti": "1.9.2",
+    "next": "14.0.3",
+    "next-intl": "3.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.11.0",
-    "tailwindcss-animated": "^1.0.1",
-    "ua-parser-js": "^1.0.36",
-    "zustand": "^4.4.6"
+    "react-icons": "4.12.0",
+    "tailwindcss-animated": "1.0.1",
+    "ua-parser-js": "1.0.37",
+    "zustand": "4.4.7"
   },
   "devDependencies": {
-    "@types/canvas-confetti": "^1.6.3",
-    "@types/node": "^20",
-    "@types/react": "18.2.34",
-    "@types/react-dom": "18.2.14",
-    "@types/ua-parser-js": "^0.7.37",
-    "autoprefixer": "^10",
-    "daisyui": "3.9.4",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.1",
-    "postcss": "^8",
-    "prettier": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.5",
-    "tailwindcss": "^3",
-    "typescript": "^5"
+    "@types/canvas-confetti": "^1.6.4",
+    "@types/node": "^20.10.1",
+    "@types/react": "18.2.39",
+    "@types/react-dom": "18.2.17",
+    "@types/ua-parser-js": "^0.7.39",
+    "autoprefixer": "^10.4.16",
+    "daisyui": "4.4.14",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "14.0.3",
+    "postcss": "^8.4.31",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.3.2"
   }
 }

@@ -14,7 +14,6 @@ const config: Config = {
       "winter",
       "synthwave",
       "retro",
-      "cyberpunk",
       "valentine",
       "halloween",
       "aqua",
@@ -25,6 +24,8 @@ const config: Config = {
       "acid",
       "night",
       "forest",
+      "sunset",
+      "dim",
     ],
   },
 };

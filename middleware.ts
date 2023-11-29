@@ -1,13 +1,16 @@
 import createMiddleware from "next-intl/middleware";
+import { createSharedPathnamesNavigation } from "next-intl/navigation";
 
-export const languages = ["en", "es", "it", "pt", "fr", "de"];
+export const locales = ["en", "es", "it", "pt", "fr", "de"] as const;
+const localePrefix = "always";
+
+export const { Link, redirect, usePathname, useRouter } =
+  createSharedPathnamesNavigation({ locales });
 
 export default createMiddleware({
-  // A list of all locales that are supported
-  locales: languages,
-
-  // If this locale is matched, pathnames work without a prefix (e.g. `/about`)
   defaultLocale: "en",
+  localePrefix,
+  locales,
 });
 
 export const config = {
