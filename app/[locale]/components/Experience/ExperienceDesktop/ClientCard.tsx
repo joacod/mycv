@@ -21,7 +21,7 @@ export const ClientCard = ({ client }: { client: Client }) => {
             height={288}
           />
         </figure>
-        <div className="card-body pt-0">
+        <div className="card-body pt-0 lg:pl-4 lg:pr-4">
           <h3 className="card-title">{client.name}</h3>
           <p className="mt-2 text-sm">{t(client.descriptionKey)}</p>
         </div>

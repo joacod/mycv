@@ -30,7 +30,7 @@
     "title": "À propos de moi",
     "description": "Avec plus de 15 ans d'expérience dans le monde en constante évolution du développement logiciel, j'ai consacré les 5 dernières années au développement frontend, avec un accent sur React.",
     "role": "Outre mon rôle de développeur, je participe à la plupart des décisions techniques, y compris la conception, l'architecture et le développement des composants principaux, ainsi qu'aux activités liées à la gestion de la configuration, à l'intégration continue, au support, à l'encadrement et à la formation des autres membres de l'équipe, en gardant toujours à l'esprit la qualité du produit.",
-    "collaborate": "Collaborons et donnons vie à votre vision numérique.",
+    "collaborate": "Je suis un professionnel engagé, proactif et axé sur les résultats, avec un fort sens des responsabilités et de la qualité. J'évolue dans des environnements collaboratifs, j'apprends rapidement et je suis toujours à la recherche de nouveaux défis et d'opportunités pour continuer à progresser.",
     "getstarted": "Commencer"
   },
   "Experience": {
@@ -39,6 +39,7 @@
     "clientDescription1": "Société de médias formée par la fusion de WarnerMedia et Discovery, Inc., offrant une vaste gamme de contenus de divertissement.",
     "clientDescription2": "Plateforme populaire de recherche d'emploi en ligne, mettant en relation les demandeurs d'emploi avec des employeurs du monde entier.",
     "clientDescription3": "Leader mondial des services professionnels, proposant des solutions innovantes en matière d'audit, de conseil et de services consultatifs.",
+    "clientDescription4": "Service de télévision en streaming gratuit financé par la publicité, détenu et exploité par la division Paramount Streaming de Paramount Global.",
     "visit": "Visiter le site du client"
   },
   "Skills": {
@@ -64,6 +65,6 @@
     "flags": "Icônes de drapeau créées par"
   },
   "Footer": {
-    "rights": "Tous droits réservés"
+    "rights": "Collaborons et donnons vie à votre vision numérique."
   }
 }

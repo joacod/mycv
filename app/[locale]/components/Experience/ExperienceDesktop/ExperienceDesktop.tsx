@@ -13,7 +13,7 @@ export const ExperienceDesktop = () => {
 
         <ul className="flex justify-between text-secondary-content">
           {myClients.map((client) => (
-            <li key={client.webUrl} className="mx-8 w-1/3">
+            <li key={client.webUrl} className="mx-4 w-1/4">
               <ClientCard client={client} />
             </li>
           ))}
