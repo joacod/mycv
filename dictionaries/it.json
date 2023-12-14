@@ -30,7 +30,7 @@
     "title": "Chi sono",
     "description": "Con oltre 15 anni di esperienza nel mondo in continua evoluzione dello sviluppo software, ho dedicato gli ultimi 5 anni allo sviluppo frontend, con un focus su React.",
     "role": "Oltre al mio ruolo di sviluppatore, sono coinvolto nella maggior parte delle decisioni tecniche, tra cui design, architettura e sviluppo di componenti principali, nonché in attività legate alla gestione della configurazione, all'integrazione continua, al supporto, all'addestramento e alla formazione di altri membri del team, tenendo sempre a mente la qualità del prodotto.",
-    "collaborate": "Collaboriamo e diamo vita alla tua visione digitale.",
+    "collaborate": "Sono un professionista impegnato, proattivo e orientato ai risultati, con un forte senso di responsabilità e qualità. Mi muovo in ambienti collaborativi, imparo rapidamente e sono sempre alla ricerca di nuove sfide e opportunità per continuare a crescere.",
     "getstarted": "Inizia"
   },
   "Experience": {
@@ -39,6 +39,7 @@
     "clientDescription1": "Azienda media nata dalla fusione di WarnerMedia e Discovery, Inc., che offre una vasta gamma di contenuti di intrattenimento.",
     "clientDescription2": "Piattaforma popolare di ricerca di lavoro online, che mette in contatto i candidati con i datori di lavoro in tutto il mondo.",
     "clientDescription3": "Leader mondiale nei servizi professionali, che fornisce soluzioni innovative in materia di revisione, consulenza e servizi di consulenza.",
+    "clientDescription4": "Servizio di televisione in streaming gratuito supportato da annunci pubblicitari, di proprietà e gestito dalla divisione Paramount Streaming di Paramount Global.",
     "visit": "Visita il sito del cliente"
   },
   "Skills": {
@@ -64,6 +65,6 @@
     "flags": "Icone delle bandiere di"
   },
   "Footer": {
-    "rights": "Tutti i diritti riservati"
+    "rights": "Collaboriamo e diamo vita alla tua visione digitale."
   }
 }

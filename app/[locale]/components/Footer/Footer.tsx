@@ -28,7 +28,7 @@ export const Footer = () => {
             {devInfo.name}
           </p>
           <p>
-            Copyright &copy; 2023-{currentYear} - {t("rights")}
+            &copy; 2023-{currentYear} - {t("rights")}
           </p>
           <CreditsModal title={tcred("title")}>
             <Credits />

@@ -7,6 +7,12 @@ export interface Client {
 
 export const myClients: Client[] = [
   {
+    name: "Pluto TV",
+    imageUrl: "/clients/plutotv.png",
+    webUrl: "https://pluto.tv/",
+    descriptionKey: "clientDescription4",
+  },
+  {
     name: "Warner Bros. Discovery",
     imageUrl: "/clients/warner.png",
     webUrl: "https://wbd.com/",
