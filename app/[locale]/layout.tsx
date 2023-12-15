@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { devInfo } from "@/utils/devInfo";
 import Navigation from "./components/Navigation/Navigation";
 import { Footer } from "./components/Footer/Footer";
@@ -48,6 +49,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </ThemeProvider>
   );
