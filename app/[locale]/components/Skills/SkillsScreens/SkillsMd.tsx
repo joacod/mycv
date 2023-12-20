@@ -20,31 +20,31 @@ export const SkillsMd = () => {
         <h1 className="text-5xl font-bold">{t("title")}</h1>
 
         <div className="mt-10 flex justify-between px-4">
-          <SkillWrapper size="md">
+          <SkillWrapper size="md" name="React">
             <FaReact size={80} />
           </SkillWrapper>
-          <SkillWrapper size="md">
+          <SkillWrapper size="md" name="Next">
             <SiNextdotjs size={70} />
           </SkillWrapper>
-          <SkillWrapper size="md">
+          <SkillWrapper size="md" name="Vite">
             <SiVite size={60} />
           </SkillWrapper>
-          <SkillWrapper size="md">
+          <SkillWrapper size="md" name="Tailwind">
             <SiTailwindcss size={70} />
           </SkillWrapper>
         </div>
 
         <div className="mt-10 flex justify-between px-4">
-          <SkillWrapper size="md">
+          <SkillWrapper size="md" name="Javascript">
             <SiJavascript size={60} />
           </SkillWrapper>
-          <SkillWrapper size="md">
+          <SkillWrapper size="md" name="Typescript">
             <BiLogoTypescript size={80} />
           </SkillWrapper>
-          <SkillWrapper size="md">
+          <SkillWrapper size="md" name="HTML">
             <SiHtml5 size={60} />
           </SkillWrapper>
-          <SkillWrapper size="md">
+          <SkillWrapper size="md" name="AWS">
             <SiAmazonaws size={70} />
           </SkillWrapper>
         </div>
