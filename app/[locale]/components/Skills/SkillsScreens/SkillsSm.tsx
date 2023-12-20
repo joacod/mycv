@@ -21,37 +21,37 @@ export const SkillsSm = () => {
         <h1 className="text-5xl font-bold">{t("title")}</h1>
 
         <div className="mt-10 flex justify-between px-4">
-          <SkillWrapper size="sm">
+          <SkillWrapper size="sm" name="React">
             <FaReact size={70} />
           </SkillWrapper>
-          <SkillWrapper size="sm">
+          <SkillWrapper size="sm" name="Next">
             <SiNextdotjs size={60} />
           </SkillWrapper>
-          <SkillWrapper size="sm">
+          <SkillWrapper size="sm" name="Vite">
             <SiVite size={50} />
           </SkillWrapper>
         </div>
 
         <div className="mt-10 flex justify-between px-4">
-          <SkillWrapper size="sm">
+          <SkillWrapper size="sm" name="Javascript">
             <SiJavascript size={50} />
           </SkillWrapper>
-          <SkillWrapper size="sm">
+          <SkillWrapper size="sm" name="Typescript">
             <BiLogoTypescript size={70} />
           </SkillWrapper>
-          <SkillWrapper size="sm">
+          <SkillWrapper size="sm" name="AWS">
             <SiAmazonaws size={60} />
           </SkillWrapper>
         </div>
 
         <div className="mt-10 flex justify-between px-4">
-          <SkillWrapper size="sm">
+          <SkillWrapper size="sm" name="HTML">
             <SiHtml5 size={50} />
           </SkillWrapper>
-          <SkillWrapper size="sm">
+          <SkillWrapper size="sm" name="CSS">
             <SiCss3 size={50} />
           </SkillWrapper>
-          <SkillWrapper size="sm">
+          <SkillWrapper size="sm" name="Tailwind">
             <SiTailwindcss size={60} />
           </SkillWrapper>
         </div>

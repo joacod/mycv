@@ -83,12 +83,6 @@ We recommend the following VS Code extensions for this project:
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - Intelligent Tailwind CSS tooling for VS Code.
 - [Tailwind Fold](https://marketplace.visualstudio.com/items?itemName=stivo.tailwind-fold) - Improve the readability of your code by automatically "folding" long class attributes.
 
-## 📄 License
-
-Copyright 2023 [Joaquin Diaz](https://github.com/joacod)
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## ☕️ Did you like the project?
 
 You can colaborate with me giving a star ⭐️ to the project or
@@ -96,9 +90,3 @@ You can colaborate with me giving a star ⭐️ to the project or
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/joacod)
 
 Thanks! 😃
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diazjoaquin/)
-
-</div>
