@@ -10,7 +10,7 @@ export const About = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <figure className="animate-flip-up lg:hidden">
           <Image
-            src="/avatar.png"
+            src="/avatar.webp"
             alt="Avatar of a guy with a beard, winking and smiling"
             width={180}
             height={196}
@@ -20,7 +20,7 @@ export const About = () => {
         </figure>
         <figure className="hidden animate-flip-up lg:inline lg:w-1/5">
           <Image
-            src="/avatar.png"
+            src="/avatar.webp"
             alt="Avatar of a guy with a beard, winking and smiling"
             width={480}
             height={526}
