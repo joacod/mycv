@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillClipboard2CheckFill } from "react-icons/bs";
 import { CreditsModal } from "../CreditsModal/CreditsModal";
 import { Credits } from "../CreditsModal/Credits";
+import { FaXTwitter } from "react-icons/fa6";
 
 export const Footer = () => {
   const tc = useTranslations("Common");
@@ -44,6 +45,15 @@ export const Footer = () => {
           aria-label="GitHub Profile"
         >
           <FaGithub size={28} />
+        </a>
+        <a
+          href={devInfo.xUrl}
+          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X Profile"
+        >
+          <FaXTwitter size={28} />
         </a>
         <a
           href={devInfo.linkedinUrl}
