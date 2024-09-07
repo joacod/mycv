@@ -1,5 +1,6 @@
 interface DevInfo {
   name: string;
+  handle: string;
   web: string;
   githubUrl: string;
   xUrl: string;
@@ -8,6 +9,7 @@ interface DevInfo {
 
 export const devInfo: DevInfo = {
   name: "Joaquin Diaz",
+  handle: "joacod",
   web: "https://joacod.com",
   githubUrl: "https://github.com/joacod",
   xUrl: "https://x.com/joacodok",

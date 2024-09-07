@@ -11,20 +11,24 @@ import { ThemeProvider } from "./providers/themeProvider";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://joacod.com"),
-  title: "My CV - " + devInfo.name,
-  description:
-    "My software developer resume. Created using Bun, Next.js 14, Typescript, Tailwind CSS and daisyUI.",
+  title: "Software Solutions | " + devInfo.handle + " | " + devInfo.name,
+  description: "Software Developer, IT Consultant, Entrepreneur, I write stuff",
   authors: [{ name: "Joaquin Diaz", url: "https://github.com/joacod" }],
   keywords: [
     devInfo.name,
+    devInfo.handle,
     "Software",
+    "Software Developer",
+    "Software Engineer",
+    "CV",
     "Resume",
-    "Bun",
-    "React",
-    "Next.js 14",
-    "Typescript",
-    "Tailwind CSS",
-    "daisyUI",
+    "IT Consultant",
+    "Entrepreneur",
+    "Writing",
+    "Tech",
+    "Mentoring",
+    "Career",
+    "Latam",
   ],
   openGraph: {
     images: "/mycv.jpg",
