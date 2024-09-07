@@ -8,25 +8,7 @@ const config: Config = {
   ],
   plugins: [require("daisyui"), require("tailwindcss-animated")],
   daisyui: {
-    themes: [
-      "emerald",
-      "dark",
-      "winter",
-      "synthwave",
-      "retro",
-      "valentine",
-      "halloween",
-      "aqua",
-      "pastel",
-      "wireframe",
-      "luxury",
-      "dracula",
-      "acid",
-      "night",
-      "forest",
-      "sunset",
-      "dim",
-    ],
+    themes: ["dark", "cyberpunk", "wireframe", "acid"],
   },
 };
 export default config;

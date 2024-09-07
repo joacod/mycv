@@ -1,12 +1,11 @@
 import { useTranslations } from "next-intl";
-import { FaReact } from "react-icons/fa";
+import { FaAws, FaReact } from "react-icons/fa";
 import { SkillWrapper } from "./SkillWrapper";
 import {
   SiJavascript,
   SiNextdotjs,
   SiTailwindcss,
   SiVite,
-  SiAmazonaws,
   SiHtml5,
   SiCss3,
 } from "react-icons/si";
@@ -40,7 +39,7 @@ export const SkillsSm = () => {
             <BiLogoTypescript size={70} />
           </SkillWrapper>
           <SkillWrapper size="sm" name="AWS">
-            <SiAmazonaws size={60} />
+            <FaAws size={60} />
           </SkillWrapper>
         </div>
 

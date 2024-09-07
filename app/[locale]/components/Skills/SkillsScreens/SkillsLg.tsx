@@ -1,11 +1,10 @@
 import { useTranslations } from "next-intl";
-import { FaReact } from "react-icons/fa";
+import { FaAws, FaReact } from "react-icons/fa";
 import {
   SiJavascript,
   SiNextdotjs,
   SiTailwindcss,
   SiVite,
-  SiAmazonaws,
   SiGit,
   SiHtml5,
   SiCss3,
@@ -35,7 +34,7 @@ export const SkillsLg = () => {
             <SiTailwindcss size={110} />
           </SkillWrapper>
           <SkillWrapper size="lg" name="AWS">
-            <SiAmazonaws size={90} />
+            <FaAws size={90} />
           </SkillWrapper>
         </div>
         <div className="mt-12 flex justify-between">

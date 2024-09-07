@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { devInfo } from "@/utils/devInfo";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import { NavLinks } from "./NavLinks";
@@ -19,7 +20,7 @@ const Navigation = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 space-y-2 bg-base-100 p-2 shadow"
+            className="menu dropdown-content menu-sm z-[1] mt-3 w-52 space-y-2 rounded-box bg-base-100 p-2 shadow"
           >
             <NavLinks />
             <LocaleSwitcher />
@@ -47,6 +48,14 @@ const Navigation = () => {
           rel="noopener noreferrer"
         >
           <FaGithub size={32} />
+        </a>
+        <a
+          href={devInfo.xUrl}
+          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaXTwitter size={32} />
         </a>
         <a
           href={devInfo.linkedinUrl}
