@@ -5,6 +5,7 @@
   },
   "Navigation": {
     "about": "À propos",
+    "writing": "Blogs",
     "experience": "Expérience",
     "skills": "Compétences",
     "riddler": "?",
@@ -31,6 +32,10 @@
     "role": "Outre mon rôle de développeur, je participe à la plupart des décisions techniques, y compris la conception, l'architecture et le développement des composants principaux, ainsi qu'aux activités liées à la gestion de la configuration, à l'intégration continue, au support, à l'encadrement et à la formation des autres membres de l'équipe, en gardant toujours à l'esprit la qualité du produit.",
     "collaborate": "Je suis un professionnel engagé, proactif et axé sur les résultats, avec un fort sens des responsabilités et de la qualité. J'évolue dans des environnements collaboratifs, j'apprends rapidement et je suis toujours à la recherche de nouveaux défis et d'opportunités pour continuer à progresser.",
     "getstarted": "Commencer"
+  },
+  "Writing": {
+    "title": "J'écris des Trucs",
+    "description": "J'écris sur les logiciels, la technologie, l'intelligence artificielle, le mentorat, l'évolution de carrière, les innovations et des opinions sur différents sujets."
   },
   "Experience": {
     "title": "Expérience",
