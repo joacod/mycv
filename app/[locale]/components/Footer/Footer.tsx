@@ -7,7 +7,6 @@ import { Credits } from "../CreditsModal/Credits";
 import { FaXTwitter } from "react-icons/fa6";
 
 export const Footer = () => {
-  const tc = useTranslations("Common");
   const t = useTranslations("Footer");
   const tcred = useTranslations("Credits");
   const currentYear = new Date().getFullYear();
@@ -24,10 +23,7 @@ export const Footer = () => {
           <BsFillClipboard2CheckFill size={50} aria-label="Clipboard Icon" />
         </a>
         <div className="space-y-2">
-          <p className="font-bold">
-            {tc("my")} CV <br />
-            {devInfo.name}
-          </p>
+          <p className="font-bold">{devInfo.name}</p>
           <p>
             &copy; 2023-{currentYear} - {t("rights")}
           </p>

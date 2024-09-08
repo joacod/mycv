@@ -40,7 +40,7 @@ export const FontBtn = ({ title }: { title: string }) => {
       onClick={() => changeFont()}
       aria-label={`${title} | Change Font randomly`}
     >
-      <span className="hidden lg:inline">
+      <span className="inline">
         <BsFillClipboard2CheckFill size={32} />
       </span>{" "}
       <span>{title}</span>
