@@ -16,7 +16,7 @@ export const Writing = () => {
           <a
             href="https://dev.to/joacod"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
             aria-label={`Dev.to`}
             className="flex flex-col items-center"
           >
@@ -32,7 +32,7 @@ export const Writing = () => {
           <a
             href="https://medium.com/@joacod"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
             aria-label={`Medium`}
             className="flex flex-col items-center"
           >

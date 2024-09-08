@@ -46,7 +46,7 @@ export const Footer = () => {
           href={devInfo.xUrl}
           className="delay-50 transition duration-200 ease-in-out hover:scale-125"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
           aria-label="X Profile"
         >
           <FaXTwitter size={28} />
@@ -55,7 +55,7 @@ export const Footer = () => {
           href={devInfo.linkedinUrl}
           className="delay-50 transition duration-200 ease-in-out hover:scale-125"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
           aria-label="LinkedIn Profile"
         >
           <FaLinkedin size={28} />

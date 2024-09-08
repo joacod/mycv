@@ -59,7 +59,7 @@ const Navigation = () => {
             href={devInfo.xUrl}
             className="delay-50 transition duration-200 ease-in-out hover:scale-125"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
           >
             <FaXTwitter size={32} />
           </a>
@@ -67,7 +67,7 @@ const Navigation = () => {
             href={devInfo.linkedinUrl}
             className="delay-50 transition duration-200 ease-in-out hover:scale-125"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener"
           >
             <FaLinkedin size={32} />
           </a>
