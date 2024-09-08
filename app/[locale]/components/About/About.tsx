@@ -11,24 +11,24 @@ export const About = () => {
         <figure className="animate-flip-up lg:hidden">
           <Image
             src="/avatar.webp"
-            alt="Avatar of a guy with a beard, winking and smiling"
-            width={180}
-            height={196}
+            alt="Avatar of a guy with a beard, glasses and smiling"
+            width={250}
+            height={250}
             priority={true}
             placeholder="empty"
           />
         </figure>
-        <figure className="hidden animate-flip-up lg:inline lg:w-1/5">
+        <figure className="hidden animate-flip-up lg:inline lg:w-3/12">
           <Image
             src="/avatar.webp"
-            alt="Avatar of a guy with a beard, winking and smiling"
-            width={480}
-            height={526}
+            alt="Avatar of a guy with a beard, glasses and smiling"
+            width={500}
+            height={500}
             priority={true}
             placeholder="empty"
           />
         </figure>
-        <article className="animate-flip-up lg:w-4/5 lg:pr-20">
+        <article className="animate-flip-up lg:w-9/12 lg:pr-20">
           <h1 className="text-5xl font-bold">{t("title")}</h1>
           <p className="pt-6 text-xl font-semibold lg:pr-40 lg:text-2xl">
             {t("description")}
