@@ -22,7 +22,7 @@ export const Credits = () => {
               rel="noopener noreferrer"
               title="My CV on GitHub"
             >
-              Web
+              Web Template
             </a>{" "}
             {t("created")}{" "}
             <a
