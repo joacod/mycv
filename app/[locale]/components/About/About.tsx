@@ -6,7 +6,7 @@ export const About = () => {
   const t = useTranslations("About");
 
   return (
-    <section className="hero z-0 min-h-screen bg-neutral text-neutral-content">
+    <section className="hero z-0 min-h-screen bg-primary bg-gradient-to-b from-secondary to-primary text-primary-content">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <figure className="animate-flip-up lg:hidden">
           <Image
@@ -38,7 +38,7 @@ export const About = () => {
             <p className="pt-4 md:pt-0 lg:pt-0">{t("collaborate")}</p>
           </div>
           <div className="hidden lg:mt-10 lg:flex">
-            <a className="btn btn-primary" href="#section-experience">
+            <a className="btn btn-neutral" href="#section-experience">
               {t("getstarted")} <FaHandPointDown size={22} />
             </a>
           </div>

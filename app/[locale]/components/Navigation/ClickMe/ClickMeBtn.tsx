@@ -39,7 +39,7 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   if (!mounted)
     return (
       <button
-        className="btn btn-accent btn-sm hidden w-32 lg:inline"
+        className="btn btn-primary btn-sm hidden w-32 lg:inline"
         aria-label="Click Me Button"
       >
         {clickMeText}
@@ -58,7 +58,7 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
         {texts[0]}
       </a>
       <button
-        className="btn btn-accent btn-sm hidden w-32 lg:inline"
+        className="btn btn-primary btn-sm hidden w-32 lg:inline"
         onClick={toggleTheme}
         aria-label="Click Me Button"
       >

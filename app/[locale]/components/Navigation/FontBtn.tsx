@@ -5,7 +5,7 @@ import { BsFillClipboard2CheckFill } from "react-icons/bs";
 import confetti from "canvas-confetti";
 
 export const FontBtn = ({ title }: { title: string }) => {
-  const fonts = ["system-ui", "cursive", "Fira Code", "Tahoma", "Courier New"];
+  const fonts = ["system-ui", "Fira Code", "Tahoma", "Courier New"];
   const [currentFont, setCurrentFont] = useState(fonts[0]);
 
   const changeFont = () => {
