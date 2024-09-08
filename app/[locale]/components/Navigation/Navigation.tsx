@@ -16,7 +16,7 @@ const Navigation = () => {
       >
         <div>
           <div className="dropdown">
-            <button tabIndex={0} className="btn btn-ghost mr-2">
+            <button tabIndex={0} className="btn btn-ghost mr-2 px-2">
               <RiMenu2Fill size={28} />
             </button>
             <ul

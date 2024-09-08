@@ -11,7 +11,7 @@ export const Writing = () => {
     >
       <h1 className="pb-6 text-5xl font-bold">{t("title")}</h1>
       <p className="lg:w-1/2 lg:text-center">{t("description")}</p>
-      <div className="flex justify-center pt-2 lg:gap-20">
+      <div className="flex justify-center gap-4 pt-2 lg:gap-20">
         <article>
           <a
             href="https://dev.to/joacod"
