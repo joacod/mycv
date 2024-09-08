@@ -6,7 +6,10 @@ export const About = () => {
   const t = useTranslations("About");
 
   return (
-    <section className="hero z-0 min-h-screen bg-primary bg-gradient-to-b from-secondary to-primary text-primary-content">
+    <section
+      id="section-about"
+      className="hero z-0 min-h-screen bg-primary bg-gradient-to-b from-secondary to-primary text-primary-content"
+    >
       <div className="hero-content flex-col lg:flex-row-reverse">
         <figure className="animate-flip-up lg:hidden">
           <Image

@@ -10,6 +10,9 @@ export const NavLinks = () => {
         <Link href="#section-about">{t("about")}</Link>
       </li>
       <li>
+        <Link href="#section-writing">Writing</Link>
+      </li>
+      <li>
         <Link href="#section-experience">{t("experience")}</Link>
       </li>
       <li>
