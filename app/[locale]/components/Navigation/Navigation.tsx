@@ -3,14 +3,11 @@ import { FaXTwitter } from "react-icons/fa6";
 import { devInfo } from "@/utils/devInfo";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import { NavLinks } from "./NavLinks";
-import { useTranslations } from "next-intl";
 import { RiMenu2Fill } from "react-icons/ri";
 import { ClickMe } from "./ClickMe/ClickMe";
 import { FontBtn } from "./FontBtn";
 
 const Navigation = () => {
-  const t = useTranslations("Common");
-
   return (
     <nav id="navigation" className="navbar bg-base-100 lg:px-4">
       <div className="navbar-start">
@@ -29,7 +26,7 @@ const Navigation = () => {
             </li>
           </ul>
         </div>
-        <FontBtn title={t("my") + "CV - " + devInfo.name} />
+        <FontBtn title={devInfo.name} />
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal space-x-2 px-1">
