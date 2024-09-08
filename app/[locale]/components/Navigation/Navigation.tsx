@@ -12,7 +12,7 @@ const Navigation = () => {
     <>
       <nav
         id="navigation"
-        className="mx-3 flex items-center justify-between py-4 lg:hidden"
+        className="mx-2 flex items-center justify-between py-4 lg:hidden"
       >
         <div>
           <div className="dropdown">

@@ -5,6 +5,7 @@
   },
   "Navigation": {
     "about": "Acerca de",
+    "writing": "Blogs",
     "experience": "Experiencia",
     "skills": "Tecnologias",
     "riddler": "?",
@@ -31,6 +32,10 @@
     "role": "Además de mi rol como desarrollador, participo en la mayoría de las decisiones técnicas, que incluyen diseño, arquitectura y desarrollo de componentes principales, así como en actividades relacionadas con la gestión de configuración, integración continua, soporte, capacitación y entrenamiento de otros miembros del equipo, siempre teniendo en cuenta la calidad del producto.",
     "collaborate": "Soy un profesional comprometido, proactivo y orientado a resultados, con un fuerte sentido de responsabilidad y calidad. Me desenvuelvo en entornos colaborativos, aprendo rápido y siempre busco nuevos desafíos y oportunidades para continuar creciendo.",
     "getstarted": "Empecemos"
+  },
+  "Writing": {
+    "title": "Escribo Cosas",
+    "description": "Escribo sobre Software, Tecnología, Inteligencia Artificial, Mentoría, Crecimiento Profesional, Innovaciones y Opiniones sobre diferentes temas."
   },
   "Experience": {
     "title": "Experiencia",

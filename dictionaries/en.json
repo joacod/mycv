@@ -5,6 +5,7 @@
   },
   "Navigation": {
     "about": "About",
+    "writing": "Blogs",
     "experience": "Experience",
     "skills": "Skills",
     "riddler": "?",
@@ -31,6 +32,10 @@
     "role": "Besides my role as developer, I'm involved in most of the technical decisions, including design, architecture and development of core components, as well as, in activities related to configuration management, continuous integration, support, coaching and training other team members, keeping always in mind product quality.",
     "collaborate": "I am a committed, proactive, and results-oriented professional with a strong sense of responsibility and quality. I thrive in collaborative environments, learn quickly, and am always seeking new challenges and opportunities to continue growing.",
     "getstarted": "Get started"
+  },
+  "Writing": {
+    "title": "I Write Stuff",
+    "description": "I write about Software, Tech, Artificial Intelligence, Mentoring, Career Growth, Innovations and Opinions on different topics."
   },
   "Experience": {
     "title": "Experience",

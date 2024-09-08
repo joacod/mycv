@@ -5,6 +5,7 @@
   },
   "Navigation": {
     "about": "Chi sono",
+    "writing": "Blogs",
     "experience": "Esperienza",
     "skills": "Competenze",
     "riddler": "?",
@@ -31,6 +32,10 @@
     "role": "Oltre al mio ruolo di sviluppatore, sono coinvolto nella maggior parte delle decisioni tecniche, tra cui design, architettura e sviluppo di componenti principali, nonché in attività legate alla gestione della configurazione, all'integrazione continua, al supporto, all'addestramento e alla formazione di altri membri del team, tenendo sempre a mente la qualità del prodotto.",
     "collaborate": "Sono un professionista impegnato, proattivo e orientato ai risultati, con un forte senso di responsabilità e qualità. Mi muovo in ambienti collaborativi, imparo rapidamente e sono sempre alla ricerca di nuove sfide e opportunità per continuare a crescere.",
     "getstarted": "Inizia"
+  },
+  "Writing": {
+    "title": "Scrivo Cose",
+    "description": "Scrivo di Software, Tecnologia, Intelligenza Artificiale, Mentoring, Crescita Professionale, Innovazioni e Opinioni su diversi argomenti."
   },
   "Experience": {
     "title": "Esperienza",
