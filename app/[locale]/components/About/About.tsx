@@ -11,7 +11,7 @@ export const About = () => {
       className="hero z-0 min-h-screen bg-primary bg-gradient-to-b from-secondary to-primary text-primary-content"
     >
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <figure className="animate-flip-up lg:hidden">
+        <figure className="mt-6 animate-flip-up lg:hidden">
           <Image
             src="/avatar.webp"
             alt="Avatar of a guy with a beard, glasses and smiling"
