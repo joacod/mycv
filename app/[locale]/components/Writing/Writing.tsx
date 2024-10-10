@@ -7,7 +7,7 @@ export const Writing = () => {
   return (
     <section
       id="section-writing"
-      className="flex flex-col justify-center bg-primary px-4 pt-14 text-primary-content md:items-center md:px-0 md:pt-5 lg:items-center lg:px-0 lg:pt-5"
+      className="flex flex-col justify-center bg-primary px-4 pt-14 text-primary-content md:items-center md:px-0 md:pt-5 lg:items-center lg:px-0 lg:py-0"
     >
       <h1 className="pb-6 text-5xl font-bold">{t("title")}</h1>
       <p className="lg:w-1/2 lg:text-center">{t("description")}</p>

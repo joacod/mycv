@@ -41,7 +41,7 @@ export const About = () => {
             <p className="pt-4 md:pt-0 lg:pt-0">{t("collaborate")}</p>
           </div>
           <div className="hidden lg:mt-10 lg:flex">
-            <a className="btn btn-neutral" href="#section-experience">
+            <a className="btn btn-neutral" href="#section-writing">
               {t("getstarted")} <FaHandPointDown size={22} />
             </a>
           </div>

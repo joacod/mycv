@@ -6,6 +6,7 @@
   "Navigation": {
     "about": "Über mich",
     "writing": "Blogs",
+    "podcast": "Podcast",
     "experience": "Erfahrung",
     "skills": "Fähigkeiten",
     "riddler": "?",
@@ -36,6 +37,10 @@
   "Writing": {
     "title": "Ich Schreibe Sachen",
     "description": "Ich schreibe über Software, Technik, Künstliche Intelligenz, Mentoring, Karrierewachstum, Innovation und Meinungen zu verschiedenen Themen."
+  },
+  "Podcast": {
+    "title": "Code Quests Podcast",
+    "description": "Code Quests ist ein Podcast mit von KI vorgelesenen Artikeln über Softwareentwicklung, Technologie und Innovation. Begleiten Sie uns, während wir die neuesten Trends und Einblicke in die Tech-Welt durch fesselnde Audio-Geschichten erkunden."
   },
   "Experience": {
     "title": "Erfahrung",

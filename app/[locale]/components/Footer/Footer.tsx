@@ -2,6 +2,7 @@ import { devInfo } from "@/utils/devInfo";
 import { useTranslations } from "next-intl";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillClipboard2CheckFill } from "react-icons/bs";
+import { PiLinktreeLogoBold } from "react-icons/pi";
 import { CreditsModal } from "../CreditsModal/CreditsModal";
 import { Credits } from "../CreditsModal/Credits";
 import { FaXTwitter } from "react-icons/fa6";
@@ -59,6 +60,15 @@ export const Footer = () => {
           aria-label="LinkedIn Profile"
         >
           <FaLinkedin size={28} />
+        </a>
+        <a
+          href={devInfo.linktree}
+          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          target="_blank"
+          rel="noopener"
+          aria-label="Linktree Profile"
+        >
+          <PiLinktreeLogoBold size={28} />
         </a>
       </div>
     </footer>

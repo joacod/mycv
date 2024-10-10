@@ -15,7 +15,7 @@
 
 ## 👋 Introduction
 
-This is my resume, created using [Bun](https://bun.sh/), [Next.js 14](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [daisyUI](https://daisyui.com/) 🌼.
+This is my resume, created using [Bun](https://bun.sh/), [Next.js](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [daisyUI](https://daisyui.com/) 🌼.
 
 <p align="center">
   <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb1.png" alt="Thumbnail 1">
@@ -87,6 +87,6 @@ We recommend the following VS Code extensions for this project:
 
 You can colaborate with me giving a star ⭐️ to the project or
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/joacod)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/joacod)
 
 Thanks! 😃

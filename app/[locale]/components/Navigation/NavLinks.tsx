@@ -13,6 +13,9 @@ export const NavLinks = () => {
         <Link href="#section-writing">{t("writing")}</Link>
       </li>
       <li>
+        <Link href="#section-podcast">{t("podcast")}</Link>
+      </li>
+      <li>
         <Link href="#section-experience">{t("experience")}</Link>
       </li>
       <li>
