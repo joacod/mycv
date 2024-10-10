@@ -5,6 +5,7 @@ interface DevInfo {
   githubUrl: string;
   xUrl: string;
   linkedinUrl: string;
+  linktree: string;
 }
 
 export const devInfo: DevInfo = {
@@ -14,4 +15,5 @@ export const devInfo: DevInfo = {
   githubUrl: "https://github.com/joacod",
   xUrl: "https://x.com/joacodok",
   linkedinUrl: "https://www.linkedin.com/in/diazjoaquin",
+  linktree: "https://linktr.ee/joacod",
 };

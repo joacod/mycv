@@ -1,5 +1,6 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { PiLinktreeLogoBold } from "react-icons/pi";
 import { devInfo } from "@/utils/devInfo";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import { NavLinks } from "./NavLinks";
@@ -64,12 +65,12 @@ const Navigation = () => {
             <FaXTwitter size={32} />
           </a>
           <a
-            href={devInfo.linkedinUrl}
+            href={devInfo.linktree}
             className="delay-50 transition duration-200 ease-in-out hover:scale-125"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
-            <FaLinkedin size={32} />
+            <PiLinktreeLogoBold size={32} />
           </a>
         </div>
       </nav>

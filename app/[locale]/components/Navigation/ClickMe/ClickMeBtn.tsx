@@ -10,6 +10,7 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   const theme = useThemeStore((state) => state.theme);
   const changeTheme = useThemeStore((state) => state.changeTheme);
   const [textIndex, setTextIndex] = useState(0);
+  const [themeIndex, setThemeIndex] = useState(0);
   const themes = config.daisyui.themes;
   let clickMeText = texts[textIndex];
 
@@ -17,17 +18,16 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
     setMounted(true);
   }, []);
 
-  const handleTextChange = () => {
+  const handleChange = () => {
     // Increment the current index and reset to 0 when it reaches the end
     setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    setThemeIndex((prevIndex) => (prevIndex + 1) % themes.length);
   };
 
   const toggleTheme = () => {
-    const availableThemes = themes.filter((t: string) => t !== theme);
-    const randomIndex = Math.floor(Math.random() * availableThemes.length);
-    const randomTheme = availableThemes[randomIndex];
-    changeTheme(randomTheme);
-    handleTextChange();
+    const newTheme = themes[(themeIndex + 1) % themes.length];
+    changeTheme(newTheme);
+    handleChange();
 
     // Confetti!!
     confetti({
