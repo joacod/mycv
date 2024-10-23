@@ -7,6 +7,7 @@ import { NavLinks } from "./NavLinks";
 import { RiMenu2Fill } from "react-icons/ri";
 import { ClickMe } from "./ClickMe/ClickMe";
 import { FontBtn } from "./FontBtn";
+import { User } from "./User/User";
 
 const Navigation = () => {
   return (
@@ -72,6 +73,7 @@ const Navigation = () => {
           >
             <PiLinktreeLogoBold size={32} />
           </a>
+          <User />
         </div>
       </nav>
     </>

@@ -1,13 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import createMiddleware from "next-intl/middleware";
-import { createSharedPathnamesNavigation } from "next-intl/navigation";
-import { clerkMiddleware } from "@clerk/nextjs/server";
+import { createNavigation } from "next-intl/navigation";
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 export const locales = ["en", "es", "it", "pt", "fr", "de"] as const;
 const localePrefix = "always";
 
-export const { Link, redirect, usePathname, useRouter } =
-  createSharedPathnamesNavigation({ locales });
+export const { Link, redirect, usePathname, useRouter } = createNavigation({
+  locales,
+});
 
 const intlMiddleware = createMiddleware({
   defaultLocale: "en",
@@ -15,30 +16,19 @@ const intlMiddleware = createMiddleware({
   locales,
 });
 
-const authMiddleware = clerkMiddleware();
+const isProtectedRoute = createRouteMatcher(["dashboard/(.*)"]);
 
-function composeMiddlewares(...middlewares: Function[]) {
-  return async function (req: NextRequest) {
-    for (const middleware of middlewares) {
-      const res = await middleware(req);
-      if (res && res instanceof NextResponse) {
-        // If the middleware returns a response, stop processing and return it
-        return res;
-      }
-    }
-    // If no middleware returns a response, proceed to the next handler
-    return NextResponse.next();
-  };
-}
+export default clerkMiddleware(async (auth, req) => {
+  if (isProtectedRoute(req)) await auth.protect();
 
-export default composeMiddlewares(
-  intlMiddleware,
-  authMiddleware,
-  // Add more middleware functions as needed
-);
+  return intlMiddleware(req);
+});
 
 export const config = {
-  // Skip all paths that should not be internationalized. This example skips
-  // certain folders and all pathnames with a dot (e.g. favicon.ico)
-  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
+  matcher: [
+    // Skip Next.js internals and all static files, unless found in search params
+    "/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",
+    // Always run for API routes
+    "/(api|trpc)(.*)",
+  ],
 };
