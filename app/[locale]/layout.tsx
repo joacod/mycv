@@ -8,6 +8,7 @@ import { devInfo } from "@/utils/devInfo";
 import Navigation from "./components/Navigation/Navigation";
 import { Footer } from "./components/Footer/Footer";
 import { ThemeProvider } from "./providers/themeProvider";
+import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://joacod.com"),
@@ -47,14 +48,16 @@ export default function RootLayout({
   if (!isValidLocale) notFound();
 
   return (
-    <ThemeProvider locale={params.locale}>
-      <body>
-        <Navigation />
-        {children}
-        <Footer />
-        <Analytics />
-        <SpeedInsights />
-      </body>
-    </ThemeProvider>
+    <ClerkProvider>
+      <ThemeProvider locale={params.locale}>
+        <body>
+          <Navigation />
+          {children}
+          <Footer />
+          <Analytics />
+          <SpeedInsights />
+        </body>
+      </ThemeProvider>
+    </ClerkProvider>
   );
 }
