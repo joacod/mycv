@@ -9,6 +9,7 @@ import Navigation from "./components/Navigation/Navigation";
 import { Footer } from "./components/Footer/Footer";
 import { ThemeProvider } from "./providers/themeProvider";
 import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://joacod.com"),
@@ -48,7 +49,7 @@ export default function RootLayout({
   if (!isValidLocale) notFound();
 
   return (
-    <ClerkProvider>
+    <ClerkProvider appearance={{ baseTheme: dark }}>
       <ThemeProvider locale={params.locale}>
         <body>
           <Navigation />
