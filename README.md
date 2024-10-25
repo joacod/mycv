@@ -67,6 +67,7 @@ Other libraries used in this project:
 
 - [zustand](https://zustand-demo.pmnd.rs/) 🐻 - A small, fast, and scalable bearbones state management solution
 - [next-intl](https://next-intl-docs.vercel.app/) - Internationalization for Next.js
+- [clerk](https://clerk.com/) - User management platform
 - [prettier](https://prettier.io/) - Code formatter
 - [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Prettier plugin for Tailwind CSS that automatically sorts classes
 - [react-icons](https://react-icons.github.io/react-icons/) - Include popular icons in your React projects easily
