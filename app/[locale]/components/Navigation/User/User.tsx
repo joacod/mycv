@@ -8,7 +8,7 @@ export const User = () => {
         <SignInButton>
           <button
             className="btn-base btn btn-accent"
-            aria-label="Click Me Button"
+            aria-label="Sign in Button"
           >
             <span className="inline">
               <CiLogin size={22} />

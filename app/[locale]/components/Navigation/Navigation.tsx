@@ -33,11 +33,13 @@ const Navigation = () => {
         </div>
 
         <ClickMe />
+        <User />
       </nav>
 
       <nav id="navigation" className="navbar hidden bg-base-100 px-4 lg:flex">
-        <div className="navbar-start">
+        <div className="navbar-start space-x-4">
           <FontBtn title={devInfo.name} />
+          <ClickMe />
         </div>
         <div className="navbar-center">
           <ul className="menu menu-horizontal space-x-2 px-1">
@@ -45,7 +47,6 @@ const Navigation = () => {
           </ul>
         </div>
         <div className="navbar-end space-x-4">
-          <ClickMe />
           <ul className="menu menu-horizontal px-1">
             <LocaleSwitcher />
           </ul>
