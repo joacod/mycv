@@ -1,3 +1,4 @@
+import { devInfo } from "@/utils/devInfo";
 import { useTranslations } from "next-intl";
 import { BiLogoDevTo, BiLogoMediumSquare } from "react-icons/bi";
 
@@ -14,7 +15,7 @@ export const Writing = () => {
       <div className="flex justify-center gap-4 pt-2 lg:gap-20">
         <article>
           <a
-            href="https://dev.to/joacod"
+            href={devInfo.devto}
             target="_blank"
             rel="noopener"
             aria-label={`Dev.to`}
@@ -30,7 +31,7 @@ export const Writing = () => {
         </article>
         <article>
           <a
-            href="https://medium.com/@joacod"
+            href={devInfo.medium}
             target="_blank"
             rel="noopener"
             aria-label={`Medium`}
