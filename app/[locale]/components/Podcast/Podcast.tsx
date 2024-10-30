@@ -3,6 +3,7 @@ import { BiLogoSpotify } from "react-icons/bi";
 import { SiAmazonmusic } from "react-icons/si";
 import { FaPodcast } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
+import { devInfo } from "@/utils/devInfo";
 
 export const Podcast = () => {
   const t = useTranslations("Podcast");
@@ -17,7 +18,7 @@ export const Podcast = () => {
       <div className="flex justify-center gap-4 pt-10 lg:gap-20">
         <article>
           <a
-            href="https://www.youtube.com/@joacoden"
+            href={devInfo.youtube}
             target="_blank"
             rel="noopener"
             aria-label={`YouTube Code Quests`}
@@ -32,7 +33,7 @@ export const Podcast = () => {
         </article>
         <article>
           <a
-            href="https://open.spotify.com/show/6LrTbhfaXAvyBBzwif9Q5C?si=3d01654dd1734433&nd=1&dlsi=706a07397d2e482c"
+            href={devInfo.spotify}
             target="_blank"
             rel="noopener"
             aria-label={`Spotify Code Quests`}
@@ -47,7 +48,7 @@ export const Podcast = () => {
         </article>
         <article>
           <a
-            href="https://podcasts.apple.com/us/podcast/code-quests-from-joacod/id1771244867"
+            href={devInfo.applepodcast}
             target="_blank"
             rel="noopener"
             aria-label={`Apple Podcasts Code Quests`}
@@ -62,7 +63,7 @@ export const Podcast = () => {
         </article>
         <article>
           <a
-            href="https://music.amazon.com/podcasts/bf1831a3-beff-4523-951b-eaae805f80e8/code-quests-from-joacod"
+            href={devInfo.amazonmusic}
             target="_blank"
             rel="noopener"
             aria-label={`Amazon Music Code Quests`}

@@ -2,37 +2,14 @@ import { locales } from "@/middleware";
 import "./globals.css";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { devInfo } from "@/utils/devInfo";
-import Navigation from "./components/Navigation/Navigation";
-import { Footer } from "./components/Footer/Footer";
 import { ThemeProvider } from "./providers/themeProvider";
+import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://joacod.com"),
   title: "Software Solutions | " + devInfo.handle + " | " + devInfo.name,
   description: "Software Developer, IT Consultant, Entrepreneur, I write stuff",
-  authors: [{ name: "Joaquin Diaz", url: "https://github.com/joacod" }],
-  keywords: [
-    devInfo.name,
-    devInfo.handle,
-    "Software",
-    "Software Developer",
-    "Software Engineer",
-    "CV",
-    "Resume",
-    "IT Consultant",
-    "Entrepreneur",
-    "Writing",
-    "Tech",
-    "Mentoring",
-    "Career",
-    "Latam",
-  ],
-  openGraph: {
-    images: "/mycv.jpg",
-  },
 };
 
 export default function RootLayout({
@@ -47,14 +24,12 @@ export default function RootLayout({
   if (!isValidLocale) notFound();
 
   return (
-    <ThemeProvider locale={params.locale}>
+    <html lang={params.locale}>
       <body>
-        <Navigation />
-        {children}
-        <Footer />
-        <Analytics />
-        <SpeedInsights />
+        <ClerkProvider appearance={{ baseTheme: dark }}>
+          <ThemeProvider>{children}</ThemeProvider>
+        </ClerkProvider>
       </body>
-    </ThemeProvider>
+    </html>
   );
 }

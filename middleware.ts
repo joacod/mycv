@@ -1,20 +1,36 @@
 import createMiddleware from "next-intl/middleware";
-import { createSharedPathnamesNavigation } from "next-intl/navigation";
+import { createNavigation } from "next-intl/navigation";
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 export const locales = ["en", "es", "it", "pt", "fr", "de"] as const;
 const localePrefix = "always";
 
-export const { Link, redirect, usePathname, useRouter } =
-  createSharedPathnamesNavigation({ locales });
+export const { Link, redirect, usePathname, useRouter } = createNavigation({
+  locales,
+});
 
-export default createMiddleware({
+const intlMiddleware = createMiddleware({
   defaultLocale: "en",
   localePrefix,
   locales,
 });
 
+const isProtectedRoute = createRouteMatcher([
+  "/:locale/dashboard",
+  "/:locale/dashboard/(.*)",
+]);
+
+export default clerkMiddleware(async (auth, req) => {
+  if (isProtectedRoute(req)) await auth.protect();
+
+  return intlMiddleware(req);
+});
+
 export const config = {
-  // Skip all paths that should not be internationalized. This example skips
-  // certain folders and all pathnames with a dot (e.g. favicon.ico)
-  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
+  matcher: [
+    // Skip Next.js internals and all static files, unless found in search params
+    "/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",
+    // Always run for API routes
+    "/(api|trpc)(.*)",
+  ],
 };
