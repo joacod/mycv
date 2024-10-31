@@ -1,11 +1,10 @@
-import { currentUser } from "@clerk/nextjs/server";
 import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
 import DashboardTimeline from "../../components/Dashboard/DashboardTimeline";
 import { DashboardLinks } from "../../components/Dashboard/DashboardLinks";
+import { DashboardWelcome } from "../../components/Dashboard/DashboardWelcome";
 
-export default async function Dashboard() {
-  const user = await currentUser();
+export default function Dashboard() {
   const email = process.env.EMAIL;
   const timelineItems = [
     "Complete Home page sections",
@@ -24,9 +23,7 @@ export default async function Dashboard() {
         <div className="hero mt-8 rounded-lg bg-black p-8 text-gray-300">
           <div className="hero-content text-center">
             <div className="max-w-2xl">
-              <h2 className="text-3xl font-bold">
-                Welcome {user?.firstName}! 👋
-              </h2>
+              <DashboardWelcome />
               <p className="mt-6 text-pretty">
                 Explore exclusive members-only content! Dive into what I’m
                 currently working on, and check out the timeline for upcoming
