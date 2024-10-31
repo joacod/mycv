@@ -8,13 +8,11 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { ClickMe } from "./ClickMe/ClickMe";
 import { FontBtn } from "./FontBtn";
 import { User } from "./User/User";
-import { currentUser } from "@clerk/nextjs/server";
 import Link from "next/link";
 import { MdDashboard } from "react-icons/md";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 
-const Navigation = async () => {
-  const user = await currentUser();
-
+const Navigation = () => {
   return (
     <>
       <nav id="navigation" className="mx-2 py-4 lg:hidden">
@@ -27,11 +25,11 @@ const Navigation = async () => {
               tabIndex={0}
               className="menu dropdown-content menu-sm z-[1] mt-3 w-52 space-y-2 rounded-box bg-base-100 p-2 shadow"
             >
-              {user && (
+              <SignedIn>
                 <li>
                   <Link href="/dashboard">Dashboard</Link>
                 </li>
-              )}
+              </SignedIn>
               <NavLinks />
               <LocaleSwitcher />
             </ul>
@@ -59,40 +57,39 @@ const Navigation = async () => {
           <ul className="menu menu-horizontal px-1">
             <LocaleSwitcher />
           </ul>
-          {user ? (
+          <SignedIn>
             <Link href="/dashboard">
               <button className="btn btn-neutral mr-2 px-2">
                 <MdDashboard size={28} /> Dashboard
               </button>
             </Link>
-          ) : (
-            <>
-              <a
-                href={devInfo.githubUrl}
-                className="delay-50 transition duration-200 ease-in-out hover:scale-125"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub size={32} />
-              </a>
-              <a
-                href={devInfo.xUrl}
-                className="delay-50 transition duration-200 ease-in-out hover:scale-125"
-                target="_blank"
-                rel="noopener"
-              >
-                <FaXTwitter size={32} />
-              </a>
-              <a
-                href={devInfo.linktree}
-                className="delay-50 transition duration-200 ease-in-out hover:scale-125"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <PiLinktreeLogoBold size={32} />
-              </a>
-            </>
-          )}
+          </SignedIn>
+          <SignedOut>
+            <a
+              href={devInfo.githubUrl}
+              className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size={32} />
+            </a>
+            <a
+              href={devInfo.xUrl}
+              className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+              target="_blank"
+              rel="noopener"
+            >
+              <FaXTwitter size={32} />
+            </a>
+            <a
+              href={devInfo.linktree}
+              className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <PiLinktreeLogoBold size={32} />
+            </a>
+          </SignedOut>
 
           <User />
         </div>
