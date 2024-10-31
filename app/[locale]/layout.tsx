@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang={params.locale}>
       <body>
-        <ClerkProvider appearance={{ baseTheme: dark }}>
+        <ClerkProvider appearance={{ baseTheme: dark }} afterSignOutUrl="/">
           <ThemeProvider>{children}</ThemeProvider>
         </ClerkProvider>
       </body>

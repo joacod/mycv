@@ -17,11 +17,8 @@ const Navigation = async () => {
 
   return (
     <>
-      <nav
-        id="navigation"
-        className="mx-2 flex items-center justify-between py-4 lg:hidden"
-      >
-        <div>
+      <nav id="navigation" className="mx-2 py-4 lg:hidden">
+        <div className="flex items-center justify-between">
           <div className="dropdown">
             <button tabIndex={0} className="btn btn-ghost mr-2 px-2">
               <RiMenu2Fill size={28} />
@@ -39,11 +36,13 @@ const Navigation = async () => {
               <LocaleSwitcher />
             </ul>
           </div>
-          <FontBtn title={devInfo.name} />
-        </div>
 
-        <ClickMe />
-        <User />
+          <User />
+        </div>
+        <div className="mt-2 flex items-center justify-between">
+          <FontBtn title={devInfo.name} />
+          <ClickMe />
+        </div>
       </nav>
 
       <nav id="navigation" className="navbar hidden bg-base-100 px-4 lg:flex">
