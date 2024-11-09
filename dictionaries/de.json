@@ -5,10 +5,11 @@
   },
   "Navigation": {
     "about": "Über mich",
-    "writing": "Blogs",
+    "writing": "Blog",
     "podcast": "Podcast",
     "experience": "Erfahrung",
     "skills": "Fähigkeiten",
+    "company": "Unternehmen",
     "riddler": "?",
     "credits": "Credits"
   },
