@@ -24,12 +24,12 @@ export default function RootLayout({
   if (!isValidLocale) notFound();
 
   return (
-    <html lang={params.locale}>
-      <body>
-        <ClerkProvider appearance={{ baseTheme: dark }} afterSignOutUrl="/">
+    <ClerkProvider appearance={{ baseTheme: dark }} afterSignOutUrl="/">
+      <html lang={params.locale}>
+        <body>
           <ThemeProvider>{children}</ThemeProvider>
-        </ClerkProvider>
-      </body>
-    </html>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
