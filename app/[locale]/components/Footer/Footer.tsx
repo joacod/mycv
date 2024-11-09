@@ -6,6 +6,7 @@ import { PiLinktreeLogoBold } from "react-icons/pi";
 import { CreditsModal } from "../CreditsModal/CreditsModal";
 import { Credits } from "../CreditsModal/Credits";
 import { FaXTwitter } from "react-icons/fa6";
+import { BiLogoDevTo, BiLogoSpotify } from "react-icons/bi";
 
 export const Footer = () => {
   const t = useTranslations("Footer");
@@ -60,6 +61,24 @@ export const Footer = () => {
           aria-label="LinkedIn Profile"
         >
           <FaLinkedin size={28} />
+        </a>
+        <a
+          href={devInfo.devto}
+          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          target="_blank"
+          rel="noopener"
+          aria-label="Linktree Profile"
+        >
+          <BiLogoDevTo size={28} />
+        </a>
+        <a
+          href={devInfo.spotify}
+          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          target="_blank"
+          rel="noopener"
+          aria-label="Linktree Profile"
+        >
+          <BiLogoSpotify size={28} />
         </a>
         <a
           href={devInfo.linktree}

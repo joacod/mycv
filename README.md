@@ -2,7 +2,7 @@
 
 # My CV
 
-[![Vercel](https://vercelbadge.vercel.app/api/joacod/mycv)](https://mycv-blush.vercel.app/)
+[![Vercel](https://vercelbadge.vercel.app/api/joacod/mycv)](https://www.joacod.com)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/joacod/mycv/blob/main/LICENSE)
 
 [![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white)](https://bun.sh/)

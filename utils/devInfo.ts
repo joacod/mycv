@@ -12,6 +12,8 @@ interface DevInfo {
   spotify: string;
   applepodcast: string;
   amazonmusic: string;
+  company: string;
+  companyUrl: string;
 }
 
 export const devInfo: DevInfo = {
@@ -31,4 +33,6 @@ export const devInfo: DevInfo = {
     "https://podcasts.apple.com/us/podcast/code-quests-from-joacod/id1771244867",
   amazonmusic:
     "https://music.amazon.com/podcasts/bf1831a3-beff-4523-951b-eaae805f80e8/code-quests-from-joacod",
+  company: "Everbak",
+  companyUrl: "https://everbak.co",
 };

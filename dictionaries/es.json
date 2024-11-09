@@ -5,10 +5,11 @@
   },
   "Navigation": {
     "about": "Acerca de",
-    "writing": "Blogs",
+    "writing": "Blog",
     "podcast": "Podcast",
     "experience": "Experiencia",
     "skills": "Tecnologias",
+    "company": "Empresa",
     "riddler": "?",
     "credits": "Creditos"
   },
@@ -53,6 +54,18 @@
   },
   "Skills": {
     "title": "Tecnologias"
+  },
+  "Company": {
+    "badge": "¡Nueva Aventura!",
+    "title": "Adivina qué? Cree una empresa!",
+    "description": "Sí, ya sé, no lo viste venir. Pero escuchá – esta bastante bien!",
+    "cardTitle": "Por qué lo hice?",
+    "card1": "Me cansé de la rutina de 9 a 5 y pensé, \"Por qué no cambiar las cosas?\"",
+    "card2": "Trabajamos 30 horas a la semana porque, seamos sinceros, la vida es demasiado corta para reuniones interminables.",
+    "card3": "Nos enfocamos en el progreso rápido. Actualizaciones diarias – nada de esperar meses!",
+    "card4": "Usamos algunas herramientas de IA. Es como tener un asistente robot superinteligente!",
+    "quote": "\"Se trata de trabajar de forma más inteligente, no más dura. Y quizá, divertirse un poco en el camino!\"",
+    "button": "Conoce mi empresa"
   },
   "Riddler": {
     "question": "¿Qué sé de ti",
