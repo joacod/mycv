@@ -1,5 +1,5 @@
 import { devInfo } from "@/utils/devInfo";
-import { BiLogoDevTo, BiLogoMediumSquare } from "react-icons/bi";
+import { BiLogoDevTo, BiLogoSpotify } from "react-icons/bi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { PiLinktreeLogoBold } from "react-icons/pi";
@@ -27,12 +27,12 @@ export const DashboardLinks = () => {
           <BiLogoDevTo size={64} />
         </a>
         <a
-          href={devInfo.medium}
+          href={devInfo.spotify}
           className="delay-50 transition duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <BiLogoMediumSquare size={64} />
+          <BiLogoSpotify size={64} />
         </a>
       </div>
       <div className="mt-5 flex justify-center space-x-12 lg:hidden">
@@ -80,12 +80,12 @@ export const DashboardLinks = () => {
           <BiLogoDevTo size={64} />
         </a>
         <a
-          href={devInfo.medium}
+          href={devInfo.spotify}
           className="delay-50 transition duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <BiLogoMediumSquare size={64} />
+          <BiLogoSpotify size={64} />
         </a>
         <a
           href={devInfo.xUrl}
