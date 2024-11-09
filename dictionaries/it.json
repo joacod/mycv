@@ -55,6 +55,18 @@
   "Skills": {
     "title": "Competenze tecniche"
   },
+  "Company": {
+    "badge": "Nuova Avventura!",
+    "title": "Indovina? Ho avviato un'azienda!",
+    "description": "Sì, lo so, probabilmente non te lo aspettavi. Ma ascolta – è davvero fantastico!",
+    "cardTitle": "Perché l'ho fatto?",
+    "card1": "Mi sono stancato della solita routine dalle 9 alle 5 e ho pensato, \"Perché non cambiare un po' le cose?\"",
+    "card2": "Lavoriamo 30 ore a settimana perché, diciamocelo, la vita è troppo breve per riunioni infinite.",
+    "card3": "Siamo orientati al progresso rapido. Vedrai aggiornamenti quotidiani – niente attese di mesi!",
+    "card4": "Usiamo strumenti di IA davvero interessanti. È come avere un assistente robot super intelligente!",
+    "quote": "\"Si tratta di lavorare in modo più intelligente, non più duro. E magari divertirsi un po' lungo il percorso!\"",
+    "button": "Dai un'occhiata alla mia azienda"
+  },
   "Riddler": {
     "question": "Cosa so di te",
     "device": "Dispositivo",

@@ -55,6 +55,18 @@
   "Skills": {
     "title": "Tech Skills"
   },
+  "Company": {
+    "badge": "New Adventure!",
+    "title": "Guess what? I started a company!",
+    "description": "Yeah, I know, bet you didn't see this coming. But hear me out – it's pretty cool!",
+    "cardTitle": "Why'd I do it?",
+    "card1": "I got tired of the usual 9-to-5 grind and thought, \"Hey, why not shake things up?\"",
+    "card2": "We work 30 hours a week because, let's face it, life's too short for endless meetings.",
+    "card3": "We're all about quick progress. You'll see updates daily – no waiting around for months!",
+    "card4": "We use some pretty nifty AI tools. It's like having a super-smart robot assistant!",
+    "quote": "\"It's all about working smarter, not harder. And maybe having a bit of fun along the way!\"",
+    "button": "Check out my company"
+  },
   "Riddler": {
     "question": "What do I know about you",
     "device": "Device",

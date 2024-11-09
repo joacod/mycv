@@ -6,8 +6,11 @@ import { FaBrain } from "react-icons/fa6";
 import { IoRocket } from "react-icons/io5";
 import { IoMdClock } from "react-icons/io";
 import { BiSolidZap } from "react-icons/bi";
+import { useTranslations } from "next-intl";
 
 export const Company = () => {
+  const t = useTranslations("Company");
+
   return (
     <section
       id="section-company"
@@ -17,11 +20,9 @@ export const Company = () => {
         <div className="mx-auto max-w-3xl">
           <div className="mb-8 text-center">
             <span className="mr-2 inline-block animate-bounce rounded-full bg-white px-2.5 py-0.5 text-xs font-semibold text-black">
-              New Adventure!
+              {t("badge")}
             </span>
-            <h2 className="mt-2 text-3xl font-bold">
-              Guess what? I started a company!
-            </h2>
+            <h2 className="mt-2 text-3xl font-bold">{t("title")}</h2>
           </div>
 
           <div className="mb-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -39,49 +40,31 @@ export const Company = () => {
             </h3>
           </div>
 
-          <p className="mb-6 text-center text-xl">
-            {`Yeah, I know, bet you didn't see this coming. But hear me out – it's
-            pretty cool!`}
-          </p>
+          <p className="mb-6 text-center text-xl">{t("description")}</p>
 
           <div className="mb-8 transform rounded-lg bg-black p-6 text-gray-300 shadow-lg transition-transform duration-300 hover:scale-105">
-            <h3 className="mb-4 text-2xl font-semibold">Why'd I do it?</h3>
+            <h3 className="mb-4 text-2xl font-semibold">{t("cardTitle")}</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <BiSolidZap className="mr-2 h-6 w-6 flex-shrink-0 text-yellow-500" />
-                <span>
-                  I got tired of the usual 9-to-5 grind and thought, "Hey, why
-                  not shake things up?"
-                </span>
+                <span>{t("card1")}</span>
               </li>
               <li className="flex items-start">
                 <IoMdClock className="mr-2 h-6 w-6 flex-shrink-0 text-green-500" />
-                <span>
-                  We work 30 hours a week because, let's face it, life's too
-                  short for endless meetings.
-                </span>
+                <span>{t("card2")}</span>
               </li>
               <li className="flex items-start">
                 <IoRocket className="mr-2 h-6 w-6 flex-shrink-0 text-blue-500" />
-                <span>
-                  We're all about quick progress. You'll see updates daily – no
-                  waiting around for months!
-                </span>
+                <span>{t("card3")}</span>
               </li>
               <li className="flex items-start">
                 <FaBrain className="mr-2 h-6 w-6 flex-shrink-0 text-purple-500" />
-                <span>
-                  We use some pretty nifty AI tools. It's like having a
-                  super-smart robot assistant!
-                </span>
+                <span>{t("card4")}</span>
               </li>
             </ul>
           </div>
 
-          <p className="mb-6 text-center text-lg italic">
-            "It's all about working smarter, not harder. And maybe having a bit
-            of fun along the way!"
-          </p>
+          <p className="mb-6 text-center text-lg italic">{t("quote")}</p>
 
           <div className="flex justify-center">
             <Link
@@ -90,7 +73,7 @@ export const Company = () => {
               rel="noopener noreferrer"
               className="btn-base group btn btn-lg"
             >
-              <span className="mr-2">Check out my company</span>
+              <span className="mr-2">{t("button")}</span>
               <FaArrowAltCircleRight className="h-5 w-5 transform transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
