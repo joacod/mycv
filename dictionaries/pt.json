@@ -30,10 +30,10 @@
   },
   "About": {
     "title": "Sobre mim",
-    "description": "Com mais de 15 anos de experiência no mundo em constante evolução do desenvolvimento de software, dediquei os últimos 5 anos ao desenvolvimento frontend, com foco em React.",
-    "role": "Além do meu papel como desenvolvedor, estou envolvido na maioria das decisões técnicas, incluindo design, arquitetura e desenvolvimento de componentes principais, bem como em atividades relacionadas à gestão de configuração, integração contínua, suporte, treinamento e treinamento de outros membros da equipe, sempre tendo em mente a qualidade do produto.",
-    "collaborate": "Sou um profissional comprometido, proativo e orientado para resultados, com um forte sentido de responsabilidade e qualidade. Desenvolvo-me em ambientes colaborativos, aprendo rápido e estou sempre em busca de novos desafios e oportunidades para continuar crescendo.",
-    "getstarted": "Comece"
+    "description": "Com mais de 15 anos de experiência em desenvolvimento de software, construí uma sólida expertise em engenharia front-end, especializando-me em React.",
+    "role": "Como Lead Software Engineer, estou envolvido em decisões técnicas importantes nas áreas de design, arquitetura e desenvolvimento de componentes principais. Além de programar, contribuo para a gestão de configurações, integração contínua e apoio à equipe, enquanto treino e oriento os membros do time.",
+    "collaborate": "Sou um profissional comprometido, proativo e orientado para resultados, com um forte senso de responsabilidade e qualidade. Prosperando em ambientes colaborativos, aprendo rapidamente e estou sempre buscando novos desafios e oportunidades para crescer.",
+    "getstarted": "Começar"
   },
   "Writing": {
     "title": "Eu Escrevo Coisas",
