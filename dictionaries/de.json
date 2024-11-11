@@ -57,14 +57,14 @@
   },
   "Company": {
     "badge": "Neues Abenteuer!",
-    "title": "Rate mal? Ich habe ein Unternehmen gegründet!",
-    "description": "Ja, ich weiß, das hast du wahrscheinlich nicht kommen sehen. Aber hör mal – es ist ziemlich cool!",
-    "cardTitle": "Warum habe ich das gemacht?",
+    "title": "Große Neuigkeiten – Ich habe eine Firma gegründet!",
+    "description": "Ich habe mich entschieden, etwas Eigenes zu starten. Es ist ein neuer Weg, und ich freue mich, ihn zu teilen!",
+    "cardTitle": "Der Grund hinter der Entscheidung",
     "card1": "Ich hatte genug vom klassischen 9-bis-5-Alltag und dachte, \"Warum nicht mal etwas verändern?\"",
     "card2": "Wir arbeiten 30 Stunden pro Woche, weil das Leben zu kurz ist für endlose Meetings.",
     "card3": "Wir setzen auf schnellen Fortschritt. Du wirst tägliche Updates sehen – kein monatelanges Warten!",
     "card4": "Wir nutzen einige ziemlich clevere KI-Tools. Es ist wie einen superintelligenten Roboter-Assistenten zu haben!",
-    "quote": "\"Es geht darum, schlauer zu arbeiten, nicht härter. Und vielleicht ein bisschen Spaß dabei zu haben!\"",
+    "quote": "\"Qualität, Effizienz, und vielleicht ein bisschen Spaß unterwegs. Das ist das Ziel!\"",
     "button": "Schau dir mein Unternehmen an"
   },
   "Riddler": {
