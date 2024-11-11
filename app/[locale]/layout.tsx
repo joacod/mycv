@@ -12,20 +12,21 @@ export const metadata: Metadata = {
   description: "Software Developer, IT Consultant, Entrepreneur, I write stuff",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
   // Validate that the incoming `locale` parameter is valid
-  const isValidLocale = locales.some((cur) => cur === params.locale);
+  const { locale } = await params;
+  const isValidLocale = locales.some((cur) => cur === locale);
   if (!isValidLocale) notFound();
 
   return (
     <ClerkProvider appearance={{ baseTheme: dark }}>
-      <html lang={params.locale}>
+      <html lang={locale}>
         <body>
           <ThemeProvider>{children}</ThemeProvider>
         </body>
