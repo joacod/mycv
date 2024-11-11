@@ -3,7 +3,7 @@ import { createNavigation } from "next-intl/navigation";
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 export const locales = ["en", "es", "it", "pt", "fr", "de"] as const;
-const localePrefix = "always";
+const localePrefix = "as-needed";
 
 export const { Link, redirect, usePathname, useRouter } = createNavigation({
   locales,
