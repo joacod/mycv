@@ -24,7 +24,7 @@ export default function RootLayout({
   if (!isValidLocale) notFound();
 
   return (
-    <ClerkProvider appearance={{ baseTheme: dark }} afterSignOutUrl="/">
+    <ClerkProvider appearance={{ baseTheme: dark }}>
       <html lang={params.locale}>
         <body>
           <ThemeProvider>{children}</ThemeProvider>

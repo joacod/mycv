@@ -56,15 +56,15 @@
     "title": "Compétences techniques"
   },
   "Company": {
-    "badge": "Nouvelle Aventure !",
-    "title": "Devine quoi ? J'ai créé une entreprise !",
-    "description": "Oui, je sais, tu ne t'y attendais probablement pas. Mais écoute – c'est plutôt cool !",
-    "cardTitle": "Pourquoi je l'ai fait ?",
+    "badge": "Nouvelle aventure !",
+    "title": "Grande nouvelle – J'ai lancé une entreprise !",
+    "description": "J'ai décidé de créer quelque chose à moi. C'est un nouveau chemin, et je suis ravi de le partager !",
+    "cardTitle": "La raison derrière cette décision",
     "card1": "Je me suis lassé du train-train quotidien et me suis dit, \"Pourquoi ne pas tout changer ?\"",
     "card2": "Nous travaillons 30 heures par semaine car, soyons honnêtes, la vie est trop courte pour des réunions interminables.",
     "card3": "On est là pour un progrès rapide. Tu verras des mises à jour quotidiennes – pas de longue attente de plusieurs mois !",
     "card4": "On utilise des outils d'IA très astucieux. C'est comme avoir un assistant robot super intelligent !",
-    "quote": "\"Il s'agit de travailler plus intelligemment, pas plus dur. Et peut-être de s'amuser un peu en cours de route !\"",
+    "quote": "\"Qualité, efficacité, et peut-être un peu de plaisir en chemin. C'est l'objectif !\"",
     "button": "Découvre mon entreprise"
   },
   "Riddler": {
