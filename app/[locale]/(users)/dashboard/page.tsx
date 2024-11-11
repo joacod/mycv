@@ -3,7 +3,6 @@ import { FaEnvelope } from "react-icons/fa";
 import DashboardTimeline from "../../components/Dashboard/DashboardTimeline";
 import { DashboardLinks } from "../../components/Dashboard/DashboardLinks";
 import { DashboardWelcome } from "../../components/Dashboard/DashboardWelcome";
-import { Suspense } from "react";
 
 export default function Dashboard() {
   const email = process.env.EMAIL;
@@ -24,9 +23,7 @@ export default function Dashboard() {
         <div className="hero mt-8 rounded-lg bg-black p-8 text-gray-300">
           <div className="hero-content text-center">
             <div className="max-w-2xl">
-              <Suspense>
-                <DashboardWelcome />
-              </Suspense>
+              <DashboardWelcome />
               <p className="mt-6 text-pretty">
                 Explore exclusive members-only content! Dive into what I’m
                 currently working on, and check out the timeline for upcoming
