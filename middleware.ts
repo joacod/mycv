@@ -21,7 +21,23 @@ const isProtectedRoute = createRouteMatcher([
 ]);
 
 export default clerkMiddleware(async (auth, req) => {
-  if (isProtectedRoute(req)) await auth.protect();
+  if (
+    req.nextUrl.pathname.includes("/sign-in") ||
+    req.nextUrl.pathname.includes("/sign-up") ||
+    isProtectedRoute(req)
+  ) {
+    if (isProtectedRoute(req)) {
+      const locale =
+        req.nextUrl.pathname.match(/(\/.*)\/dashboard/)?.at(1) ?? "";
+
+      const signInUrl = new URL(`${locale}/sign-in`, req.url);
+
+      auth.protect({
+        // `unauthenticatedUrl` is needed to avoid error: "Unable to find `next-intl` locale because the middleware didn't run on this request"
+        unauthenticatedUrl: signInUrl.toString(),
+      });
+    }
+  }
 
   return intlMiddleware(req);
 });
