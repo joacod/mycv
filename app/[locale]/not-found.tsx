@@ -9,18 +9,18 @@ export default function NotFound() {
   return (
     <>
       <UsersNavigation />
-      <main className="flex min-h-screen flex-col items-center justify-center p-4 dark:bg-gray-900">
+      <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-neutral">
         <div className="text-center">
-          <h1 className="mb-4 text-6xl font-semibold text-red-500">404</h1>
-          <h2 className="mb-4 text-2xl font-bold dark:text-white">
+          <h1 className="mb-4 text-6xl font-semibold text-error">404</h1>
+          <h2 className="mb-4 text-2xl font-bold text-neutral-content">
             {t("title")}
           </h2>
-          <p className="mb-8 dark:text-gray-400">
+          <p className="mb-8 text-neutral-content/70">
             {t("description")}
           </p>
           <Link
             href="/"
-            className="rounded bg-blue-500 px-4 py-2 font-semibold text-white hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700"
+            className="btn btn-primary"
           >
             {t("backHome")}
           </Link>
