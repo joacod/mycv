@@ -88,5 +88,10 @@
   },
   "Footer": {
     "rights": "Let's collaborate and bring your digital vision to life."
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist.",
+    "backHome": "Back to Home"
   }
 }

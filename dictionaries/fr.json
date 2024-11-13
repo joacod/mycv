@@ -88,5 +88,10 @@
   },
   "Footer": {
     "rights": "Collaborons et donnons vie à votre vision numérique."
+  },
+  "NotFound": {
+    "title": "Page Non Trouvée",
+    "description": "Désolé, la page que vous recherchez n'existe pas.",
+    "backHome": "Retour à l'Accueil"
   }
 }
