@@ -1,6 +1,6 @@
 "use client";
 
-import { RiddlerInfo } from "@/utils/riddler";
+import { RiddlerInfo, LocationInfo } from "@/utils/riddler";
 import { useState } from "react";
 import { RiddlerModal } from "./RiddlerModal";
 
@@ -9,18 +9,34 @@ export const RiddlerClient = ({ info }: { info: RiddlerInfo }) => {
   const [phraseIndex, setPhraseIndex] = useState(0);
   const currentPhrase = phrases.slice(0, phraseIndex).join(" ") + "?";
   const isFullPhrase = phraseIndex === phrases.length;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [geolocation, setGeolocation] = useState<LocationInfo | null>(null);
+
+  const fetchGeolocation = async () => {
+    try {
+      const response = await fetch("https://ipapi.co/json/");
+      const data = await response.json();
+      setGeolocation(data);
+    } catch (error) {
+      // if error occurs, i'm not showing the location
+    }
+  };
 
   const handleClick = () => {
     if (phraseIndex < phrases.length) {
       setPhraseIndex(phraseIndex + 1);
-    } else {
-      const modal = document.getElementById(
-        "riddler_modal",
-      ) as HTMLDialogElement;
-      if (modal) {
-        modal.showModal();
+
+      // Fetch geolocation data when user clicks the third time
+      if (phraseIndex + 1 === 3) {
+        fetchGeolocation();
       }
+    } else {
+      setIsModalOpen(true);
     }
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -39,7 +55,12 @@ export const RiddlerClient = ({ info }: { info: RiddlerInfo }) => {
           currentPhrase
         )}
       </button>
-      <RiddlerModal info={info} />
+      <RiddlerModal
+        info={info}
+        isModalOpen={isModalOpen}
+        onClose={handleCloseModal}
+        geolocation={geolocation}
+      />
     </section>
   );
 };

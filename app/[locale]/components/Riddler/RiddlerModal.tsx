@@ -1,32 +1,44 @@
 "use client";
 
 import { RiddlerInfo, LocationInfo } from "@/utils/riddler";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import UAParser from "ua-parser-js";
 
-export const RiddlerModal = ({ info }: { info: RiddlerInfo }) => {
+export const RiddlerModal = ({
+  info,
+  isModalOpen,
+  onClose,
+  geolocation,
+}: {
+  info: RiddlerInfo;
+  isModalOpen: boolean;
+  onClose: () => void;
+  geolocation: LocationInfo | null;
+}) => {
   const [parserResult, setParserResult] = useState<UAParser.IResult>();
-  const [geolocation, setGeolocation] = useState<LocationInfo>();
+  const dialogRef = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
     const parser = new UAParser();
     setParserResult(parser.getResult());
-
-    const fetchGeolocation = async () => {
-      try {
-        const response = await fetch("https://ipapi.co/json/");
-        const data = await response.json();
-        setGeolocation(data);
-      } catch (error) {
-        // if error occurs, i'm not showing the location
-      }
-    };
-
-    fetchGeolocation();
   }, []);
 
+  useEffect(() => {
+    if (dialogRef.current) {
+      if (isModalOpen) {
+        dialogRef.current.showModal();
+      } else {
+        dialogRef.current.close();
+      }
+    }
+  }, [isModalOpen]);
+
   return (
-    <dialog id="riddler_modal" className="modal modal-bottom sm:modal-middle">
+    <dialog
+      ref={dialogRef}
+      className="modal modal-bottom sm:modal-middle"
+      onClose={onClose}
+    >
       <div className="modal-box bg-neutral text-neutral-content">
         <div className="text-center" aria-label="Device Information">
           <h3 className="text-7xl font-bold">?</h3>
@@ -83,8 +95,6 @@ export const RiddlerModal = ({ info }: { info: RiddlerInfo }) => {
                     <dd className="ml-1 inline">{geolocation.city}</dd>
                   </div>
                 )}
-              </dl>
-              <dl className="text-center">
                 {geolocation.country_name && (
                   <div>
                     <dt className="inline">
@@ -100,11 +110,9 @@ export const RiddlerModal = ({ info }: { info: RiddlerInfo }) => {
           <p className="mt-5 text-xs italic">{info.disclaimer}</p>
         </div>
         <div className="modal-action flex flex-col items-center">
-          <form method="dialog">
-            <button className="btn btn-primary" type="submit">
-              {info.close}
-            </button>
-          </form>
+          <button className="btn btn-primary" type="button" onClick={onClose}>
+            {info.close}
+          </button>
         </div>
       </div>
     </dialog>
