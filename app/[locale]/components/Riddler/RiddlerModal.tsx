@@ -2,7 +2,7 @@
 
 import { RiddlerInfo, LocationInfo } from "@/utils/riddler";
 import { useEffect, useState, useRef } from "react";
-import UAParser from "ua-parser-js";
+import { UAParser } from "ua-parser-js";
 
 export const RiddlerModal = ({
   info,
@@ -19,8 +19,8 @@ export const RiddlerModal = ({
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
-    const parser = new UAParser();
-    setParserResult(parser.getResult());
+    const parser = UAParser();
+    setParserResult(parser);
   }, []);
 
   useEffect(() => {
