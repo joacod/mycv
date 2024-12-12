@@ -1,7 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { IoLanguageOutline } from "react-icons/io5";
-import { Link, locales } from "@/middleware";
 import Image from "next/image";
+import { Link, locales } from "@/i18n/routing";
 
 const LocaleSwitcher = () => {
   const locale = useLocale();
