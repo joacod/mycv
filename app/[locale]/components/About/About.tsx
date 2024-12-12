@@ -17,7 +17,6 @@ export const About = () => {
             alt="Avatar of a guy with a beard, glasses and smiling"
             width={250}
             height={250}
-            priority={true}
             placeholder="empty"
           />
         </figure>
@@ -27,7 +26,6 @@ export const About = () => {
             alt="Avatar of a guy with a beard, glasses and smiling"
             width={500}
             height={500}
-            priority={true}
             placeholder="empty"
           />
         </figure>

@@ -1,13 +1,8 @@
 import createMiddleware from "next-intl/middleware";
-import { createNavigation } from "next-intl/navigation";
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+import { locales } from "./i18n/routing";
 
-export const locales = ["en", "es", "it", "pt", "fr", "de"] as const;
 const localePrefix = "as-needed";
-
-export const { Link, redirect, usePathname, useRouter } = createNavigation({
-  locales,
-});
 
 const intlMiddleware = createMiddleware({
   defaultLocale: "en",
