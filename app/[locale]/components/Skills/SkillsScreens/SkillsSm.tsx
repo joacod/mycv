@@ -1,15 +1,17 @@
 import { useTranslations } from "next-intl";
-import { FaAws, FaReact } from "react-icons/fa";
+import { FaAws, FaNode, FaReact } from "react-icons/fa";
 import { SkillWrapper } from "./SkillWrapper";
 import {
   SiJavascript,
   SiNextdotjs,
   SiTailwindcss,
-  SiVite,
   SiHtml5,
   SiCss3,
+  SiGit,
 } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
+import { FaGolang } from "react-icons/fa6";
+import { TbBrandCSharp } from "react-icons/tb";
 
 export const SkillsSm = () => {
   const t = useTranslations("Skills");
@@ -26,8 +28,8 @@ export const SkillsSm = () => {
           <SkillWrapper size="sm" name="Next">
             <SiNextdotjs size={60} />
           </SkillWrapper>
-          <SkillWrapper size="sm" name="Vite">
-            <SiVite size={50} />
+          <SkillWrapper size="sm" name="Git">
+            <SiGit size={60} />
           </SkillWrapper>
         </div>
 
@@ -52,6 +54,18 @@ export const SkillsSm = () => {
           </SkillWrapper>
           <SkillWrapper size="sm" name="Tailwind">
             <SiTailwindcss size={60} />
+          </SkillWrapper>
+        </div>
+
+        <div className="mt-10 flex justify-between px-4">
+          <SkillWrapper size="sm" name="NodeJS">
+            <FaNode size={60} />
+          </SkillWrapper>
+          <SkillWrapper size="sm" name="Golang">
+            <FaGolang size={60} />
+          </SkillWrapper>
+          <SkillWrapper size="sm" name="C#">
+            <TbBrandCSharp size={60} />
           </SkillWrapper>
         </div>
       </div>

@@ -27,7 +27,7 @@ export const Footer = () => {
         <div className="space-y-2">
           <p className="font-bold">{devInfo.name}</p>
           <p>
-            &copy; 2023-{currentYear} - {t("rights")}
+            &copy; 2008-{currentYear} - {t("rights")}
           </p>
           <CreditsModal title={tcred("title")}>
             <Credits />
@@ -43,15 +43,6 @@ export const Footer = () => {
           aria-label="GitHub Profile"
         >
           <FaGithub size={28} />
-        </a>
-        <a
-          href={devInfo.xUrl}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
-          target="_blank"
-          rel="noopener"
-          aria-label="X Profile"
-        >
-          <FaXTwitter size={28} />
         </a>
         <a
           href={devInfo.linkedinUrl}
@@ -79,6 +70,15 @@ export const Footer = () => {
           aria-label="Linktree Profile"
         >
           <BiLogoSpotify size={28} />
+        </a>
+        <a
+          href={devInfo.xUrl}
+          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          target="_blank"
+          rel="noopener"
+          aria-label="X Profile"
+        >
+          <FaXTwitter size={28} />
         </a>
         <a
           href={devInfo.linktree}
