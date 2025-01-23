@@ -1,14 +1,16 @@
 import { useTranslations } from "next-intl";
-import { FaAws, FaReact } from "react-icons/fa";
+import { FaAws, FaNode, FaReact } from "react-icons/fa";
 import { SkillWrapper } from "./SkillWrapper";
 import {
   SiJavascript,
   SiNextdotjs,
-  SiTailwindcss,
-  SiVite,
   SiHtml5,
+  SiGit,
+  SiCss3,
 } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
+import { FaGolang } from "react-icons/fa6";
+import { TbBrandCSharp, TbSql } from "react-icons/tb";
 
 export const SkillsMd = () => {
   const t = useTranslations("Skills");
@@ -25,11 +27,11 @@ export const SkillsMd = () => {
           <SkillWrapper size="md" name="Next">
             <SiNextdotjs size={70} />
           </SkillWrapper>
-          <SkillWrapper size="md" name="Vite">
-            <SiVite size={60} />
+          <SkillWrapper size="md" name="Git">
+            <SiGit size={70} />
           </SkillWrapper>
-          <SkillWrapper size="md" name="Tailwind">
-            <SiTailwindcss size={70} />
+          <SkillWrapper size="md" name="AWS">
+            <FaAws size={70} />
           </SkillWrapper>
         </div>
 
@@ -43,8 +45,23 @@ export const SkillsMd = () => {
           <SkillWrapper size="md" name="HTML">
             <SiHtml5 size={60} />
           </SkillWrapper>
-          <SkillWrapper size="md" name="AWS">
-            <FaAws size={70} />
+          <SkillWrapper size="md" name="CSS">
+            <SiCss3 size={60} />
+          </SkillWrapper>
+        </div>
+
+        <div className="mt-10 flex justify-between px-4">
+          <SkillWrapper size="md" name="NodeJS">
+            <FaNode size={70} />
+          </SkillWrapper>
+          <SkillWrapper size="md" name="Golang">
+            <FaGolang size={80} />
+          </SkillWrapper>
+          <SkillWrapper size="md" name="C#">
+            <TbBrandCSharp size={60} />
+          </SkillWrapper>
+          <SkillWrapper size="md" name="SQL">
+            <TbSql size={70} />
           </SkillWrapper>
         </div>
       </div>
