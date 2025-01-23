@@ -45,15 +45,6 @@ export const Footer = () => {
           <FaGithub size={28} />
         </a>
         <a
-          href={devInfo.xUrl}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
-          target="_blank"
-          rel="noopener"
-          aria-label="X Profile"
-        >
-          <FaXTwitter size={28} />
-        </a>
-        <a
           href={devInfo.linkedinUrl}
           className="delay-50 transition duration-200 ease-in-out hover:scale-125"
           target="_blank"
@@ -79,6 +70,15 @@ export const Footer = () => {
           aria-label="Linktree Profile"
         >
           <BiLogoSpotify size={28} />
+        </a>
+        <a
+          href={devInfo.xUrl}
+          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          target="_blank"
+          rel="noopener"
+          aria-label="X Profile"
+        >
+          <FaXTwitter size={28} />
         </a>
         <a
           href={devInfo.linktree}

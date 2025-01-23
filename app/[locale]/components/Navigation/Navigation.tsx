@@ -1,5 +1,4 @@
 import { FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { PiLinktreeLogoBold } from "react-icons/pi";
 import { devInfo } from "@/utils/devInfo";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
@@ -11,6 +10,7 @@ import { User } from "./User/User";
 import Link from "next/link";
 import { MdDashboard } from "react-icons/md";
 import { SignedIn, SignedOut } from "@clerk/nextjs";
+import { BiLogoDevTo } from "react-icons/bi";
 
 const Navigation = () => {
   return (
@@ -74,12 +74,12 @@ const Navigation = () => {
               <FaGithub size={32} />
             </a>
             <a
-              href={devInfo.xUrl}
+              href={devInfo.devto}
               className="delay-50 transition duration-200 ease-in-out hover:scale-125"
               target="_blank"
               rel="noopener"
             >
-              <FaXTwitter size={32} />
+              <BiLogoDevTo size={40} />
             </a>
             <a
               href={devInfo.linktree}
