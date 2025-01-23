@@ -27,7 +27,7 @@ export const Footer = () => {
         <div className="space-y-2">
           <p className="font-bold">{devInfo.name}</p>
           <p>
-            &copy; 2023-{currentYear} - {t("rights")}
+            &copy; 2008-{currentYear} - {t("rights")}
           </p>
           <CreditsModal title={tcred("title")}>
             <Credits />
