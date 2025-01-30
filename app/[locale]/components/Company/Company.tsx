@@ -42,7 +42,7 @@ export const Company = () => {
 
           <p className="mb-6 text-center text-xl">{t("description")}</p>
 
-          <div className="mb-8 transform rounded-lg bg-black p-6 text-gray-300 shadow-lg transition-transform duration-300 hover:scale-105">
+          <div className="mb-8 rounded-lg bg-black p-6 text-gray-300 shadow-lg">
             <h3 className="mb-4 text-2xl font-semibold">{t("cardTitle")}</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
