@@ -10,7 +10,7 @@ import { setRequestLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Software Solutions | " + devInfo.handle + " | " + devInfo.name,
-  description: "Software Developer, IT Consultant, Entrepreneur, I write stuff",
+  description: "Software Developer, Entrepreneur, I write stuff",
 };
 
 export function generateStaticParams() {

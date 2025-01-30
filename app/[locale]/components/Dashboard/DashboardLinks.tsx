@@ -1,7 +1,6 @@
 import { devInfo } from "@/utils/devInfo";
 import { BiLogoDevTo, BiLogoSpotify } from "react-icons/bi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { PiLinktreeLogoBold } from "react-icons/pi";
 
 export const DashboardLinks = () => {
@@ -36,14 +35,6 @@ export const DashboardLinks = () => {
         </a>
       </div>
       <div className="mt-5 flex justify-center space-x-12 lg:hidden">
-        <a
-          href={devInfo.xUrl}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
-          target="_blank"
-          rel="noopener"
-        >
-          <FaXTwitter size={64} />
-        </a>
         <a
           href={devInfo.linkedinUrl}
           className="delay-50 transition duration-200 ease-in-out hover:scale-125"
@@ -86,14 +77,6 @@ export const DashboardLinks = () => {
           rel="noopener noreferrer"
         >
           <BiLogoSpotify size={64} />
-        </a>
-        <a
-          href={devInfo.xUrl}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
-          target="_blank"
-          rel="noopener"
-        >
-          <FaXTwitter size={64} />
         </a>
         <a
           href={devInfo.linkedinUrl}
