@@ -81,14 +81,6 @@ const Navigation = () => {
             >
               <BiLogoDevTo size={40} />
             </a>
-            <a
-              href={devInfo.linktree}
-              className="delay-50 transition duration-200 ease-in-out hover:scale-125"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <PiLinktreeLogoBold size={32} />
-            </a>
           </SignedOut>
 
           <User />
