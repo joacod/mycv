@@ -18,15 +18,15 @@
 This is my resume, created using [Bun](https://bun.sh/), [Next.js](https://nextjs.org/), [Typescript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and [daisyUI](https://daisyui.com/) 🌼.
 
 <p align="center">
-  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb1.png" alt="Thumbnail 1">
-  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb2.png" alt="Thumbnail 2">
-  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb3.png" alt="Thumbnail 3">
+  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb1.webp" alt="Thumbnail 1">
+  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb2.webp" alt="Thumbnail 2">
+  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb3.webp" alt="Thumbnail 3">
 </p>
 
 <p align="center">
-  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb-mobile1.png" alt="Thumbnail 1">
-  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb-mobile2.png" alt="Thumbnail 2">
-  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb-mobile3.png" alt="Thumbnail 3">
+  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb-mobile1.webp" alt="Thumbnail 1">
+  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb-mobile2.webp" alt="Thumbnail 2">
+  <img width="30%" src="https://github.com/joacod/mycv/blob/main/public/readme/thumb-mobile3.webp" alt="Thumbnail 3">
 </p>
 
 ## 💻 Development
