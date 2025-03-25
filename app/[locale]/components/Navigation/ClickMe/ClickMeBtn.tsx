@@ -1,9 +1,9 @@
 "use client";
 
-import config from "@/tailwind.config";
 import { useEffect, useState } from "react";
 import { useThemeStore } from "@/store/theme";
 import confetti from "canvas-confetti";
+import { themes } from "@/utils/themes";
 
 export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   const [mounted, setMounted] = useState(false);
@@ -11,7 +11,6 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   const changeTheme = useThemeStore((state) => state.changeTheme);
   const [textIndex, setTextIndex] = useState(0);
   const [themeIndex, setThemeIndex] = useState(0);
-  const themes = config.daisyui.themes;
   let clickMeText = texts[textIndex];
 
   useEffect(() => {

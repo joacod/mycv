@@ -22,7 +22,7 @@ const Navigation = () => {
             </button>
             <ul
               tabIndex={0}
-              className="menu dropdown-content menu-sm z-[1] mt-3 w-52 space-y-2 rounded-box bg-base-100 p-2 shadow"
+              className="menu dropdown-content menu-sm z-1 mt-3 w-52 space-y-2 rounded-box bg-base-100 p-2 shadow-sm"
             >
               <SignedIn>
                 <li>
