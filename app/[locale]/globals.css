@@ -1,6 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+@plugin "daisyui" {
+  themes:
+    caramellatte --default,
+    cyberpunk,
+    corporate,
+    acid;
+}
 
 html {
   scroll-behavior: smooth;

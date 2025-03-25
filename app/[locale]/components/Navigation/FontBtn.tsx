@@ -36,7 +36,7 @@ export const FontBtn = ({ title }: { title: string }) => {
 
   return (
     <button
-      className="btn btn-neutral px-2 text-sm normal-case lg:px-4 lg:text-lg"
+      className="btn btn-neutral px-2 py-6 text-sm normal-case lg:px-4 lg:text-lg"
       onClick={() => changeFont()}
       aria-label={`${title} | Change Font randomly`}
     >

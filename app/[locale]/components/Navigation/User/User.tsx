@@ -7,7 +7,7 @@ export const User = () => {
       <SignedOut>
         <SignInButton>
           <button
-            className="btn-base btn btn-accent"
+            className="btn-base btn btn-accent py-6"
             aria-label="Sign in Button"
           >
             <span className="inline">

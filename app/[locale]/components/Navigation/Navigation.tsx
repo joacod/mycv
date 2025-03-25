@@ -17,12 +17,12 @@ const Navigation = () => {
       <nav id="navigation" className="mx-2 py-4 lg:hidden">
         <div className="flex items-center justify-between">
           <div className="dropdown">
-            <button tabIndex={0} className="btn btn-ghost mr-2 px-2">
+            <button tabIndex={0} className="btn btn-ghost mr-2 px-2 py-6">
               <RiMenu2Fill size={28} />
             </button>
             <ul
               tabIndex={0}
-              className="menu dropdown-content menu-sm z-[1] mt-3 w-52 space-y-2 rounded-box bg-base-100 p-2 shadow"
+              className="menu dropdown-content menu-sm rounded-box bg-base-100 z-1 mt-3 w-52 space-y-2 p-2 shadow-sm"
             >
               <SignedIn>
                 <li>
@@ -42,7 +42,10 @@ const Navigation = () => {
         </div>
       </nav>
 
-      <nav id="navigation" className="navbar hidden bg-base-100 px-4 lg:flex">
+      <nav
+        id="navigation"
+        className="navbar bg-base-100 hidden px-4 py-3 lg:flex"
+      >
         <div className="navbar-start space-x-4">
           <FontBtn title={devInfo.name} />
           <ClickMe />
@@ -58,7 +61,7 @@ const Navigation = () => {
           </ul>
           <SignedIn>
             <Link href="/dashboard">
-              <button className="btn btn-neutral mr-2 px-2">
+              <button className="btn btn-neutral mr-2 px-2 py-6">
                 <MdDashboard size={28} /> Dashboard
               </button>
             </Link>
@@ -66,7 +69,7 @@ const Navigation = () => {
           <SignedOut>
             <a
               href={devInfo.githubUrl}
-              className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+              className="transition delay-50 duration-200 ease-in-out hover:scale-125"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -74,7 +77,7 @@ const Navigation = () => {
             </a>
             <a
               href={devInfo.devto}
-              className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+              className="transition delay-50 duration-200 ease-in-out hover:scale-125"
               target="_blank"
               rel="noopener"
             >

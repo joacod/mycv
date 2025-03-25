@@ -1,7 +1,5 @@
+import { themes } from "@/utils/themes";
 import { create } from "zustand";
-import config from "@/tailwind.config";
-
-const themes = config.daisyui.themes as string[];
 
 interface ThemeState {
   theme: string;

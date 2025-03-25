@@ -14,11 +14,11 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer footer-center bg-primary p-10 text-primary-content">
+    <footer className="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
       <section>
         <a
           href="https://github.com/joacod/mycv"
-          className="delay-50 transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-125"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -37,7 +37,7 @@ export const Footer = () => {
       <div className="grid grid-flow-col gap-4">
         <a
           href={devInfo.githubUrl}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub Profile"
@@ -46,7 +46,7 @@ export const Footer = () => {
         </a>
         <a
           href={devInfo.linkedinUrl}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener"
           aria-label="LinkedIn Profile"
@@ -55,7 +55,7 @@ export const Footer = () => {
         </a>
         <a
           href={devInfo.devto}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener"
           aria-label="Linktree Profile"
@@ -64,7 +64,7 @@ export const Footer = () => {
         </a>
         <a
           href={devInfo.spotify}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener"
           aria-label="Linktree Profile"
@@ -73,7 +73,7 @@ export const Footer = () => {
         </a>
         <a
           href={devInfo.xUrl}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener"
           aria-label="X Profile"
@@ -82,7 +82,7 @@ export const Footer = () => {
         </a>
         <a
           href={devInfo.linktree}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener"
           aria-label="Linktree Profile"

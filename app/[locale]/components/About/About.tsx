@@ -8,10 +8,10 @@ export const About = () => {
   return (
     <section
       id="section-about"
-      className="hero z-0 min-h-screen bg-primary bg-gradient-to-b from-secondary to-primary text-primary-content"
+      className="hero bg-primary from-secondary to-primary text-primary-content z-0 min-h-screen bg-linear-to-b"
     >
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <figure className="mt-6 animate-flip-up lg:hidden">
+        <figure className="animate-flip-up mt-6 lg:hidden">
           <Image
             src="/avatar.webp"
             alt="Avatar of a guy with a beard, glasses and smiling"
@@ -20,7 +20,7 @@ export const About = () => {
             placeholder="empty"
           />
         </figure>
-        <figure className="hidden animate-flip-up lg:inline lg:w-3/12">
+        <figure className="animate-flip-up hidden lg:inline lg:w-3/12">
           <Image
             src="/avatar.webp"
             alt="Avatar of a guy with a beard, glasses and smiling"

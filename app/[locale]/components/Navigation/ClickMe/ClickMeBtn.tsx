@@ -1,9 +1,9 @@
 "use client";
 
-import config from "@/tailwind.config";
 import { useEffect, useState } from "react";
 import { useThemeStore } from "@/store/theme";
 import confetti from "canvas-confetti";
+import { themes } from "@/utils/themes";
 
 export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   const [mounted, setMounted] = useState(false);
@@ -11,7 +11,6 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   const changeTheme = useThemeStore((state) => state.changeTheme);
   const [textIndex, setTextIndex] = useState(0);
   const [themeIndex, setThemeIndex] = useState(0);
-  const themes = config.daisyui.themes;
   let clickMeText = texts[textIndex];
 
   useEffect(() => {
@@ -39,7 +38,7 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   if (!mounted)
     return (
       <button
-        className="btn-base btn btn-primary inline w-28 lg:w-32"
+        className="btn btn-primary w-28 py-6 lg:w-32"
         aria-label="Click Me Button"
       >
         {clickMeText}
@@ -49,7 +48,7 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   return (
     <>
       <button
-        className="btn-base btn btn-primary inline w-28 lg:w-32"
+        className="btn btn-primary w-28 py-6 lg:w-32"
         onClick={toggleTheme}
         aria-label="Click Me Button"
       >

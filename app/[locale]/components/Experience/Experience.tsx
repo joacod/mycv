@@ -5,7 +5,7 @@ export const Experience = () => {
   return (
     <section
       id="section-experience"
-      className="bg-primary bg-gradient-to-b from-primary to-secondary text-primary-content"
+      className="bg-primary bg-linear-to-b from-primary to-secondary text-primary-content"
     >
       <ExperienceMobile />
       <ExperienceDesktop />
