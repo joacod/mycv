@@ -1,5 +1,4 @@
 import { FaGithub } from "react-icons/fa";
-import { PiLinktreeLogoBold } from "react-icons/pi";
 import { devInfo } from "@/utils/devInfo";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import { NavLinks } from "./NavLinks";

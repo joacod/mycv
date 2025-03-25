@@ -6,7 +6,8 @@ import { ThemeProvider } from "./providers/themeProvider";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { locales, routing } from "@/i18n/routing";
-import { setRequestLocale } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 export const metadata: Metadata = {
   title: "Software Solutions | " + devInfo.handle + " | " + devInfo.name,
@@ -32,11 +33,16 @@ export default async function RootLayout({
   // Enable static rendering
   setRequestLocale(locale);
 
+  // Fetch messages for the current locale
+  const messages = await getMessages();
+
   return (
     <ClerkProvider appearance={{ baseTheme: dark }}>
       <html lang={locale}>
         <body>
-          <ThemeProvider>{children}</ThemeProvider>
+          <NextIntlClientProvider messages={messages}>
+            <ThemeProvider>{children}</ThemeProvider>
+          </NextIntlClientProvider>
         </body>
       </html>
     </ClerkProvider>
