@@ -17,7 +17,7 @@ const Navigation = () => {
       <nav id="navigation" className="mx-2 py-4 lg:hidden">
         <div className="flex items-center justify-between">
           <div className="dropdown">
-            <button tabIndex={0} className="btn btn-ghost mr-2 px-2">
+            <button tabIndex={0} className="btn btn-ghost mr-2 px-2 py-6">
               <RiMenu2Fill size={28} />
             </button>
             <ul
@@ -42,7 +42,10 @@ const Navigation = () => {
         </div>
       </nav>
 
-      <nav id="navigation" className="navbar bg-base-100 hidden px-4 lg:flex">
+      <nav
+        id="navigation"
+        className="navbar bg-base-100 hidden px-4 py-3 lg:flex"
+      >
         <div className="navbar-start space-x-4">
           <FontBtn title={devInfo.name} />
           <ClickMe />
@@ -58,7 +61,7 @@ const Navigation = () => {
           </ul>
           <SignedIn>
             <Link href="/dashboard">
-              <button className="btn btn-neutral mr-2 px-2">
+              <button className="btn btn-neutral mr-2 px-2 py-6">
                 <MdDashboard size={28} /> Dashboard
               </button>
             </Link>

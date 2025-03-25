@@ -9,7 +9,7 @@ export const UsersNavigation = () => {
     <>
       <nav className="mx-2 flex items-center justify-between py-4 lg:hidden">
         <Link href="/">
-          <button className="btn btn-neutral mr-2 px-2">
+          <button className="btn btn-neutral mr-2 px-2 py-6">
             <FaHome size={28} /> Home
           </button>
         </Link>
@@ -19,10 +19,10 @@ export const UsersNavigation = () => {
         </SignedIn>
       </nav>
 
-      <nav id="navigation" className="navbar hidden bg-base-100 px-4 lg:flex">
+      <nav id="navigation" className="navbar bg-base-100 hidden px-4 lg:flex">
         <div className="navbar-start space-x-4">
           <Link href="/">
-            <button className="btn btn-neutral mr-2 px-2">
+            <button className="btn btn-neutral mr-2 px-2 py-6">
               <FaHome size={28} /> Home
             </button>
           </Link>

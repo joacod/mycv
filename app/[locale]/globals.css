@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tailwindcss-animated";
+
 @plugin "daisyui" {
   themes:
     caramellatte --default,
