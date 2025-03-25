@@ -1,1 +1,1 @@
-export const themes = ["dark", "cyberpunk", "wireframe", "acid"];
+export const themes = ["caramellatte", "cyberpunk", "corporate", "acid"];

@@ -1,7 +1,11 @@
 @import "tailwindcss";
 @import "tailwindcss-animated";
 @plugin "daisyui" {
-  themes: "dark", "cyberpunk", "wireframe", "acid";
+  themes:
+    caramellatte --default,
+    cyberpunk,
+    corporate,
+    acid;
 }
 
 html {
