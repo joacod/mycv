@@ -6,9 +6,5 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  plugins: [require("daisyui"), require("tailwindcss-animated")],
-  daisyui: {
-    themes: ["dark", "cyberpunk", "wireframe", "acid"],
-  },
 };
 export default config;
