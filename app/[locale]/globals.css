@@ -3,9 +3,9 @@
 
 @plugin "daisyui" {
   themes:
-    caramellatte --default,
+    corporate --default,
     cyberpunk,
-    corporate,
+    caramellatte,
     acid;
 }
 

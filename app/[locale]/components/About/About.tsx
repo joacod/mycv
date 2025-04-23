@@ -18,15 +18,17 @@ export const About = () => {
             width={250}
             height={250}
             placeholder="empty"
+            className="rounded-full"
           />
         </figure>
-        <figure className="animate-flip-up hidden lg:inline lg:w-3/12">
+        <figure className="animate-flip-up hidden lg:inline lg:w-3/12 lg:self-start">
           <Image
             src="/avatar.webp"
             alt="Avatar of a guy with a beard, glasses and smiling"
             width={500}
             height={500}
             placeholder="empty"
+            className="rounded-full"
           />
         </figure>
         <article className="animate-flip-up lg:w-9/12 lg:pr-20">
