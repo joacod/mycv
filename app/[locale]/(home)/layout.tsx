@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Navigation from "../components/Navigation/Navigation";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Footer } from "../components/Footer/Footer";
 import { devInfo } from "@/utils/devInfo";
 
@@ -37,7 +36,6 @@ export default function HomeLayout({
       {children}
       <Footer />
       <Analytics />
-      <SpeedInsights />
     </>
   );
 }
