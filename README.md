@@ -86,7 +86,7 @@ We recommend the following VS Code extensions for this project:
 
 ## ☕️ Did you like the project?
 
-You can colaborate with me giving a star ⭐️ to the project or
+You can collaborate with me giving a star ⭐️ to the project or
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/joacod)
 
