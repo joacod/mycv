@@ -3,6 +3,15 @@ import { IoLanguageOutline } from "react-icons/io5";
 import Image from "next/image";
 import { Link, locales } from "@/i18n/routing";
 
+const nativeLanguageNames: Record<string, string> = {
+  en: "English",
+  es: "Español",
+  it: "Italiano",
+  pt: "Português",
+  fr: "Français",
+  de: "Deutsch",
+};
+
 const LocaleSwitcher = () => {
   const locale = useLocale();
   const t = useTranslations("LocaleSwitcher");
@@ -16,22 +25,22 @@ const LocaleSwitcher = () => {
           </span>
           <span className="lg:hidden">{t("title")}</span>
         </summary>
-        <ul className="z-50 w-44 space-y-2 bg-base-100 p-2">
+        <ul className="bg-base-100 z-50 w-44 space-y-2 p-2">
           {locales.map((lang) => (
             <li key={lang}>
               <Link
                 href="/"
                 locale={lang}
                 className={locale === lang ? "active px-2" : "px-2"}
-                aria-label={`Switch to ${t(lang)} language`}
+                aria-label={`Switch to ${nativeLanguageNames[lang]} language`}
               >
                 <Image
                   src={"/flags/" + lang + ".png"}
-                  alt={t("flagAlt", { language: lang })}
+                  alt={t("flagAlt", { language: nativeLanguageNames[lang] })}
                   width={24}
                   height={24}
                 />{" "}
-                {t(lang)}
+                {nativeLanguageNames[lang]}
               </Link>
             </li>
           ))}

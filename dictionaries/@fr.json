@@ -63,13 +63,7 @@
     "metaTitle": "Solutions Logicielles"
   },
   "LocaleSwitcher": {
-    "de": "Allemand",
-    "en": "Anglais",
-    "es": "Espagnol",
     "flagAlt": "Drapeau de langue: {language}",
-    "fr": "Français",
-    "it": "Italien",
-    "pt": "Portugais",
     "title": "Langue"
   },
   "Navigation": {

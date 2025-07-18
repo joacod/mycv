@@ -63,13 +63,7 @@
     "metaTitle": "Soluções de Software"
   },
   "LocaleSwitcher": {
-    "de": "Alemão",
-    "en": "Inglês",
-    "es": "Espanhol",
     "flagAlt": "Bandeira do idioma: {language}",
-    "fr": "Francês",
-    "it": "Italiano",
-    "pt": "Português",
     "title": "Idioma"
   },
   "Navigation": {
