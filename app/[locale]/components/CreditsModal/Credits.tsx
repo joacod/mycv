@@ -15,94 +15,114 @@ export const Credits = () => {
         <h3 className="mb-5 text-lg font-bold">{t("title")}</h3>
         <div className="flex items-center justify-center">
           <p>
-            <a
-              className="underline"
-              href="https://github.com/joacod/mycv"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="My CV on GitHub"
-            >
-              Web Template
-            </a>{" "}
-            {t("created")}{" "}
-            <a
-              className="underline"
-              href="https://github.com/joacod"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Joaquin Diaz on GitHub"
-            >
-              Joaquin Diaz
-            </a>
+            {t.rich("created", {
+              webTemplate: (chunks) => (
+                <a
+                  className="underline"
+                  href="https://github.com/joacod/mycv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="My CV on GitHub"
+                >
+                  {chunks}
+                </a>
+              ),
+              author: (chunks) => (
+                <a
+                  className="underline"
+                  href="https://github.com/joacod"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Joaquin Diaz on GitHub"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
           </p>
           <span
             className="tooltip tooltip-info ml-2"
-            aria-label="Live Long and Prosper! 🖖"
-            data-tip="Live Long and Prosper! 🖖"
+            aria-label={t("tooltip")}
+            data-tip={t("tooltip")}
           >
             <SiStartrek size={20} />
           </span>
         </div>
         <ul>
           <li>
-            {t("shots")}{" "}
-            <a
-              className="underline"
-              href="https://shots.so/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Shots.so website"
-            >
-              Shots.so
-            </a>
+            {t.rich("shots", {
+              link: (chunks) => (
+                <a
+                  className="underline"
+                  href="https://shots.so/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Shots.so website"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
           </li>
           <li>
-            {t("uaparser")}{" "}
-            <a
-              className="underline"
-              href="https://uaparser.js.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="UAParser website"
-            >
-              uaparser.js.org
-            </a>
+            {t.rich("uaparser", {
+              link: (chunks) => (
+                <a
+                  className="underline"
+                  href="https://uaparser.js.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="UAParser website"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
           </li>
           <li>
-            {t("location")}{" "}
-            <a
-              className="underline"
-              href="https://ipapi.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="ipapi website"
-            >
-              ipapi.co
-            </a>
+            {t.rich("location", {
+              link: (chunks) => (
+                <a
+                  className="underline"
+                  href="https://ipapi.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="ipapi website"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
           </li>
           <li>
-            {t("flags")}{" "}
-            <a
-              className="underline"
-              href="https://icons8.com/icon/set/flags/color"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Flags icon set on icons8.com"
-            >
-              icons8.com
-            </a>
+            {t.rich("flags", {
+              link: (chunks) => (
+                <a
+                  className="underline"
+                  href="https://icons8.com/icon/set/flags/color"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Flags icon set on icons8.com"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
           </li>
           <li>
-            {t("flaticon")}{" "}
-            <a
-              className="underline"
-              href="https://www.flaticon.com/free-icons/files-and-folders"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Files and Folders icon on Flaticon by Muhammad Atif"
-            >
-              Muhammad Atif - Flaticon
-            </a>
+            {t.rich("flaticon", {
+              link: (chunks) => (
+                <a
+                  className="underline"
+                  href="https://www.flaticon.com/free-icons/files-and-folders"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Files and Folders icon on Flaticon by Muhammad Atif"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
           </li>
         </ul>
       </div>

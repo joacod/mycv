@@ -14,7 +14,7 @@ export const About = () => {
         <figure className="animate-flip-up mt-6 lg:hidden">
           <Image
             src="/avatar.webp"
-            alt="Avatar of a guy with a beard, glasses and smiling"
+            alt={t("avatarAlt")}
             width={250}
             height={250}
             placeholder="empty"
@@ -24,7 +24,7 @@ export const About = () => {
         <figure className="animate-flip-up hidden lg:inline lg:w-3/12 lg:self-start">
           <Image
             src="/avatar.webp"
-            alt="Avatar of a guy with a beard, glasses and smiling"
+            alt={t("avatarAlt")}
             width={500}
             height={500}
             placeholder="empty"

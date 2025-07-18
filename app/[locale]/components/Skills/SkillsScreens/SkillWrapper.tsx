@@ -29,7 +29,7 @@ export const SkillWrapper = ({
     <div className="tooltip tooltip-bottom" data-tip={name}>
       <div
         className={
-          "mask mask-hexagon-2 bg-primary text-primary-content transition duration-300 hover:mask-decagon hover:scale-125 hover:bg-secondary hover:text-secondary-content hover:duration-700 motion-reduce:transition-none motion-reduce:hover:transform-none"
+          "mask mask-hexagon-2 bg-primary text-primary-content hover:mask-decagon hover:bg-secondary hover:text-secondary-content transition duration-300 hover:scale-125 hover:duration-700 motion-reduce:transition-none motion-reduce:hover:transform-none"
         }
       >
         <div className={containerClasses}>{children}</div>

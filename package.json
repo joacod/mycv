@@ -1,6 +1,6 @@
 {
   "name": "mycv",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "scripts": {
     "dev": "NODE_ENV=development next dev --turbo",
@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "6.25.0",
-    "@clerk/themes": "2.2.56",
+    "@clerk/nextjs": "6.25.4",
+    "@clerk/themes": "2.3.3",
     "@vercel/analytics": "1.5.0",
     "canvas-confetti": "1.9.3",
     "next": "15.4.1",
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "4.1.11",
     "@types/canvas-confetti": "1.9.0",
-    "@types/node": "24.0.13",
+    "@types/node": "24.0.14",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
     "@types/ua-parser-js": "0.7.39",

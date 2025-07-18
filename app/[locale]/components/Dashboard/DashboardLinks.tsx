@@ -11,7 +11,7 @@ export const DashboardLinks = () => {
       <div className="mt-5 flex justify-center space-x-12 lg:hidden">
         <a
           href={devInfo.githubUrl}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -19,7 +19,7 @@ export const DashboardLinks = () => {
         </a>
         <a
           href={devInfo.devto}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -27,7 +27,7 @@ export const DashboardLinks = () => {
         </a>
         <a
           href={devInfo.spotify}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -37,7 +37,7 @@ export const DashboardLinks = () => {
       <div className="mt-5 flex justify-center space-x-12 lg:hidden">
         <a
           href={devInfo.linkedinUrl}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener"
         >
@@ -45,7 +45,7 @@ export const DashboardLinks = () => {
         </a>
         <a
           href={devInfo.linktree}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -56,7 +56,7 @@ export const DashboardLinks = () => {
       <div className="mt-5 hidden justify-center space-x-12 lg:flex">
         <a
           href={devInfo.githubUrl}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -64,7 +64,7 @@ export const DashboardLinks = () => {
         </a>
         <a
           href={devInfo.devto}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -72,7 +72,7 @@ export const DashboardLinks = () => {
         </a>
         <a
           href={devInfo.spotify}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -80,7 +80,7 @@ export const DashboardLinks = () => {
         </a>
         <a
           href={devInfo.linkedinUrl}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener"
         >
@@ -88,7 +88,7 @@ export const DashboardLinks = () => {
         </a>
         <a
           href={devInfo.linktree}
-          className="delay-50 transition duration-200 ease-in-out hover:scale-125"
+          className="transition delay-50 duration-200 ease-in-out hover:scale-125"
           target="_blank"
           rel="noopener noreferrer"
         >

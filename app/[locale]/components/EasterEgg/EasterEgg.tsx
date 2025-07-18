@@ -1,27 +1,35 @@
 "use client";
 
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 export const EasterEgg = () => {
+  const t = useTranslations("EasterEgg");
+
   useEffect(() => {
     console.clear();
+
+    // Blue pill message with console formatting
     console.log(
-      "%cYou take the %c🔵 blue pill%c... the story ends, you wake up in your bed and believe whatever you want to believe.",
+      `%c${t("bluePill", { bluePillEmoji: "%c🔵%c" })}`,
       "background-color: white; color: green; font-size: 15px",
       "background-color: white; color: blue; font-size: 15px",
       "background-color: white; color: green; font-size: 15px",
     );
+
+    // Red pill message with console formatting
     console.log(
-      "%cYou take the %c🔴 red pill%c... you stay in Wonderland, and I show you how deep the rabbit hole goes.",
+      `%c${t("redPill", { redPillEmoji: "%c🔴%c" })}`,
       "background-color: white; color: green; font-size: 15px",
       "background-color: white; color: red; font-size: 15px",
       "background-color: white; color: green; font-size: 15px",
     );
+
     console.log(
-      "%cFollow the white rabbit 🐇😎",
+      `%c${t("followRabbit")}`,
       "background-color: black; color: white; font-size: 20px; font-weight: bold",
     );
-  }, []);
+  }, [t]);
 
   return <></>;
 };

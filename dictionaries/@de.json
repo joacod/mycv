@@ -1,0 +1,113 @@
+{
+  "About": {
+    "avatarAlt": "Avatar eines Typen mit Bart, Brille und lächelnd",
+    "collaborate": "Ich bin ein engagierter, proaktiver und ergebnisorientierter Fachmann mit einem starken Verantwortungs- und Qualitätsbewusstsein. Ich gedeihe in kollaborativen Umgebungen, lerne schnell und suche immer nach neuen Herausforderungen und Möglichkeiten, weiter zu wachsen.",
+    "description": "Mit über 15 Jahren Erfahrung in der Softwareentwicklung habe ich fundierte Expertise in verschiedenen Branchen entwickelt, einschließlich Finanzen, Medien, Gesundheitswesen und IoT.",
+    "getstarted": "Loslegen",
+    "role": "Als Lead Software Engineer treibe ich wichtige technische Entscheidungen zu Design, Architektur und Core-Komponentenentwicklung voran. Über das Programmieren hinaus trage ich zu Konfigurationsmanagement, kontinuierlicher Integration und Teamunterstützung bei und biete auch Mentoring und Schulungen an.",
+    "title": "Über mich"
+  },
+  "ClickMe": {
+    "text1": "Klick mich!",
+    "text2": "Ja!",
+    "text3": "Themen!",
+    "text4": "Nochmal!"
+  },
+  "Common": {
+    "close": "Schließen",
+    "top": "Nach oben"
+  },
+  "Company": {
+    "badge": "Neues Abenteuer!",
+    "button": "Schauen Sie sich mein Unternehmen an",
+    "card1": "Ich wollte schaffen, innovieren und Wirkung nach meinen eigenen Bedingungen erzielen.",
+    "card2": "Wir beseitigen das Durcheinander. Schnelle, effiziente und kostengünstige Software-Lösungen.",
+    "card3": "Wir konzentrieren uns auf schnelle Fortschritte. Sie sehen täglich Updates, keine monatelangen Wartezeiten!",
+    "card4": "Wir verwenden ziemlich clevere KI-Tools. Es ist wie ein superintelligenter Roboter-Assistent!",
+    "cardTitle": "Das Warum hinter der Entscheidung",
+    "description": "Ich habe beschlossen, etwas Eigenes zu beginnen. Es ist ein neuer Weg, und ich bin aufgeregt, ihn zu teilen!",
+    "logoAlt": "Unternehmens-Logo",
+    "quote": "\"Qualität, Effizienz und vielleicht ein bisschen Spaß auf dem Weg. Das ist das Ziel!\"",
+    "title": "Große Neuigkeiten – Ich habe ein Unternehmen gegründet!"
+  },
+  "Credits": {
+    "created": "<webTemplate>Web-Template</webTemplate> erstellt von <author>Joaquin Diaz</author>",
+    "flags": "Flaggen-Icons von <link>icons8.com</link>",
+    "flaticon": "Favicon-Bild erstellt von <link>Muhammad Atif - Flaticon</link>",
+    "location": "Standort bereitgestellt von <link>ipapi.co</link>",
+    "shots": "Gerahmte Bilder erstellt mit <link>Shots.so</link>",
+    "title": "Credits",
+    "tooltip": "Lebe lang und in Frieden! 🖖",
+    "uaparser": "Wir zeigen Benutzerinformationen mit <link>uaparser.js.org</link>"
+  },
+  "EasterEgg": {
+    "bluePill": "Du nimmst die {bluePillEmoji} blaue Pille... die Geschichte endet, du wachst in deinem Bett auf und glaubst, was du glauben willst.",
+    "followRabbit": "Folge dem weißen Kaninchen 🐇😎",
+    "redPill": "Du nimmst die {redPillEmoji} rote Pille... du bleibst im Wunderland, und ich zeige dir, wie tief der Kaninchenbau geht."
+  },
+  "Experience": {
+    "clientDescription1": "Medienunternehmen entstanden durch die Fusion von WarnerMedia und Discovery, Inc., das eine große Bandbreite an Unterhaltungsinhalten bietet.",
+    "clientDescription2": "Beliebte Online-Jobsuchplattform, die Arbeitssuchende mit Arbeitgebern weltweit verbindet.",
+    "clientDescription3": "Globaler Marktführer in professionellen Dienstleistungen, der innovative Lösungen in Wirtschaftsprüfung, Beratung und Beratungsdienstleistungen anbietet.",
+    "clientDescription4": "Kostenloser werbeunterstützter Streaming-TV-Dienst, der von der Paramount Streaming-Abteilung von Paramount Global besessen und betrieben wird.",
+    "clientLogoAlt": "Logo von {clientName}",
+    "description": "Als Anbieter hatte ich die Gelegenheit, mit diesen herausragenden Kunden zusammenzuarbeiten.",
+    "title": "Erfahrung",
+    "visit": "Kunden-Website besuchen"
+  },
+  "Footer": {
+    "rights": "Lassen Sie uns zusammenarbeiten und Ihre digitale Vision zum Leben erwecken."
+  },
+  "Layout": {
+    "metaDescription": "Software-Entwickler, Unternehmer, Ich schreibe Zeug",
+    "metaTitle": "Software-Lösungen"
+  },
+  "LocaleSwitcher": {
+    "de": "Deutsch",
+    "en": "Englisch",
+    "es": "Spanisch",
+    "flagAlt": "Sprachflagge: {language}",
+    "fr": "Französisch",
+    "it": "Italienisch",
+    "pt": "Portugiesisch",
+    "title": "Sprache"
+  },
+  "Navigation": {
+    "about": "Über",
+    "company": "Unternehmen",
+    "credits": "Credits",
+    "experience": "Erfahrung",
+    "podcast": "Podcast",
+    "riddler": "?",
+    "skills": "Fähigkeiten",
+    "writing": "Blog"
+  },
+  "NotFound": {
+    "backHome": "Zurück zur Startseite",
+    "description": "Entschuldigung, die gesuchte Seite existiert nicht.",
+    "title": "Seite Nicht Gefunden"
+  },
+  "Podcast": {
+    "description": "Code Quests ist ein Podcast mit KI-erzählten Lesungen meiner Artikel über Softwareentwicklung, Technologie und Innovation. Begleiten Sie uns, während wir die neuesten Trends und Erkenntnisse in der Tech-Welt durch fesselnde Audio-Geschichten erkunden.",
+    "title": "Code Quests Podcast"
+  },
+  "Riddler": {
+    "browser": "Browser",
+    "city": "Stadt",
+    "country": "Land",
+    "device": "Gerät",
+    "disclaimer": "Diese Website speichert keine Informationen.",
+    "os": "Betriebssystem",
+    "question": "Was ich über Sie weiß",
+    "version": "Version"
+  },
+  "Skills": {
+    "title": "Technische Fähigkeiten"
+  },
+  "Writing": {
+    "description": "Ich schreibe über Software, Technologie, Künstliche Intelligenz, Mentoring, Karriereentwicklung, Innovation und Meinungen zu verschiedenen Themen.",
+    "platformDevTo": "Dev.to",
+    "platformMedium": "Medium",
+    "title": "Ich Schreibe Zeug"
+  }
+}

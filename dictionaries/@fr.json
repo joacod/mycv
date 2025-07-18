@@ -1,0 +1,113 @@
+{
+  "About": {
+    "avatarAlt": "Avatar d'un mec avec une barbe, des lunettes et souriant",
+    "collaborate": "Je suis un professionnel engagé, proactif et orienté résultats, avec un fort sens des responsabilités et de la qualité. Je prospère dans des environnements collaboratifs, j'apprends rapidement et je recherche toujours de nouveaux défis et opportunités pour continuer à grandir.",
+    "description": "Avec plus de 15 ans d'expérience dans le développement logiciel, j'ai développé une solide expertise dans diverses industries, notamment la finance, les médias, la santé et l'IoT.",
+    "getstarted": "Commencer",
+    "role": "En tant qu'Ingénieur Logiciel Principal, je dirige les décisions techniques clés concernant la conception, l'architecture et le développement de composants principaux. Au-delà du codage, je contribue à la gestion de configuration, l'intégration continue et le support d'équipe, tout en fournissant du mentorat et de la formation.",
+    "title": "À propos de moi"
+  },
+  "ClickMe": {
+    "text1": "Cliquez-moi!",
+    "text2": "Oui!",
+    "text3": "Thèmes!",
+    "text4": "Encore!"
+  },
+  "Common": {
+    "close": "Fermer",
+    "top": "Retour en haut"
+  },
+  "Company": {
+    "badge": "Nouvelle aventure!",
+    "button": "Découvrez mon entreprise",
+    "card1": "Je voulais créer, innover et avoir un impact selon mes propres termes.",
+    "card2": "Nous éliminons le désordre. Solutions logicielles rapides, efficaces et économiques.",
+    "card3": "Nous nous concentrons sur les progrès rapides. Vous verrez des mises à jour quotidiennes, pas d'attente de mois!",
+    "card4": "Nous utilisons des outils d'IA assez astucieux. C'est comme avoir un assistant robot super intelligent!",
+    "cardTitle": "Le pourquoi derrière la décision",
+    "description": "J'ai décidé de commencer quelque chose par moi-même. C'est un nouveau chemin, et je suis excité de le partager!",
+    "logoAlt": "Logo de l'Entreprise",
+    "quote": "\"Qualité, efficacité, et peut-être un peu de plaisir en cours de route. C'est l'objectif!\"",
+    "title": "Grande nouvelle – J'ai lancé une Entreprise!"
+  },
+  "Credits": {
+    "created": "<webTemplate>Template Web</webTemplate> créé par <author>Joaquin Diaz</author>",
+    "flags": "Icônes de drapeaux par <link>icons8.com</link>",
+    "flaticon": "Image du favicon créée par <link>Muhammad Atif - Flaticon</link>",
+    "location": "Localisation fournie par <link>ipapi.co</link>",
+    "shots": "Images encadrées créées avec <link>Shots.so</link>",
+    "title": "Crédits",
+    "tooltip": "Longue vie et prospérité! 🖖",
+    "uaparser": "Nous affichons les informations utilisateur en utilisant <link>uaparser.js.org</link>"
+  },
+  "EasterEgg": {
+    "bluePill": "Vous prenez la {bluePillEmoji} pilule bleue... l'histoire se termine, vous vous réveillez dans votre lit et croyez ce que vous voulez croire.",
+    "followRabbit": "Suivez le lapin blanc 🐇😎",
+    "redPill": "Vous prenez la {redPillEmoji} pilule rouge... vous restez au Pays des Merveilles, et je vous montre à quel point le terrier du lapin est profond."
+  },
+  "Experience": {
+    "clientDescription1": "Entreprise de médias formée par la fusion de WarnerMedia et Discovery, Inc., offrant une vaste gamme de contenu de divertissement.",
+    "clientDescription2": "Plateforme populaire de recherche d'emploi en ligne, connectant les chercheurs d'emploi aux employeurs du monde entier.",
+    "clientDescription3": "Leader mondial des services professionnels, fournissant des solutions innovantes en audit, conseil et services consultatifs.",
+    "clientDescription4": "Service de télévision en streaming gratuit avec support publicitaire, détenu et exploité par la division Paramount Streaming de Paramount Global.",
+    "clientLogoAlt": "Logo de {clientName}",
+    "description": "En tant que fournisseur, j'ai eu l'opportunité de collaborer avec ces clients exceptionnels.",
+    "title": "Expérience",
+    "visit": "Visiter le Site Client"
+  },
+  "Footer": {
+    "rights": "Collaborons et donnons vie à votre vision numérique."
+  },
+  "Layout": {
+    "metaDescription": "Développeur Logiciel, Entrepreneur, J'écris des trucs",
+    "metaTitle": "Solutions Logicielles"
+  },
+  "LocaleSwitcher": {
+    "de": "Allemand",
+    "en": "Anglais",
+    "es": "Espagnol",
+    "flagAlt": "Drapeau de langue: {language}",
+    "fr": "Français",
+    "it": "Italien",
+    "pt": "Portugais",
+    "title": "Langue"
+  },
+  "Navigation": {
+    "about": "À propos",
+    "company": "Entreprise",
+    "credits": "Crédits",
+    "experience": "Expérience",
+    "podcast": "Podcast",
+    "riddler": "?",
+    "skills": "Compétences",
+    "writing": "Blog"
+  },
+  "NotFound": {
+    "backHome": "Retour à l'Accueil",
+    "description": "Désolé, la page que vous recherchez n'existe pas.",
+    "title": "Page Non Trouvée"
+  },
+  "Podcast": {
+    "description": "Code Quests est un podcast avec des lectures narrées par l'IA de mes articles sur le développement logiciel, la technologie et l'innovation. Rejoignez-nous alors que nous explorons les dernières tendances et perspectives dans le monde de la technologie à travers des histoires audio captivantes.",
+    "title": "Code Quests Podcast"
+  },
+  "Riddler": {
+    "browser": "Navigateur",
+    "city": "Ville",
+    "country": "Pays",
+    "device": "Appareil",
+    "disclaimer": "Ce site ne stocke aucune information.",
+    "os": "Système d'Exploitation",
+    "question": "Ce que je sais de vous",
+    "version": "Version"
+  },
+  "Skills": {
+    "title": "Compétences Techniques"
+  },
+  "Writing": {
+    "description": "J'écris sur le Logiciel, la Technologie, l'Intelligence Artificielle, le Mentorat, l'Évolution de Carrière, l'Innovation et des Opinions sur différents sujets.",
+    "platformDevTo": "Dev.to",
+    "platformMedium": "Medium",
+    "title": "J'Écris des Trucs"
+  }
+}
