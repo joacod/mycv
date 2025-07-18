@@ -12,16 +12,16 @@ export const ClientCard = ({ client }: { client: Client }) => {
       rel="noopener noreferrer"
       aria-label={`Visit ${client.name}`}
     >
-      <article className="card glass h-full hover:animate-wiggle hover:shadow-lg hover:shadow-secondary-content">
+      <article className="card glass hover:animate-wiggle hover:shadow-secondary-content h-full hover:shadow-lg">
         <figure>
           <Image
             src={client.imageUrl}
-                          alt={t("clientLogoAlt", { clientName: client.name })}
+            alt={t("clientLogoAlt", { clientName: client.name })}
             width={384}
             height={288}
           />
         </figure>
-        <div className="card-body pt-0 lg:pl-4 lg:pr-4">
+        <div className="card-body pt-0 lg:pr-4 lg:pl-4">
           <h3 className="card-title">{client.name}</h3>
           <p className="mt-2 text-sm">{t(client.descriptionKey)}</p>
         </div>

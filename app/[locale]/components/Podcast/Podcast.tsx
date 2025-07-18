@@ -11,7 +11,7 @@ export const Podcast = () => {
   return (
     <section
       id="section-podcast"
-      className="flex flex-col justify-center bg-primary px-4 pt-14 text-primary-content md:items-center md:px-0 md:pt-8 lg:items-center lg:px-0 lg:pt-20"
+      className="bg-primary text-primary-content flex flex-col justify-center px-4 pt-14 md:items-center md:px-0 md:pt-8 lg:items-center lg:px-0 lg:pt-20"
     >
       <h1 className="pb-6 text-5xl font-bold">{t("title")}</h1>
       <p className="lg:w-1/2 lg:text-center">{t("description")}</p>
@@ -27,7 +27,7 @@ export const Podcast = () => {
             <FaYoutube size={80} className="lg:hidden" />
             <FaYoutube
               size={200}
-              className="delay-50 hidden transition duration-200 ease-in-out hover:scale-125 lg:flex"
+              className="hidden transition delay-50 duration-200 ease-in-out hover:scale-125 lg:flex"
             />
           </a>
         </article>
@@ -42,7 +42,7 @@ export const Podcast = () => {
             <BiLogoSpotify size={80} className="lg:hidden" />
             <BiLogoSpotify
               size={200}
-              className="delay-50 hidden transition duration-200 ease-in-out hover:scale-125 lg:flex"
+              className="hidden transition delay-50 duration-200 ease-in-out hover:scale-125 lg:flex"
             />
           </a>
         </article>
@@ -57,7 +57,7 @@ export const Podcast = () => {
             <FaPodcast size={80} className="lg:hidden" />
             <FaPodcast
               size={200}
-              className="delay-50 hidden transition duration-200 ease-in-out hover:scale-125 lg:flex"
+              className="hidden transition delay-50 duration-200 ease-in-out hover:scale-125 lg:flex"
             />
           </a>
         </article>
@@ -72,7 +72,7 @@ export const Podcast = () => {
             <SiAmazonmusic size={80} className="lg:hidden" />
             <SiAmazonmusic
               size={200}
-              className="delay-50 hidden transition duration-200 ease-in-out hover:scale-125 lg:flex"
+              className="hidden transition delay-50 duration-200 ease-in-out hover:scale-125 lg:flex"
             />
           </a>
         </article>

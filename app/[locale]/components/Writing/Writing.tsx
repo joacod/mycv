@@ -8,7 +8,7 @@ export const Writing = () => {
   return (
     <section
       id="section-writing"
-      className="flex flex-col justify-center bg-primary px-4 pt-14 text-primary-content md:items-center md:px-0 md:pt-5 lg:items-center lg:px-0 lg:py-0"
+      className="bg-primary text-primary-content flex flex-col justify-center px-4 pt-14 md:items-center md:px-0 md:pt-5 lg:items-center lg:px-0 lg:py-0"
     >
       <h1 className="pb-6 text-5xl font-bold">{t("title")}</h1>
       <p className="lg:w-1/2 lg:text-center">{t("description")}</p>
@@ -24,9 +24,9 @@ export const Writing = () => {
             <BiLogoDevTo size={150} className="lg:hidden" />
             <BiLogoDevTo
               size={200}
-              className="delay-50 hidden transition duration-200 ease-in-out hover:scale-125 lg:flex"
+              className="hidden transition delay-50 duration-200 ease-in-out hover:scale-125 lg:flex"
             />
-                            <p className="text-xl font-semibold">{t("platformDevTo")}</p>
+            <p className="text-xl font-semibold">{t("platformDevTo")}</p>
           </a>
         </article>
         <article>
@@ -40,9 +40,9 @@ export const Writing = () => {
             <BiLogoMediumSquare size={150} className="lg:hidden" />
             <BiLogoMediumSquare
               size={200}
-              className="delay-50 hidden transition duration-200 ease-in-out hover:scale-125 lg:flex"
+              className="hidden transition delay-50 duration-200 ease-in-out hover:scale-125 lg:flex"
             />
-                            <p className="text-xl font-semibold">{t("platformMedium")}</p>
+            <p className="text-xl font-semibold">{t("platformMedium")}</p>
           </a>
         </article>
       </div>

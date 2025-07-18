@@ -42,10 +42,10 @@ export const RiddlerClient = ({ info }: { info: RiddlerInfo }) => {
   return (
     <section
       id="section-riddler"
-      className="bg-neutral px-28 pb-12 pt-16 text-center lg:px-80 lg:pb-16 lg:pt-28"
+      className="bg-neutral px-28 pt-16 pb-12 text-center lg:px-80 lg:pt-28 lg:pb-16"
     >
       <button
-        className="inline-block cursor-pointer select-none rounded-3xl border-4 bg-secondary p-8 text-4xl font-bold text-secondary-content outline-double transition-colors duration-200 ease-in-out hover:bg-accent hover:text-accent-content md:text-6xl lg:px-20 lg:text-7xl"
+        className="bg-secondary text-secondary-content hover:bg-accent hover:text-accent-content inline-block cursor-pointer rounded-3xl border-4 p-8 text-4xl font-bold transition-colors duration-200 ease-in-out outline-double select-none md:text-6xl lg:px-20 lg:text-7xl"
         onClick={handleClick}
         aria-label="Riddle phrase button"
       >

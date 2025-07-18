@@ -8,7 +8,7 @@ export const EasterEgg = () => {
 
   useEffect(() => {
     console.clear();
-    
+
     // Blue pill message with console formatting
     console.log(
       `%c${t("bluePill", { bluePillEmoji: "%c🔵%c" })}`,
@@ -16,7 +16,7 @@ export const EasterEgg = () => {
       "background-color: white; color: blue; font-size: 15px",
       "background-color: white; color: green; font-size: 15px",
     );
-    
+
     // Red pill message with console formatting
     console.log(
       `%c${t("redPill", { redPillEmoji: "%c🔴%c" })}`,
@@ -24,7 +24,7 @@ export const EasterEgg = () => {
       "background-color: white; color: red; font-size: 15px",
       "background-color: white; color: green; font-size: 15px",
     );
-    
+
     console.log(
       `%c${t("followRabbit")}`,
       "background-color: black; color: white; font-size: 20px; font-weight: bold",

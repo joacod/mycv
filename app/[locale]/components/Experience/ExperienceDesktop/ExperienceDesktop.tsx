@@ -11,7 +11,7 @@ export const ExperienceDesktop = () => {
         <h1 className="text-5xl font-bold">{t("title")}</h1>
         <p className="py-6">{t("description")}</p>
 
-        <ul className="flex justify-between text-secondary-content">
+        <ul className="text-secondary-content flex justify-between">
           {myClients.map((client) => (
             <li key={client.webUrl} className="mx-4 w-1/4">
               <ClientCard client={client} />
