@@ -16,7 +16,7 @@ export const ClientCard = ({ client }: { client: Client }) => {
         <figure>
           <Image
             src={client.imageUrl}
-            alt={`Logo of ${client.name}`}
+                          alt={t("clientLogoAlt", { clientName: client.name })}
             width={384}
             height={288}
           />

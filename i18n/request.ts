@@ -11,6 +11,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   return {
     locale,
-    messages: (await import(`../dictionaries/${locale}.json`)).default,
+    messages: (await import(`../dictionaries/@${locale === 'en' ? 'en-US' : locale}.json`)).default,
   };
 });

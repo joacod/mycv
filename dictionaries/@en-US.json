@@ -1,0 +1,116 @@
+{
+  "About": {
+    "avatarAlt": "Avatar of a guy with a beard, glasses and smiling",
+    "collaborate": "I am a committed, proactive, and results-oriented professional with a strong sense of responsibility and quality. I thrive in collaborative environments, learn quickly, and am always seeking new challenges and opportunities to continue growing.",
+    "description": "With over 15 years of experience in software development, I've developed strong expertise across diverse industries, including finance, media, healthcare, and IoT.",
+    "getstarted": "Get started",
+    "role": "As a Lead Software Engineer, I drive key technical decisions across design, architecture, and core component development. Beyond coding, I contribute to configuration management, continuous integration, and team support, while also providing mentorship and training.",
+    "title": "About me"
+  },
+  "ClickMe": {
+    "text1": "Click me!",
+    "text2": "Yeah!",
+    "text3": "Themes!",
+    "text4": "Again!"
+  },
+  "Common": {
+    "close": "Close",
+    "top": "Go to Top"
+  },
+  "Company": {
+    "badge": "New Adventure!",
+    "button": "Check out my company",
+    "card1": "I wanted to create, innovate, and make an impact on my own terms.",
+    "card2": "We cut through the clutter. Fast, efficient, and cost-effective software solutions.",
+    "card3": "We're all about quick progress. You'll see updates daily, no waiting around for months!",
+    "card4": "We use some pretty nifty AI tools. It's like having a super-smart robot assistant!",
+    "cardTitle": "The Why Behind the Decision",
+    "description": "Decided to start something of my own. It's a new path, and I'm excited to share it!",
+    "logoAlt": "Company Logo",
+    "quote": "\"Quality, efficiency, and maybe having a bit of fun along the way. That's the goal!\"",
+    "title": "Big News – I started a Company!"
+  },
+  "Credits": {
+    "created": "<webTemplate>Web Template</webTemplate> created by <author>Joaquin Diaz</author>",
+    "flags": "Flags icons by <link>icons8.com</link>",
+    "flaticon": "Image for the favicon created by <link>Muhammad Atif - Flaticon</link>",
+    "location": "Location provided by <link>ipapi.co</link>",
+    "shots": "Framed images created with <link>Shots.so</link>",
+    "title": "Credits",
+    "tooltip": "Live Long and Prosper! 🖖",
+    "uaparser": "We show user's info using <link>uaparser.js.org</link>"
+  },
+  "EasterEgg": {
+    "bluePill": "You take the <blue>🔵 blue pill</blue>... the story ends, you wake up in your bed and believe whatever you want to believe.",
+    "followRabbit": "Follow the white rabbit 🐇😎",
+    "redPill": "You take the <red>🔴 red pill</red>... you stay in Wonderland, and I show you how deep the rabbit hole goes."
+  },
+  "Experience": {
+    "clientDescription1": "Media company formed by the merger of WarnerMedia and Discovery, Inc., offering a vast array of entertainment content.",
+    "clientDescription2": "Popular online job search platform, connecting job seekers with employers worldwide.",
+    "clientDescription3": "A global leader in professional services, providing innovative solutions in auditing, consulting, and advisory services.",
+    "clientDescription4": "Free ad-supported streaming television service owned and operated by the Paramount Streaming division of Paramount Global.",
+    "clientLogoAlt": "Logo of {clientName}",
+    "description": "As a vendor, I've had the opportunity to collaborate with these outstanding clients.",
+    "title": "Experience",
+    "visit": "Visit Client Site"
+  },
+  "Footer": {
+    "rights": "Let's collaborate and bring your digital vision to life."
+  },
+  "Layout": {
+    "authDescription": "Access your account by signing in to joacod",
+    "authKeywords": ["sign in", "login", "create account"],
+    "authTitle": "Auth",
+    "metaDescription": "Software Developer, Entrepreneur, I write stuff",
+    "metaTitle": "Software Solutions"
+  },
+  "LocaleSwitcher": {
+    "de": "German",
+    "en": "English",
+    "es": "Spanish",
+    "flagAlt": "Language flag: {language}",
+    "fr": "French",
+    "it": "Italian",
+    "pt": "Portuguese",
+    "title": "Language"
+  },
+  "Navigation": {
+    "about": "About",
+    "company": "Company",
+    "credits": "Credits",
+    "experience": "Experience",
+    "podcast": "Podcast",
+    "riddler": "?",
+    "skills": "Skills",
+    "writing": "Blog"
+  },
+  "NotFound": {
+    "backHome": "Back to Home",
+    "description": "Sorry, the page you are looking for does not exist.",
+    "title": "Page Not Found"
+  },
+  "Podcast": {
+    "description": "Code Quests, is a podcast featuring AI-narrated readings of my articles about software development, technology, and innovation. Join us as we explore the latest trends and insights in the tech world through engaging audio stories.",
+    "title": "Code Quests Podcast"
+  },
+  "Riddler": {
+    "browser": "Browser",
+    "city": "City",
+    "country": "Country",
+    "device": "Device",
+    "disclaimer": "This site does not store any information.",
+    "os": "Operating System",
+    "question": "What do I know about you",
+    "version": "Version"
+  },
+  "Skills": {
+    "title": "Tech Skills"
+  },
+  "Writing": {
+    "description": "I write about Software, Tech, Artificial Intelligence, Mentoring, Career Growth, Innovation and Opinions on different topics.",
+    "platformDevTo": "Dev.to",
+    "platformMedium": "Medium",
+    "title": "I Write Stuff"
+  }
+}

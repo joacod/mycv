@@ -6,13 +6,22 @@ import { ThemeProvider } from "./providers/themeProvider";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { locales, routing } from "@/i18n/routing";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { getMessages, setRequestLocale, getTranslations } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
-export const metadata: Metadata = {
-  title: "Software Solutions | " + devInfo.handle + " | " + devInfo.name,
-  description: "Software Developer, Entrepreneur, I write stuff",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Layout" });
+
+  return {
+    title: `${t("metaTitle")} | ${devInfo.handle} | ${devInfo.name}`,
+    description: t("metaDescription"),
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

@@ -26,7 +26,7 @@ export const Writing = () => {
               size={200}
               className="delay-50 hidden transition duration-200 ease-in-out hover:scale-125 lg:flex"
             />
-            <p className="text-xl font-semibold">Dev.to</p>
+                            <p className="text-xl font-semibold">{t("platformDevTo")}</p>
           </a>
         </article>
         <article>
@@ -42,7 +42,7 @@ export const Writing = () => {
               size={200}
               className="delay-50 hidden transition duration-200 ease-in-out hover:scale-125 lg:flex"
             />
-            <p className="text-xl font-semibold">Medium</p>
+                            <p className="text-xl font-semibold">{t("platformMedium")}</p>
           </a>
         </article>
       </div>

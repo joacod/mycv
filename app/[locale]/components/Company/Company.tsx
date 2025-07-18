@@ -29,7 +29,7 @@ export const Company = () => {
             <div className="relative">
               <Image
                 src="/company-logo.png"
-                alt="Company Logo"
+                alt={t("logoAlt")}
                 width={100}
                 height={100}
                 className="rounded-full bg-black p-2"

@@ -27,7 +27,7 @@ const LocaleSwitcher = () => {
               >
                 <Image
                   src={"/flags/" + lang + ".png"}
-                  alt={`Language flag: ${lang}`}
+                  alt={t("flagAlt", { language: lang })}
                   width={24}
                   height={24}
                 />{" "}
