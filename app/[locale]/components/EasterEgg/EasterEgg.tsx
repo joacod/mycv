@@ -9,23 +9,17 @@ export const EasterEgg = () => {
   useEffect(() => {
     console.clear();
     
-    // Blue pill message with rich text formatting
-    const bluePillMessage = t.rich("bluePill", {
-      blue: (chunks) => `%c${chunks}%c`,
-    });
+    // Blue pill message with console formatting
     console.log(
-      bluePillMessage,
+      `%c${t("bluePill", { bluePillEmoji: "%c🔵%c" })}`,
       "background-color: white; color: green; font-size: 15px",
       "background-color: white; color: blue; font-size: 15px",
       "background-color: white; color: green; font-size: 15px",
     );
     
-    // Red pill message with rich text formatting
-    const redPillMessage = t.rich("redPill", {
-      red: (chunks) => `%c${chunks}%c`,
-    });
+    // Red pill message with console formatting
     console.log(
-      redPillMessage,
+      `%c${t("redPill", { redPillEmoji: "%c🔴%c" })}`,
       "background-color: white; color: green; font-size: 15px",
       "background-color: white; color: red; font-size: 15px",
       "background-color: white; color: green; font-size: 15px",

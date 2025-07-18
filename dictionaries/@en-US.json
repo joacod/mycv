@@ -41,9 +41,9 @@
     "uaparser": "We show user's info using <link>uaparser.js.org</link>"
   },
   "EasterEgg": {
-    "bluePill": "You take the <blue>🔵 blue pill</blue>... the story ends, you wake up in your bed and believe whatever you want to believe.",
+    "bluePill": "You take the {bluePillEmoji} blue pill... the story ends, you wake up in your bed and believe whatever you want to believe.",
     "followRabbit": "Follow the white rabbit 🐇😎",
-    "redPill": "You take the <red>🔴 red pill</red>... you stay in Wonderland, and I show you how deep the rabbit hole goes."
+    "redPill": "You take the {redPillEmoji} red pill... you stay in Wonderland, and I show you how deep the rabbit hole goes."
   },
   "Experience": {
     "clientDescription1": "Media company formed by the merger of WarnerMedia and Discovery, Inc., offering a vast array of entertainment content.",
