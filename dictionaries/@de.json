@@ -103,5 +103,29 @@
     "platformDevTo": "Dev.to",
     "platformMedium": "Medium",
     "title": "Ich Schreibe Zeug"
+  },
+  "Dashboard": {
+    "contactDescription": "Haben Sie Fragen oder Anregungen? Kontaktieren Sie mich gerne.",
+    "contactTitle": "Kontakt aufnehmen",
+    "description": "Entdecken Sie exklusive Mitgliederinhalte! Erfahren Sie, woran ich aktuell arbeite, und sehen Sie sich den Zeitplan für kommende Funktionen und Projekte an, die nur für Sie verfügbar sind.",
+    "supportMessage": "Bleiben Sie auf dem Laufenden, und <strong>danke</strong> für Ihre Unterstützung!",
+    "timelineItems": {
+      "completeHome": "Startseiten-Abschnitte vervollständigen",
+      "responsiveMobile": "Responsive Mobile Version",
+      "intl": "Internationalisierung (i18n) Unterstützung",
+      "loginAuth": "Authentifizierungskonfigurationen",
+      "userDashboard": "Dashboard-Seite (Login erforderlich)",
+      "moreStuff": "Weitere Inhalte (in Kürze)"
+    },
+    "title": "Dashboard"
+  },
+  "DashboardLinks": {
+    "title": "Entdecken Sie Meine Projekte und Sozialen Medien"
+  },
+  "DashboardTimeline": {
+    "title": "Zeitplan"
+  },
+  "DashboardWelcome": {
+    "message": "Willkommen {userName}! 👋"
   }
 }

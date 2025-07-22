@@ -1,10 +1,12 @@
 "use client";
 
 import { useUser } from "@clerk/nextjs";
+import { useTranslations } from "next-intl";
 
 export const DashboardWelcome = () => {
   const { user } = useUser();
-  const userName = user ? user.firstName : "";
+  const t = useTranslations("DashboardWelcome");
+  const userName = user?.firstName || "";
 
-  return <h2 className="text-3xl font-bold">Welcome {userName}! 👋</h2>;
+  return <h2 className="text-3xl font-bold">{t("message", { userName })}</h2>;
 };

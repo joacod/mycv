@@ -103,5 +103,29 @@
     "platformDevTo": "Dev.to",
     "platformMedium": "Medium",
     "title": "Scrivo Cose"
+  },
+  "Dashboard": {
+    "contactDescription": "Hai domande o suggerimenti? Non esitare a contattarmi.",
+    "contactTitle": "Contattami",
+    "description": "Esplora contenuti esclusivi per i membri! Scopri su cosa sto lavorando attualmente e controlla la timeline delle prossime funzionalità e progetti disponibili solo per te.",
+    "supportMessage": "Resta sintonizzato per gli aggiornamenti, e <strong>grazie</strong> per il tuo supporto!",
+    "timelineItems": {
+      "completeHome": "Completare le sezioni della homepage",
+      "responsiveMobile": "Versione mobile responsive",
+      "intl": "Supporto internazionalizzazione (i18n)",
+      "loginAuth": "Configurazioni di autenticazione",
+      "userDashboard": "Pagina dashboard (Login richiesto)",
+      "moreStuff": "Altri contenuti (in arrivo)"
+    },
+    "title": "Dashboard"
+  },
+  "DashboardLinks": {
+    "title": "Esplora i Miei Progetti e Social Media"
+  },
+  "DashboardTimeline": {
+    "title": "Timeline"
+  },
+  "DashboardWelcome": {
+    "message": "Benvenuto {userName}! 👋"
   }
 }

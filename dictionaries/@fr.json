@@ -103,5 +103,29 @@
     "platformDevTo": "Dev.to",
     "platformMedium": "Medium",
     "title": "J'Écris des Trucs"
+  },
+  "Dashboard": {
+    "contactDescription": "Vous avez des questions ou des suggestions ? N'hésitez pas à me contacter.",
+    "contactTitle": "Contactez-moi",
+    "description": "Explorez du contenu exclusif réservé aux membres ! Découvrez ce sur quoi je travaille actuellement et consultez le calendrier des fonctionnalités et projets à venir disponibles uniquement pour vous.",
+    "supportMessage": "Restez à l'écoute des mises à jour, et <strong>merci</strong> pour votre soutien !",
+    "timelineItems": {
+      "completeHome": "Compléter les sections de la page d'accueil",
+      "responsiveMobile": "Version mobile responsive",
+      "intl": "Support de l'internationalisation (i18n)",
+      "loginAuth": "Configurations d'authentification",
+      "userDashboard": "Page tableau de bord (Connexion requise)",
+      "moreStuff": "Plus de contenu (à venir)"
+    },
+    "title": "Tableau de Bord"
+  },
+  "DashboardLinks": {
+    "title": "Explorez Mes Projets et Réseaux Sociaux"
+  },
+  "DashboardTimeline": {
+    "title": "Chronologie"
+  },
+  "DashboardWelcome": {
+    "message": "Bienvenue {userName}! 👋"
   }
 }
