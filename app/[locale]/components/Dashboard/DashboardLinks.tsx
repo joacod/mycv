@@ -1,12 +1,15 @@
 import { devInfo } from "@/utils/devInfo";
+import { useTranslations } from "next-intl";
 import { BiLogoDevTo, BiLogoSpotify } from "react-icons/bi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { PiLinktreeLogoBold } from "react-icons/pi";
 
 export const DashboardLinks = () => {
+  const t = useTranslations("DashboardLinks");
+
   return (
     <div className="mt-12">
-      <h2 className="mt-5 text-3xl">Explore My Projects and Social Media</h2>
+      <h2 className="mt-5 text-3xl">{t("title")}</h2>
 
       <div className="mt-5 flex justify-center space-x-12 lg:hidden">
         <a

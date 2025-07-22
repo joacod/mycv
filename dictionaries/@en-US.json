@@ -40,6 +40,30 @@
     "tooltip": "Live Long and Prosper! 🖖",
     "uaparser": "We show user's info using <link>uaparser.js.org</link>"
   },
+  "Dashboard": {
+    "contactDescription": "Have questions or suggestions? Feel free to contact me.",
+    "contactTitle": "Get in Touch",
+    "description": "Explore exclusive members-only content! Dive into what I'm currently working on, and check out the timeline for upcoming features and projects available just for you.",
+    "supportMessage": "Stay tuned for updates, and <strong>thank you</strong> for your support!",
+    "timelineItems": {
+      "completeHome": "Complete Home page sections",
+      "responsiveMobile": "Responsive Mobile version",
+      "intl": "Internationalization (i18n) support",
+      "loginAuth": "Login Auth configurations",
+      "userDashboard": "Dashboard page (Login needed)",
+      "moreStuff": "More stuff (stay tuned)"
+    },
+    "title": "Dashboard"
+  },
+  "DashboardLinks": {
+    "title": "Explore My Projects and Social Media"
+  },
+  "DashboardTimeline": {
+    "title": "Timeline"
+  },
+  "DashboardWelcome": {
+    "message": "Welcome {userName}! 👋"
+  },
   "EasterEgg": {
     "bluePill": "You take the {bluePillEmoji} blue pill... the story ends, you wake up in your bed and believe whatever you want to believe.",
     "followRabbit": "Follow the white rabbit 🐇😎",
