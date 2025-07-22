@@ -103,5 +103,29 @@
     "platformDevTo": "Dev.to",
     "platformMedium": "Medium",
     "title": "Eu Escrevo Coisas"
+  },
+  "Dashboard": {
+    "contactDescription": "Tem perguntas ou sugestões? Não hesite em me contatar.",
+    "contactTitle": "Entre em Contato",
+    "description": "Explore conteúdo exclusivo para membros! Descubra no que estou trabalhando atualmente e confira a linha do tempo de próximas funcionalidades e projetos disponíveis apenas para você.",
+    "supportMessage": "Fique atento às atualizações, e <strong>obrigado</strong> pelo seu apoio!",
+    "timelineItems": {
+      "completeHome": "Completar seções da página inicial",
+      "responsiveMobile": "Versão móvel responsiva",
+      "intl": "Suporte à internacionalização (i18n)",
+      "loginAuth": "Configurações de autenticação",
+      "userDashboard": "Página de painel de controle (Login necessário)",
+      "moreStuff": "Mais conteúdo (em breve)"
+    },
+    "title": "Painel de Controle"
+  },
+  "DashboardLinks": {
+    "title": "Explore Meus Projetos e Redes Sociais"
+  },
+  "DashboardTimeline": {
+    "title": "Linha do Tempo"
+  },
+  "DashboardWelcome": {
+    "message": "Bem-vindo {userName}! 👋"
   }
 }
