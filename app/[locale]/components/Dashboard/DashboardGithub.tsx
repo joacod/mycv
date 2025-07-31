@@ -1,76 +1,69 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import { FaCodeBranch, FaStar, FaCode, FaChartLine } from "react-icons/fa";
 import { GitHubData } from "@/models/github";
 import { devInfo } from "@/utils/devInfo";
 
-export function GitHubShowcase() {
-  const [data, setData] = useState<GitHubData | null>(null);
-  const [loading, setLoading] = useState(true);
+export async function GitHubShowcase() {
+  let data: GitHubData | null = null;
 
-  useEffect(() => {
-    async function fetchGitHubData() {
-      try {
-        // Fetch user info, repos, and recent events in parallel
-        const [userResponse, reposResponse, eventsResponse] = await Promise.all(
-          [
-            fetch(`https://api.github.com/users/${devInfo.handle}`),
-            fetch(
-              `https://api.github.com/users/${devInfo.handle}/repos?sort=updated&per_page=100`,
-            ),
-            fetch(
-              `https://api.github.com/users/${devInfo.handle}/events?per_page=10`,
-            ),
-          ],
-        );
+  try {
+    // Fetch user info, repos, and recent events in parallel directly from GitHub API
+    const [userResponse, reposResponse, eventsResponse] = await Promise.all([
+      fetch(`https://api.github.com/users/${devInfo.handle}`, {
+        next: { revalidate: 3600 }, // Cache for 1 hour
+      }),
+      fetch(
+        `https://api.github.com/users/${devInfo.handle}/repos?sort=updated&per_page=100`,
+        { next: { revalidate: 3600 } },
+      ),
+      fetch(
+        `https://api.github.com/users/${devInfo.handle}/events?per_page=10`,
+        { next: { revalidate: 3600 } },
+      ),
+    ]);
 
-        const [user, repos, events] = await Promise.all([
-          userResponse.json(),
-          reposResponse.json(),
-          eventsResponse.json(),
-        ]);
-
-        // Calculate totals and language distribution
-        const totalStars = repos.reduce(
-          (sum: number, repo: any) => sum + repo.stargazers_count,
-          0,
-        );
-        const totalForks = repos.reduce(
-          (sum: number, repo: any) => sum + repo.forks_count,
-          0,
-        );
-
-        const languages: Record<string, number> = {};
-        repos.forEach((repo: any) => {
-          if (repo.language) {
-            languages[repo.language] = (languages[repo.language] || 0) + 1;
-          }
-        });
-
-        setData({
-          user,
-          repos: repos.slice(0, 6), // Top 6 repos
-          events: events
-            .filter((event: any) =>
-              ["PushEvent", "CreateEvent", "PullRequestEvent"].includes(
-                event.type,
-              ),
-            )
-            .slice(0, 5),
-          totalStars,
-          totalForks,
-          languages,
-        });
-      } catch (error) {
-        console.error("Error fetching GitHub data:", error);
-      } finally {
-        setLoading(false);
-      }
+    if (!userResponse.ok || !reposResponse.ok || !eventsResponse.ok) {
+      throw new Error("Failed to fetch GitHub data");
     }
 
-    fetchGitHubData();
-  }, []);
+    const [user, repos, events] = await Promise.all([
+      userResponse.json(),
+      reposResponse.json(),
+      eventsResponse.json(),
+    ]);
+
+    // Calculate totals and language distribution
+    const totalStars = repos.reduce(
+      (sum: number, repo: any) => sum + repo.stargazers_count,
+      0,
+    );
+    const totalForks = repos.reduce(
+      (sum: number, repo: any) => sum + repo.forks_count,
+      0,
+    );
+
+    const languages: Record<string, number> = {};
+    repos.forEach((repo: any) => {
+      if (repo.language) {
+        languages[repo.language] = (languages[repo.language] || 0) + 1;
+      }
+    });
+
+    data = {
+      user,
+      repos: repos.slice(0, 6), // Top 6 repos
+      events: events
+        .filter((event: any) =>
+          ["PushEvent", "CreateEvent", "PullRequestEvent"].includes(event.type),
+        )
+        .slice(0, 5),
+      totalStars,
+      totalForks,
+      languages,
+    };
+  } catch (error) {
+    console.error("Error fetching GitHub data:", error);
+    data = null;
+  }
 
   const getTopLanguages = () => {
     if (!data?.languages) return [];
@@ -99,26 +92,14 @@ export function GitHubShowcase() {
     }
   };
 
-  if (loading) {
+  if (!data) {
     return (
-      <div className="bg-base-100 rounded-xl p-6">
-        <div className="mb-6 flex items-center gap-3">
-          <div className="bg-base-300 h-8 w-8 animate-pulse rounded-full"></div>
-          <div className="bg-base-300 h-6 w-32 animate-pulse rounded"></div>
-        </div>
-        <div className="mb-6 grid grid-cols-2 gap-4 md:grid-cols-4">
-          {[...Array(4)].map((_, i) => (
-            <div key={i} className="bg-base-200 animate-pulse rounded-lg p-4">
-              <div className="bg-base-300 mb-2 h-4 rounded"></div>
-              <div className="bg-base-300 h-6 rounded"></div>
-            </div>
-          ))}
-        </div>
+      <div className="bg-base-100 rounded-xl p-6 text-center">
+        <FaCodeBranch className="mx-auto mb-4 h-12 w-12 opacity-30" />
+        <p className="opacity-60">Unable to load GitHub data</p>
       </div>
     );
   }
-
-  if (!data) return null;
 
   return (
     <div className="bg-base-100 rounded-xl p-6">

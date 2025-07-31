@@ -1,7 +1,9 @@
 import { useTranslations } from "next-intl";
+import { Suspense } from "react";
 import { DashboardWelcome } from "../../components/Dashboard/DashboardWelcome";
 import { GitHubShowcase } from "../../components/Dashboard/DashboardGithub";
 import { DevToShowcase } from "../../components/Dashboard/DashboardDevto";
+import { LoadingCard } from "../../components/Dashboard/LoadingCard";
 import DashboardTimeline from "../../components/Dashboard/DashboardTimeline";
 import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
@@ -40,8 +42,12 @@ export default function Dashboard() {
         <DashboardTimeline items={timelineItems} indexOfDone={4} />
 
         <div className="mb-8 space-y-8">
-          <GitHubShowcase />
-          <DevToShowcase />
+          <Suspense fallback={<LoadingCard />}>
+            <GitHubShowcase />
+          </Suspense>
+          <Suspense fallback={<LoadingCard />}>
+            <DevToShowcase />
+          </Suspense>
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
