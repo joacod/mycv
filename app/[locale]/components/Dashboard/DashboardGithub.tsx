@@ -2,36 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { FaCodeBranch, FaStar, FaCode, FaChartLine } from "react-icons/fa";
+import { GitHubData } from "@/models/github";
+import { devInfo } from "@/utils/devInfo";
 
-interface GitHubData {
-  user: {
-    public_repos: number;
-    followers: number;
-    following: number;
-    created_at: string;
-  };
-  repos: Array<{
-    name: string;
-    description: string;
-    stargazers_count: number;
-    forks_count: number;
-    language: string;
-    updated_at: string;
-    html_url: string;
-  }>;
-  events: Array<{
-    id: string;
-    type: string;
-    repo: { name: string };
-    created_at: string;
-    payload: any;
-  }>;
-  totalStars: number;
-  totalForks: number;
-  languages: Record<string, number>;
-}
-
-export function GitHubShowcase({ username = "joacod" }: { username?: string }) {
+export function GitHubShowcase() {
   const [data, setData] = useState<GitHubData | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -41,12 +15,12 @@ export function GitHubShowcase({ username = "joacod" }: { username?: string }) {
         // Fetch user info, repos, and recent events in parallel
         const [userResponse, reposResponse, eventsResponse] = await Promise.all(
           [
-            fetch(`https://api.github.com/users/${username}`),
+            fetch(`https://api.github.com/users/${devInfo.handle}`),
             fetch(
-              `https://api.github.com/users/${username}/repos?sort=updated&per_page=100`,
+              `https://api.github.com/users/${devInfo.handle}/repos?sort=updated&per_page=100`,
             ),
             fetch(
-              `https://api.github.com/users/${username}/events?per_page=10`,
+              `https://api.github.com/users/${devInfo.handle}/events?per_page=10`,
             ),
           ],
         );
@@ -96,7 +70,7 @@ export function GitHubShowcase({ username = "joacod" }: { username?: string }) {
     }
 
     fetchGitHubData();
-  }, [username]);
+  }, []);
 
   const getTopLanguages = () => {
     if (!data?.languages) return [];

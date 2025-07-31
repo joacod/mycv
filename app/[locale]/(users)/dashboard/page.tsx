@@ -40,8 +40,8 @@ export default function Dashboard() {
         <DashboardTimeline items={timelineItems} indexOfDone={4} />
 
         <div className="mb-8 space-y-8">
-          <GitHubShowcase username="joacod" />
-          <DevToShowcase username="joacod" />
+          <GitHubShowcase />
+          <DevToShowcase />
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">

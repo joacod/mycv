@@ -9,28 +9,10 @@ import {
   FaChartLine,
   FaCalendar,
 } from "react-icons/fa";
+import { DevToData } from "@/models/devto";
+import { devInfo } from "@/utils/devInfo";
 
-interface DevToData {
-  articles: Array<{
-    id: number;
-    title: string;
-    description: string;
-    url: string;
-    published_at: string;
-    tag_list: string[];
-    public_reactions_count: number;
-    comments_count: number;
-    page_views_count: number;
-    reading_time_minutes: number;
-    cover_image?: string;
-  }>;
-  totalViews: number;
-  totalReactions: number;
-  totalComments: number;
-  topTags: Array<{ tag: string; count: number }>;
-}
-
-export function DevToShowcase({ username = "joacod" }: { username?: string }) {
+export function DevToShowcase() {
   const [data, setData] = useState<DevToData | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -38,7 +20,7 @@ export function DevToShowcase({ username = "joacod" }: { username?: string }) {
     async function fetchDevToData() {
       try {
         const response = await fetch(
-          `https://dev.to/api/articles?username=${username}&per_page=50`,
+          `https://dev.to/api/articles?username=${devInfo.handle}&per_page=50`,
         );
         const articles = await response.json();
 
@@ -84,7 +66,7 @@ export function DevToShowcase({ username = "joacod" }: { username?: string }) {
     }
 
     fetchDevToData();
-  }, [username]);
+  }, []);
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString("en-US", {
