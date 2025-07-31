@@ -8,7 +8,7 @@ export const DashboardLinks = () => {
   const t = useTranslations("DashboardLinks");
 
   return (
-    <div className="mt-12">
+    <div className="bg-base-100 rounded-xl p-6 shadow-sm">
       <h2 className="mt-5 text-3xl">{t("title")}</h2>
 
       <div className="mt-5 flex justify-center space-x-12 lg:hidden">
