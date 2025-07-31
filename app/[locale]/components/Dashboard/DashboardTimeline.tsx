@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { RiTimelineView } from "react-icons/ri";
 import DoneIcon from "../Icons/DoneIcon";
 import NotDoneIcon from "../Icons/NotDoneIcon";
 
@@ -14,9 +15,15 @@ const DashboardTimeline: React.FC<DashboardTimelineProps> = ({
   const t = useTranslations("DashboardTimeline");
 
   return (
-    <div className="mt-12">
-      <h2 className="mt-5 text-3xl">{t("title")}</h2>
-      <ul className="timeline timeline-vertical mt-10">
+    <div className="bg-base-100 rounded-xl p-6 shadow-sm">
+      <div className="mb-6 flex items-center gap-3">
+        <div className="bg-primary/20 flex h-8 w-8 items-center justify-center rounded-full">
+          <RiTimelineView className="text-primary h-4 w-4" />
+        </div>
+        <h2 className="text-xl font-bold">{t("title")}</h2>
+      </div>
+
+      <ul className="timeline timeline-vertical">
         {items.map((name, index) => {
           const isDone = index <= indexOfDone;
 

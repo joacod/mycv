@@ -39,8 +39,6 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <DashboardTimeline items={timelineItems} indexOfDone={4} />
-
         <div className="mb-8 space-y-8">
           <Suspense fallback={<LoadingCard />}>
             <GitHubShowcase />
@@ -50,16 +48,27 @@ export default function Dashboard() {
           </Suspense>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div className="bg-base-100 rounded-xl p-6 shadow-sm">
-            <h2 className="mb-4 text-2xl font-bold">{t("contactTitle")}</h2>
-            <p className="mb-4 opacity-70">{t("contactDescription")}</p>
-            <Link href={`mailto:${email}`} className="btn btn-primary">
-              <FaEnvelope className="mr-2" /> {email}
-            </Link>
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div className="lg:col-span-2">
+            <DashboardTimeline items={timelineItems} indexOfDone={4} />
           </div>
 
-          <DashboardLinks />
+          <div className="space-y-8">
+            <div className="bg-base-100 rounded-xl p-6 shadow-sm">
+              <div className="mb-6 flex items-center gap-3">
+                <div className="bg-primary/20 flex h-8 w-8 items-center justify-center rounded-full">
+                  <FaEnvelope className="text-primary h-4 w-4" />
+                </div>
+                <h2 className="text-xl font-bold">{t("contactTitle")}</h2>
+              </div>
+              <p className="mb-4 opacity-70">{t("contactDescription")}</p>
+              <Link href={`mailto:${email}`} className="btn btn-primary">
+                <FaEnvelope className="mr-2" /> {email}
+              </Link>
+            </div>
+
+            <DashboardLinks />
+          </div>
         </div>
       </div>
     </section>
