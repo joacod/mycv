@@ -113,193 +113,192 @@ export async function DevToShowcase() {
 
   if (!data || data.articles.length === 0) {
     return (
-      <div className="card bg-base-100 shadow-lg">
-        <div className="card-body items-center text-center">
-          <FaBook className="text-base-content/30 h-12 w-12" />
-          <p className="text-base-content/60">No Dev.to articles found</p>
-        </div>
+      <div className="bg-base-100 rounded-xl p-6 text-center">
+        <FaBook className="mx-auto mb-4 h-12 w-12 opacity-30" />
+        <p className="opacity-60">No Dev.to articles found</p>
       </div>
     );
   }
 
   const topArticles = getTopArticles(data.articles);
-  const recentArticles = data.articles.slice(0, 5);
+  // Sort articles by publication date to get the most recent ones
+  const recentArticles = data.articles
+    .sort(
+      (a, b) =>
+        new Date(b.published_at).getTime() - new Date(a.published_at).getTime(),
+    )
+    .slice(0, 5);
 
   return (
-    <div className="card bg-base-100 shadow-lg">
-      <div className="card-body">
-        {/* Enhanced Header */}
-        <div className="mb-6 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="bg-primary text-primary-content flex h-10 w-10 items-center justify-center rounded-full">
-              <FaBook className="h-5 w-5" />
-            </div>
-            <div>
-              <h3 className="text-base-content text-xl font-bold">
-                Dev.to Articles
-              </h3>
-              <p className="text-base-content/60 text-sm">
-                {totalArticleCount} articles published
-              </p>
-            </div>
-          </div>
+    <div className="bg-base-100 rounded-xl p-6">
+      {/* Header */}
+      <div className="mb-6 flex items-center gap-3">
+        <div className="bg-primary/20 flex h-8 w-8 items-center justify-center rounded-full">
+          <FaBook className="text-primary h-4 w-4" />
         </div>
-
-        {/* Improved Stats Grid */}
-        <div className="mb-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {data.hasViewsData && data.totalViews !== null && (
-            <div className="bg-secondary text-secondary-content rounded-lg p-4 text-center">
-              <div className="mb-1 text-2xl font-bold">
-                {formatNumber(data.totalViews)}
-              </div>
-              <div className="flex items-center justify-center gap-1 text-sm opacity-80">
-                <FaEye className="h-3 w-3" />
-                Total Views
-              </div>
-            </div>
-          )}
-          <div className="bg-accent text-accent-content rounded-lg p-4 text-center">
-            <div className="mb-1 text-2xl font-bold">
-              {formatNumber(data.totalReactions)}
-            </div>
-            <div className="flex items-center justify-center gap-1 text-sm opacity-80">
-              <FaHeart className="h-3 w-3" />
-              Total Reactions
-            </div>
-          </div>
-          <div className="bg-primary text-primary-content rounded-lg p-4 text-center">
-            <div className="mb-1 text-2xl font-bold">
-              {formatNumber(data.totalComments)}
-            </div>
-            <div className="flex items-center justify-center gap-1 text-sm opacity-80">
-              <FaComment className="h-3 w-3" />
-              Total Comments
-            </div>
-          </div>
+        <h3 className="text-xl font-bold">Dev.to Articles</h3>
+        <div className="ml-auto text-sm">
+          <span className="bg-base-200 rounded-full px-3 py-1">
+            {totalArticleCount} articles published
+          </span>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 gap-8 xl:grid-cols-3">
+      {/* Stats Grid */}
+      <div
+        className={`mb-6 grid grid-cols-1 gap-4 ${data.hasViewsData && data.totalViews !== null ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}
+      >
+        <div className="bg-accent text-accent-content rounded-lg p-4 text-center">
+          <div className="text-2xl font-bold">
+            {formatNumber(data.totalReactions)}
+          </div>
+          <div className="text-sm opacity-70">Total Reactions</div>
+        </div>
+        <div className="bg-primary text-primary-content rounded-lg p-4 text-center">
+          <div className="text-2xl font-bold">
+            {formatNumber(data.totalComments)}
+          </div>
+          <div className="text-sm opacity-70">Total Comments</div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        {/* Column 1: Top Articles + Popular Tags */}
+        <div>
           {/* Top Performing Articles */}
-          <div className="xl:col-span-2">
-            <h4 className="text-base-content mb-4 flex items-center gap-2 text-lg font-semibold">
-              <FaTrophy className="text-warning h-5 w-5" />
-              Top 3 Articles
-            </h4>
-            <div className="space-y-4">
-              {topArticles.map((article, index) => (
-                <a
-                  key={article.id}
-                  href={article.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card bg-base-200 hover:bg-base-300 shadow-sm transition-colors duration-200 hover:shadow-md"
-                >
-                  <div className="card-body p-4">
-                    <div className="flex gap-4">
-                      <div className="bg-warning text-warning-content flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full text-sm font-bold">
-                        {index + 1}
-                      </div>
-                      {article.cover_image && (
-                        <img
-                          src={article.cover_image}
-                          alt={article.title}
-                          className="h-16 w-16 flex-shrink-0 rounded-lg object-cover"
-                        />
-                      )}
-                      <div className="min-w-0 flex-1">
-                        <h5 className="text-base-content mb-2 line-clamp-2 font-medium">
-                          {article.title}
-                        </h5>
-                        <p className="text-base-content/70 mb-3 line-clamp-2 text-sm">
-                          {article.description}
-                        </p>
-                        <div className="flex items-center justify-between text-xs">
-                          <span className="text-base-content/60 flex items-center gap-1">
-                            <FaCalendar className="h-3 w-3" />
-                            {formatDate(article.published_at)}
-                          </span>
-                          <div className="flex items-center gap-3">
-                            {data.hasViewsData && (
-                              <span className="text-base-content/70 flex items-center gap-1">
-                                <FaEye className="h-3 w-3" />
-                                {formatNumber(article.page_views_count || 0)}
-                              </span>
-                            )}
-                            <span className="text-base-content/70 flex items-center gap-1">
-                              <FaHeart className="h-3 w-3" />
-                              {article.public_reactions_count}
-                            </span>
-                            <span className="text-base-content/70 flex items-center gap-1">
-                              <FaComment className="h-3 w-3" />
-                              {article.comments_count}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+          <h4 className="mb-3 flex items-center gap-2 font-semibold">
+            <FaTrophy className="text-warning h-4 w-4" />
+            Top 3 Articles
+          </h4>
+          <div className="mb-6 space-y-4">
+            {topArticles.map((article, index) => (
+              <a
+                key={article.id}
+                href={article.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-base-200 hover:bg-base-300 block rounded-lg p-4 transition-colors duration-200"
+              >
+                <div className="flex gap-4">
+                  <div className="bg-warning text-warning-content flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full text-sm font-bold">
+                    {index + 1}
                   </div>
-                </a>
-              ))}
-            </div>
-
-            {/* Recent Articles Section */}
-            <h4 className="text-base-content mt-8 mb-4 flex items-center gap-2 text-lg font-semibold">
-              <FaChartLine className="text-info h-5 w-5" />
-              Recent Articles
-            </h4>
-            <div className="space-y-3">
-              {recentArticles.map((article) => (
-                <a
-                  key={article.id}
-                  href={article.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-base-200 hover:bg-base-300 block rounded-lg p-3 transition-colors duration-200"
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="min-w-0 flex-1">
-                      <h5 className="text-base-content mb-1 line-clamp-1 font-medium">
-                        {article.title}
-                      </h5>
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="text-base-content/60">
-                          {formatDate(article.published_at)}
+                  {article.cover_image && (
+                    <img
+                      src={article.cover_image}
+                      alt={article.title}
+                      className="h-16 w-16 flex-shrink-0 rounded-lg object-cover"
+                    />
+                  )}
+                  <div className="min-w-0 flex-1">
+                    <h5 className="mb-2 line-clamp-2 font-medium">
+                      {article.title}
+                    </h5>
+                    <p className="mb-3 line-clamp-2 text-sm opacity-70">
+                      {article.description}
+                    </p>
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="flex items-center gap-1 opacity-60">
+                        <FaCalendar className="h-3 w-3" />
+                        {formatDate(article.published_at)}
+                      </span>
+                      <div className="flex items-center gap-3">
+                        {data.hasViewsData && (
+                          <span className="flex items-center gap-1 opacity-70">
+                            <FaEye className="h-3 w-3" />
+                            {formatNumber(article.page_views_count || 0)}
+                          </span>
+                        )}
+                        <span className="flex items-center gap-1 opacity-70">
+                          <FaHeart className="h-3 w-3" />
+                          {article.public_reactions_count}
                         </span>
-                        <div className="flex items-center gap-2">
-                          <span className="text-base-content/60 flex items-center gap-1">
-                            <FaHeart className="h-3 w-3" />
-                            {article.public_reactions_count}
-                          </span>
-                          <span className="text-base-content/60 flex items-center gap-1">
-                            <FaComment className="h-3 w-3" />
-                            {article.comments_count}
-                          </span>
-                        </div>
+                        <span className="flex items-center gap-1 opacity-70">
+                          <FaComment className="h-3 w-3" />
+                          {article.comments_count}
+                        </span>
                       </div>
                     </div>
                   </div>
-                </a>
-              ))}
-            </div>
+                </div>
+              </a>
+            ))}
           </div>
 
           {/* Popular Tags */}
-          <div>
-            <h4 className="text-base-content mb-4 flex items-center gap-2 text-lg font-semibold">
-              <FaTags className="text-secondary h-5 w-5" />
-              Popular Tags
-            </h4>
-            <div className="flex flex-wrap gap-2">
-              {data.topTags.map(({ tag, count }) => (
-                <span
-                  key={tag}
-                  className="badge badge-secondary badge-outline gap-1 text-sm"
-                >
-                  #{tag}
-                  <span className="text-xs opacity-70">({count})</span>
-                </span>
-              ))}
-            </div>
+          <h4 className="mb-3 flex items-center gap-2 font-semibold">
+            <FaTags className="h-4 w-4" />
+            Popular Tags
+          </h4>
+          <div className="flex flex-wrap gap-2">
+            {data.topTags.map(({ tag, count }) => (
+              <span
+                key={tag}
+                className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-sm"
+              >
+                #{tag}
+                <span className="text-xs opacity-70">({count})</span>
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Column 2: Recent Articles */}
+        <div>
+          <h4 className="mb-3 flex items-center gap-2 font-semibold">
+            <FaChartLine className="h-4 w-4" />
+            Recent Articles
+          </h4>
+          <div className="space-y-4">
+            {recentArticles.map((article) => (
+              <a
+                key={article.id}
+                href={article.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-base-200 hover:bg-base-300 block rounded-lg p-4 transition-colors duration-200"
+              >
+                <div className="flex gap-4">
+                  {article.cover_image && (
+                    <img
+                      src={article.cover_image}
+                      alt={article.title}
+                      className="h-16 w-16 flex-shrink-0 rounded-lg object-cover"
+                    />
+                  )}
+                  <div className="min-w-0 flex-1">
+                    <h5 className="mb-2 line-clamp-2 font-medium">
+                      {article.title}
+                    </h5>
+                    <p className="mb-3 line-clamp-2 text-sm opacity-70">
+                      {article.description}
+                    </p>
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="flex items-center gap-1 opacity-60">
+                        <FaCalendar className="h-3 w-3" />
+                        {formatDate(article.published_at)}
+                      </span>
+                      <div className="flex items-center gap-3">
+                        {data.hasViewsData && (
+                          <span className="flex items-center gap-1 opacity-70">
+                            <FaEye className="h-3 w-3" />
+                            {formatNumber(article.page_views_count || 0)}
+                          </span>
+                        )}
+                        <span className="flex items-center gap-1 opacity-70">
+                          <FaHeart className="h-3 w-3" />
+                          {article.public_reactions_count}
+                        </span>
+                        <span className="flex items-center gap-1 opacity-70">
+                          <FaComment className="h-3 w-3" />
+                          {article.comments_count}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </div>
