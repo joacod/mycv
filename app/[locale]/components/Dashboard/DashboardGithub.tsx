@@ -61,7 +61,7 @@ export async function GitHubShowcase() {
 
     // Calculate totals and language distribution
     const totalStars = Array.isArray(repos)
-      ? repos.reduce((sum: number, repo: GitHubRepository) => {
+      ? repos.reduce((sum: number, repo: any) => {
           // Ensure we're dealing with a valid number
           const stars =
             typeof repo.stargazers_count === "number"
