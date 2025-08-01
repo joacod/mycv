@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "6.28.0",
-    "@clerk/themes": "2.4.3",
+    "@clerk/nextjs": "6.28.1",
+    "@clerk/themes": "2.4.4",
     "@vercel/analytics": "1.5.0",
     "canvas-confetti": "1.9.3",
     "next": "15.4.5",
@@ -36,6 +36,6 @@
     "prettier": "3.6.2",
     "prettier-plugin-tailwindcss": "0.6.14",
     "tailwindcss": "4.1.11",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   }
 }
