@@ -115,6 +115,8 @@
       "intl": "Soporte de internacionalización (i18n)",
       "loginAuth": "Configuraciones de autenticación",
       "userDashboard": "Página de panel de control (Requiere inicio de sesión)",
+      "githubDashboard": "Actividad de Github (Requiere inicio de sesión)",
+      "devtoDashboard": "Artículos de Dev.to (Requiere inicio de sesión)",
       "moreStuff": "Más contenido (próximamente)"
     },
     "title": "Panel de Control"

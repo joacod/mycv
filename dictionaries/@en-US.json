@@ -51,6 +51,8 @@
       "intl": "Internationalization (i18n) support",
       "loginAuth": "Login Auth configurations",
       "userDashboard": "Dashboard page (Login needed)",
+      "githubDashboard": "Github Activity (Login needed)",
+      "devtoDashboard": "Dev.to Articles (Login needed)",
       "moreStuff": "More stuff (stay tuned)"
     },
     "title": "Dashboard"

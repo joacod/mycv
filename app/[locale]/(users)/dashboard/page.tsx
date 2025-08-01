@@ -18,6 +18,8 @@ export default function Dashboard() {
     t("timelineItems.intl"),
     t("timelineItems.loginAuth"),
     t("timelineItems.userDashboard"),
+    t("timelineItems.githubDashboard"),
+    t("timelineItems.devtoDashboard"),
     t("timelineItems.moreStuff"),
   ];
 
@@ -50,7 +52,7 @@ export default function Dashboard() {
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="lg:col-span-2">
-            <DashboardTimeline items={timelineItems} indexOfDone={4} />
+            <DashboardTimeline items={timelineItems} indexOfDone={6} />
           </div>
 
           <div className="space-y-8">

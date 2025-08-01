@@ -115,6 +115,8 @@
       "intl": "Internationalisierung (i18n) Unterstützung",
       "loginAuth": "Authentifizierungskonfigurationen",
       "userDashboard": "Dashboard-Seite (Login erforderlich)",
+      "githubDashboard": "Github Aktivität (Login erforderlich)",
+      "devtoDashboard": "Dev.to Artikel (Login erforderlich)",
       "moreStuff": "Weitere Inhalte (in Kürze)"
     },
     "title": "Dashboard"
