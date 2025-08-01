@@ -1,4 +1,26 @@
-import { FaCodeBranch, FaStar, FaCode, FaChartLine } from "react-icons/fa";
+import {
+  FaCodeBranch,
+  FaStar,
+  FaCode,
+  FaChartLine,
+  FaVuejs,
+} from "react-icons/fa";
+import {
+  SiAstro,
+  SiJavascript,
+  SiTypescript,
+  SiPython,
+  SiOracle,
+  SiPhp,
+  SiGo,
+  SiRust,
+  SiCplusplus,
+  SiHtml5,
+  SiCss3,
+  SiGnubash,
+} from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
+import { VscCode } from "react-icons/vsc";
 import { GitHubData } from "@/models/github";
 import { devInfo } from "@/utils/devInfo";
 
@@ -12,11 +34,11 @@ export async function GitHubShowcase() {
         next: { revalidate: 3600 }, // Cache for 1 hour
       }),
       fetch(
-        `https://api.github.com/users/${devInfo.handle}/repos?sort=updated&per_page=100`,
+        `https://api.github.com/users/${devInfo.handle}/repos?sort=stars&direction=desc&per_page=100&type=owner`,
         { next: { revalidate: 3600 } },
       ),
       fetch(
-        `https://api.github.com/users/${devInfo.handle}/events?per_page=10`,
+        `https://api.github.com/users/${devInfo.handle}/events?per_page=50`,
         { next: { revalidate: 3600 } },
       ),
     ]);
@@ -25,37 +47,73 @@ export async function GitHubShowcase() {
       throw new Error("Failed to fetch GitHub data");
     }
 
-    const [user, repos, events] = await Promise.all([
-      userResponse.json(),
-      reposResponse.json(),
-      eventsResponse.json(),
-    ]);
+    let user, repos, events;
+    try {
+      [user, repos, events] = await Promise.all([
+        userResponse.json(),
+        reposResponse.json(),
+        eventsResponse.json(),
+      ]);
+    } catch (parseError) {
+      console.error("Error parsing GitHub API response:", parseError);
+      throw new Error("Failed to parse GitHub data");
+    }
 
     // Calculate totals and language distribution
-    const totalStars = repos.reduce(
-      (sum: number, repo: any) => sum + repo.stargazers_count,
-      0,
-    );
-    const totalForks = repos.reduce(
-      (sum: number, repo: any) => sum + repo.forks_count,
-      0,
-    );
+    const totalStars = Array.isArray(repos)
+      ? repos.reduce((sum: number, repo: any) => {
+          // Ensure we're dealing with a valid number
+          const stars =
+            typeof repo?.stargazers_count === "number"
+              ? repo.stargazers_count
+              : 0;
+          return sum + stars;
+        }, 0)
+      : 0;
+    const totalForks = Array.isArray(repos)
+      ? repos.reduce(
+          (sum: number, repo: any) => sum + (repo.forks_count || 0),
+          0,
+        )
+      : 0;
 
     const languages: Record<string, number> = {};
-    repos.forEach((repo: any) => {
-      if (repo.language) {
-        languages[repo.language] = (languages[repo.language] || 0) + 1;
-      }
-    });
+    if (Array.isArray(repos)) {
+      repos.forEach((repo: any) => {
+        if (repo?.language) {
+          languages[repo.language] = (languages[repo.language] || 0) + 1;
+        }
+      });
+    }
 
     data = {
-      user,
-      repos: repos.slice(0, 6), // Top 6 repos
-      events: events
-        .filter((event: any) =>
-          ["PushEvent", "CreateEvent", "PullRequestEvent"].includes(event.type),
-        )
-        .slice(0, 5),
+      user: user || {
+        public_repos: 0,
+        followers: 0,
+        following: 0,
+        created_at: new Date().toISOString(),
+      },
+      repos: Array.isArray(repos) ? repos : [], // Keep all repos for accurate stats
+      events: Array.isArray(events)
+        ? events
+            .filter((event: any) => {
+              // Only include code contribution events
+              return (
+                event?.type &&
+                [
+                  "PushEvent", // Code commits
+                  "CreateEvent", // New branches/tags
+                  "PullRequestEvent", // PR actions (open/close/merge)
+                  "IssuesEvent", // Issue actions
+                  "ReleaseEvent", // New releases
+                ].includes(event.type) &&
+                // For PRs, only show if you're the author
+                (event.type !== "PullRequestEvent" ||
+                  event.payload?.pull_request?.user?.login === devInfo.handle)
+              );
+            })
+            .slice(0, 5)
+        : [],
       totalStars,
       totalForks,
       languages,
@@ -65,11 +123,47 @@ export async function GitHubShowcase() {
     data = null;
   }
 
+  const getLanguageIcon = (language: string) => {
+    const iconMap: Record<string, React.ReactElement> = {
+      JavaScript: <SiJavascript className="h-5 w-5" />,
+      TypeScript: <SiTypescript className="h-5 w-5" />,
+      Python: <SiPython className="h-5 w-5" />,
+      Java: <SiOracle className="h-5 w-5" />,
+      PHP: <SiPhp className="h-5 w-5" />,
+      Go: <SiGo className="h-5 w-5" />,
+      Rust: <SiRust className="h-5 w-5" />,
+      "C++": <SiCplusplus className="h-5 w-5" />,
+      "C#": <TbBrandCSharp className="h-5 w-5" />,
+      HTML: <SiHtml5 className="h-5 w-5" />,
+      CSS: <SiCss3 className="h-5 w-5" />,
+      Shell: <SiGnubash className="h-5 w-5" />,
+      Vue: <FaVuejs className="h-5 w-5" />,
+      Astro: <SiAstro className="h-5 w-5" />,
+      default: <VscCode className="h-5 w-5" />,
+    };
+    return iconMap[language] || iconMap.default;
+  };
+
   const getTopLanguages = () => {
     if (!data?.languages) return [];
-    return Object.entries(data.languages)
-      .sort(([, a], [, b]) => b - a)
-      .slice(0, 5);
+    const sortedLanguages = Object.entries(data.languages).sort(
+      ([, a], [, b]) => b - a,
+    );
+
+    // Get top 7 languages
+    const topLanguages = sortedLanguages.slice(0, 7);
+
+    // Calculate "Others" count from remaining languages
+    const othersCount = sortedLanguages
+      .slice(7)
+      .reduce((sum, [, count]) => sum + count, 0);
+
+    // Add "Others" if there are remaining languages
+    if (othersCount > 0) {
+      topLanguages.push(["Others", othersCount]);
+    }
+
+    return topLanguages;
   };
 
   const formatDate = (dateString: string) => {
@@ -82,11 +176,29 @@ export async function GitHubShowcase() {
   const getEventDescription = (event: any) => {
     switch (event.type) {
       case "PushEvent":
-        return `Pushed ${event.payload.commits?.length || 1} commit${event.payload.commits?.length !== 1 ? "s" : ""}`;
+        const commitCount = event.payload.commits?.length || 1;
+        const branchName =
+          event.payload.ref?.replace("refs/heads/", "") || "branch";
+        return `Pushed ${commitCount} commit${commitCount !== 1 ? "s" : ""} to ${branchName}`;
       case "CreateEvent":
-        return `Created ${event.payload.ref_type}`;
+        const refType = event.payload.ref_type;
+        const refName = event.payload.ref;
+        return `Created ${refType}${refName ? ` ${refName}` : ""}`;
       case "PullRequestEvent":
-        return `${event.payload.action} pull request`;
+        const action = event.payload.action;
+        const prNumber = event.payload.number;
+        if (action === "closed" && event.payload.pull_request?.merged) {
+          return `Merged pull request #${prNumber}`;
+        }
+        return `${action} pull request #${prNumber}`;
+      case "IssuesEvent":
+        return `${event.payload.action} issue #${event.payload.issue?.number}`;
+      case "ReleaseEvent":
+        const version =
+          event.payload.release?.tag_name ||
+          event.payload.release?.name ||
+          "new version";
+        return `Released ${version}`;
       default:
         return "Activity";
     }
@@ -108,37 +220,45 @@ export async function GitHubShowcase() {
         <div className="bg-primary/20 flex h-8 w-8 items-center justify-center rounded-full">
           <FaCodeBranch className="text-primary h-4 w-4" />
         </div>
-        <h3 className="text-xl font-bold">GitHub Activity</h3>
-        <div className="ml-auto text-sm opacity-60">
-          Member since {new Date(data.user.created_at).getFullYear()}
+        <h3 className="text-xl font-bold">
+          GitHub Activity - {devInfo.handle}
+        </h3>
+        <div className="ml-auto text-sm">
+          <span className="bg-base-200 rounded-full px-3 py-1">
+            Member since{" "}
+            {new Date(data.user.created_at).toLocaleDateString("en-US", {
+              month: "short",
+              year: "numeric",
+            })}
+          </span>
         </div>
       </div>
 
       {/* Stats Grid */}
-      <div className="mb-6 grid grid-cols-2 gap-4 md:grid-cols-4">
-        <div className="rounded-lg bg-gradient-to-br from-blue-500/10 to-blue-600/20 p-4 text-center">
-          <div className="text-2xl font-bold text-blue-600">
+      <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <div className="bg-primary rounded-lg p-4 text-center">
+          <div className="text-primary-content text-2xl font-bold">
             {data.user.public_repos}
           </div>
-          <div className="text-sm opacity-70">Repositories</div>
+          <div className="text-primary-content text-sm opacity-70">
+            Repositories
+          </div>
         </div>
-        <div className="rounded-lg bg-gradient-to-br from-yellow-500/10 to-yellow-600/20 p-4 text-center">
-          <div className="text-2xl font-bold text-yellow-600">
+        <div className="bg-accent rounded-lg p-4 text-center">
+          <div className="text-accent-content text-2xl font-bold">
             {data.totalStars}
           </div>
-          <div className="text-sm opacity-70">Total Stars</div>
+          <div className="text-accent-content text-sm opacity-70">
+            Total Stars
+          </div>
         </div>
-        <div className="rounded-lg bg-gradient-to-br from-green-500/10 to-green-600/20 p-4 text-center">
-          <div className="text-2xl font-bold text-green-600">
+        <div className="bg-secondary rounded-lg p-4 text-center">
+          <div className="text-secondary-content text-2xl font-bold">
             {data.user.followers}
           </div>
-          <div className="text-sm opacity-70">Followers</div>
-        </div>
-        <div className="rounded-lg bg-gradient-to-br from-purple-500/10 to-purple-600/20 p-4 text-center">
-          <div className="text-2xl font-bold text-purple-600">
-            {data.totalForks}
+          <div className="text-secondary-content text-sm opacity-70">
+            Followers
           </div>
-          <div className="text-sm opacity-70">Total Forks</div>
         </div>
       </div>
 
@@ -149,23 +269,32 @@ export async function GitHubShowcase() {
             <FaCode className="h-4 w-4" />
             Top Languages
           </h4>
-          <div className="space-y-2">
+          <div className="space-y-3">
             {getTopLanguages().map(([language, count]) => (
               <div
                 key={language}
-                className="bg-base-200 flex items-center justify-between rounded-lg p-3"
+                className="bg-base-200 flex items-center gap-3 rounded-lg p-3"
               >
-                <span className="font-medium">{language}</span>
-                <div className="flex items-center gap-2">
-                  <div className="bg-base-300 h-2 w-16 rounded-full">
+                <div className="text-primary">
+                  {language === "Others" ? (
+                    <VscCode className="h-5 w-5" />
+                  ) : (
+                    getLanguageIcon(language)
+                  )}
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center justify-between">
+                    <span className="font-medium">{language}</span>
+                    <span className="text-sm opacity-70">{count} repos</span>
+                  </div>
+                  <div className="bg-base-300 mt-1 h-2 w-full rounded-full">
                     <div
-                      className="bg-primary h-2 rounded-full"
+                      className="bg-primary h-2 rounded-full transition-all duration-300"
                       style={{
                         width: `${(count / Math.max(...Object.values(data.languages))) * 100}%`,
                       }}
                     ></div>
                   </div>
-                  <span className="text-sm opacity-70">{count}</span>
                 </div>
               </div>
             ))}
@@ -178,17 +307,34 @@ export async function GitHubShowcase() {
             <FaChartLine className="h-4 w-4" />
             Recent Activity
           </h4>
-          <div className="space-y-2">
+          <div className="space-y-3">
             {data.events.map((event) => (
               <div key={event.id} className="bg-base-200 rounded-lg p-3">
-                <div className="text-sm font-medium">
-                  {getEventDescription(event)}
-                </div>
-                <div className="truncate text-xs opacity-70">
-                  {event.repo.name}
-                </div>
-                <div className="mt-1 text-xs opacity-50">
-                  {formatDate(event.created_at)}
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <div className="mb-1 text-sm font-medium">
+                      {getEventDescription(event)}
+                    </div>
+                    <div className="mb-2 text-xs opacity-70">
+                      <span className="bg-primary text-primary-content rounded px-2 py-1 font-mono">
+                        {event.repo.name}
+                      </span>
+                    </div>
+                    <div className="text-xs opacity-50">
+                      {formatDate(event.created_at)}
+                    </div>
+                  </div>
+                  <div className="text-primary/60 ml-2">
+                    {event.type === "PushEvent" && (
+                      <FaCodeBranch className="h-3 w-3" />
+                    )}
+                    {event.type === "CreateEvent" && (
+                      <FaCode className="h-3 w-3" />
+                    )}
+                    {event.type === "PullRequestEvent" && (
+                      <FaCodeBranch className="h-3 w-3" />
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
@@ -204,7 +350,17 @@ export async function GitHubShowcase() {
         </h4>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {data.repos
-            .sort((a, b) => b.stargazers_count - a.stargazers_count)
+            .sort((a, b) => {
+              // Primary: Sort by stars
+              if (b.stargazers_count !== a.stargazers_count) {
+                return b.stargazers_count - a.stargazers_count;
+              }
+              // Secondary: Sort by recent activity
+              return (
+                new Date(b.updated_at).getTime() -
+                new Date(a.updated_at).getTime()
+              );
+            })
             .slice(0, 4)
             .map((repo) => (
               <a
@@ -212,24 +368,39 @@ export async function GitHubShowcase() {
                 href={repo.html_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-base-200 hover:bg-base-300 rounded-lg p-4 transition-colors"
+                className="bg-base-200 hover:bg-primary/5 hover:border-primary/20 group rounded-lg border border-transparent p-4 transition-all duration-200 hover:scale-[1.02]"
               >
-                <div className="mb-1 font-medium">{repo.name}</div>
-                <div className="mb-2 line-clamp-2 text-sm opacity-70">
+                <div className="mb-2 flex items-start justify-between">
+                  <div className="group-hover:text-primary font-medium transition-colors">
+                    {repo.name}
+                  </div>
+                  {repo.stargazers_count > 0 && (
+                    <div className="bg-secondary/10 text-secondary flex items-center gap-1 rounded-full px-2 py-1 text-xs">
+                      <FaStar className="h-3 w-3" />
+                      {repo.stargazers_count}
+                    </div>
+                  )}
+                </div>
+                <div className="mb-3 line-clamp-2 text-sm opacity-70">
                   {repo.description || "No description available"}
                 </div>
                 <div className="flex items-center justify-between text-xs">
-                  <span className="opacity-60">{repo.language}</span>
-                  <div className="flex items-center gap-3">
-                    <span className="flex items-center gap-1">
-                      <FaStar className="h-3 w-3" />
-                      {repo.stargazers_count}
+                  <div className="flex items-center gap-2">
+                    {repo.language && (
+                      <span className="bg-accent text-accent-content rounded px-2 py-1">
+                        {repo.language}
+                      </span>
+                    )}
+                    <span className="opacity-60">
+                      Updated {formatDate(repo.updated_at)}
                     </span>
-                    <span className="flex items-center gap-1">
+                  </div>
+                  {repo.forks_count > 0 && (
+                    <span className="flex items-center gap-1 opacity-60">
                       <FaCodeBranch className="h-3 w-3" />
                       {repo.forks_count}
                     </span>
-                  </div>
+                  )}
                 </div>
               </a>
             ))}
