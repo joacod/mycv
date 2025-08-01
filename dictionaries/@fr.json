@@ -115,6 +115,8 @@
       "intl": "Support de l'internationalisation (i18n)",
       "loginAuth": "Configurations d'authentification",
       "userDashboard": "Page tableau de bord (Connexion requise)",
+      "githubDashboard": "Activité Github (Connexion requise)",
+      "devtoDashboard": "Articles Dev.to (Connexion requise)",
       "moreStuff": "Plus de contenu (à venir)"
     },
     "title": "Tableau de Bord"
