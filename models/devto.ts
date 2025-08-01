@@ -12,8 +12,9 @@ export interface DevToData {
     reading_time_minutes: number;
     cover_image?: string;
   }>;
-  totalViews: number;
+  totalViews: number | null;
   totalReactions: number;
   totalComments: number;
   topTags: Array<{ tag: string; count: number }>;
+  hasViewsData?: boolean;
 }
