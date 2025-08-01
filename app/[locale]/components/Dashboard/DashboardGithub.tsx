@@ -375,7 +375,7 @@ export async function GitHubShowcase() {
                     {repo.name}
                   </div>
                   {repo.stargazers_count > 0 && (
-                    <div className="bg-secondary/10 text-secondary flex items-center gap-1 rounded-full px-2 py-1 text-xs">
+                    <div className="bg-secondary text-secondary-content flex items-center gap-1 rounded-full px-2 py-1 text-xs">
                       <FaStar className="h-3 w-3" />
                       {repo.stargazers_count}
                     </div>
