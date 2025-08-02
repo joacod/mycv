@@ -5,6 +5,7 @@
     "description": "Con más de 15 años de carrera en desarrollo de software, he adquirido una sólida experiencia en diversas industrias, incluyendo finanzas, media, salud e IoT.",
     "getstarted": "Empecemos",
     "role": "Como Lead Software Engineer, participo en decisiones técnicas de diseño, arquitectura y desarrollo de componentes core. Más allá de la programación, contribuyo con la gestión de configuraciones, integración continua y soporte del equipo, además de brindar mentoría y capacitación.",
+    "signin": "Iniciar sesión para más contenido",
     "title": "Acerca de mi"
   },
   "ClickMe": {
@@ -28,7 +29,7 @@
     "description": "Decidí empezar algo propio. Es un nuevo camino, y estoy emocionado de compartirlo!",
     "logoAlt": "Logo de la Empresa",
     "quote": "\"Calidad, eficiencia, y tal vez un poco de diversión en el proceso. Ese es el objetivo!\"",
-    "title": "Gran noticia – Cree una empresa!"
+    "title": "Cree una empresa!"
   },
   "Credits": {
     "created": "<webTemplate>Plantilla Web</webTemplate> creada por <author>Joaquin Diaz</author>",
