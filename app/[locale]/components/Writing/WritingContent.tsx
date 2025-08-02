@@ -32,9 +32,9 @@ export function WritingContent({
           >
             <BiLogoDevTo
               size={120}
-              className="transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-80"
+              className="transition-all duration-300 ease-in-out group-hover:scale-110"
             />
-            <p className="mt-2 text-lg font-semibold transition-opacity group-hover:opacity-80">
+            <p className="mt-2 text-lg font-semibold transition-opacity">
               {platformDevTo}
             </p>
           </a>
@@ -49,9 +49,9 @@ export function WritingContent({
           >
             <BiLogoMediumSquare
               size={120}
-              className="transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:opacity-80"
+              className="transition-all duration-300 ease-in-out group-hover:scale-110"
             />
-            <p className="mt-2 text-lg font-semibold transition-opacity group-hover:opacity-80">
+            <p className="mt-2 text-lg font-semibold transition-opacity">
               {platformMedium}
             </p>
           </a>

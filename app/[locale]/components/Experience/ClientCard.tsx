@@ -26,7 +26,7 @@ export const ClientCard = ({ client }: { client: Client }) => {
         <div className="card-body">
           <h3 className="card-title text-lg">{client.name}</h3>
           <p className="mt-2 flex-grow text-sm">{t(client.descriptionKey)}</p>
-          <div className="card-actions mt-4 justify-start">
+          <div className="card-actions mt-4 justify-start md:hidden">
             <span className="btn btn-xs btn-secondary">{t("visit")}</span>
           </div>
         </div>
