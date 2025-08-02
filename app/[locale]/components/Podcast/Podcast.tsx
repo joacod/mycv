@@ -17,7 +17,7 @@ export const Podcast = () => {
         <div className="mx-auto">
           {/* Mobile: Stacked layout */}
           <div className="flex flex-col gap-8 lg:hidden">
-            <div className="text-center">
+            <div>
               <h1 className="pb-4 text-4xl font-bold">{t("title")}</h1>
               <p className="text-lg">{t("description")}</p>
             </div>
