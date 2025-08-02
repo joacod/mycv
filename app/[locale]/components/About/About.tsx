@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { FaGrinStars, FaHandPointDown } from "react-icons/fa";
 import Image from "next/image";
+import { SignedOut, SignInButton } from "@clerk/nextjs";
 
 export const About = () => {
   const t = useTranslations("About");
@@ -45,9 +46,13 @@ export const About = () => {
               <a className="btn btn-neutral" href="#section-writing">
                 {t("getstarted")} <FaHandPointDown size={22} />
               </a>
-              <button className="btn btn-neutral">
-                {t("signin")} <FaGrinStars size={22} />
-              </button>
+              <SignedOut>
+                <SignInButton>
+                  <button className="btn btn-neutral">
+                    {t("signin")} <FaGrinStars size={22} />
+                  </button>
+                </SignInButton>
+              </SignedOut>
             </div>
           </article>
         </div>
