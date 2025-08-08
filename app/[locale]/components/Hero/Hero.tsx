@@ -35,7 +35,9 @@ export const Hero = () => {
           </figure>
 
           <article className="animate-flip-up lg:w-9/12 lg:pr-20">
-            <h1 className="text-5xl leading-tight font-bold">{t("title")}</h1>
+            <h1 className="text-5xl leading-tight font-bold text-balance">
+              {t("title")}
+            </h1>
             <p className="pt-6 text-xl font-semibold lg:pr-40 lg:text-2xl">
               {t("subtitle")}
             </p>
