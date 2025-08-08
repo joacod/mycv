@@ -34,16 +34,22 @@ export const About = () => {
               rel="noopener noreferrer"
               className="group border-base-300 bg-base-200/50 hover:border-primary/30 hover:bg-base-200/80 block rounded-lg border p-6 backdrop-blur-sm transition-all duration-300 hover:shadow-lg"
             >
-              <div className="flex items-start gap-6">
+              <div className="md:flex md:items-start md:gap-6">
+                <div className="mb-4 flex items-center justify-between md:hidden">
+                  <span className="badge badge-primary badge-sm">
+                    {t("articleCard.badge")}
+                  </span>
+                  <FaExternalLinkAlt className="text-base-content/40 group-hover:text-primary h-4 w-4 flex-shrink-0 transition-colors" />
+                </div>
                 <Image
                   src={ARTICLE_COVER_IMAGE}
                   alt={t("articleCard.title")}
                   width={128}
                   height={96}
-                  className="h-24 w-32 flex-shrink-0 rounded-lg object-cover opacity-90 transition-opacity group-hover:opacity-100"
+                  className="mb-4 h-48 w-full rounded-lg object-cover opacity-90 transition-opacity group-hover:opacity-100 md:mb-0 md:h-24 md:w-32 md:flex-shrink-0"
                 />
                 <div className="flex-1">
-                  <div className="mb-2 flex items-center gap-2">
+                  <div className="mb-2 hidden items-center gap-2 md:flex">
                     <span className="badge badge-primary badge-sm">
                       {t("articleCard.badge")}
                     </span>
@@ -55,7 +61,7 @@ export const About = () => {
                     {t("articleCard.description")}
                   </p>
                 </div>
-                <FaExternalLinkAlt className="text-base-content/40 group-hover:text-primary mt-2 h-4 w-4 flex-shrink-0 transition-colors" />
+                <FaExternalLinkAlt className="text-base-content/40 group-hover:text-primary mt-2 hidden h-4 w-4 flex-shrink-0 transition-colors md:block" />
               </div>
             </a>
           </div>
