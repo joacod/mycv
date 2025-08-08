@@ -1,12 +1,26 @@
 {
-  "About": {
+  "Hero": {
     "avatarAlt": "Avatar of a guy with a beard, glasses and smiling",
-    "collaborate": "I am a committed, proactive, and results-oriented professional with a strong sense of responsibility and quality. I thrive in collaborative environments, learn quickly, and am always seeking new challenges and opportunities to continue growing.",
-    "description": "With more than 15 years in the software industry, I've built strong expertise across diverse sectors, including finance, media, healthcare, and IoT.",
-    "getstarted": "Get started",
-    "role": "As a Lead Software Engineer, I drive key technical decisions across design, architecture, and core component development. Beyond coding, I contribute to configuration management, continuous integration, and team support, while also providing mentorship and training.",
+    "title": "15+ years building Software that people actually use",
+    "subtitle": "Just products that work.",
+    "description1": "Currently shipping MVPs in 2 weeks at Everbak, because great ideas shouldn't die in planning phases. No corporate buzzwords, no endless meetings, we ship. ",
+    "description2": "I have built systems for Warner Bros Discovery, PlutoTV, Indeed job search, Deloitte, financial platforms across Latin America, and IoT infrastructure that powers smart cities.",
+    "ctaPrimary": "Ship your MVP",
+    "ctaSecondary": "See my story"
+  },
+  "About": {
     "signin": "Sign in for more content",
-    "title": "About me"
+    "title": "My Story",
+    "story1": "It all started with a 486 PC my father brought home. While other kids were outside playing, I spent lots of hours on that machine, fascinated by the fact that it could run games like Prehistorik (I played that one a lot). That early curiosity about how things worked quickly turned into a passion for building them.",
+    "story2": "Fast-forward past my Computer Science studies and early freelance gigs, my real education happened in the trenches. I worked on credit bureau systems across Latam, helped businesses launch websites in industries ranging from insurance to entertainment, and even contributed to the MetLife Stadium site just before Super Bowl XLVIII. Later came IoT infrastructure for smart cities at Aclara, job search features at Indeed, and streaming platforms at Warner Bros Discovery and PlutoTV.",
+    "story3": "Fifteen years in, one truth stands out, software isn't about perfect code, it's about solving real problems.",
+    "story4": "I've been a digital nomad, working with teams across continents and time zones. The sectors changed, but the principle stayed the same, if users can’t depend on what you ship, none of it matters. That belief led me to start Everbak. I was tired of watching brilliant ideas get stuck in endless “discovery phases”. Two weeks is enough to validate if something has potential. If it does, we improve it. If not, we pivot or scrap it. No wasted time, no wasted money.",
+    "story5": "When I’m not coding, I’m writing about the messy realities of software development, war stories from someone who’s been building stuff since that first 486 sparked a lifelong fascination. That same kid who used to mash the space bar to fight pixelated dinosaurs, now helps people ship products that actually work.",
+    "articleCard": {
+      "title": "From Playing on PC to Building Software: My Journey into Programming",
+      "description": "The complete story of how a 486 PC and childhood curiosity turned into a 15-year software development career.",
+      "badge": "Origin Story"
+    }
   },
   "ClickMe": {
     "text1": "Click me!",
@@ -19,17 +33,18 @@
     "top": "Go to Top"
   },
   "Company": {
-    "badge": "New Adventure!",
-    "button": "Check out my company",
-    "card1": "I wanted to create, innovate, and make an impact on my own terms.",
-    "card2": "We cut through the clutter. Fast, efficient, and cost-effective software solutions.",
+    "badge": "AI-Driven Development",
+    "button": "Let's get things done!",
+    "card1": "I wanted to create, innovate, and make an impact on my own terms. Ideas deserve to see daylight in weeks, not months.",
+    "card2": "We use AI not because it's trendy, but because it genuinely lets us build faster without sacrificing quality.",
     "card3": "We're all about quick progress. You'll see updates daily, no waiting around for months!",
-    "card4": "We use some pretty nifty AI tools. It's like having a super-smart robot assistant!",
-    "cardTitle": "The Why Behind the Decision",
-    "description": "Decided to start something of my own. It's a new path, and I'm excited to share it!",
-    "logoAlt": "Company Logo",
+    "card4": "Zero bureaucracy doesn't mean zero process. It means the right process for getting things done.",
+    "cardTitle": "Why Everbak?",
+    "description": "Decided to start something of my own to prove ideas can move from concept to reality in 2 weeks.",
+    "logoAlt": "Everbak Logo",
+    "mvpPitch": "You pay for development, not project managers. Every dollar goes toward building your product.",
     "quote": "\"Quality, efficiency, and maybe having a bit of fun along the way. That's the goal!\"",
-    "title": "I started a Company!"
+    "title": "Ship Your MVP"
   },
   "Credits": {
     "created": "<webTemplate>Web Template</webTemplate> created by <author>Joaquin Diaz</author>",
@@ -73,21 +88,21 @@
     "redPill": "You take the {redPillEmoji} red pill... you stay in Wonderland, and I show you how deep the rabbit hole goes."
   },
   "Experience": {
-    "clientDescription1": "Media company formed by the merger of WarnerMedia and Discovery, Inc., offering a vast array of entertainment content.",
-    "clientDescription2": "Popular online job search platform, connecting job seekers with employers worldwide.",
-    "clientDescription3": "A global leader in professional services, providing innovative solutions in auditing, consulting, and advisory services.",
-    "clientDescription4": "Free ad-supported streaming television service owned and operated by the Paramount Streaming division of Paramount Global.",
+    "clientDescription1": "Media giant. Developed a custom portal from scratch, enabling media content submissions. Implemented a client side media inspection layer to detect issues with media files before upload, saving gigabytes of data and hours of processing time.",
+    "clientDescription2": "The job search platform everyone knows. I implemented microfrontend solutions and developed features that connect job seekers with opportunities worldwide.",
+    "clientDescription3": "Global consulting powerhouse. I worked on their WOTC tax credit systems. Conducted research to improve performance on specific parts of the software as API responses and exports times.",
+    "clientDescription4": "Paramount's free streaming service. I worked on infrastructure that delivers content to millions of users. I contributed to optimizing the user experience and code maintainability, ensuring a modular and efficient microfrontend architecture.",
     "clientLogoAlt": "Logo of {clientName}",
-    "description": "As a vendor, I've had the opportunity to collaborate with these outstanding clients.",
+    "description": "15+ years working with distributed teams. Different companies, same principle, build software that actually matters.",
     "title": "Experience",
-    "visit": "Visit Client Site"
+    "visit": "Visit Client"
   },
   "Footer": {
     "rights": "Let's collaborate and bring your digital vision to life."
   },
   "Layout": {
-    "metaDescription": "Software Developer, Entrepreneur, I write stuff",
-    "metaTitle": "Software Solutions"
+    "metaDescription": "Lead Software Engineer. 15+ years building software for Warner Bros Discovery, PlutoTV, Indeed, IoT systems. Now building MVPs at Everbak.",
+    "metaTitle": "Software Engineer & Entrepreneur"
   },
   "LocaleSwitcher": {
     "flagAlt": "Language flag: {language}",
@@ -109,7 +124,8 @@
     "title": "Page Not Found"
   },
   "Podcast": {
-    "description": "Code Quests, is a podcast featuring AI-narrated readings of my articles about software development, technology, and innovation. Join us as we explore the latest trends and insights in the tech world through engaging audio stories.",
+    "description1": "Code Quests, is a podcast featuring AI-narrated readings of my articles about software development, technology, and innovation.",
+    "description2": "Join us as we explore the latest trends and insights in the tech world through audio stories.",
     "title": "Code Quests Podcast"
   },
   "Riddler": {
@@ -123,12 +139,21 @@
     "version": "Version"
   },
   "Skills": {
-    "title": "Tech Skills"
+    "title": "How I Ship MVPs in 2 Weeks",
+    "subtitle": "The exact tech stack and approach that lets Everbak deliver production-ready products fast.",
+    "mvpStack": "MVP Shipping Stack",
+    "mvpStackDescription": "Next.js 15 and React 19 for speed and reliability. TypeScript to catch mistakes early and keep your codebase predictable. Tailwind for responsive designs that look great on any device. PostgreSQL or MongoDB for robust data handling. Git for clean version control, Vercel for instant deployments. Built with an architecture you can grow on, following proven industry practices. You own everything, complete GitHub repository included.",
+    "aiTitle": "AI-Powered Development",
+    "aiDescription": "We kick off with GPT-5 from OpenAI to spark ideas, explore possibilities, and shape the concept. Claude Code then maps out the architecture and plans the build. Vercel v0 quickly transforms those plans into functional prototypes. Finally, GitHub Copilot works alongside us in the IDE to refine and expand the code. AI takes care of the repetitive and time-consuming tasks, our human expertise focuses on strategy, creativity, and solving the problems that actually matter.",
+    "customTitle": "Need Something Different?",
+    "customDescription": "Not every project fits the same mold, and that’s the fun part. Whether you prefer Astro over Next.js, want separate front-end and back-end repos, need a Go or Python backend, or are thinking microservices, AI integration, high-performance caching with Redis, complex database setups, multi-tenant architectures, or custom deployment pipelines, I’ve been there. Tell me your vision, and we’ll make it happen."
   },
   "Writing": {
-    "description": "I write about Software, Tech, Artificial Intelligence, Mentoring, Career Growth, Innovation and Opinions on different topics.",
+    "description": "I write about software, tech, artificial intelligence, mentoring, career growth, innovation and honest takes on different topics.",
     "platformDevTo": "Dev.to",
     "platformMedium": "Medium",
-    "title": "I Write Stuff"
+    "title": "I Write Stuff",
+    "valueProposition": "I've made the expensive mistakes building software for Warner Bros, Indeed, financial systems, and IoT infrastructure. Writing helps me process what works versus what sounds good in meetings.",
+    "recentPost": "War stories from 15 years in the software trenches. Lessons learned from building across multiple industries, architecture decisions and remote work realities."
   }
 }

@@ -26,9 +26,14 @@ export const CompanyHeader = () => {
         <h2 className="mb-4 text-3xl leading-tight font-bold md:text-4xl lg:text-6xl">
           {t("title")}
         </h2>
-        <p className="text-primary-content/90 text-md mx-auto mb-6 max-w-2xl leading-relaxed md:text-xl">
+        <p className="text-primary-content/90 text-md mx-auto mb-4 max-w-2xl leading-relaxed md:text-xl">
           {t("description")}
         </p>
+        <div className="bg-primary-content/10 mb-6 rounded-lg p-4">
+          <p className="text-primary-content text-lg font-medium">
+            {t("mvpPitch")}
+          </p>
+        </div>
       </div>
     </div>
   );

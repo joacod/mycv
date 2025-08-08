@@ -1,56 +1,95 @@
 import { useTranslations } from "next-intl";
-import { FaAws, FaNode, FaReact } from "react-icons/fa";
+import { FaAws, FaGithub, FaNode, FaReact, FaRocket } from "react-icons/fa";
 import {
-  SiJavascript,
   SiTypescript,
   SiNextdotjs,
   SiTailwindcss,
-  SiVite,
   SiGit,
-  SiHtml5,
-  SiCss3,
   SiPython,
   SiGo,
-  SiPhp,
+  SiPostgresql,
+  SiMongodb,
+  SiVercel,
+  SiOpenai,
+  SiClaude,
+  SiGithubcopilot,
+  SiDocker,
+  SiAstro,
+  SiKubernetes,
+  SiTerraform,
+  SiRedis,
 } from "react-icons/si";
-import { TbBrandCSharp, TbSql } from "react-icons/tb";
-import { SkillBadge } from "./SkillBadge";
+import { TbBrandCSharp, TbSql, TbBrain } from "react-icons/tb";
+import { SkillCard } from "./SkillCard";
 
 export const Skills = () => {
   const t = useTranslations("Skills");
 
-  const skills = [
-    { name: "JavaScript", icon: <SiJavascript /> },
-    { name: "TypeScript", icon: <SiTypescript /> },
-    { name: "React", icon: <FaReact /> },
-    { name: "Next.js", icon: <SiNextdotjs /> },
-    { name: "Vite", icon: <SiVite /> },
-    { name: "HTML", icon: <SiHtml5 /> },
-    { name: "CSS", icon: <SiCss3 /> },
-    { name: "Tailwind", icon: <SiTailwindcss /> },
-    { name: "Node.js", icon: <FaNode /> },
-    { name: "Python", icon: <SiPython /> },
-    { name: "Golang", icon: <SiGo /> },
-    { name: "C#", icon: <TbBrandCSharp /> },
-    { name: "PHP", icon: <SiPhp /> },
-    { name: "SQL", icon: <TbSql /> },
-    { name: "Git", icon: <SiGit /> },
-    { name: "AWS", icon: <FaAws /> },
+  const mvpStack = [
+    { name: "Next.js 15", icon: <SiNextdotjs />, category: "mvp" },
+    { name: "React 19", icon: <FaReact />, category: "mvp" },
+    { name: "TypeScript", icon: <SiTypescript />, category: "mvp" },
+    { name: "Tailwind", icon: <SiTailwindcss />, category: "mvp" },
+    { name: "PostgreSQL", icon: <SiPostgresql />, category: "mvp" },
+    { name: "MongoDB", icon: <SiMongodb />, category: "mvp" },
+    { name: "Vercel", icon: <SiVercel />, category: "mvp" },
+    { name: "GitHub", icon: <FaGithub />, category: "mvp" },
+  ];
+
+  const aiPowered = [
+    { name: "GPT-5", icon: <SiOpenai />, category: "ai" },
+    { name: "Claude Code", icon: <SiClaude />, category: "ai" },
+    { name: "v0 by Vercel", icon: <SiVercel />, category: "ai" },
+    { name: "GitHub Copilot", icon: <SiGithubcopilot />, category: "ai" },
+  ];
+
+  const customSolutions = [
+    { name: "Node.js", icon: <FaNode />, category: "custom" },
+    { name: "Python", icon: <SiPython />, category: "custom" },
+    { name: "Golang", icon: <SiGo />, category: "custom" },
+    { name: "C#", icon: <TbBrandCSharp />, category: "custom" },
+    { name: "AWS", icon: <FaAws />, category: "custom" },
+    { name: "Docker", icon: <SiDocker />, category: "custom" },
+    { name: "Kubernetes", icon: <SiKubernetes />, category: "custom" },
+    { name: "Redis", icon: <SiRedis />, category: "custom" },
+    { name: "Terraform", icon: <SiTerraform />, category: "custom" },
+    { name: "Astro", icon: <SiAstro />, category: "custom" },
+    { name: "Git", icon: <SiGit />, category: "custom" },
+    { name: "OpenAI API", icon: <SiOpenai />, category: "custom" },
   ];
 
   return (
-    <section id="section-skills" className="px-4 py-16 md:px-8 lg:px-16">
-      <div className="mx-auto max-w-7xl">
-        <h1 className="mb-12 text-center text-4xl font-bold md:text-5xl lg:text-left">
-          {t("title")}
-        </h1>
+    <section
+      id="section-skills"
+      className="bg-base-200 px-4 py-16 md:px-8 lg:px-16"
+    >
+      <div className="mx-auto max-w-6xl">
+        <h2 className="mb-4 text-4xl font-bold md:text-5xl">{t("title")}</h2>
+        <p className="text-base-content/70 mb-12 text-xl">{t("subtitle")}</p>
 
-        <div className="grid grid-cols-3 gap-6 sm:grid-cols-4 md:grid-cols-5 md:gap-8 lg:grid-cols-6 lg:gap-10 xl:grid-cols-8">
-          {skills.map((skill) => (
-            <SkillBadge key={skill.name} name={skill.name}>
-              {skill.icon}
-            </SkillBadge>
-          ))}
+        <div className="space-y-12">
+          {/* MVP Shipping Stack */}
+          <SkillCard
+            title={t("mvpStack")}
+            description={t("mvpStackDescription")}
+            skills={mvpStack}
+            icon={<FaRocket />}
+          />
+
+          {/* AI-Powered Development */}
+          <SkillCard
+            title={t("aiTitle")}
+            description={t("aiDescription")}
+            skills={aiPowered}
+            icon={<TbBrain />}
+          />
+
+          {/* Custom Solutions */}
+          <SkillCard
+            title={t("customTitle")}
+            description={t("customDescription")}
+            skills={customSolutions}
+          />
         </div>
       </div>
     </section>

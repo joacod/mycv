@@ -4,7 +4,7 @@ import { UsersNavigation } from "../components/Navigation/UsersNavigation";
 import { devInfo } from "@/utils/devInfo";
 
 export const metadata: Metadata = {
-  title: "Dashboard | " + devInfo.handle + " | " + devInfo.name,
+  title: "Dashboard | " + devInfo.name + " | " + devInfo.handle,
   robots: {
     index: false,
     follow: false,

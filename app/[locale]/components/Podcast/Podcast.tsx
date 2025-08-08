@@ -11,15 +11,16 @@ export const Podcast = () => {
   return (
     <section
       id="section-podcast"
-      className="bg-primary text-primary-content pt-16"
+      className="bg-primary text-primary-content pt-24"
     >
       <div className="container mx-auto px-4">
         <div className="mx-auto">
           {/* Mobile: Stacked layout */}
           <div className="flex flex-col gap-8 lg:hidden">
             <div>
-              <h1 className="pb-4 text-4xl font-bold">{t("title")}</h1>
-              <p className="text-lg">{t("description")}</p>
+              <h2 className="pb-4 text-4xl font-bold">{t("title")}</h2>
+              <p className="text-base italic">{t("description1")}</p>
+              <p className="mt-4 text-base italic">{t("description2")}</p>
             </div>
             <div className="grid grid-cols-2 justify-items-center gap-6">
               <article>
@@ -88,8 +89,13 @@ export const Podcast = () => {
           >
             {/* Left column: Title and description (60%) */}
             <div className="space-y-6">
-              <h1 className="text-5xl leading-tight font-bold">{t("title")}</h1>
-              <p className="text-xl leading-relaxed">{t("description")}</p>
+              <h2 className="text-5xl leading-tight font-bold">{t("title")}</h2>
+              <p className="text-base leading-relaxed text-pretty italic">
+                {t("description1")}
+              </p>
+              <p className="text-base leading-relaxed text-pretty italic">
+                {t("description2")}
+              </p>
             </div>
 
             {/* Right column: Logo grid (2x2) (40%) */}

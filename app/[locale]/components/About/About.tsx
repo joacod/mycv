@@ -1,7 +1,11 @@
 import { useTranslations } from "next-intl";
-import { FaGrinStars, FaHandPointDown } from "react-icons/fa";
-import Image from "next/image";
+import { FaGrinStars, FaExternalLinkAlt } from "react-icons/fa";
 import { SignedOut, SignInButton } from "@clerk/nextjs";
+
+const ARTICLE_URL =
+  "https://dev.to/joacod/from-playing-on-pc-to-building-software-my-journey-into-programming-33j9";
+const ARTICLE_COVER_IMAGE =
+  "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fndagr5ktu53fg5ql71xs.jpeg";
 
 export const About = () => {
   const t = useTranslations("About");
@@ -9,52 +13,60 @@ export const About = () => {
   return (
     <section
       id="section-about"
-      className="hero bg-primary from-secondary to-primary text-primary-content z-0 min-h-screen bg-linear-to-b"
+      className="bg-base-100 px-4 py-16 md:px-8 lg:px-16"
     >
-      <div className="container mx-auto">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <figure className="animate-flip-up mt-6 lg:hidden">
-            <Image
-              src="/avatar.webp"
-              alt={t("avatarAlt")}
-              width={250}
-              height={250}
-              placeholder="empty"
-              className="rounded-full"
-            />
-          </figure>
-          <figure className="animate-flip-up hidden lg:inline lg:w-3/12 lg:self-start">
-            <Image
-              src="/avatar.webp"
-              alt={t("avatarAlt")}
-              width={500}
-              height={500}
-              placeholder="empty"
-              className="rounded-full"
-            />
-          </figure>
-          <article className="animate-flip-up lg:w-9/12 lg:pr-20">
-            <h1 className="text-5xl font-bold">{t("title")}</h1>
-            <p className="pt-6 text-xl font-semibold lg:pr-40 lg:text-2xl">
-              {t("description")}
-            </p>
-            <div className="pt-6 md:flex md:gap-10 lg:flex lg:gap-12">
-              <p>{t("role")}</p>
-              <p className="pt-4 md:pt-0 lg:pt-0">{t("collaborate")}</p>
+      <div className="mx-auto max-w-4xl">
+        <h2 className="mb-8 text-4xl font-bold md:text-5xl lg:text-6xl">
+          {t("title")}
+        </h2>
+
+        <div className="prose prose-lg max-w-none space-y-6">
+          <p className="text-lg leading-relaxed text-pretty">{t("story1")}</p>
+          <p className="text-lg leading-relaxed text-pretty">{t("story2")}</p>
+          <p className="text-lg leading-relaxed text-pretty">{t("story3")}</p>
+          <p className="text-lg leading-relaxed text-pretty">{t("story4")}</p>
+          <p className="text-lg leading-relaxed text-pretty">{t("story5")}</p>
+        </div>
+
+        <div className="mt-8">
+          <a
+            href={ARTICLE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group border-base-300 bg-base-200/50 hover:border-primary/30 hover:bg-base-200/80 block rounded-lg border p-6 backdrop-blur-sm transition-all duration-300 hover:shadow-lg"
+          >
+            <div className="flex items-start gap-6">
+              <img
+                src={ARTICLE_COVER_IMAGE}
+                alt={t("articleCard.title")}
+                className="h-24 w-32 flex-shrink-0 rounded-lg object-cover opacity-90 transition-opacity group-hover:opacity-100"
+              />
+              <div className="flex-1">
+                <div className="mb-2 flex items-center gap-2">
+                  <span className="badge badge-primary badge-sm">
+                    {t("articleCard.badge")}
+                  </span>
+                </div>
+                <h3 className="group-hover:text-primary mb-2 text-lg font-semibold transition-colors">
+                  {t("articleCard.title")}
+                </h3>
+                <p className="text-base-content/70 text-sm">
+                  {t("articleCard.description")}
+                </p>
+              </div>
+              <FaExternalLinkAlt className="text-base-content/40 group-hover:text-primary mt-2 h-4 w-4 flex-shrink-0 transition-colors" />
             </div>
-            <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:gap-6 lg:mt-10">
-              <a className="btn btn-neutral" href="#section-writing">
-                {t("getstarted")} <FaHandPointDown size={22} />
-              </a>
-              <SignedOut>
-                <SignInButton>
-                  <button className="btn btn-neutral">
-                    {t("signin")} <FaGrinStars size={22} />
-                  </button>
-                </SignInButton>
-              </SignedOut>
-            </div>
-          </article>
+          </a>
+        </div>
+
+        <div className="mt-8 flex justify-center">
+          <SignedOut>
+            <SignInButton>
+              <button className="btn btn-primary btn-lg">
+                {t("signin")} <FaGrinStars size={22} />
+              </button>
+            </SignInButton>
+          </SignedOut>
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ export const Company = () => {
   return (
     <section
       id="section-company"
-      className="from-primary to-accent text-primary-content bg-linear-to-br py-16"
+      className="from-primary to-accent text-primary-content bg-linear-to-b py-16 lg:pt-0"
     >
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-4xl">
@@ -23,7 +23,9 @@ export const Company = () => {
 
           <CompanyHeader />
           <CompanyCards />
-          <p className="mb-6 text-center text-lg italic">{t("quote")}</p>
+          <p className="text-accent-content mb-6 text-center text-lg italic">
+            {t("quote")}
+          </p>
 
           <div className="flex justify-center">
             <Link

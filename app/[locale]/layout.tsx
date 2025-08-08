@@ -6,7 +6,11 @@ import { ThemeProvider } from "./providers/themeProvider";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { locales, routing } from "@/i18n/routing";
-import { getMessages, setRequestLocale, getTranslations } from "next-intl/server";
+import {
+  getMessages,
+  setRequestLocale,
+  getTranslations,
+} from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
 export async function generateMetadata({
@@ -18,7 +22,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Layout" });
 
   return {
-    title: `${t("metaTitle")} | ${devInfo.handle} | ${devInfo.name}`,
+    title: `${devInfo.name} | ${t("metaTitle")} | ${devInfo.handle}`,
     description: t("metaDescription"),
   };
 }
