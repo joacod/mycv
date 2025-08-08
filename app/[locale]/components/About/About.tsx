@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { FaGrinStars, FaExternalLinkAlt } from "react-icons/fa";
 import { SignedOut, SignInButton } from "@clerk/nextjs";
+import Image from "next/image";
 
 const ARTICLE_URL =
   "https://dev.to/joacod/from-playing-on-pc-to-building-software-my-journey-into-programming-33j9";
@@ -34,9 +35,11 @@ export const About = () => {
               className="group border-base-300 bg-base-200/50 hover:border-primary/30 hover:bg-base-200/80 block rounded-lg border p-6 backdrop-blur-sm transition-all duration-300 hover:shadow-lg"
             >
               <div className="flex items-start gap-6">
-                <img
+                <Image
                   src={ARTICLE_COVER_IMAGE}
                   alt={t("articleCard.title")}
+                  width={128}
+                  height={96}
                   className="h-24 w-32 flex-shrink-0 rounded-lg object-cover opacity-90 transition-opacity group-hover:opacity-100"
                 />
                 <div className="flex-1">

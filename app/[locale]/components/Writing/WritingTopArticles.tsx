@@ -6,6 +6,7 @@ import {
   FaCalendar,
   FaTrophy,
 } from "react-icons/fa";
+import Image from "next/image";
 
 interface Article {
   id: number;
@@ -100,9 +101,11 @@ export async function WritingTopArticles() {
                 {index + 1}
               </div>
               {article.cover_image && (
-                <img
+                <Image
                   src={article.cover_image}
                   alt={article.title}
+                  width={48}
+                  height={48}
                   className="h-12 w-12 flex-shrink-0 rounded-lg object-cover opacity-90 transition-opacity group-hover:opacity-100"
                 />
               )}

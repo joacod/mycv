@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { DevToData } from "@/models/devto";
 import { devInfo } from "@/utils/devInfo";
+import Image from "next/image";
 
 export async function DevToShowcase() {
   let data: DevToData | null = null;
@@ -184,9 +185,11 @@ export async function DevToShowcase() {
                     {index + 1}
                   </div>
                   {article.cover_image && (
-                    <img
+                    <Image
                       src={article.cover_image}
                       alt={article.title}
+                      width={64}
+                      height={64}
                       className="h-16 w-16 flex-shrink-0 rounded-lg object-cover"
                     />
                   )}
@@ -260,9 +263,11 @@ export async function DevToShowcase() {
               >
                 <div className="flex gap-4">
                   {article.cover_image && (
-                    <img
+                    <Image
                       src={article.cover_image}
                       alt={article.title}
+                      width={64}
+                      height={64}
                       className="h-16 w-16 flex-shrink-0 rounded-lg object-cover"
                     />
                   )}
