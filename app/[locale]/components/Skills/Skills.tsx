@@ -59,11 +59,8 @@ export const Skills = () => {
   ];
 
   return (
-    <section
-      id="section-skills"
-      className="bg-base-200 px-4 py-16 md:px-8 lg:px-16"
-    >
-      <div className="mx-auto max-w-6xl">
+    <section id="section-skills" className="bg-base-200 py-16">
+      <div className="container mx-auto px-4">
         <h2 className="mb-4 text-4xl font-bold md:text-5xl">{t("title")}</h2>
         <p className="text-base-content/70 mb-12 text-xl">{t("subtitle")}</p>
 

@@ -11,11 +11,8 @@ export const About = () => {
   const t = useTranslations("About");
 
   return (
-    <section
-      id="section-about"
-      className="bg-base-100 px-4 py-16 md:px-8 lg:px-16"
-    >
-      <div className="mx-auto max-w-4xl">
+    <section id="section-about" className="bg-base-100 py-16">
+      <div className="container mx-auto px-4">
         <h2 className="mb-8 text-4xl font-bold md:text-5xl lg:text-6xl">
           {t("title")}
         </h2>
@@ -28,35 +25,37 @@ export const About = () => {
           <p className="text-lg leading-relaxed text-pretty">{t("story5")}</p>
         </div>
 
-        <div className="mt-8">
-          <a
-            href={ARTICLE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group border-base-300 bg-base-200/50 hover:border-primary/30 hover:bg-base-200/80 block rounded-lg border p-6 backdrop-blur-sm transition-all duration-300 hover:shadow-lg"
-          >
-            <div className="flex items-start gap-6">
-              <img
-                src={ARTICLE_COVER_IMAGE}
-                alt={t("articleCard.title")}
-                className="h-24 w-32 flex-shrink-0 rounded-lg object-cover opacity-90 transition-opacity group-hover:opacity-100"
-              />
-              <div className="flex-1">
-                <div className="mb-2 flex items-center gap-2">
-                  <span className="badge badge-primary badge-sm">
-                    {t("articleCard.badge")}
-                  </span>
+        <div className="flex justify-center">
+          <div className="mt-8 lg:w-3/5">
+            <a
+              href={ARTICLE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group border-base-300 bg-base-200/50 hover:border-primary/30 hover:bg-base-200/80 block rounded-lg border p-6 backdrop-blur-sm transition-all duration-300 hover:shadow-lg"
+            >
+              <div className="flex items-start gap-6">
+                <img
+                  src={ARTICLE_COVER_IMAGE}
+                  alt={t("articleCard.title")}
+                  className="h-24 w-32 flex-shrink-0 rounded-lg object-cover opacity-90 transition-opacity group-hover:opacity-100"
+                />
+                <div className="flex-1">
+                  <div className="mb-2 flex items-center gap-2">
+                    <span className="badge badge-primary badge-sm">
+                      {t("articleCard.badge")}
+                    </span>
+                  </div>
+                  <h3 className="group-hover:text-primary mb-2 text-lg font-semibold transition-colors">
+                    {t("articleCard.title")}
+                  </h3>
+                  <p className="text-base-content/70 text-sm">
+                    {t("articleCard.description")}
+                  </p>
                 </div>
-                <h3 className="group-hover:text-primary mb-2 text-lg font-semibold transition-colors">
-                  {t("articleCard.title")}
-                </h3>
-                <p className="text-base-content/70 text-sm">
-                  {t("articleCard.description")}
-                </p>
+                <FaExternalLinkAlt className="text-base-content/40 group-hover:text-primary mt-2 h-4 w-4 flex-shrink-0 transition-colors" />
               </div>
-              <FaExternalLinkAlt className="text-base-content/40 group-hover:text-primary mt-2 h-4 w-4 flex-shrink-0 transition-colors" />
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
 
         <div className="mt-8 flex justify-center">
