@@ -1,67 +1,108 @@
 {
-  "About": {
+  "Hero": {
     "avatarAlt": "Avatar de um cara com barba, óculos e sorrindo",
-    "collaborate": "Sou um profissional comprometido, proativo e orientado a resultados, com forte senso de responsabilidade e qualidade. Prospero em ambientes colaborativos, aprendo rapidamente e estou sempre buscando novos desafios e oportunidades para continuar crescendo.",
-    "description": "Com mais de 15 anos na indústria de software, construí forte expertise em diversos setores, incluindo finanças, mídia, saúde e IoT.",
-    "getstarted": "Vamos começar",
-    "role": "Como Lead Software Engineer, conduzo decisões técnicas chave em design, arquitetura e desenvolvimento de componentes principais. Além da codificação, contribuo com gestão de configuração, integração contínua e suporte da equipe, além de fornecer mentoria e treinamento.",
-    "signin": "Entrar para mais conteúdo",
-    "title": "Sobre mim"
+    "title": "15+ anos construindo Software que as pessoas realmente usam",
+    "subtitle": "Sem enrolação. Apenas resultados.",
+    "description1": "Ajudo a transformar ideias em produtos funcionais, rapidamente. Agora na Everbak, entregamos MVPs em duas semanas, porque boas ideias não devem se perder em reuniões intermináveis.",
+    "description2": "Já construí para Warner Bros Discovery, PlutoTV, Indeed, Deloitte, plataformas financeiras em toda a América Latina e sistemas IoT nos EUA. Diferentes indústrias, e a maior lição? Menos burocracia, mais execução, resultados mais sólidos.",
+    "ctaPrimary": "Lance seu MVP",
+    "ctaSecondary": "Veja minha história"
+  },
+  "About": {
+    "signin": "Faça login para mais conteúdo",
+    "title": "Minha História",
+    "story1": "Tudo começou com um PC 486 que meu pai trouxe para casa. Enquanto outras crianças estavam brincando na rua, eu passava muitas horas naquela máquina, fascinado pelo fato de que ela conseguia rodar jogos como Prehistorik (joguei muito aquele). Aquela curiosidade inicial sobre como as coisas funcionavam rapidamente se transformou em paixão por construí-las.",
+    "story2": "Avançando rápido pelos meus estudos de Ciência da Computação e primeiros trabalhos freelance, minha educação real aconteceu nas trincheiras. Trabalhei em sistemas de bureau de crédito em toda a América Latina, ajudei empresas a lançar sites em setores que vão de seguros a entretenimento, e até contribuí para o site do MetLife Stadium pouco antes do Super Bowl XLVIII. Depois vieram infraestrutura IoT para cidades inteligentes na Aclara, funcionalidades de busca de empregos na Indeed, e plataformas de streaming na Warner Bros Discovery e PlutoTV.",
+    "story3": "Quinze anos depois, uma verdade se destaca: software não é sobre código perfeito, é sobre resolver problemas reais.",
+    "story4": "Fui um nômade digital, trabalhando com equipes em continentes e fusos horários diferentes. Os setores mudaram, mas o princípio permaneceu o mesmo: se os usuários não podem confiar no que você entrega, nada disso importa. Essa crença me levou a fundar a Everbak. Estava cansado de ver ideias brilhantes ficarem presas em infinitas \"fases de descoberta\". Duas semanas são suficientes para validar se algo tem potencial. Se tem, melhoramos. Se não, pivotamos ou descartamos. Sem tempo perdido, sem dinheiro desperdiçado.",
+    "story5": "Quando não estou programando, escrevo sobre as realidades bagunçadas do desenvolvimento de software, histórias de guerra de alguém que constrói coisas desde que aquele primeiro 486 despertou um fascínio que dura até hoje. A mesma criança que costumava apertar a barra de espaço para lutar contra dinossauros pixelados, agora ajuda pessoas a lançar produtos que realmente funcionam.",
+    "articleCard": {
+      "title": "De Jogar no PC a Construir Software: Minha Jornada na Programação",
+      "description": "A história completa de como um PC 486 e a curiosidade infantil se transformaram em uma carreira de 15 anos no desenvolvimento de software.",
+      "badge": "História de Origem"
+    }
   },
   "ClickMe": {
     "text1": "Clique em mim!",
-    "text2": "Sim!",
+    "text2": "Isso!",
     "text3": "Temas!",
     "text4": "De novo!"
   },
   "Common": {
     "close": "Fechar",
-    "top": "Ir para o topo"
+    "top": "Ir ao Topo"
   },
   "Company": {
-    "badge": "Nova aventura!",
-    "button": "Conheça minha empresa",
-    "card1": "Queria criar, inovar e causar impacto nos meus próprios termos.",
-    "card2": "Cortamos a confusão. Soluções de software rápidas, eficientes e econômicas.",
-    "card3": "Focamos em progresso rápido. Você verá atualizações diárias, sem esperar meses!",
-    "card4": "Usamos ferramentas de IA bem legais. É como ter um assistente robô superinteligente!",
-    "cardTitle": "O porquê por trás da decisão",
-    "description": "Decidi começar algo próprio. É um novo caminho, e estou animado para compartilhar!",
-    "logoAlt": "Logo da Empresa",
-    "quote": "\"Qualidade, eficiência e talvez um pouco de diversão pelo caminho. Esse é o objetivo!\"",
-    "title": "Comecei uma Empresa!"
+    "badge": "Desenvolvimento com IA",
+    "button": "Vamos fazer as coisas acontecerem!",
+    "card1": "Queria criar, inovar e causar impacto nos meus próprios termos. Ideias merecem ver a luz do dia em semanas, não meses.",
+    "card2": "Usamos IA não porque está na moda, mas porque genuinamente nos permite construir mais rápido sem sacrificar qualidade.",
+    "card3": "Somos sobre progresso rápido. Você verá atualizações diariamente, sem esperar por meses!",
+    "card4": "Zero burocracia não significa zero processo. Significa o processo certo para fazer as coisas acontecerem.",
+    "cardTitle": "Por que Everbak?",
+    "description": "Decidi começar algo próprio para provar que ideias podem ir do conceito à realidade em 2 semanas.",
+    "logoAlt": "Logo da Everbak",
+    "mvpPitch": "Você paga pelo desenvolvimento, não por gerentes de projeto. Cada real vai para construir seu produto.",
+    "quote": "\"Qualidade, eficiência e talvez se divertir um pouco no caminho. Esse é o objetivo!\"",
+    "title": "Lance Seu MVP"
   },
   "Credits": {
     "created": "<webTemplate>Template Web</webTemplate> criado por <author>Joaquin Diaz</author>",
     "flags": "Ícones de bandeiras por <link>icons8.com</link>",
-    "flaticon": "Imagem do favicon criada por <link>Muhammad Atif - Flaticon</link>",
+    "flaticon": "Imagem para o favicon criada por <link>Muhammad Atif - Flaticon</link>",
     "location": "Localização fornecida por <link>ipapi.co</link>",
-    "shots": "Imagens enquadradas criadas com <link>Shots.so</link>",
+    "shots": "Imagens com moldura criadas com <link>Shots.so</link>",
     "title": "Créditos",
-    "tooltip": "Vida longa e próspera! 🖖",
+    "tooltip": "Vida Longa e Próspera! 🖖",
     "uaparser": "Mostramos informações do usuário usando <link>uaparser.js.org</link>"
+  },
+  "Dashboard": {
+    "contactDescription": "Tem perguntas ou sugestões? Sinta-se à vontade para entrar em contato.",
+    "contactTitle": "Entre em Contato",
+    "description": "Explore conteúdo exclusivo para membros! Mergulhe no que estou trabalhando atualmente e confira a linha do tempo para próximas funcionalidades e projetos disponíveis apenas para você.",
+    "supportMessage": "Fique ligado para atualizações, e <strong>obrigado</strong> pelo seu apoio!",
+    "timelineItems": {
+      "completeHome": "Completar seções da página inicial",
+      "responsiveMobile": "Versão responsiva para mobile",
+      "intl": "Suporte à internacionalização (i18n)",
+      "loginAuth": "Configurações de autenticação de login",
+      "userDashboard": "Página do dashboard (Login necessário)",
+      "githubDashboard": "Atividade do Github (Login necessário)",
+      "devtoDashboard": "Artigos do Dev.to (Login necessário)",
+      "moreStuff": "Mais coisas (fique ligado)"
+    },
+    "title": "Dashboard"
+  },
+  "DashboardLinks": {
+    "title": "Explore Meus Projetos e Redes Sociais"
+  },
+  "DashboardTimeline": {
+    "title": "Linha do Tempo"
+  },
+  "DashboardWelcome": {
+    "message": "Bem-vindo {userName}! 👋"
   },
   "EasterEgg": {
     "bluePill": "Você toma a {bluePillEmoji} pílula azul... a história acaba, você acorda na sua cama e acredita no que quiser acreditar.",
     "followRabbit": "Siga o coelho branco 🐇😎",
-    "redPill": "Você toma a {redPillEmoji} pílula vermelha... permanece no País das Maravilhas, e eu te mostro quão profunda é a toca do coelho."
+    "redPill": "Você toma a {redPillEmoji} pílula vermelha... você fica no País das Maravilhas, e eu te mostro quão profunda é a toca do coelho."
   },
   "Experience": {
-    "clientDescription1": "Empresa de mídia formada pela fusão da WarnerMedia e Discovery, Inc., oferecendo uma vasta gama de conteúdo de entretenimento.",
-    "clientDescription2": "Plataforma popular de busca de emprego online, conectando candidatos a empregadores em todo o mundo.",
-    "clientDescription3": "Líder global em serviços profissionais, fornecendo soluções inovadoras em auditoria, consultoria e serviços de assessoria.",
-    "clientDescription4": "Serviço de televisão streaming gratuito com suporte de anúncios, de propriedade e operado pela divisão Paramount Streaming da Paramount Global.",
-    "clientLogoAlt": "Logo de {clientName}",
-    "description": "Como fornecedor, tive a oportunidade de colaborar com estes clientes excepcionais.",
+    "clientDescription1": "Gigante da mídia. Desenvolvi um portal customizado do zero, permitindo submissões de conteúdo de mídia. Implementei uma camada de inspeção de mídia do lado cliente para detectar problemas com arquivos de mídia antes do upload, economizando gigabytes de dados e horas de tempo de processamento.",
+    "clientDescription2": "A plataforma de busca de empregos que todo mundo conhece. Implementei soluções de microfrontend e desenvolvi funcionalidades que conectam pessoas em busca de emprego com oportunidades pelo mundo.",
+    "clientDescription3": "Potência global de consultoria. Trabalhei nos sistemas de crédito fiscal WOTC deles. Conduzi pesquisa para melhorar performance em partes específicas do software como tempos de resposta de API e exportações.",
+    "clientDescription4": "Serviço de streaming gratuito da Paramount. Trabalhei na infraestrutura que entrega conteúdo para milhões de usuários. Contribuí para otimizar a experiência do usuário e manutenibilidade do código, garantindo uma arquitetura de microfrontend modular e eficiente.",
+    "clientLogoAlt": "Logo da {clientName}",
+    "description": "15+ anos trabalhando com equipes distribuídas. Empresas diferentes, mesmo princípio: construir software que realmente importa.",
     "title": "Experiência",
-    "visit": "Visitar Site do Cliente"
+    "visit": "Visitar Cliente"
   },
   "Footer": {
     "rights": "Vamos colaborar e dar vida à sua visão digital."
   },
   "Layout": {
-    "metaDescription": "Desenvolvedor de Software, Empreendedor, Escrevo coisas",
-    "metaTitle": "Soluções de Software"
+    "metaDescription": "Engenheiro de Software Sênior. 15+ anos construindo software para Warner Bros Discovery, PlutoTV, Indeed, sistemas IoT. Agora construindo MVPs na Everbak.",
+    "metaTitle": "Engenheiro de Software & Empreendedor"
   },
   "LocaleSwitcher": {
     "flagAlt": "Bandeira do idioma: {language}",
@@ -83,8 +124,9 @@
     "title": "Página Não Encontrada"
   },
   "Podcast": {
-    "description": "Code Quests é um podcast com leituras narradas por IA dos meus artigos sobre desenvolvimento de software, tecnologia e inovação. Junte-se a nós enquanto exploramos as últimas tendências e insights no mundo da tecnologia através de histórias de áudio envolventes.",
-    "title": "Code Quests Podcast"
+    "description1": "Code Quests é um podcast com leituras narradas por IA dos meus artigos sobre desenvolvimento de software, tecnologia e inovação.",
+    "description2": "Junte-se a nós enquanto exploramos as últimas tendências e insights do mundo tech através de histórias em áudio.",
+    "title": "Podcast Code Quests"
   },
   "Riddler": {
     "browser": "Navegador",
@@ -97,38 +139,20 @@
     "version": "Versão"
   },
   "Skills": {
-    "title": "Habilidades Técnicas"
+    "title": "Como Lanço MVPs em 2 Semanas",
+    "subtitle": "O stack de tecnologia exato e a abordagem que permite à Everbak entregar produtos prontos para produção rapidamente.",
+    "mvpStack": "Stack para Lançamento de MVP",
+    "mvpStackDescription": "Next.js 15 e React 19 para velocidade e confiabilidade. TypeScript para capturar erros cedo e manter sua base de código previsível. Tailwind para designs responsivos que ficam ótimos em qualquer dispositivo. PostgreSQL ou MongoDB para manipulação robusta de dados. Git para controle de versão limpo, Vercel para deploys instantâneos. Construído com uma arquitetura na qual você pode crescer, seguindo práticas comprovadas da indústria. Você é dono de tudo, repositório completo no GitHub incluso.",
+    "aiTitle": "Desenvolvimento com IA",
+    "aiDescription": "Começamos com GPT-5 da OpenAI para despertar ideias, explorar possibilidades e moldar o conceito. Claude Code então mapeia a arquitetura e planeja a construção. Vercel v0 rapidamente transforma esses planos em protótipos funcionais. Finalmente, GitHub Copilot trabalha conosco no IDE para refinar e expandir o código. A IA cuida das tarefas repetitivas e demoradas, nossa expertise humana foca em estratégia, criatividade e resolver os problemas que realmente importam.",
+    "customTitle": "Precisa de Algo Diferente?",
+    "customDescription": "Nem todo projeto se encaixa no mesmo molde, e essa é a parte divertida. Se você prefere Astro ao Next.js, quer repositórios separados para front-end e back-end, precisa de um backend em Go ou Python, ou está pensando em microsserviços, integração de IA, cache de alta performance com Redis, configurações complexas de banco de dados, arquiteturas multi-tenant, ou pipelines de deploy customizados, eu já passei por isso. Me conte sua visão, e faremos acontecer."
   },
   "Writing": {
-    "description": "Escrevo sobre Software, Tecnologia, Inteligência Artificial, Mentoria, Crescimento de Carreira, Inovação e Opiniões sobre diferentes tópicos.",
+    "description": "Escrevo sobre software, tecnologia, inteligência artificial, mentoria, crescimento de carreira, inovação e opiniões honestas sobre diferentes tópicos.",
     "platformDevTo": "Dev.to",
     "platformMedium": "Medium",
-    "title": "Eu Escrevo Coisas"
-  },
-  "Dashboard": {
-    "contactDescription": "Tem perguntas ou sugestões? Não hesite em me contatar.",
-    "contactTitle": "Entre em Contato",
-    "description": "Explore conteúdo exclusivo para membros! Descubra no que estou trabalhando atualmente e confira a linha do tempo de próximas funcionalidades e projetos disponíveis apenas para você.",
-    "supportMessage": "Fique atento às atualizações, e <strong>obrigado</strong> pelo seu apoio!",
-    "timelineItems": {
-      "completeHome": "Completar seções da página inicial",
-      "responsiveMobile": "Versão móvel responsiva",
-      "intl": "Suporte à internacionalização (i18n)",
-      "loginAuth": "Configurações de autenticação",
-      "userDashboard": "Página de painel de controle (Login necessário)",
-      "githubDashboard": "Atividade do Github (Login necessário)",
-      "devtoDashboard": "Artigos do Dev.to (Login necessário)",
-      "moreStuff": "Mais conteúdo (em breve)"
-    },
-    "title": "Painel de Controle"
-  },
-  "DashboardLinks": {
-    "title": "Explore Meus Projetos e Redes Sociais"
-  },
-  "DashboardTimeline": {
-    "title": "Linha do Tempo"
-  },
-  "DashboardWelcome": {
-    "message": "Bem-vindo {userName}! 👋"
+    "title": "Eu Escrevo Coisas",
+    "recentPost": "Histórias de guerra de 15 anos nas trincheiras do software. Lições aprendidas construindo em múltiplas indústrias, decisões de arquitetura e realidades do trabalho remoto."
   }
 }

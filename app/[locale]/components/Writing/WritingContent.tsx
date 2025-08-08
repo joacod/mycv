@@ -1,25 +1,21 @@
 import { devInfo } from "@/utils/devInfo";
+import { getTranslations } from "next-intl/server";
 import { BiLogoDevTo, BiLogoMediumSquare } from "react-icons/bi";
 
-interface WritingContentProps {
-  title: string;
-  description: string;
-  platformDevTo: string;
-  platformMedium: string;
-}
+export async function WritingContent() {
+  const t = await getTranslations("Writing");
 
-export function WritingContent({
-  title,
-  description,
-  platformDevTo,
-  platformMedium,
-}: WritingContentProps) {
   return (
     <div className="flex flex-col justify-center lg:col-span-3">
-      <h1 className="pb-6 text-4xl font-bold lg:text-6xl">{title}</h1>
-      <p className="mb-8 text-lg leading-relaxed opacity-90 lg:text-xl">
-        {description}
+      <h2 className="pb-6 text-4xl font-bold lg:text-5xl">{t("title")}</h2>
+
+      <p className="mb-6 text-base leading-relaxed italic">
+        {t("description")}
       </p>
+
+      <div className="mb-8 italic">
+        <p className="text-base">{t("recentPost")}</p>
+      </div>
 
       <div className="flex justify-center gap-8 lg:gap-12">
         <article>
@@ -35,7 +31,7 @@ export function WritingContent({
               className="transition-all duration-300 ease-in-out group-hover:scale-110"
             />
             <p className="mt-2 text-lg font-semibold transition-opacity">
-              {platformDevTo}
+              {t("platformDevTo")}
             </p>
           </a>
         </article>
@@ -52,7 +48,7 @@ export function WritingContent({
               className="transition-all duration-300 ease-in-out group-hover:scale-110"
             />
             <p className="mt-2 text-lg font-semibold transition-opacity">
-              {platformMedium}
+              {t("platformMedium")}
             </p>
           </a>
         </article>

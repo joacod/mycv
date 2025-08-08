@@ -7,6 +7,15 @@ export const NavLinks = () => {
   return (
     <>
       <li>
+        <Link href="#section-company">{t("company")}</Link>
+      </li>
+      <li>
+        <Link href="#section-about">{t("about")}</Link>
+      </li>
+      <li>
+        <Link href="#section-skills">{t("skills")}</Link>
+      </li>
+      <li>
         <Link href="#section-writing">{t("writing")}</Link>
       </li>
       <li>
@@ -14,12 +23,6 @@ export const NavLinks = () => {
       </li>
       <li>
         <Link href="#section-experience">{t("experience")}</Link>
-      </li>
-      <li>
-        <Link href="#section-skills">{t("skills")}</Link>
-      </li>
-      <li>
-        <Link href="#section-company">{t("company")}</Link>
       </li>
       <li>
         <Link href="#section-riddler">{t("riddler")}</Link>

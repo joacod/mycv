@@ -8,7 +8,7 @@ export const Experience = () => {
   return (
     <section
       id="section-experience"
-      className="bg-primary from-primary to-secondary text-primary-content bg-linear-to-b py-16"
+      className="bg-primary from-primary to-secondary text-primary-content bg-linear-to-b py-24"
     >
       <div className="container mx-auto px-4">
         <div className="mx-auto">
