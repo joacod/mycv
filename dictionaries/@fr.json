@@ -1,4 +1,13 @@
 {
+  "Hero": {
+    "avatarAlt": "Avatar d'un mec avec une barbe, des lunettes et souriant",
+    "title": "15+ années à construire des logiciels que les gens utilisent vraiment",
+    "subtitle": "Pas de baratin. Que des résultats.",
+    "description1": "J'aide à transformer les idées en produits fonctionnels, rapidement. En ce moment chez Everbak, nous livrons des MVPs en deux semaines, car les bonnes idées ne devraient pas se perdre dans des réunions interminables.",
+    "description2": "J'ai construit pour Warner Bros Discovery, PlutoTV, Indeed, Deloitte, des plateformes financières en Amérique latine, et des systèmes IoT aux États-Unis. Différentes industries, et la plus grande leçon ? Moins de bureaucratie, plus d'action, des résultats plus solides.",
+    "ctaPrimary": "Livrez votre MVP",
+    "ctaSecondary": "Voir mon histoire"
+  },
   "About": {
     "avatarAlt": "Avatar d'un mec avec une barbe, des lunettes et souriant",
     "collaborate": "Je suis un professionnel engagé, proactif et orienté résultats, avec un fort sens des responsabilités et de la qualité. Je prospère dans des environnements collaboratifs, j'apprends rapidement et je recherche toujours de nouveaux défis et opportunités pour continuer à grandir.",
@@ -6,7 +15,17 @@
     "getstarted": "Commencer",
     "role": "En tant qu'Ingénieur Logiciel Principal, je dirige les décisions techniques clés concernant la conception, l'architecture et le développement de composants principaux. Au-delà du codage, je contribue à la gestion de configuration, l'intégration continue et le support d'équipe, tout en fournissant du mentorat et de la formation.",
     "signin": "Se connecter pour plus de contenu",
-    "title": "À propos de moi"
+    "title": "Mon Histoire",
+    "story1": "Tout a commencé avec un PC 486 que mon père a ramené à la maison. Pendant que les autres enfants jouaient dehors, j'ai passé de nombreuses heures sur cette machine, fasciné par le fait qu'elle puisse faire tourner des jeux comme Prehistorik (j'y ai beaucoup joué). Cette curiosité précoce sur le fonctionnement des choses s'est rapidement transformée en passion pour les construire.",
+    "story2": "Avance rapide après mes études en informatique et mes premiers emplois en freelance, ma vraie éducation s'est faite dans les tranchées. J'ai travaillé sur des systèmes de bureaux de crédit à travers l'Amérique latine, aidé les entreprises à lancer des sites web dans des industries allant de l'assurance au divertissement, et même contribué au site du MetLife Stadium juste avant le Super Bowl XLVIII. Plus tard sont venus l'infrastructure IoT pour les villes intelligentes chez Aclara, les fonctionnalités de recherche d'emploi chez Indeed, et les plateformes de streaming chez Warner Bros Discovery et PlutoTV.",
+    "story3": "Quinze ans plus tard, une vérité se détache : le logiciel ne concerne pas le code parfait, il s'agit de résoudre de vrais problèmes.",
+    "story4": "J'ai été un nomade numérique, travaillant avec des équipes à travers les continents et les fuseaux horaires. Les secteurs ont changé, mais le principe est resté le même : si les utilisateurs ne peuvent pas compter sur ce que vous livrez, rien de tout cela n'a d'importance. Cette croyance m'a mené à créer Everbak. J'étais fatigué de voir des idées brillantes bloquées dans des 'phases de découverte' interminables. Deux semaines suffisent pour valider si quelque chose a du potentiel. Si c'est le cas, nous l'améliorons. Sinon, nous pivotons ou l'abandonnons. Pas de temps perdu, pas d'argent gaspillé.",
+    "story5": "Quand je ne code pas, j'écris sur les réalités désordonnées du développement logiciel, des histoires de guerre de quelqu'un qui construit des choses depuis ce premier 486 qui a suscité une fascination durable. Ce même gamin qui appuyait sur la barre d'espace pour combattre des dinosaures pixelisés, aide maintenant les gens à livrer des produits qui fonctionnent vraiment.",
+    "articleCard": {
+      "title": "De Jouer sur PC à Construire des Logiciels : Mon Voyage dans la Programmation",
+      "description": "L'histoire complète de comment un PC 486 et la curiosité d'enfance se sont transformés en une carrière de développement logiciel de 15 ans.",
+      "badge": "Histoire d'Origine"
+    }
   },
   "ClickMe": {
     "text1": "Cliquez-moi!",
@@ -26,10 +45,11 @@
     "card3": "Nous nous concentrons sur les progrès rapides. Vous verrez des mises à jour quotidiennes, pas d'attente de mois!",
     "card4": "Nous utilisons des outils d'IA assez astucieux. C'est comme avoir un assistant robot super intelligent!",
     "cardTitle": "Le pourquoi derrière la décision",
-    "description": "J'ai décidé de commencer quelque chose par moi-même. C'est un nouveau chemin, et je suis excité de le partager!",
-    "logoAlt": "Logo de l'Entreprise",
+    "description": "Décidé de commencer quelque chose par moi-même pour prouver que les idées peuvent passer du concept à la réalité en 2 semaines.",
+    "logoAlt": "Logo Everbak",
+    "mvpPitch": "Vous payez pour le développement, pas pour les chefs de projet. Chaque euro va vers la construction de votre produit.",
     "quote": "\"Qualité, efficacité, et peut-être un peu de plaisir en cours de route. C'est l'objectif!\"",
-    "title": "J'ai lancé une Entreprise!"
+    "title": "Livrez Votre MVP"
   },
   "Credits": {
     "created": "<webTemplate>Template Web</webTemplate> créé par <author>Joaquin Diaz</author>",
@@ -47,21 +67,21 @@
     "redPill": "Vous prenez la {redPillEmoji} pilule rouge... vous restez au Pays des Merveilles, et je vous montre à quel point le terrier du lapin est profond."
   },
   "Experience": {
-    "clientDescription1": "Entreprise de médias formée par la fusion de WarnerMedia et Discovery, Inc., offrant une vaste gamme de contenu de divertissement.",
-    "clientDescription2": "Plateforme populaire de recherche d'emploi en ligne, connectant les chercheurs d'emploi aux employeurs du monde entier.",
-    "clientDescription3": "Leader mondial des services professionnels, fournissant des solutions innovantes en audit, conseil et services consultatifs.",
-    "clientDescription4": "Service de télévision en streaming gratuit avec support publicitaire, détenu et exploité par la division Paramount Streaming de Paramount Global.",
+    "clientDescription1": "Géant des médias. Développé un portail personnalisé à partir de zéro, permettant les soumissions de contenu média. Implémenté une couche d'inspection média côté client pour détecter les problèmes avec les fichiers média avant téléchargement, économisant des gigaoctets de données et des heures de temps de traitement.",
+    "clientDescription2": "La plateforme de recherche d'emploi que tout le monde connaît. J'ai implémenté des solutions de microfrontend et développé des fonctionnalités qui connectent les chercheurs d'emploi avec des opportunités mondiales.",
+    "clientDescription3": "Puissance de conseil mondiale. J'ai travaillé sur leurs systèmes de crédits d'impôt WOTC. Mené des recherches pour améliorer les performances sur des parties spécifiques du logiciel comme les réponses API et les temps d'exportation.",
+    "clientDescription4": "Service de streaming gratuit de Paramount. J'ai travaillé sur l'infrastructure qui livre du contenu à des millions d'utilisateurs. J'ai contribué à optimiser l'expérience utilisateur et la maintenabilité du code, assurant une architecture microfrontend modulaire et efficace.",
     "clientLogoAlt": "Logo de {clientName}",
-    "description": "En tant que fournisseur, j'ai eu l'opportunité de collaborer avec ces clients exceptionnels.",
+    "description": "15+ années de travail avec des équipes distribuées. Différentes entreprises, même principe : construire des logiciels qui comptent vraiment.",
     "title": "Expérience",
-    "visit": "Visiter le Site Client"
+    "visit": "Visiter le Client"
   },
   "Footer": {
     "rights": "Collaborons et donnons vie à votre vision numérique."
   },
   "Layout": {
-    "metaDescription": "Développeur Logiciel, Entrepreneur, J'écris des trucs",
-    "metaTitle": "Solutions Logicielles"
+    "metaDescription": "Lead Software Engineer. 15+ années de développement logiciel pour Warner Bros Discovery, PlutoTV, Indeed, systèmes IoT. Maintenant construisant des MVPs chez Everbak.",
+    "metaTitle": "Software Engineer & Entrepreneur"
   },
   "LocaleSwitcher": {
     "flagAlt": "Drapeau de langue: {language}",
@@ -83,7 +103,8 @@
     "title": "Page Non Trouvée"
   },
   "Podcast": {
-    "description": "Code Quests est un podcast avec des lectures narrées par l'IA de mes articles sur le développement logiciel, la technologie et l'innovation. Rejoignez-nous alors que nous explorons les dernières tendances et perspectives dans le monde de la technologie à travers des histoires audio captivantes.",
+    "description1": "Code Quests est un podcast avec des lectures narrées par l'IA de mes articles sur le développement logiciel, la technologie et l'innovation.",
+    "description2": "Rejoignez-nous alors que nous explorons les dernières tendances et perspectives dans le monde de la technologie à travers des histoires audio captivantes.",
     "title": "Code Quests Podcast"
   },
   "Riddler": {
@@ -97,13 +118,22 @@
     "version": "Version"
   },
   "Skills": {
-    "title": "Compétences Techniques"
+    "title": "Comment Je Livre des MVPs en 2 Semaines",
+    "subtitle": "La stack technique exacte et l'approche qui permettent à Everbak de livrer des produits prêts pour la production rapidement.",
+    "mvpStack": "Stack de Livraison MVP",
+    "mvpStackDescription": "Next.js 15 et React 19 pour la vitesse et la fiabilité. TypeScript pour détecter les erreurs tôt et garder votre base de code prévisible. Tailwind pour des designs responsifs qui sont superbes sur n'importe quel appareil. PostgreSQL ou MongoDB pour une gestion robuste des données. Git pour un contrôle de version propre, Vercel pour des déploiements instantanés. Construit avec une architecture sur laquelle vous pouvez évoluer, suivant les pratiques prouvées de l'industrie. Vous possédez tout, dépôt GitHub complet inclus.",
+    "aiTitle": "Développement Propulsé par l'IA",
+    "aiDescription": "Nous commençons avec GPT-5 d'OpenAI pour susciter des idées, explorer les possibilités et façonner le concept. Claude Code cartographie ensuite l'architecture et planifie la construction. Vercel v0 transforme rapidement ces plans en prototypes fonctionnels. Enfin, GitHub Copilot travaille à nos côtés dans l'IDE pour affiner et étendre le code. L'IA s'occupe des tâches répétitives et chronophages, notre expertise humaine se concentre sur la stratégie, la créativité et la résolution des problèmes qui comptent vraiment.",
+    "customTitle": "Besoin de Quelque Chose de Différent ?",
+    "customDescription": "Tous les projets ne rentrent pas dans le même moule, et c'est la partie amusante. Que vous préfériez Astro à Next.js, vouliez des dépôts front-end et back-end séparés, ayez besoin d'un backend Go ou Python, ou pensiez aux microservices, intégration IA, mise en cache haute performance avec Redis, configurations de base de données complexes, architectures multi-locataires, ou pipelines de déploiement personnalisés, j'y suis allé. Dites-moi votre vision, et nous la réaliserons."
   },
   "Writing": {
     "description": "J'écris sur le Logiciel, la Technologie, l'Intelligence Artificielle, le Mentorat, l'Évolution de Carrière, l'Innovation et des Opinions sur différents sujets.",
     "platformDevTo": "Dev.to",
     "platformMedium": "Medium",
-    "title": "J'Écris des Trucs"
+    "title": "J'Écris des Trucs",
+    "valueProposition": "J'ai fait les erreurs coûteuses en construisant des logiciels pour Warner Bros, Indeed, systèmes financiers et infrastructure IoT. Écrire m'aide à traiter ce qui fonctionne versus ce qui sonne bien en réunion.",
+    "recentPost": "Histoires de guerre de 15 ans dans les tranchées du logiciel. Leçons apprises en construisant à travers plusieurs industries, décisions d'architecture et réalités du travail à distance."
   },
   "Dashboard": {
     "contactDescription": "Vous avez des questions ou des suggestions ? N'hésitez pas à me contacter.",
