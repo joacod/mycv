@@ -2,35 +2,30 @@
   "Hero": {
     "avatarAlt": "Avatar eines Typen mit Bart, Brille und lächelnd",
     "title": "15+ Jahre beim Entwickeln von Software, die Menschen tatsächlich nutzen",
-    "subtitle": "Keine Füllstoffe. Nur Ergebnisse.",
-    "description1": "Ich helfe dabei, Ideen schnell in funktionierende Produkte zu verwandeln. Derzeit bei Everbak liefern wir MVPs in zwei Wochen, weil gute Ideen nicht in endlosen Meetings verloren gehen sollten.",
-    "description2": "Ich habe für Warner Bros Discovery, PlutoTV, Indeed, Deloitte, Finanzplattformen in Lateinamerika und IoT-Systeme in den USA gebaut. Verschiedene Branchen, und die größte Lektion? Weniger Bürokratie, mehr Handeln, stärkere Ergebnisse.",
-    "ctaPrimary": "Versenden Sie Ihr MVP",
-    "ctaSecondary": "Sehen Sie meine Geschichte"
+    "subtitle": "Keine Floskeln. Nur Resultate.",
+    "description1": "Ich helfe dabei, Ideen schnell in funktionierende Produkte zu verwandeln. Bei Everbak liefern wir gerade MVPs in zwei Wochen, weil gute Ideen nicht in endlosen Meetings verloren gehen sollten.",
+    "description2": "Ich habe für Warner Bros Discovery, PlutoTV, Indeed, Deloitte, Finanzplattformen in ganz Lateinamerika und IoT-Systeme in den USA entwickelt. Verschiedene Branchen, und die größte Lektion? Weniger Bürokratie, mehr Umsetzung, stärkere Ergebnisse.",
+    "ctaPrimary": "Ihr MVP liefern",
+    "ctaSecondary": "Meine Geschichte sehen"
   },
   "About": {
-    "avatarAlt": "Avatar eines Typen mit Bart, Brille und lächelnd",
-    "collaborate": "Ich bin ein engagierter, proaktiver und ergebnisorientierter Fachmann mit einem starken Verantwortungs- und Qualitätsbewusstsein. Ich gedeihe in kollaborativen Umgebungen, lerne schnell und suche immer nach neuen Herausforderungen und Möglichkeiten, weiter zu wachsen.",
-    "description": "Mit mehr als 15 Jahren in der Software-Industrie habe ich fundierte Expertise in verschiedenen Branchen aufgebaut, einschließlich Finanzen, Medien, Gesundheitswesen und IoT.",
-    "getstarted": "Loslegen",
-    "role": "Als Lead Software Engineer treibe ich wichtige technische Entscheidungen zu Design, Architektur und Core-Komponentenentwicklung voran. Über das Programmieren hinaus trage ich zu Konfigurationsmanagement, kontinuierlicher Integration und Teamunterstützung bei und biete auch Mentoring und Schulungen an.",
     "signin": "Anmelden für mehr Inhalte",
     "title": "Meine Geschichte",
-    "story1": "Alles begann mit einem 486 PC, den mein Vater nach Hause brachte. Während andere Kinder draußen spielten, verbrachte ich viele Stunden an dieser Maschine, fasziniert von der Tatsache, dass sie Spiele wie Prehistorik laufen lassen konnte (das habe ich sehr oft gespielt). Diese frühe Neugier darüber, wie Dinge funktionieren, verwandelte sich schnell in eine Leidenschaft, sie zu bauen.",
-    "story2": "Schneller Vorlauf nach meinem Informatikstudium und frühen freiberuflichen Tätigkeiten, meine echte Ausbildung geschah in den Schützengräben. Ich arbeitete an Kreditbürosystemen in ganz Lateinamerika, half Unternehmen beim Start von Websites in Branchen von Versicherungen bis Unterhaltung und trug sogar zur MetLife Stadium-Website kurz vor dem Super Bowl XLVIII bei. Später kamen IoT-Infrastrukturen für Smart Cities bei Aclara, Jobsuchfunktionen bei Indeed und Streaming-Plattformen bei Warner Bros Discovery und PlutoTV.",
+    "story1": "Alles begann mit einem 486-PC, den mein Vater nach Hause brachte. Während andere Kinder draußen spielten, verbrachte ich viele Stunden mit dieser Maschine, fasziniert davon, dass sie Spiele wie Prehistorik ausführen konnte (das habe ich viel gespielt). Diese frühe Neugier darauf, wie Dinge funktionieren, verwandelte sich schnell in eine Leidenschaft fürs Entwickeln.",
+    "story2": "Nach meinem Informatikstudium und ersten Freelance-Aufträgen fand meine echte Ausbildung in den Schützengräben statt. Ich arbeitete an Kreditauskunftssystemen in ganz Lateinamerika, half Unternehmen beim Aufbau von Websites in Branchen von Versicherungen bis Unterhaltung und trug sogar zur MetLife Stadium-Website kurz vor dem Super Bowl XLVIII bei. Später kamen IoT-Infrastrukturen für Smart Cities bei Aclara, Job-Suchfunktionen bei Indeed und Streaming-Plattformen bei Warner Bros Discovery und PlutoTV.",
     "story3": "Nach fünfzehn Jahren sticht eine Wahrheit hervor: Software geht nicht um perfekten Code, sondern um das Lösen echter Probleme.",
-    "story4": "Ich war ein digitaler Nomade und arbeitete mit Teams auf verschiedenen Kontinenten und in verschiedenen Zeitzonen. Die Branchen änderten sich, aber das Prinzip blieb dasselbe: Wenn Benutzer sich nicht auf das verlassen können, was Sie versenden, spielt nichts davon eine Rolle. Dieser Glaube führte mich dazu, Everbak zu gründen. Ich war es leid zu sehen, wie brillante Ideen in endlosen 'Entdeckungsphasen' hängen blieben. Zwei Wochen reichen aus, um zu validieren, ob etwas Potenzial hat. Wenn ja, verbessern wir es. Wenn nicht, schwenken wir um oder verwerfen es. Keine verschwendete Zeit, kein verschwendetes Geld.",
-    "story5": "Wenn ich nicht programmiere, schreibe ich über die chaotischen Realitäten der Softwareentwicklung, Kriegsgeschichten von jemandem, der seit diesem ersten 486er Dinge baut, der eine lebenslange Faszination auslöste. Dasselbe Kind, das früher die Leertaste drückte, um gegen pixelige Dinosaurier zu kämpfen, hilft jetzt Menschen dabei, Produkte zu versenden, die tatsächlich funktionieren.",
+    "story4": "Ich war digitaler Nomade und arbeitete mit Teams über Kontinente und Zeitzonen hinweg. Die Branchen änderten sich, aber das Prinzip blieb dasselbe: Wenn Nutzer sich nicht auf das verlassen können, was Sie liefern, spielt nichts davon eine Rolle. Diese Überzeugung führte mich dazu, Everbak zu gründen. Ich hatte es satt zu sehen, wie brillante Ideen in endlosen 'Entdeckungsphasen' stecken bleiben. Zwei Wochen reichen aus, um zu validieren, ob etwas Potenzial hat. Wenn ja, verbessern wir es. Wenn nicht, schwenken wir um oder verwerfen es. Keine verschwendete Zeit, kein verschwendetes Geld.",
+    "story5": "Wenn ich nicht programmiere, schreibe ich über die chaotischen Realitäten der Softwareentwicklung, Kriegsgeschichten von jemandem, der seit diesem ersten 486er Sachen baut, der eine lebenslange Faszination auslöste. Dasselbe Kind, das früher die Leertaste hämmerte, um gegen pixelige Dinosaurier zu kämpfen, hilft jetzt Menschen dabei, Produkte zu liefern, die tatsächlich funktionieren.",
     "articleCard": {
-      "title": "Vom Spielen am PC zum Entwickeln von Software: Meine Reise ins Programmieren",
-      "description": "Die vollständige Geschichte, wie ein 486 PC und kindliche Neugier zu einer 15-jährigen Softwareentwicklungskarriere wurden.",
+      "title": "Vom PC-Spielen zum Softwareentwickeln: Meine Reise in die Programmierung",
+      "description": "Die vollständige Geschichte, wie ein 486-PC und kindliche Neugier zu einer 15-jährigen Karriere in der Softwareentwicklung wurden.",
       "badge": "Ursprungsgeschichte"
     }
   },
   "ClickMe": {
     "text1": "Klick mich!",
     "text2": "Ja!",
-    "text3": "Themen!",
+    "text3": "Themes!",
     "text4": "Nochmal!"
   },
   "Common": {
@@ -38,41 +33,67 @@
     "top": "Nach oben"
   },
   "Company": {
-    "badge": "Neues Abenteuer!",
-    "button": "Schauen Sie sich mein Unternehmen an",
-    "card1": "Ich wollte schaffen, innovieren und Wirkung nach meinen eigenen Bedingungen erzielen.",
-    "card2": "Wir beseitigen das Durcheinander. Schnelle, effiziente und kostengünstige Software-Lösungen.",
-    "card3": "Wir konzentrieren uns auf schnelle Fortschritte. Sie sehen täglich Updates, keine monatelangen Wartezeiten!",
-    "card4": "Wir verwenden ziemlich clevere KI-Tools. Es ist wie ein superintelligenter Roboter-Assistent!",
-    "cardTitle": "Das Warum hinter der Entscheidung",
-    "description": "Entschied mich, etwas Eigenes zu beginnen, um zu beweisen, dass Ideen in 2 Wochen von der Konzeption zur Realität werden können.",
+    "badge": "KI-getriebene Entwicklung",
+    "button": "Lassen Sie uns loslegen!",
+    "card1": "Ich wollte erschaffen, innovieren und auf meinen eigenen Bedingungen Wirkung erzielen. Ideen verdienen es, in Wochen das Licht der Welt zu erblicken, nicht in Monaten.",
+    "card2": "Wir nutzen KI nicht, weil es trendig ist, sondern weil es uns wirklich ermöglicht, schneller zu entwickeln, ohne die Qualität zu beeinträchtigen.",
+    "card3": "Wir sind ganz auf schnellen Fortschritt ausgelegt. Sie sehen täglich Updates, kein monatelanges Warten!",
+    "card4": "Null Bürokratie bedeutet nicht null Prozess. Es bedeutet den richtigen Prozess, um Dinge erledigt zu bekommen.",
+    "cardTitle": "Warum Everbak?",
+    "description": "Entschied mich, etwas Eigenes zu starten, um zu beweisen, dass Ideen in 2 Wochen vom Konzept zur Realität werden können.",
     "logoAlt": "Everbak Logo",
-    "mvpPitch": "Sie zahlen für Entwicklung, nicht für Projektmanager. Jeder Dollar fließt in den Aufbau Ihres Produkts.",
-    "quote": "\"Qualität, Effizienz und vielleicht ein bisschen Spaß auf dem Weg. Das ist das Ziel!\"",
-    "title": "Senden Sie Ihr MVP"
+    "mvpPitch": "Sie bezahlen für Entwicklung, nicht für Projektmanager. Jeder Euro fließt in den Aufbau Ihres Produkts.",
+    "quote": "\"Qualität, Effizienz und vielleicht ein bisschen Spaß dabei. Das ist das Ziel!\"",
+    "title": "Ihr MVP liefern"
   },
   "Credits": {
-    "created": "<webTemplate>Web-Template</webTemplate> erstellt von <author>Joaquin Diaz</author>",
+    "created": "<webTemplate>Web Template</webTemplate> erstellt von <author>Joaquin Diaz</author>",
     "flags": "Flaggen-Icons von <link>icons8.com</link>",
-    "flaticon": "Favicon-Bild erstellt von <link>Muhammad Atif - Flaticon</link>",
+    "flaticon": "Bild für das Favicon erstellt von <link>Muhammad Atif - Flaticon</link>",
     "location": "Standort bereitgestellt von <link>ipapi.co</link>",
     "shots": "Gerahmte Bilder erstellt mit <link>Shots.so</link>",
     "title": "Credits",
     "tooltip": "Lebe lang und in Frieden! 🖖",
-    "uaparser": "Wir zeigen Benutzerinformationen mit <link>uaparser.js.org</link>"
+    "uaparser": "Wir zeigen Nutzerinformationen mit <link>uaparser.js.org</link>"
+  },
+  "Dashboard": {
+    "contactDescription": "Haben Sie Fragen oder Vorschläge? Kontaktieren Sie mich gerne.",
+    "contactTitle": "Kontakt aufnehmen",
+    "description": "Entdecken Sie exklusive Inhalte nur für Mitglieder! Tauchen Sie ein in das, woran ich gerade arbeite, und schauen Sie sich die Timeline für kommende Features und Projekte an, die nur für Sie verfügbar sind.",
+    "supportMessage": "Bleiben Sie dran für Updates, und <strong>vielen Dank</strong> für Ihre Unterstützung!",
+    "timelineItems": {
+      "completeHome": "Home-Seite Bereiche vervollständigen",
+      "responsiveMobile": "Responsive Mobile-Version",
+      "intl": "Internationalisierung (i18n) Unterstützung",
+      "loginAuth": "Login Auth-Konfigurationen",
+      "userDashboard": "Dashboard-Seite (Login erforderlich)",
+      "githubDashboard": "Github-Aktivität (Login erforderlich)",
+      "devtoDashboard": "Dev.to-Artikel (Login erforderlich)",
+      "moreStuff": "Mehr Zeug (bleiben Sie dran)"
+    },
+    "title": "Dashboard"
+  },
+  "DashboardLinks": {
+    "title": "Erkunden Sie meine Projekte und Social Media"
+  },
+  "DashboardTimeline": {
+    "title": "Timeline"
+  },
+  "DashboardWelcome": {
+    "message": "Willkommen {userName}! 👋"
   },
   "EasterEgg": {
     "bluePill": "Du nimmst die {bluePillEmoji} blaue Pille... die Geschichte endet, du wachst in deinem Bett auf und glaubst, was du glauben willst.",
     "followRabbit": "Folge dem weißen Kaninchen 🐇😎",
-    "redPill": "Du nimmst die {redPillEmoji} rote Pille... du bleibst im Wunderland, und ich zeige dir, wie tief der Kaninchenbau geht."
+    "redPill": "Du nimmst die {redPillEmoji} rote Pille... du bleibst im Wunderland, und ich zeige dir, wie tief das Kaninchenloch geht."
   },
   "Experience": {
-    "clientDescription1": "Mediengigant. Entwickelte ein benutzerdefiniertes Portal von Grund auf, das die Übermittlung von Medieninhalten ermöglicht. Implementierte eine clientseitige Medieninspektion zur Erkennung von Problemen mit Mediendateien vor dem Upload, wodurch Gigabytes an Daten und Stunden an Verarbeitungszeit gespart wurden.",
-    "clientDescription2": "Die Jobsuchplattform, die jeder kennt. Ich implementierte Microfrontend-Lösungen und entwickelte Funktionen, die Jobsuchende mit Gelegenheiten weltweit verbinden.",
-    "clientDescription3": "Globaler Beratungsriese. Ich arbeitete an ihren WOTC-Steuergutschriftsystemen. Führte Forschungen durch, um die Leistung bestimmter Softwareteile wie API-Antworten und Exportzeiten zu verbessern.",
-    "clientDescription4": "Paramount's kostenloser Streaming-Service. Ich arbeitete an der Infrastruktur, die Inhalte an Millionen von Nutzern liefert. Ich trug zur Optimierung der Benutzererfahrung und Code-Wartbarkeit bei und sorgte für eine modulare und effiziente Microfrontend-Architektur.",
+    "clientDescription1": "Mediengigant. Entwickelte ein maßgeschneidertes Portal von Grund auf, das Medieninhalts-Einreichungen ermöglicht. Implementierte eine clientseitige Medienprüfungsebene, um Probleme mit Mediendateien vor dem Upload zu erkennen, wodurch Gigabytes an Daten und Stunden an Verarbeitungszeit gespart wurden.",
+    "clientDescription2": "Die Job-Such-Plattform, die jeder kennt. Ich implementierte Microfrontend-Lösungen und entwickelte Features, die Jobsuchende mit Möglichkeiten weltweit verbinden.",
+    "clientDescription3": "Globales Beratungsunternehmen. Ich arbeitete an ihren WOTC-Steuergutschrift-Systemen. Führte Recherchen durch, um die Performance in spezifischen Teilen der Software zu verbessern, wie API-Antworten und Export-Zeiten.",
+    "clientDescription4": "Paramounts kostenloser Streaming-Service. Ich arbeitete an der Infrastruktur, die Inhalte an Millionen von Nutzern ausliefert. Ich trug zur Optimierung der Nutzererfahrung und Code-Wartbarkeit bei und sorgte für eine modulare und effiziente Microfrontend-Architektur.",
     "clientLogoAlt": "Logo von {clientName}",
-    "description": "15+ Jahre Arbeit mit verteilten Teams. Verschiedene Unternehmen, gleiches Prinzip: Software bauen, die wirklich zählt.",
+    "description": "15+ Jahre Arbeit mit verteilten Teams. Verschiedene Unternehmen, gleiches Prinzip: Software entwickeln, die tatsächlich wichtig ist.",
     "title": "Erfahrung",
     "visit": "Kunde besuchen"
   },
@@ -80,7 +101,7 @@
     "rights": "Lassen Sie uns zusammenarbeiten und Ihre digitale Vision zum Leben erwecken."
   },
   "Layout": {
-    "metaDescription": "Lead Software Engineer. 15+ Jahre Software-Entwicklung für Warner Bros Discovery, PlutoTV, Indeed, IoT-Systeme. Jetzt MVPs bei Everbak.",
+    "metaDescription": "Lead Software Engineer. 15+ Jahre Softwareentwicklung für Warner Bros Discovery, PlutoTV, Indeed, IoT-Systeme. Entwickelt jetzt MVPs bei Everbak.",
     "metaTitle": "Software Engineer & Unternehmer"
   },
   "LocaleSwitcher": {
@@ -88,7 +109,7 @@
     "title": "Sprache"
   },
   "Navigation": {
-    "about": "Über",
+    "about": "Über mich",
     "company": "Unternehmen",
     "credits": "Credits",
     "experience": "Erfahrung",
@@ -99,12 +120,12 @@
   },
   "NotFound": {
     "backHome": "Zurück zur Startseite",
-    "description": "Entschuldigung, die gesuchte Seite existiert nicht.",
-    "title": "Seite Nicht Gefunden"
+    "description": "Entschuldigung, die Seite, die Sie suchen, existiert nicht.",
+    "title": "Seite nicht gefunden"
   },
   "Podcast": {
     "description1": "Code Quests ist ein Podcast mit KI-erzählten Lesungen meiner Artikel über Softwareentwicklung, Technologie und Innovation.",
-    "description2": "Begleiten Sie uns, während wir die neuesten Trends und Erkenntnisse in der Tech-Welt durch fesselnde Audio-Geschichten erkunden.",
+    "description2": "Begleiten Sie uns, während wir die neuesten Trends und Erkenntnisse in der Tech-Welt durch Audio-Geschichten erkunden.",
     "title": "Code Quests Podcast"
   },
   "Riddler": {
@@ -112,53 +133,26 @@
     "city": "Stadt",
     "country": "Land",
     "device": "Gerät",
-    "disclaimer": "Diese Website speichert keine Informationen.",
+    "disclaimer": "Diese Seite speichert keine Informationen.",
     "os": "Betriebssystem",
     "question": "Was ich über Sie weiß",
     "version": "Version"
   },
   "Skills": {
-    "title": "Wie ich MVPs in 2 Wochen versende",
-    "subtitle": "Der genaue Tech-Stack und Ansatz, der es Everbak ermöglicht, produktionsbereite Produkte schnell zu liefern.",
-    "mvpStack": "MVP-Versand-Stack",
-    "mvpStackDescription": "Next.js 15 und React 19 für Geschwindigkeit und Zuverlässigkeit. TypeScript, um Fehler früh zu erkennen und Ihre Codebasis vorhersagbar zu halten. Tailwind für responsive Designs, die auf jedem Gerät großartig aussehen. PostgreSQL oder MongoDB für robuste Datenbehandlung. Git für saubere Versionskontrolle, Vercel für sofortige Bereitstellungen. Gebaut mit einer Architektur, auf der Sie wachsen können, nach bewährten Industriepraktiken. Sie besitzen alles, vollständiges GitHub-Repository inklusive.",
-    "aiTitle": "KI-unterstützte Entwicklung",
-    "aiDescription": "Wir starten mit GPT-5 von OpenAI, um Ideen zu entfachen, Möglichkeiten zu erkunden und das Konzept zu formen. Claude Code kartiert dann die Architektur und plant den Aufbau. Vercel v0 verwandelt diese Pläne schnell in funktionale Prototypen. Schließlich arbeitet GitHub Copilot neben uns in der IDE, um den Code zu verfeinern und zu erweitern. KI kümmert sich um die repetitiven und zeitaufwändigen Aufgaben, unsere menschliche Expertise konzentriert sich auf Strategie, Kreativität und das Lösen der Probleme, die wirklich wichtig sind.",
+    "title": "Wie ich MVPs in 2 Wochen liefere",
+    "subtitle": "Der exakte Tech-Stack und Ansatz, der Everbak ermöglicht, produktionsreife Produkte schnell zu liefern.",
+    "mvpStack": "MVP-Lieferungs-Stack",
+    "mvpStackDescription": "Next.js 15 und React 19 für Geschwindigkeit und Zuverlässigkeit. TypeScript, um Fehler früh zu erkennen und Ihre Codebasis vorhersagbar zu halten. Tailwind für responsive Designs, die auf jedem Gerät großartig aussehen. PostgreSQL oder MongoDB für robuste Datenverarbeitung. Git für saubere Versionskontrolle, Vercel für sofortige Deployments. Gebaut mit einer Architektur, auf der Sie aufbauen können, nach bewährten Branchenpraktiken. Sie besitzen alles, komplettes GitHub-Repository inklusive.",
+    "aiTitle": "KI-gestützte Entwicklung",
+    "aiDescription": "Wir starten mit GPT-5 von OpenAI, um Ideen zu entzünden, Möglichkeiten zu erkunden und das Konzept zu formen. Claude Code kartiert dann die Architektur und plant den Aufbau. Vercel v0 verwandelt diese Pläne schnell in funktionale Prototypen. Schließlich arbeitet GitHub Copilot neben uns in der IDE, um den Code zu verfeinern und zu erweitern. KI kümmert sich um die repetitiven und zeitaufwändigen Aufgaben, unsere menschliche Expertise konzentriert sich auf Strategie, Kreativität und das Lösen der Probleme, die wirklich wichtig sind.",
     "customTitle": "Brauchen Sie etwas Anderes?",
-    "customDescription": "Nicht jedes Projekt passt in dieselbe Form, und das ist der spaßige Teil. Ob Sie Astro gegenüber Next.js bevorzugen, getrennte Frontend- und Backend-Repos wollen, ein Go- oder Python-Backend benötigen oder an Microservices, KI-Integration, Hochleistungs-Caching mit Redis, komplexe Datenbanksetups, Multi-Tenant-Architekturen oder benutzerdefinierte Bereitstellungspipelines denken, ich war dort. Erzählen Sie mir Ihre Vision, und wir werden sie verwirklichen."
+    "customDescription": "Nicht jedes Projekt passt in dieselbe Form, und das ist der spaßige Teil. Ob Sie Astro gegenüber Next.js bevorzugen, separate Front-End- und Back-End-Repos wollen, ein Go- oder Python-Backend benötigen oder an Microservices, KI-Integration, Hochleistungs-Caching mit Redis, komplexe Datenbanksetups, Multi-Tenant-Architekturen oder maßgeschneiderte Deployment-Pipelines denken - ich war da. Erzählen Sie mir Ihre Vision, und wir machen es möglich."
   },
   "Writing": {
-    "description": "Ich schreibe über Software, Technologie, Künstliche Intelligenz, Mentoring, Karriereentwicklung, Innovation und Meinungen zu verschiedenen Themen.",
+    "description": "Ich schreibe über Software, Technologie, künstliche Intelligenz, Mentoring, Karriereentwicklung, Innovation und ehrliche Standpunkte zu verschiedenen Themen.",
     "platformDevTo": "Dev.to",
     "platformMedium": "Medium",
-    "title": "Ich Schreibe Zeug",
-    "valueProposition": "Ich habe die teuren Fehler beim Entwickeln von Software für Warner Bros, Indeed, Finanzsysteme und IoT-Infrastruktur gemacht. Schreiben hilft mir zu verarbeiten, was funktioniert versus was in Meetings gut klingt.",
-    "recentPost": "Kriegsgeschichten aus 15 Jahren in den Software-Schützengräben. Lektionen aus dem Bauen in verschiedenen Branchen, Architekturentscheidungen und Fernarbeitsrealitäten."
-  },
-  "Dashboard": {
-    "contactDescription": "Haben Sie Fragen oder Anregungen? Kontaktieren Sie mich gerne.",
-    "contactTitle": "Kontakt aufnehmen",
-    "description": "Entdecken Sie exklusive Mitgliederinhalte! Erfahren Sie, woran ich aktuell arbeite, und sehen Sie sich den Zeitplan für kommende Funktionen und Projekte an, die nur für Sie verfügbar sind.",
-    "supportMessage": "Bleiben Sie auf dem Laufenden, und <strong>danke</strong> für Ihre Unterstützung!",
-    "timelineItems": {
-      "completeHome": "Startseiten-Abschnitte vervollständigen",
-      "responsiveMobile": "Responsive Mobile Version",
-      "intl": "Internationalisierung (i18n) Unterstützung",
-      "loginAuth": "Authentifizierungskonfigurationen",
-      "userDashboard": "Dashboard-Seite (Login erforderlich)",
-      "githubDashboard": "Github Aktivität (Login erforderlich)",
-      "devtoDashboard": "Dev.to Artikel (Login erforderlich)",
-      "moreStuff": "Weitere Inhalte (in Kürze)"
-    },
-    "title": "Dashboard"
-  },
-  "DashboardLinks": {
-    "title": "Entdecken Sie Meine Projekte und Sozialen Medien"
-  },
-  "DashboardTimeline": {
-    "title": "Zeitplan"
-  },
-  "DashboardWelcome": {
-    "message": "Willkommen {userName}! 👋"
+    "title": "Ich schreibe Zeug",
+    "recentPost": "Kriegsgeschichten aus 15 Jahren in den Software-Schützengräben. Lektionen aus dem Entwickeln in verschiedenen Branchen, Architekturentscheidungen und Remote-Work-Realitäten."
   }
 }
