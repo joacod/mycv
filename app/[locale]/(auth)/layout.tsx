@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Footer } from "../components/Footer/Footer";
-import { UsersNavigation } from "../components/Navigation/UsersNavigation";
+import Navigation from "../components/Navigation/Navigation";
 
 export const metadata: Metadata = {
   robots: {
@@ -16,7 +16,7 @@ export default function AuthLayout({
 }) {
   return (
     <>
-      <UsersNavigation />
+      <Navigation variant="other" />
       {children}
       <Footer />
     </>

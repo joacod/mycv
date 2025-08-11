@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { UsersNavigation } from "./components/Navigation/UsersNavigation";
+import Navigation from "./components/Navigation/Navigation";
 import { Footer } from "./components/Footer/Footer";
 
 export default function NotFound() {
@@ -8,20 +8,15 @@ export default function NotFound() {
 
   return (
     <>
-      <UsersNavigation />
-      <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-neutral">
+      <Navigation variant="other" />
+      <main className="bg-neutral flex min-h-screen flex-col items-center justify-center p-4">
         <div className="text-center">
-          <h1 className="mb-4 text-6xl font-semibold text-error">404</h1>
-          <h2 className="mb-4 text-2xl font-bold text-neutral-content">
+          <h1 className="text-error mb-4 text-6xl font-semibold">404</h1>
+          <h2 className="text-neutral-content mb-4 text-2xl font-bold">
             {t("title")}
           </h2>
-          <p className="mb-8 text-neutral-content/70">
-            {t("description")}
-          </p>
-          <Link
-            href="/"
-            className="btn btn-primary"
-          >
+          <p className="text-neutral-content/70 mb-8">{t("description")}</p>
+          <Link href="/" className="btn btn-primary">
             {t("backHome")}
           </Link>
         </div>
@@ -29,4 +24,4 @@ export default function NotFound() {
       <Footer />
     </>
   );
-} 
+}
