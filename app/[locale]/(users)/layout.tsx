@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Footer } from "../components/Footer/Footer";
-import { UsersNavigation } from "../components/Navigation/UsersNavigation";
+import Navigation from "../components/Navigation/Navigation";
 import { devInfo } from "@/utils/devInfo";
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function UsersLayout({
 }) {
   return (
     <>
-      <UsersNavigation />
+      <Navigation variant="dashboard" />
       {children}
       <Footer />
     </>

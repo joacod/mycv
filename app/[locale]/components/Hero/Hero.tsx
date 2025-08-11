@@ -12,7 +12,7 @@ export const Hero = () => {
       className="hero bg-primary from-secondary to-primary text-primary-content z-0 min-h-screen bg-linear-to-b"
     >
       <div className="container mx-auto">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero-content flex-col lg:max-w-full lg:flex-row-reverse">
           <figure className="animate-flip-up mt-6 lg:hidden">
             <Image
               src="/avatar.webp"

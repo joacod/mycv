@@ -32,7 +32,7 @@ export default function HomeLayout({
 }) {
   return (
     <>
-      <Navigation />
+      <Navigation variant="home" />
       {children}
       <Footer />
       <Analytics />

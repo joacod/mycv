@@ -1,7 +1,9 @@
+"use client";
+
 import { useLocale, useTranslations } from "next-intl";
 import { IoLanguageOutline } from "react-icons/io5";
 import Image from "next/image";
-import { Link, locales } from "@/i18n/routing";
+import { Link, locales, usePathname } from "@/i18n/routing";
 
 const nativeLanguageNames: Record<string, string> = {
   en: "English",
@@ -14,6 +16,7 @@ const nativeLanguageNames: Record<string, string> = {
 
 const LocaleSwitcher = () => {
   const locale = useLocale();
+  const pathname = usePathname();
   const t = useTranslations("LocaleSwitcher");
 
   return (
@@ -29,7 +32,7 @@ const LocaleSwitcher = () => {
           {locales.map((lang) => (
             <li key={lang}>
               <Link
-                href="/"
+                href={pathname || "/"}
                 locale={lang}
                 className={locale === lang ? "active px-2" : "px-2"}
                 aria-label={`Switch to ${nativeLanguageNames[lang]} language`}

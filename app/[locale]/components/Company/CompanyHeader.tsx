@@ -6,7 +6,7 @@ export const CompanyHeader = () => {
   const t = useTranslations("Company");
 
   return (
-    <div className="mb-8 flex flex-row items-center justify-center gap-8 md:mx-auto md:w-11/12">
+    <div className="mb-8 flex flex-col items-center justify-center gap-8 md:mx-auto md:w-11/12 md:flex-row">
       <div className="flex flex-col items-center justify-center">
         <div className="relative flex-shrink-0">
           <Image
@@ -22,7 +22,7 @@ export const CompanyHeader = () => {
         </h2>
       </div>
 
-      <div className="flex-1">
+      <div className="flex-1 text-center md:text-left">
         <h2 className="mb-4 text-3xl leading-tight font-bold md:text-4xl lg:text-6xl">
           {t("title")}
         </h2>
