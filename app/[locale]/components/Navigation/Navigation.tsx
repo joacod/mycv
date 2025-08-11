@@ -94,6 +94,10 @@ const Navigation = ({ variant }: NavigationProps) => {
         )}
 
         <div className="navbar-end space-x-4">
+          <ul className="menu menu-horizontal px-1">
+            <LocaleSwitcher />
+          </ul>
+
           {showDashboardButton && (
             <SignedIn>
               <Link href="/dashboard">
@@ -103,10 +107,6 @@ const Navigation = ({ variant }: NavigationProps) => {
               </Link>
             </SignedIn>
           )}
-
-          <ul className="menu menu-horizontal px-1">
-            <LocaleSwitcher />
-          </ul>
 
           {showSocialLinks && (
             <SignedOut>
