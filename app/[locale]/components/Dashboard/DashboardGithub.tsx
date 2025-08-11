@@ -216,14 +216,25 @@ export async function GitHubShowcase() {
   return (
     <div className="bg-base-100 rounded-xl p-6">
       {/* Header */}
-      <div className="mb-6 flex items-center gap-3">
-        <div className="bg-primary/20 flex h-8 w-8 items-center justify-center rounded-full">
-          <FaCodeBranch className="text-primary h-4 w-4" />
+      <div className="mb-6">
+        <div className="flex items-center gap-3">
+          <div className="bg-primary/20 flex h-8 w-8 items-center justify-center rounded-full">
+            <FaCodeBranch className="text-primary h-4 w-4" />
+          </div>
+          <h3 className="text-xl font-bold">
+            GitHub Activity - {devInfo.handle}
+          </h3>
+          <div className="ml-auto hidden text-sm md:block">
+            <span className="bg-base-200 rounded-full px-3 py-1">
+              Member since{" "}
+              {new Date(data.user.created_at).toLocaleDateString("en-US", {
+                month: "short",
+                year: "numeric",
+              })}
+            </span>
+          </div>
         </div>
-        <h3 className="text-xl font-bold">
-          GitHub Activity - {devInfo.handle}
-        </h3>
-        <div className="ml-auto text-sm">
+        <div className="mt-2 text-left text-sm md:hidden">
           <span className="bg-base-200 rounded-full px-3 py-1">
             Member since{" "}
             {new Date(data.user.created_at).toLocaleDateString("en-US", {

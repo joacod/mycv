@@ -14,8 +14,10 @@ export const UsersNavigation = () => {
           </button>
         </Link>
         <SignedIn>
-          <ClickMe />
-          <User />
+          <div className="flex items-center gap-2">
+            <ClickMe />
+            <User />
+          </div>
         </SignedIn>
       </nav>
 
