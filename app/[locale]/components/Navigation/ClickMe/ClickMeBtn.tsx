@@ -3,11 +3,10 @@
 import { useEffect, useState } from "react";
 import { useThemeStore } from "@/store/theme";
 import confetti from "canvas-confetti";
-import { themes } from "@/utils/themes";
 
 export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   const [mounted, setMounted] = useState(false);
-  const { themeIndex, changeTheme, incrementIndex } = useThemeStore();
+  const { themeIndex, nextTheme } = useThemeStore();
   let clickMeText = texts[themeIndex];
 
   useEffect(() => {
@@ -15,9 +14,7 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   }, []);
 
   const toggleTheme = () => {
-    incrementIndex();
-    const newTheme = themes[(themeIndex + 1) % themes.length];
-    changeTheme(newTheme);
+    nextTheme();
 
     // Confetti!!
     confetti({
@@ -37,14 +34,12 @@ export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
     );
 
   return (
-    <>
-      <button
-        className="btn btn-primary btn-sm md:btn-md py-2 md:py-6"
-        onClick={toggleTheme}
-        aria-label="Click Me Button"
-      >
-        {clickMeText}
-      </button>
-    </>
+    <button
+      className="btn btn-primary btn-sm md:btn-md py-2 md:py-6"
+      onClick={toggleTheme}
+      aria-label="Click Me Button"
+    >
+      {clickMeText}
+    </button>
   );
 };
