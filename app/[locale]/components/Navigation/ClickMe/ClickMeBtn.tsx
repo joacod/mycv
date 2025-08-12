@@ -7,26 +7,17 @@ import { themes } from "@/utils/themes";
 
 export const ClickMeBtn = ({ texts }: { texts: string[] }) => {
   const [mounted, setMounted] = useState(false);
-  const theme = useThemeStore((state) => state.theme);
-  const changeTheme = useThemeStore((state) => state.changeTheme);
-  const [textIndex, setTextIndex] = useState(0);
-  const [themeIndex, setThemeIndex] = useState(0);
-  let clickMeText = texts[textIndex];
+  const { themeIndex, changeTheme, incrementIndex } = useThemeStore();
+  let clickMeText = texts[themeIndex];
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  const handleChange = () => {
-    // Increment the current index and reset to 0 when it reaches the end
-    setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    setThemeIndex((prevIndex) => (prevIndex + 1) % themes.length);
-  };
-
   const toggleTheme = () => {
+    incrementIndex();
     const newTheme = themes[(themeIndex + 1) % themes.length];
     changeTheme(newTheme);
-    handleChange();
 
     // Confetti!!
     confetti({
