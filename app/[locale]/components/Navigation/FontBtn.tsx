@@ -36,12 +36,13 @@ export const FontBtn = ({ title }: { title: string }) => {
 
   return (
     <button
-      className="btn btn-neutral px-2 py-6 text-sm normal-case lg:px-4 lg:text-lg"
+      className="btn btn-neutral btn-sm md:btn-md px-2 py-2 text-xs normal-case md:px-4 md:py-6 md:text-lg"
       onClick={() => changeFont()}
       aria-label={`${title} | Change Font randomly`}
     >
       <span className="inline">
-        <BsFillClipboard2CheckFill size={32} />
+        <BsFillClipboard2CheckFill className="md:hidden" size={20} />
+        <BsFillClipboard2CheckFill className="hidden md:block" size={32} />
       </span>{" "}
       <span>{title}</span>
     </button>

@@ -32,8 +32,12 @@ const Navigation = ({ variant }: NavigationProps) => {
       <nav id="navigation" className="mx-2 py-4 lg:hidden">
         <div className="flex items-center justify-between">
           <div className="dropdown">
-            <button tabIndex={0} className="btn btn-ghost mr-2 px-2 py-6">
-              <RiMenu2Fill size={28} />
+            <button
+              tabIndex={0}
+              className="btn btn-ghost btn-sm md:btn-md mr-2 px-2 py-2 md:py-6"
+            >
+              <RiMenu2Fill className="md:hidden" size={20} />
+              <RiMenu2Fill className="hidden md:block" size={28} />
             </button>
             <ul
               tabIndex={0}
@@ -76,8 +80,10 @@ const Navigation = ({ variant }: NavigationProps) => {
         <div className="navbar-start space-x-4">
           {showHomeButton && (
             <Link href="/">
-              <button className="btn btn-neutral mr-2 px-2 py-6">
-                <FaHome size={28} /> Home
+              <button className="btn btn-neutral btn-sm md:btn-md mr-2 px-2 py-2 md:py-6">
+                <FaHome className="md:hidden" size={18} />
+                <FaHome className="hidden md:block" size={28} />
+                <span className="ml-1">Home</span>
               </button>
             </Link>
           )}
@@ -101,8 +107,10 @@ const Navigation = ({ variant }: NavigationProps) => {
           {showDashboardButton && (
             <SignedIn>
               <Link href="/dashboard">
-                <button className="btn btn-neutral mr-2 px-2 py-6">
-                  <MdDashboard size={28} /> Dashboard
+                <button className="btn btn-neutral btn-sm md:btn-md mr-2 px-2 py-2 md:py-6">
+                  <MdDashboard className="md:hidden" size={18} />
+                  <MdDashboard className="hidden md:block" size={28} />
+                  <span className="ml-1">Dashboard</span>
                 </button>
               </Link>
             </SignedIn>
@@ -116,7 +124,8 @@ const Navigation = ({ variant }: NavigationProps) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub size={32} />
+                <FaGithub className="md:hidden" size={24} />
+                <FaGithub className="hidden md:block" size={32} />
               </a>
               <a
                 href={devInfo.devto}
@@ -124,7 +133,8 @@ const Navigation = ({ variant }: NavigationProps) => {
                 target="_blank"
                 rel="noopener"
               >
-                <BiLogoDevTo size={40} />
+                <BiLogoDevTo className="md:hidden" size={28} />
+                <BiLogoDevTo className="hidden md:block" size={40} />
               </a>
             </SignedOut>
           )}
